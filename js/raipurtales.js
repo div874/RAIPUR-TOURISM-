@@ -142,11 +142,24 @@ jQuery(function($) {
     $("#aiResponseArea").addClass("active").hide().fadeIn(300);
   });
 
-  // Live AI Search Assistant powered by Qwen3.8 Max (xkiro API)
-  (function initAiSearchAssistant() {
-    var apiKey = "sk-xt-76c57fd259af55d2fc746eb295cff2f8d2a84be40e6216c7";
-    var modelName = "qwen/qwen3.8-max:free";
-    var apiUrl = "https://api.xkiro.com/v1/chat/completions";
+    function getSmartFallbackResponse(query) {
+      var q = query.toLowerCase();
+      if (q.includes("turf") || q.includes("sport") || q.includes("cricket") || q.includes("football") || q.includes("play")) {
+        return "For sports turfs and grounds in Raipur, check out <strong>Swami Vivekananda Turf</strong>, <strong>VIP Road Sports Arenas</strong>, or <strong>Netaji Subhash Stadium</strong> for cricket, football, and night matches!";
+      } else if (q.includes("food") || q.includes("eat") || q.includes("farra") || q.includes("chila") || q.includes("sweet") || q.includes("restaurant") || q.includes("cafe")) {
+        return "Raipur is renowned for authentic Chhattisgarhi delicacies like <strong>Farra</strong>, <strong>Chila</strong> with spicy garlic chutney, <strong>Bara</strong>, and <strong>Muthia</strong>. Visit <strong>Gole Bazaar</strong> and <strong>Telibandha Marine Drive</strong> for street food treats!";
+      } else if (q.includes("sunset") || q.includes("lake") || q.includes("park") || q.includes("view") || q.includes("evening")) {
+        return "Top sunset and lake spots in Raipur include <strong>Vivekananda Sarovar (Budha Talab)</strong> with its 37-ft statue, <strong>Telibandha Lake (Marine Drive)</strong>, and <strong>Urja Park</strong>.";
+      } else if (q.includes("temple") || q.includes("history") || q.includes("heritage") || q.includes("museum") || q.includes("culture")) {
+        return "Experience Raipur's rich heritage at the 17th-century <strong>Dudhadhari Math</strong>, <strong>Hatkeshwar Mahadev Temple</strong> (1402 AD), and the <strong>Mahant Ghasidas Memorial Museum</strong>.";
+      } else if (q.includes("wildlife") || q.includes("safari") || q.includes("nature") || q.includes("zoo")) {
+        return "Explore <strong>Nandan Van Jungle Safari</strong> in Naya Raipur (over 800 acres featuring Tiger, Lion, Bear & Herbivore safaris) or stroll through <strong>Purkhauti Muktangan</strong> open-air museum.";
+      } else if (q.includes("stay") || q.includes("hotel") || q.includes("flight") || q.includes("airport") || q.includes("train") || q.includes("station")) {
+        return "Raipur is easily accessible via <strong>Swami Vivekananda Airport (Mana)</strong> and <strong>Raipur Junction Railway Station</strong>. Premier stays and business hotels are clustered around VIP Road and GE Road.";
+      } else {
+        return "Hamara Raipur offers a wonderful blend of heritage and modern charm! You can explore <strong>Purkhauti Muktangan</strong> for open-air tribal culture, enjoy sunset views at <strong>Telibandha Lake</strong>, or try traditional <strong>Farra & Chila</strong> in Old Raipur.";
+      }
+    }
 
     function askAi(query, $textEl, $cardEl) {
       if (!query || !query.trim()) return;
@@ -157,12 +170,16 @@ jQuery(function($) {
 
       var systemPrompt = "You are Hamara Raipur AI, a highly knowledgeable, precise local guide for Raipur, Chhattisgarh. Answer the user prompt with exact, highly specific details about Raipur (such as real sports turfs, food spots, places, events, or local advice). Provide a clear, detailed, and accurate response (2 to 4 sentences).";
 
+      var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+      var timeoutId = controller ? setTimeout(function() { controller.abort(); }, 4000) : null;
+
       fetch(apiUrl, {
         method: "POST",
         headers: {
           "Authorization": "Bearer " + apiKey,
           "Content-Type": "application/json"
         },
+        signal: controller ? controller.signal : undefined,
         body: JSON.stringify({
           model: modelName,
           messages: [
@@ -173,6 +190,7 @@ jQuery(function($) {
         })
       })
       .then(function(res) {
+        if (timeoutId) clearTimeout(timeoutId);
         if (!res.ok) throw new Error("API request error " + res.status);
         return res.json();
       })
@@ -182,12 +200,13 @@ jQuery(function($) {
           var formattedAnswer = rawAnswer.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
           $textEl.html(formattedAnswer);
         } else {
-          $textEl.html("Sorry, could not retrieve details right now. Please try searching again!");
+          $textEl.html(getSmartFallbackResponse(cleanQuery));
         }
       })
       .catch(function(err) {
-        console.error("AI Search Error:", err);
-        $textEl.html("Unable to connect to AI assistant. Please try again in a moment.");
+        if (timeoutId) clearTimeout(timeoutId);
+        console.warn("AI API unavailable, using smart local fallback:", err);
+        $textEl.html(getSmartFallbackResponse(cleanQuery));
       });
     }
 
