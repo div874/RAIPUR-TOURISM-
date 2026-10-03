@@ -196,4 +196,122 @@ jQuery(function($) {
       $(".header").removeClass("scrolled");
     }
   }).trigger("scroll");
+
+  // ScrollExpand Hero Component (React Bits Port to Vanilla JS)
+  (function initScrollExpand() {
+    var root = document.getElementById("heroScrollExpand");
+    var track = document.getElementById("scrollExpandTrack");
+    var stage = document.getElementById("scrollExpandStage");
+    var frame = document.getElementById("scrollExpandFrame");
+    var media = frame ? frame.querySelector(".rt-scroll-expand-media") : null;
+    var title = document.getElementById("scrollExpandTitle");
+    var hint = document.getElementById("scrollExpandHint");
+    var overlay = document.getElementById("scrollExpandOverlay");
+    var scrim = document.getElementById("scrollExpandScrim");
+
+    if (!root || !track || !stage || !frame || !media) return;
+
+    var startWidth = 44; // %
+    var startHeight = 56; // %
+    var startRadius = 24; // px
+    var endRadius = 0; // px
+    var mediaZoom = 1.35;
+    var scrollDistance = 1.2;
+    var holdDistance = 0.35;
+    var overlayScrim = 0.55;
+
+    var current = 0;
+    var target = 0;
+    var running = false;
+
+    function clamp(v, min, max) {
+      return v < min ? min : v > max ? max : v;
+    }
+
+    function smoothstep(edge0, edge1, x) {
+      var t = clamp((x - edge0) / (edge1 - edge0 || 1e-6), 0, 1);
+      return t * t * (3 - 2 * t);
+    }
+
+    function measure() {
+      var stageH = window.innerHeight;
+      stage.style.height = stageH + "px";
+      track.style.height = (stageH * (1 + scrollDistance + holdDistance)) + "px";
+    }
+
+    function readProgress() {
+      var stageH = window.innerHeight;
+      var span = stageH * Math.max(0.01, scrollDistance);
+      var top = track.getBoundingClientRect().top;
+      return clamp(-top / span, 0, 1);
+    }
+
+    function applyProgress(p) {
+      var e = smoothstep(0, 1, p);
+      var w = startWidth + (100 - startWidth) * e;
+      var h = startHeight + (100 - startHeight) * e;
+      var ix = Math.max(0, (100 - w) / 2);
+      var iy = Math.max(0, (100 - h) / 2);
+      var r = startRadius + (endRadius - startRadius) * e;
+
+      frame.style.clipPath = "inset(" + iy.toFixed(3) + "% " + ix.toFixed(3) + "% " + iy.toFixed(3) + "% " + ix.toFixed(3) + "% round " + r.toFixed(1) + "px)";
+      media.style.transform = "scale(" + (mediaZoom + (1 - mediaZoom) * e).toFixed(4) + ")";
+
+      if (scrim) {
+        scrim.style.opacity = (overlayScrim * e).toFixed(3);
+      }
+
+      if (title) {
+        var out = smoothstep(0.3, 0.85, p);
+        title.style.opacity = (1 - out).toFixed(3);
+        title.style.transform = "translate3d(0, " + (-36 * out).toFixed(1) + "px, 0) scale(" + (1 + 0.06 * out).toFixed(3) + ")";
+      }
+
+      if (hint) {
+        var gone = smoothstep(0, 0.15, p);
+        hint.style.opacity = (1 - gone).toFixed(3);
+        hint.style.transform = "translate3d(0, " + (12 * gone).toFixed(1) + "px, 0)";
+      }
+
+      if (overlay) {
+        var inn = smoothstep(0.72, 1, p);
+        overlay.style.opacity = inn.toFixed(3);
+        overlay.style.transform = "translate3d(0, " + (20 * (1 - inn)).toFixed(1) + "px, 0)";
+      }
+    }
+
+    function tick() {
+      var k = 0.16;
+      current += (target - current) * k;
+      if (Math.abs(target - current) < 0.0004) {
+        current = target;
+        running = false;
+      }
+      applyProgress(current);
+      if (running) {
+        requestAnimationFrame(tick);
+      }
+    }
+
+    function onScroll() {
+      target = readProgress();
+      if (!running) {
+        running = true;
+        requestAnimationFrame(tick);
+      }
+    }
+
+    function onResize() {
+      measure();
+      target = readProgress();
+      current = target;
+      applyProgress(current);
+    }
+
+    measure();
+    onResize();
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+  })();
 });

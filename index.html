@@ -10,7 +10,7 @@
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="css/raipurtales.css?v=12" rel="stylesheet">
+  <link href="css/raipurtales.css?v=13" rel="stylesheet">
 </head>
 <body>
 
@@ -72,23 +72,40 @@
   </div>
 </div>
 
-<!-- SECTION 1 — HERO SECTION (75-85vh Desktop) -->
-<section class="rt-hero-sec">
-  <img src="images/hero_banner.jpg" alt="Vivekananda Sarovar Sunset Raipur" class="rt-hero-bg">
-  <div class="rt-hero-overlay"></div>
-  
-  <div class="rt-hero-content">
-    <span class="rt-hero-badge">HAMARA RAIPUR</span>
-    <h1 class="rt-hero-title">RAIPUR, <br>TOLD DIFFERENTLY.</h1>
-    <p class="rt-hero-sub">Discover the places, food, people, stories and experiences that make Raipur what it is.</p>
-    
-    <div class="rt-hero-actions">
-      <a href="#explore" class="btn-rt-primary">EXPLORE RAIPUR ↓</a>
-      <a href="#events" class="btn-rt-outline-light">DISCOVER WHAT'S ON</a>
+<!-- SECTION 1 — HERO SECTION (REACT BITS SCROLL EXPAND EFFECT) -->
+<section class="rt-scroll-expand-root" id="heroScrollExpand">
+  <div class="rt-scroll-expand-track" id="scrollExpandTrack">
+    <div class="rt-scroll-expand-stage" id="scrollExpandStage">
+      <div class="rt-scroll-expand-frame" id="scrollExpandFrame">
+        <video class="rt-scroll-expand-media" src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-city-at-sunset-41484-large.mp4" poster="images/hero_banner.jpg" autoplay muted loop playsinline></video>
+        <div class="rt-scroll-expand-scrim" id="scrollExpandScrim"></div>
+        
+        <div class="rt-scroll-expand-overlay" id="scrollExpandOverlay">
+          <span class="rt-hero-badge">HAMARA RAIPUR</span>
+          <p class="rt-hero-sub">Discover the places, food, people, stories and experiences that make Raipur what it is.</p>
+          <div class="rt-hero-actions">
+            <a href="#discover-sec" class="btn-rt-primary">EXPLORE RAIPUR ↓</a>
+            <a href="#events" class="btn-rt-outline-light">DISCOVER WHAT'S ON</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rt-scroll-expand-title" id="scrollExpandTitle">
+        <span class="rt-title-eyebrow">HAMARA RAIPUR</span>
+        <h1>RAIPUR,<br>TOLD DIFFERENTLY.</h1>
+      </div>
+      
+      <div class="rt-scroll-expand-hint" id="scrollExpandHint">
+        <span>SCROLL TO DISCOVER <i class="fa-solid fa-arrow-down ms-1"></i></span>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- SECTION 2 — DISCOVERY SEARCH (Overlapping / Below Hero) -->
-    <div class="rt-ai-discovery-bar d-none d-sm-block">
+<!-- SECTION 2 — DISCOVERY SEARCH (Immediately Below Expanded Hero) -->
+<section class="rt-search-sec" id="search-sec">
+  <div class="container">
+    <div class="rt-ai-discovery-bar">
       <div class="rt-ai-input-wrap">
         <input type="text" class="rt-ai-input" id="heroSearchInput" placeholder="What are you looking for in Raipur?">
         <a href="#explore" class="btn-rt-primary" style="padding: 12px 24px; font-size: 11px;">SEARCH <i class="fa-solid fa-arrow-right"></i></a>
