@@ -142,6 +142,12 @@ jQuery(function($) {
     $("#aiResponseArea").addClass("active").hide().fadeIn(300);
   });
 
+  // Live AI Search Assistant powered by Qwen3.8 Max (xkiro API)
+  (function initAiSearchAssistant() {
+    var apiKey = "sk-xt-76c57fd259af55d2fc746eb295cff2f8d2a84be40e6216c7";
+    var modelName = "qwen/qwen3.8-max:free";
+    var apiUrl = "https://api.xkiro.com/v1/chat/completions";
+
     function getSmartFallbackResponse(query) {
       var q = query.toLowerCase();
       if (q.includes("turf") || q.includes("sport") || q.includes("cricket") || q.includes("football") || q.includes("play")) {
