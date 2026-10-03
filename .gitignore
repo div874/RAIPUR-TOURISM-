@@ -1,9 +1,10 @@
-# Exclude large video files
-*.mp4
+# Ignore large videos
+gol bazar video.mp4
+
+# Exclude video formats by default except compressed banner video
 *.MOV
 *.avi
-videos/*.mp4
-gol bazar video.mp4
+!videos/golbazar_hero.mp4
 
 # OS generated files
 .DS_Store
