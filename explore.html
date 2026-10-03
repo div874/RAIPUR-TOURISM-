@@ -9,8 +9,8 @@
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="css/raipurtales.css?v=8" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="css/raipurtales.css?v=14" rel="stylesheet">
 </head>
 <body>
 
@@ -29,7 +29,7 @@
       </button>
 
       <div class="collapse-menu">
-        <div class="close-rt-pnl"><i class="fa fa-times"></i></div>
+        <div class="close-rt-pnl"><i data-lucide="x"></i></div>
         <ul class="navbar-menu">
           <li class="nav-item"><a class="nav-link active" href="explore.html">Explore</a></li>
           <li class="nav-item"><a class="nav-link" href="eat.html">Eat</a></li>
@@ -41,7 +41,7 @@
       </div>
 
       <a href="explore.html" class="btn-rt-header d-none d-md-inline-flex">
-        Explore Raipur
+        Explore Raipur <i data-lucide="arrow-right"></i>
       </a>
     </nav>
   </div>
@@ -152,7 +152,7 @@
           <span class="rt-label">MUSEUM & ANTIQUITIES</span>
           <h4>Mahant Ghasidas Memorial Museum</h4>
           <p>Established in 1875, housing rare ancient coins, Kalchuri sculptures, tribal weaponry, and stone carvings.</p>
-          <a href="#" class="rt-culture-link">Explore Details <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="rt-culture-link">Explore Details <i data-lucide="arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -174,6 +174,8 @@
 
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <script src="js/raipurtales.js"></script>
+<script>if (typeof lucide !== 'undefined') { lucide.createIcons(); }</script>
 </body>
 </html>

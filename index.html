@@ -9,8 +9,8 @@
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="css/raipurtales.css?v=13" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="css/raipurtales.css?v=14" rel="stylesheet">
 </head>
 <body>
 
@@ -34,7 +34,7 @@
       </button>
 
       <div class="collapse-menu">
-        <div class="close-rt-pnl"><i class="fa fa-times"></i></div>
+        <div class="close-rt-pnl"><i data-lucide="x"></i></div>
         <ul class="navbar-menu">
           <li class="nav-item"><a class="nav-link" href="#explore">EXPLORE</a></li>
           <li class="nav-item"><a class="nav-link" href="#eat">EAT</a></li>
@@ -43,13 +43,13 @@
           <li class="nav-item"><a class="nav-link" href="#stories">STORIES</a></li>
           <li class="nav-item"><a class="nav-link" href="#plan">PLAN</a></li>
           <li class="nav-item search-item">
-            <a class="nav-link" id="search-trigger" href="javascript:void(0)"><i class="fa fa-search"></i> SEARCH</a>
+            <a class="nav-link" id="search-trigger" href="javascript:void(0)"><i data-lucide="search"></i> SEARCH</a>
           </li>
         </ul>
       </div>
 
       <a href="#explore" class="btn-rt-header d-none d-md-inline-flex">
-        EXPLORE RAIPUR
+        EXPLORE RAIPUR <i data-lucide="arrow-right"></i>
       </a>
     </nav>
   </div>
@@ -77,50 +77,70 @@
   <div class="rt-scroll-expand-track" id="scrollExpandTrack">
     <div class="rt-scroll-expand-stage" id="scrollExpandStage">
       <div class="rt-scroll-expand-frame" id="scrollExpandFrame">
-        <video class="rt-scroll-expand-media" src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-city-at-sunset-41484-large.mp4" poster="images/hero_banner.jpg" autoplay muted loop playsinline></video>
+        <video class="rt-scroll-expand-media" src="videos/golbazar_hero.mp4" poster="images/hero_banner.jpg" autoplay muted loop playsinline></video>
         <div class="rt-scroll-expand-scrim" id="scrollExpandScrim"></div>
-        
-        <div class="rt-scroll-expand-overlay" id="scrollExpandOverlay">
-          <span class="rt-hero-badge">HAMARA RAIPUR</span>
-          <p class="rt-hero-sub">Discover the places, food, people, stories and experiences that make Raipur what it is.</p>
-          <div class="rt-hero-actions">
-            <a href="#discover-sec" class="btn-rt-primary">EXPLORE RAIPUR ↓</a>
-            <a href="#events" class="btn-rt-outline-light">DISCOVER WHAT'S ON</a>
+      </div>
+      <!-- Left gradient scrim for text readability -->
+      <div class="rt-hero-left-scrim" id="heroLeftScrim"></div>
+
+      <!-- Editorial text overlay (fades in after video expands) -->
+      <div class="rt-hero-editorial" id="heroEditorial">
+        <h1 class="rt-hero-headline">RAIPUR,<br>TOLD DIFFERENTLY.</h1>
+        <p class="rt-hero-tagline">Places. People. Food. Stories. Experiences.</p>
+        <p class="rt-hero-sub">Curated places, local stories, hidden eats, and everyday Raipur.</p>
+      </div>
+
+      <!-- Right Weather Widget overlay (fades in with scroll) -->
+      <div class="rt-hero-weather-widget" id="heroWeatherWidget" aria-label="Current weather in Raipur">
+        <div class="rt-weather-inner" id="weatherWidgetContent">
+          <div class="rt-weather-head">
+            <span class="rt-weather-loc">RAIPUR · TODAY</span>
+          </div>
+          <div class="rt-weather-body">
+            <div class="rt-weather-temp-row">
+              <span class="rt-weather-icon-wrap" id="weatherIconWrap">
+                <i data-lucide="sun" class="rt-weather-icon"></i>
+              </span>
+              <span class="rt-weather-temp" id="weatherTemp">--°C</span>
+            </div>
+            <div class="rt-weather-cond-row">
+              <span class="rt-weather-cond" id="weatherCond">Loading weather…</span>
+            </div>
+            <div class="rt-weather-meta-row">
+              <span class="rt-weather-feels" id="weatherFeels">--</span>
+              <span class="rt-weather-hl" id="weatherHL">H: --°  L: --°</span>
+            </div>
+            <div class="rt-weather-context" id="weatherContext">
+              <span>Checking live conditions...</span>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="rt-scroll-expand-title" id="scrollExpandTitle">
-        <span class="rt-title-eyebrow">HAMARA RAIPUR</span>
-        <h1>RAIPUR,<br>TOLD DIFFERENTLY.</h1>
+
+      <!-- Search Bar — fades in after video expands -->
+      <div class="rt-hero-search-overlay" id="heroSearchOverlay">
+        <div class="container">
+          <div class="rt-ai-discovery-bar">
+            <div class="rt-ai-input-wrap">
+              <input type="text" class="rt-ai-input" id="heroSearchInput" placeholder="What are you looking for in Raipur?">
+              <a href="#explore" class="btn-rt-primary rt-ai-search-btn">SEARCH <i data-lucide="arrow-right"></i></a>
+            </div>
+            <div class="rt-ai-prompt-chips">
+              <span class="rt-ai-chip-label">Suggestions:</span>
+              <button class="rt-ai-chip btn-suggest-chip" data-query="Places to visit this evening">Places to visit this evening</button>
+              <button class="rt-ai-chip btn-suggest-chip" data-query="Best local food">Best local food</button>
+              <button class="rt-ai-chip btn-suggest-chip" data-query="Things to do this weekend">Things to do this weekend</button>
+              <button class="rt-ai-chip btn-suggest-chip" data-query="Raipur hidden gems">Raipur hidden gems</button>
+              <button class="rt-ai-chip btn-suggest-chip" data-query="Historical places">Historical places</button>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div class="rt-scroll-expand-hint" id="scrollExpandHint">
-        <span>SCROLL TO DISCOVER <i class="fa-solid fa-arrow-down ms-1"></i></span>
-      </div>
+
     </div>
   </div>
 </section>
 
-<!-- SECTION 2 — DISCOVERY SEARCH (Immediately Below Expanded Hero) -->
-<section class="rt-search-sec" id="search-sec">
-  <div class="container">
-    <div class="rt-ai-discovery-bar">
-      <div class="rt-ai-input-wrap">
-        <input type="text" class="rt-ai-input" id="heroSearchInput" placeholder="What are you looking for in Raipur?">
-        <a href="#explore" class="btn-rt-primary" style="padding: 12px 24px; font-size: 11px;">SEARCH <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="rt-ai-prompt-chips">
-        <span class="rt-ai-chip-label">Suggestions:</span>
-        <button class="rt-ai-chip btn-suggest-chip" data-query="Places to visit this evening">Places to visit this evening</button>
-        <button class="rt-ai-chip btn-suggest-chip" data-query="Best local food">Best local food</button>
-        <button class="rt-ai-chip btn-suggest-chip" data-query="Things to do this weekend">Things to do this weekend</button>
-        <button class="rt-ai-chip btn-suggest-chip" data-query="Raipur hidden gems">Raipur hidden gems</button>
-        <button class="rt-ai-chip btn-suggest-chip" data-query="Historical places">Historical places</button>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- SECTION 3 — DISCOVER RAIPUR (Editorial Asymmetric Composition) -->
 <section class="rt-section" id="discover-sec">
@@ -537,7 +557,7 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#plan" class="rt-plan-compact-item">
-          <i class="fa-solid fa-plane-arrival fa-2x mb-3" style="color: var(--rt-orange);"></i>
+          <i data-lucide="plane-takeoff" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>GETTING HERE</h4>
           <p>Flight, train & highway connectivity to Raipur.</p>
         </a>
@@ -545,7 +565,7 @@
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#plan" class="rt-plan-compact-item">
-          <i class="fa-solid fa-hotel fa-2x mb-3" style="color: var(--rt-orange);"></i>
+          <i data-lucide="building" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>WHERE TO STAY</h4>
           <p>Heritage homestays & city business hotels.</p>
         </a>
@@ -553,7 +573,7 @@
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#plan" class="rt-plan-compact-item">
-          <i class="fa-solid fa-taxi fa-2x mb-3" style="color: var(--rt-orange);"></i>
+          <i data-lucide="car" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>GETTING AROUND</h4>
           <p>Cabs, autos & Naya Raipur bus corridors.</p>
         </a>
@@ -561,7 +581,7 @@
 
       <div class="col-md-3 col-sm-6 mb-4">
         <a href="#plan" class="rt-plan-compact-item">
-          <i class="fa-solid fa-route fa-2x mb-3" style="color: var(--rt-orange);"></i>
+          <i data-lucide="map" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>ITINERARIES</h4>
           <p>Curated 1-day, weekend & culinary itineraries.</p>
         </a>
@@ -663,6 +683,8 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scrolla.jquery.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 <script src="js/raipurtales.js"></script>
+<script>if (typeof lucide !== 'undefined') { lucide.createIcons(); }</script>
 </body>
 </html>

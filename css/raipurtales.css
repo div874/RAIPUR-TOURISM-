@@ -1,17 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 /* ==========================================================================
    HAMARA RAIPUR — OFFICIAL BRAND SYSTEM & DESIGN LANGUAGE
-   Scalable Consumer City Discovery Platform
-   
-   Palette:
-   - Primary Teal: #003838 (Wordmark, headings, nav text, dark text on light)
-   - Primary Orange: #D85020 (Raipur wordmark, CTAs, active states, accents)
-   - Warm Off-White: #F8F8F0 (Main website background canvas)
-   - White: #FFFFFF (Cards, search containers, modal surfaces)
-   - Dark Text: #102828 (Body copy, secondary headings)
-   - Muted Text: #5F6B6B (Descriptions, metadata, supporting text)
-   - Border: #D9DEDA (Subtle separators and card borders)
-   - Light Teal: #E7F0EE (Selected filters, chips, light callouts)
-   - Light Orange: #F8E5DC (Event highlights, active badges)
    ========================================================================== */
 
 :root {
@@ -29,24 +19,67 @@
   --rt-shadow-hover: 0 14px 36px rgba(16, 40, 40, 0.12);
 }
 
-/* Global Reset & Off-White Canvas */
-body {
-  background-color: var(--rt-offwhite) !important;
-  color: var(--rt-dark-text) !important;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+/* Global Reset & Manrope Canvas */
+body, button, input, select, textarea {
+  background-color: var(--rt-offwhite);
+  color: var(--rt-dark-text);
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   -webkit-font-smoothing: antialiased;
   line-height: 1.65;
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, .rt-serif {
-  font-family: 'Playfair Display', Georgia, serif;
+/* Headings default to Manrope for clean product feel */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif !important;
   color: var(--rt-teal);
   letter-spacing: -0.01em;
 }
 
+/* Editorial Brand Statement Headlines remain Playfair Display */
+.rt-hero-headline,
+.rt-serif,
+.rt-brand-headline {
+  font-family: 'Playfair Display', Georgia, serif !important;
+}
+
 p {
+  font-family: 'Manrope', sans-serif !important;
   color: var(--rt-muted-text);
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: 1.65;
+}
+
+/* Lucide Icons Utility & Stroke Discipline */
+[data-lucide],
+.lucide {
+  stroke-width: 1.85px !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  vertical-align: middle;
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+/* Button & Link Hover Animations for Lucide Arrow Icons */
+.btn-rt-primary [data-lucide],
+.btn-rt-primary i,
+.rt-ai-search-btn [data-lucide],
+.rt-ai-search-btn i,
+.btn-rt-header [data-lucide],
+.btn-rt-header i {
+  transition: transform 0.25s ease;
+  margin-left: 6px;
+}
+
+.btn-rt-primary:hover [data-lucide],
+.btn-rt-primary:hover i,
+.rt-ai-search-btn:hover [data-lucide],
+.rt-ai-search-btn:hover i,
+.btn-rt-header:hover [data-lucide],
+.btn-rt-header:hover i {
+  transform: translateX(5px);
 }
 
 /* Custom Scrollbar */
@@ -80,10 +113,10 @@ p {
 }
 
 .rt-label {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif !important;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--rt-orange);
   display: block;
@@ -91,23 +124,19 @@ p {
 }
 
 .rt-title {
-  font-size: 36px;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: clamp(30px, 3.2vw, 48px);
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 750;
   color: var(--rt-teal);
   margin-bottom: 12px;
 }
 
-@media (min-width: 992px) {
-  .rt-title {
-    font-size: 44px;
-  }
-}
-
 .rt-subtitle {
-  font-size: 16px;
+  font-size: clamp(14px, 1.1vw, 18px);
   color: var(--rt-muted-text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -169,7 +198,7 @@ p {
   border: 1px solid var(--rt-border);
   border-top: none;
   width: 195px;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, visibility 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,21 +210,23 @@ p {
   box-shadow: 0 14px 38px rgba(0, 56, 56, 0.18);
 }
 
-/* AUTO-HIDE LOGO TAB ON SCROLL */
+/* SMOOTH LOGO ELEVATION ON SCROLL — RETRACTS FLUSH INTO NAVBAR */
 .header.scrolled {
   box-shadow: 0 6px 24px rgba(0, 56, 56, 0.08) !important;
 }
 
 .header.scrolled .custom-navbar {
-  height: 64px;
-  padding-left: 0px;
+  height: 76px;
+  padding-left: 220px;
 }
 
 .header.scrolled .navbar-brand-tab {
-  transform: translateY(-120%);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  transform: translateY(-12px);
+  box-shadow: 0 4px 16px rgba(0, 56, 56, 0.08);
+}
+
+.header.scrolled .navbar-brand-tab:hover {
+  transform: translateY(-9px);
 }
 
 .rt-logo-img {
@@ -266,13 +297,18 @@ p {
 }
 
 @media (max-width: 1023px) {
-  .custom-navbar {
-    padding: 0 0 0 150px !important;
+  .custom-navbar,
+  .header.scrolled .custom-navbar {
+    padding: 0 0 0 160px !important;
+    height: 76px;
   }
   .navbar-brand-tab {
     left: 15px !important;
     width: 135px !important;
     padding: 8px 10px;
+  }
+  .header.scrolled .navbar-brand-tab {
+    transform: translateY(-10px);
   }
   .menu-icon {
     display: inline-flex !important;
@@ -418,7 +454,7 @@ p {
 .rt-scroll-expand-frame {
   position: absolute;
   inset: 0;
-  clip-path: inset(21% 28% 21% 28% round 24px);
+  clip-path: inset(30% 30% 30% 30% round 24px);
   will-change: clip-path;
   background-color: #000000;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
@@ -484,7 +520,7 @@ p {
 
 .rt-scroll-expand-title h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(34px, 5.5vw, 76px);
+  font-size: clamp(22px, 3.8vw, 52px);
   font-weight: 700;
   line-height: 1.1;
   color: #FFFFFF !important;
@@ -506,6 +542,466 @@ p {
   pointer-events: none;
   z-index: 10;
   will-change: opacity, transform;
+}
+
+/* ==========================================
+   FINAL PRECISION HERO SECTION LAYOUT PASS
+   ========================================== */
+
+/* 1 & 2. HERO ROOT STAGE & IMAGE COVER */
+.rt-scroll-expand-stage {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: clamp(700px, 82vh, 850px);
+  height: 100vh;
+  overflow: hidden;
+  background-color: #001818;
+}
+
+.rt-scroll-expand-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  will-change: transform;
+  transform-origin: center;
+  user-select: none;
+}
+
+/* 16. DIRECTIONAL GRADIENT OVERLAY */
+.rt-hero-left-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 14, 14, 0.88) 0%,
+    rgba(0, 14, 14, 0.65) 28%,
+    rgba(0, 14, 14, 0.32) 50%,
+    rgba(0, 14, 14, 0.08) 68%,
+    transparent 80%
+  );
+  opacity: 0;
+  z-index: 7;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+/* 3, 4, 5. HERO TEXT CONTAINER & CONTROLLED WIDTH & VERTICAL POSITION */
+.rt-hero-editorial {
+  position: absolute;
+  top: 36%;
+  left: max(40px, calc((100% - 1280px) / 2 + 40px));
+  transform: translateY(-50%);
+  width: 48%;
+  max-width: 620px;
+  z-index: 15;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+/* 6. EYEBROW */
+.rt-hero-eyebrow {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(10px, 0.75vw, 13px);
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--rt-orange);
+  margin-bottom: clamp(18px, 2vh, 24px);
+  opacity: 0;
+  transform: translateY(10px);
+  will-change: opacity, transform;
+}
+
+/* 7. MAIN HEADLINE */
+.rt-hero-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(52px, 5.2vw, 76px);
+  font-weight: 700;
+  line-height: 0.92;
+  color: #F5EFE0;
+  margin: 0 0 clamp(18px, 2.2vh, 24px);
+  letter-spacing: -0.02em;
+  max-width: 620px;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.38);
+  opacity: 0;
+  transform: translateY(16px);
+  will-change: opacity, transform;
+}
+
+/* 8. SUPPORTING LABEL */
+.rt-hero-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(9px, 0.7vw, 12px);
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(245, 239, 224, 0.75);
+  margin: 0 0 8px;
+  opacity: 0;
+  transform: translateY(12px);
+  will-change: opacity, transform;
+}
+
+/* 9. DESCRIPTION */
+.rt-hero-sub {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 300;
+  color: rgba(245, 239, 224, 0.65);
+  max-width: 500px;
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(12px);
+  will-change: opacity, transform;
+}
+
+/* LIVE WEATHER WIDGET OVERLAY (HERO RIGHT) */
+.rt-hero-weather-widget {
+  position: absolute;
+  top: 32%;
+  right: max(140px, calc((100% - 1280px) / 2 + 140px));
+  transform: translateY(-50%);
+  width: 275px;
+  z-index: 15;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+.rt-weather-inner {
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 16px 36px rgba(0, 24, 24, 0.24);
+  color: #F5EFE0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.rt-hero-weather-widget:hover .rt-weather-inner {
+  background: rgba(255, 255, 255, 0.19);
+  border-color: rgba(255, 255, 255, 0.38);
+}
+
+.rt-weather-loc {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(245, 239, 224, 0.88);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rt-weather-temp-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.rt-weather-icon-wrap {
+  color: var(--rt-orange);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rt-weather-icon-wrap [data-lucide],
+.rt-weather-icon-wrap svg {
+  width: 32px !important;
+  height: 32px !important;
+  stroke-width: 2px !important;
+}
+
+.rt-weather-temp {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 40px;
+  font-weight: 750;
+  line-height: 1;
+  color: #F5EFE0;
+  letter-spacing: -0.02em;
+}
+
+.rt-weather-cond-row {
+  margin-bottom: 8px;
+}
+
+.rt-weather-cond {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(245, 239, 224, 0.92);
+}
+
+.rt-weather-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 12px;
+  color: rgba(245, 239, 224, 0.78);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rt-weather-context {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(245, 239, 224, 0.88);
+}
+
+/* 10, 14, 23. SEARCH PANEL CONTAINER — shifted 20% upwards */
+.rt-hero-search-overlay {
+  position: absolute;
+  bottom: clamp(120px, 20vh, 180px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  opacity: 0;
+  transform: translateY(24px);
+  pointer-events: none;
+  will-change: opacity, transform;
+  transition: none;
+}
+
+.rt-hero-search-overlay .container {
+  width: min(1280px, calc(100% - 80px));
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 10, 11, 12, 13. SEARCH PANEL DISCOVERY BAR */
+.rt-ai-discovery-bar {
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(0, 56, 56, 0.10);
+  padding: 20px 24px;
+  border-radius: 6px;
+  box-shadow: 0 16px 40px rgba(0, 36, 36, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  backdrop-filter: blur(10px);
+}
+
+.rt-ai-input-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rt-ai-input {
+  width: 100%;
+  height: 56px;
+  background: var(--rt-offwhite);
+  border: 1px solid var(--rt-border);
+  padding: 0 20px;
+  color: var(--rt-dark-text);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  transition: border-color 0.3s;
+  border-radius: 4px;
+}
+
+.rt-ai-search-btn {
+  width: 160px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.rt-ai-prompt-chips {
+  display: flex;
+  gap: 8px 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rt-ai-chip-label {
+  font-size: 10px;
+  color: var(--rt-muted-text);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.rt-ai-chip {
+  background: var(--rt-light-teal);
+  border: 1px solid rgba(0, 56, 56, 0.10);
+  color: var(--rt-teal);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ==========================================
+   BREAKPOINTS & RESPONSIVE BEHAVIOR
+   ========================================== */
+
+/* 17. LARGE DESKTOP (>= 1440px) */
+@media (min-width: 1440px) {
+  .rt-hero-editorial {
+    width: 48%;
+    max-width: 640px;
+  }
+  .rt-hero-headline {
+    font-size: clamp(60px, 5.2vw, 76px);
+  }
+}
+
+/* 17. LAPTOP / SMALL DESKTOP (1024px - 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .rt-hero-editorial {
+    width: 52%;
+    left: max(32px, calc((100% - 1024px) / 2 + 32px));
+  }
+  .rt-hero-headline {
+    font-size: clamp(46px, 4.8vw, 62px);
+  }
+  .rt-hero-search-overlay .container {
+    width: calc(100% - 64px);
+  }
+  .rt-ai-discovery-bar {
+    padding: 18px 20px;
+  }
+}
+
+/* 18. TABLET (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rt-hero-editorial {
+    width: 58%;
+    max-width: 540px;
+    left: max(24px, calc((100% - 768px) / 2 + 24px));
+    top: 38%;
+  }
+  .rt-hero-headline {
+    font-size: clamp(44px, 6vw, 60px);
+    line-height: 0.94;
+  }
+  .rt-hero-search-overlay {
+    bottom: clamp(70px, 10vh, 110px);
+  }
+  .rt-hero-search-overlay .container {
+    width: calc(100% - 48px);
+  }
+  .rt-ai-discovery-bar {
+    padding: 16px 20px;
+  }
+  .rt-ai-input {
+    height: 50px;
+  }
+  .rt-ai-search-btn {
+    height: 50px;
+    width: 140px;
+  }
+}
+
+/* 19. MOBILE (< 768px) */
+@media (max-width: 767px) {
+  .rt-hero-editorial {
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px);
+    max-width: none;
+    top: auto;
+    bottom: 180px;
+    transform: none !important;
+  }
+  .rt-hero-headline {
+    font-size: clamp(40px, 11vw, 56px);
+    line-height: 0.95;
+    margin-bottom: 14px;
+  }
+  .rt-hero-eyebrow {
+    margin-bottom: 12px;
+  }
+  .rt-hero-tagline {
+    margin-bottom: 6px;
+  }
+  .rt-hero-sub {
+    font-size: 14px;
+  }
+  .rt-hero-left-scrim {
+    background: linear-gradient(
+      to top,
+      rgba(0, 14, 14, 0.92) 0%,
+      rgba(0, 14, 14, 0.60) 50%,
+      rgba(0, 14, 14, 0.15) 75%,
+      transparent 100%
+    );
+  }
+  .rt-hero-search-overlay {
+    bottom: 60px;
+  }
+  .rt-hero-search-overlay .container {
+    width: calc(100% - 32px);
+  }
+  .rt-ai-discovery-bar {
+    padding: 14px 16px;
+  }
+  .rt-ai-input-wrap {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .rt-ai-input {
+    height: 48px;
+    font-size: 13px;
+  }
+  .rt-ai-search-btn {
+    width: 100%;
+    height: 48px;
+  }
+  .rt-ai-prompt-chips {
+    gap: 6px;
+  }
+}
+
+/* 20. SMALL MOBILE (< 390px) */
+@media (max-width: 389px) {
+  .rt-hero-editorial {
+    left: 12px;
+    right: 12px;
+    width: calc(100% - 24px);
+    bottom: 190px;
+  }
+  .rt-hero-headline {
+    font-size: clamp(34px, 10vw, 44px);
+  }
+  .rt-hero-search-overlay .container {
+    width: calc(100% - 24px);
+  }
+  .rt-ai-discovery-bar {
+    padding: 12px;
+  }
+  .rt-ai-chip {
+    font-size: 10px;
+    padding: 4px 9px;
+  }
 }
 
 /* SEARCH SECTION BELOW EXPANDED HERO */
@@ -652,30 +1148,31 @@ p {
   border-color: #FFFFFF !important;
 }
 
-/* SEARCH / AI DISCOVERY AREA (WHITE PREMIUM BOX) */
+/* SEARCH / AI DISCOVERY AREA — refined, lighter weight */
 .rt-ai-discovery-bar {
-  background: var(--rt-white);
-  border: 1px solid var(--rt-border);
-  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid rgba(0, 56, 56, 0.10);
+  padding: 12px 18px;
   border-radius: 4px;
-  margin-top: 10px;
-  box-shadow: 0 16px 40px rgba(0, 56, 56, 0.15);
+  margin-top: 0;
+  box-shadow: 0 12px 32px rgba(0, 56, 56, 0.18), 0 2px 8px rgba(0,0,0,0.08);
   text-align: left;
+  backdrop-filter: blur(8px);
 }
 
 .rt-ai-input-wrap {
   display: flex;
-  gap: 12px;
-  margin-bottom: 16px;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
 .rt-ai-input {
   flex: 1;
   background: var(--rt-offwhite);
   border: 1px solid var(--rt-border);
-  padding: 14px 20px;
+  padding: 10px 16px;
   color: var(--rt-dark-text);
-  font-size: 15px;
+  font-size: 13px;
   font-family: 'Inter', sans-serif;
   outline: none;
   transition: border-color 0.3s;
@@ -692,14 +1189,14 @@ p {
 
 .rt-ai-prompt-chips {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .rt-ai-chip-label {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--rt-muted-text);
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -708,11 +1205,11 @@ p {
 
 .rt-ai-chip {
   background: var(--rt-light-teal);
-  border: 1px solid rgba(0, 56, 56, 0.12);
+  border: 1px solid rgba(0, 56, 56, 0.10);
   color: var(--rt-teal);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  padding: 6px 14px;
+  padding: 4px 11px;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.25s ease;

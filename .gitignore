@@ -1,0 +1,10 @@
+# Exclude large video files
+*.mp4
+*.MOV
+*.avi
+videos/*.mp4
+gol bazar video.mp4
+
+# OS generated files
+.DS_Store
+Thumbs.db

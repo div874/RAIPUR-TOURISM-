@@ -1,4 +1,9 @@
 jQuery(function($) {
+  // Init Lucide icons
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
   // Init scroll animations
   if ($.fn.scrolla) {
     $(".animate").scrolla({ mobile: true, once: true });
@@ -208,17 +213,25 @@ jQuery(function($) {
     var hint = document.getElementById("scrollExpandHint");
     var overlay = document.getElementById("scrollExpandOverlay");
     var scrim = document.getElementById("scrollExpandScrim");
+    var searchOverlay = document.getElementById("heroSearchOverlay");
+    var leftScrim = document.getElementById("heroLeftScrim");
+    var editorial = document.getElementById("heroEditorial");
+    var eyebrowEl = editorial ? editorial.querySelector(".rt-hero-eyebrow") : null;
+    var headlineEl = editorial ? editorial.querySelector(".rt-hero-headline") : null;
+    var taglineEl = editorial ? editorial.querySelector(".rt-hero-tagline") : null;
+    var heroSubEl = editorial ? editorial.querySelector(".rt-hero-sub") : null;
+    var weatherWidget = document.getElementById("heroWeatherWidget");
 
     if (!root || !track || !stage || !frame || !media) return;
 
-    var startWidth = 44; // %
-    var startHeight = 56; // %
+    var startWidth = 40; // %
+    var startHeight = 40; // %
     var startRadius = 24; // px
     var endRadius = 0; // px
-    var mediaZoom = 1.35;
-    var scrollDistance = 1.2;
-    var holdDistance = 0.35;
-    var overlayScrim = 0.55;
+    var mediaZoom = 1.08;
+    var scrollDistance = 0.55;
+    var holdDistance = 0.0;
+    var overlayScrim = 0.45;
 
     var current = 0;
     var target = 0;
@@ -237,13 +250,6 @@ jQuery(function($) {
       var stageH = window.innerHeight;
       stage.style.height = stageH + "px";
       track.style.height = (stageH * (1 + scrollDistance + holdDistance)) + "px";
-    }
-
-    function readProgress() {
-      var stageH = window.innerHeight;
-      var span = stageH * Math.max(0.01, scrollDistance);
-      var top = track.getBoundingClientRect().top;
-      return clamp(-top / span, 0, 1);
     }
 
     function applyProgress(p) {
@@ -278,10 +284,127 @@ jQuery(function($) {
         overlay.style.opacity = inn.toFixed(3);
         overlay.style.transform = "translate3d(0, " + (20 * (1 - inn)).toFixed(1) + "px, 0)";
       }
+
+      if (searchOverlay) {
+        var srch = smoothstep(0.80, 1, p);
+        searchOverlay.style.opacity = srch.toFixed(3);
+        searchOverlay.style.transform = "translateY(" + (24 * (1 - srch)).toFixed(1) + "px)";
+        searchOverlay.style.pointerEvents = srch > 0.5 ? "auto" : "none";
+      }
+
+      if (leftScrim) {
+        leftScrim.style.opacity = smoothstep(0.65, 0.95, p).toFixed(3);
+      }
+
+      if (editorial) {
+        var editFade = smoothstep(0.72, 0.96, p);
+        editorial.style.opacity = editFade.toFixed(3);
+        editorial.style.pointerEvents = editFade > 0.5 ? "auto" : "none";
+        var isMobile = window.innerWidth < 768;
+        if (!isMobile) {
+          editorial.style.transform = "translateY(calc(-50% + " + (20 * (1 - editFade)).toFixed(1) + "px))";
+        } else {
+          editorial.style.transform = "translateY(" + (20 * (1 - editFade)).toFixed(1) + "px)";
+        }
+      }
+
+      if (eyebrowEl) {
+        var ewFade = smoothstep(0.72, 0.88, p);
+        eyebrowEl.style.opacity = ewFade.toFixed(3);
+        eyebrowEl.style.transform = "translateY(" + (10 * (1 - ewFade)).toFixed(1) + "px)";
+      }
+
+      if (headlineEl) {
+        var hlFade = smoothstep(0.76, 0.93, p);
+        headlineEl.style.opacity = hlFade.toFixed(3);
+        headlineEl.style.transform = "translateY(" + (16 * (1 - hlFade)).toFixed(1) + "px)";
+      }
+
+      if (taglineEl) {
+        var tgFade = smoothstep(0.80, 0.96, p);
+        taglineEl.style.opacity = tgFade.toFixed(3);
+        taglineEl.style.transform = "translateY(" + (12 * (1 - tgFade)).toFixed(1) + "px)";
+      }
+
+      if (heroSubEl) {
+        var hsFade = smoothstep(0.84, 1.0, p);
+        heroSubEl.style.opacity = hsFade.toFixed(3);
+        heroSubEl.style.transform = "translateY(" + (12 * (1 - hsFade)).toFixed(1) + "px)";
+      }
+
+      if (weatherWidget) {
+        var wFade = smoothstep(0.72, 0.96, p);
+        weatherWidget.style.opacity = wFade.toFixed(3);
+        weatherWidget.style.pointerEvents = wFade > 0.5 ? "auto" : "none";
+        var isMobile = window.innerWidth < 768;
+        if (!isMobile) {
+          weatherWidget.style.transform = "translateY(calc(-50% + " + (20 * (1 - wFade)).toFixed(1) + "px))";
+        } else {
+          weatherWidget.style.transform = "translateY(" + (20 * (1 - wFade)).toFixed(1) + "px)";
+        }
+      }
+    }
+
+    var hasExpanded = false;
+    var lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+    var snapTimer = null;
+    var isSnapping = false;
+
+    function readProgress() {
+      if (hasExpanded) return 1.0;
+      var stageH = window.innerHeight;
+      var span = stageH * Math.max(0.01, scrollDistance);
+      var top = track.getBoundingClientRect().top;
+      var p = clamp(-top / span, 0, 1);
+      if (p >= 0.95) {
+        hasExpanded = true;
+        return 1.0;
+      }
+      return p;
+    }
+
+    function customSmoothScrollTo(targetY, duration, callback) {
+      isSnapping = true;
+      var startY = window.pageYOffset || document.documentElement.scrollTop;
+      var distance = targetY - startY;
+      var startTime = null;
+
+      function cubicEaseInOut(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function step(currentTime) {
+        if (!startTime) startTime = currentTime;
+        var elapsed = currentTime - startTime;
+        var progress = Math.min(elapsed / duration, 1);
+        var ease = cubicEaseInOut(progress);
+
+        window.scrollTo(0, startY + distance * ease);
+
+        if (elapsed < duration) {
+          requestAnimationFrame(step);
+        } else {
+          isSnapping = false;
+          if (callback) callback();
+        }
+      }
+
+      requestAnimationFrame(step);
+    }
+
+    function triggerExpand() {
+      if (hasExpanded || isSnapping) return;
+      var stageH = window.innerHeight;
+      var span = stageH * Math.max(0.01, scrollDistance);
+      var trackTop = track.offsetTop;
+      
+      customSmoothScrollTo(trackTop + span, 850, function() {
+        hasExpanded = true;
+      });
     }
 
     function tick() {
-      var k = 0.16;
+      var k = 0.16; // Fluid responsive lerp speed
       current += (target - current) * k;
       if (Math.abs(target - current) < 0.0004) {
         current = target;
@@ -294,16 +417,31 @@ jQuery(function($) {
     }
 
     function onScroll() {
+      if (hasExpanded) {
+        applyProgress(1.0);
+        return;
+      }
+      var currentY = window.pageYOffset || document.documentElement.scrollTop;
       target = readProgress();
+
       if (!running) {
         running = true;
         requestAnimationFrame(tick);
       }
+
+      // Auto-trigger smooth expansion if user scrolls down slightly
+      if (!isSnapping && currentY > lastScrollY && target > 0.02 && target < 0.95) {
+        clearTimeout(snapTimer);
+        snapTimer = setTimeout(triggerExpand, 40);
+      }
+
+      lastScrollY = currentY;
     }
 
     function onResize() {
       measure();
       target = readProgress();
+      if (hasExpanded) target = 1.0;
       current = target;
       applyProgress(current);
     }
@@ -313,5 +451,132 @@ jQuery(function($) {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onResize);
+
+    // Instant wheel gesture trigger for smooth 1.4s expansion
+    window.addEventListener("wheel", function(e) {
+      if (hasExpanded || isSnapping) return;
+      var currentP = readProgress();
+
+      if (e.deltaY > 5 && currentP < 0.92) {
+        triggerExpand();
+      }
+    }, { passive: true });
+  })();
+
+  // Live Weather Integration for Raipur, Chhattisgarh
+  (function initRaipurWeather() {
+    var lat = 21.2514;
+    var lon = 81.6296;
+    var cacheKey = "rt_raipur_weather_v1";
+    var cacheTTL = 15 * 60 * 1000; // 15 mins cache
+
+    var tempEl = document.getElementById("weatherTemp");
+    var condEl = document.getElementById("weatherCond");
+    var feelsEl = document.getElementById("weatherFeels");
+    var hlEl = document.getElementById("weatherHL");
+    var contextEl = document.getElementById("weatherContext");
+    var iconWrapEl = document.getElementById("weatherIconWrap");
+    var widgetEl = document.getElementById("heroWeatherWidget");
+
+    if (!tempEl || !condEl) return;
+
+    function getWeatherInfo(code, temp) {
+      // WMO Weather interpretation codes
+      if (code === 0) {
+        return { icon: "sun", text: "Clear", context: temp > 32 ? "Warm afternoon ahead." : "Clear skies over Raipur." };
+      } else if (code === 1 || code === 2) {
+        return { icon: "cloud-sun", text: "Partly Cloudy", context: "Good day to explore." };
+      } else if (code === 3) {
+        return { icon: "cloud", text: "Overcast", context: "Pleasant breeze over Raipur." };
+      } else if (code >= 45 && code <= 48) {
+        return { icon: "cloud-fog", text: "Foggy", context: "Hazy morning in Raipur." };
+      } else if ((code >= 51 && code <= 67) || (code >= 80 && code <= 82)) {
+        return { icon: "cloud-rain", text: "Rain Showers", context: "Carry an umbrella today." };
+      } else if (code >= 95 && code <= 99) {
+        return { icon: "cloud-lightning", text: "Thunderstorm", context: "Stay indoors & stay safe." };
+      } else {
+        return { icon: "cloud-sun", text: "Passing Clouds", context: "Good day to explore." };
+      }
+    }
+
+    function renderWeatherData(data) {
+      try {
+        var current = data.current;
+        var daily = data.daily;
+        var temp = Math.round(current.temperature_2m);
+        var feels = Math.round(current.apparent_temperature);
+        var code = current.weather_code;
+        var maxTemp = Math.round(daily.temperature_2m_max[0]);
+        var minTemp = Math.round(daily.temperature_2m_min[0]);
+        var info = getWeatherInfo(code, temp);
+
+        tempEl.textContent = temp + "°C";
+        condEl.textContent = info.text;
+        feelsEl.textContent = "Feels like " + feels + "°C";
+        hlEl.textContent = "H: " + maxTemp + "°   L: " + minTemp + "°";
+        contextEl.innerHTML = "<span>" + info.context + "</span>";
+
+        if (iconWrapEl) {
+          iconWrapEl.innerHTML = '<i data-lucide="' + info.icon + '" class="rt-weather-icon"></i>';
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }
+
+        // Accessibility label
+        if (widgetEl) {
+          widgetEl.setAttribute("aria-label", "Current weather in Raipur: " + temp + " degrees Celsius, " + info.text.toLowerCase() + ".");
+        }
+      } catch (err) {
+        showErrorState();
+      }
+    }
+
+    function showErrorState() {
+      if (tempEl) tempEl.textContent = "--°C";
+      if (condEl) condEl.textContent = "Weather unavailable";
+      if (feelsEl) feelsEl.textContent = "Unable to fetch live data";
+      if (hlEl) hlEl.textContent = "";
+      if (contextEl) contextEl.innerHTML = "<span>Check back shortly</span>";
+    }
+
+    // Try cache first
+    try {
+      var cached = localStorage.getItem(cacheKey);
+      if (cached) {
+        var parsed = JSON.parse(cached);
+        if (parsed.timestamp && (Date.now() - parsed.timestamp < cacheTTL) && parsed.data) {
+          renderWeatherData(parsed.data);
+          return;
+        }
+      }
+    } catch (e) {
+      // Ignore storage errors
+    }
+
+    // Fetch live weather data asynchronously from Open-Meteo for Raipur (21.2514, 81.6296)
+    var apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon + "&current=temperature_2m,apparent_temperature,weather_code&daily=temperature_2m_max,temperature_2m_min&timezone=Asia%2FKolkata";
+
+    fetch(apiUrl)
+      .then(function(response) {
+        if (!response.ok) throw new Error("Network response was not ok");
+        return response.json();
+      })
+      .then(function(data) {
+        if (data && data.current && data.daily) {
+          renderWeatherData(data);
+          try {
+            localStorage.setItem(cacheKey, JSON.stringify({
+              timestamp: Date.now(),
+              data: data
+            }));
+          } catch (e) {}
+        } else {
+          showErrorState();
+        }
+      })
+      .catch(function() {
+        showErrorState();
+      });
   })();
 });
