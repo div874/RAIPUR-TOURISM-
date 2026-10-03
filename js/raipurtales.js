@@ -155,14 +155,13 @@ jQuery(function($) {
       $cardEl.slideDown(250);
       $textEl.html('<div class="rt-ai-loading"><span class="rt-ai-pulse"></span> Asking Hamara Raipur AI...</div>');
 
-      var systemPrompt = "You are Hamara Raipur AI, a direct and expert local guide for Raipur, Chhattisgarh. Answer the user query in 1 to 2 short, direct, simple, accurate, and specific sentences. Do not use bullet points or markdown headings.";
+      var systemPrompt = "You are Hamara Raipur AI, a highly knowledgeable, precise local guide for Raipur, Chhattisgarh. Answer the user prompt with exact, highly specific details about Raipur (such as real sports turfs, food spots, places, events, or local advice). Provide a clear, detailed, and accurate response (2 to 4 sentences).";
 
       fetch(apiUrl, {
         method: "POST",
         headers: {
           "Authorization": "Bearer " + apiKey,
-          "Content-Type": "application/json",
-          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           model: modelName,
@@ -170,23 +169,25 @@ jQuery(function($) {
             { role: "system", content: systemPrompt },
             { role: "user", content: cleanQuery }
           ],
-          max_tokens: 150
+          max_tokens: 350
         })
       })
       .then(function(res) {
-        if (!res.ok) throw new Error("API request error");
+        if (!res.ok) throw new Error("API request error " + res.status);
         return res.json();
       })
       .then(function(data) {
         if (data && data.choices && data.choices[0] && data.choices[0].message) {
-          var answer = data.choices[0].message.content.trim();
-          $textEl.text(answer);
+          var rawAnswer = data.choices[0].message.content.trim();
+          var formattedAnswer = rawAnswer.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+          $textEl.html(formattedAnswer);
         } else {
-          $textEl.text("Explore Telibandha Marine Drive, Dudhadhari Math, and enjoy local Chhattisgarhi Farra & Chila in Old Raipur.");
+          $textEl.html("Sorry, could not retrieve details right now. Please try searching again!");
         }
       })
-      .catch(function() {
-        $textEl.text("Discover Vivekananda Sarovar, Nandanvan Jungle Safari, and authentic street food across Old Raipur.");
+      .catch(function(err) {
+        console.error("AI Search Error:", err);
+        $textEl.html("Unable to connect to AI assistant. Please try again in a moment.");
       });
     }
 
