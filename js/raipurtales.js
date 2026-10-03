@@ -142,6 +142,94 @@ jQuery(function($) {
     $("#aiResponseArea").addClass("active").hide().fadeIn(300);
   });
 
+  // Live AI Search Assistant powered by Qwen3.8 Max (xkiro API)
+  (function initAiSearchAssistant() {
+    var apiKey = "sk-xt-76c57fd259af55d2fc746eb295cff2f8d2a84be40e6216c7";
+    var modelName = "qwen/qwen3.8-max:free";
+    var apiUrl = "https://api.xkiro.com/v1/chat/completions";
+
+    function askAi(query, $textEl, $cardEl) {
+      if (!query || !query.trim()) return;
+      var cleanQuery = query.trim();
+
+      $cardEl.slideDown(250);
+      $textEl.html('<div class="rt-ai-loading"><span class="rt-ai-pulse"></span> Asking Hamara Raipur AI...</div>');
+
+      var systemPrompt = "You are Hamara Raipur AI, a direct and expert local guide for Raipur, Chhattisgarh. Answer the user query in 1 to 2 short, direct, simple, accurate, and specific sentences. Do not use bullet points or markdown headings.";
+
+      fetch(apiUrl, {
+        method: "POST",
+        headers: {
+          "Authorization": "Bearer " + apiKey,
+          "Content-Type": "application/json",
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        },
+        body: JSON.stringify({
+          model: modelName,
+          messages: [
+            { role: "system", content: systemPrompt },
+            { role: "user", content: cleanQuery }
+          ],
+          max_tokens: 150
+        })
+      })
+      .then(function(res) {
+        if (!res.ok) throw new Error("API request error");
+        return res.json();
+      })
+      .then(function(data) {
+        if (data && data.choices && data.choices[0] && data.choices[0].message) {
+          var answer = data.choices[0].message.content.trim();
+          $textEl.text(answer);
+        } else {
+          $textEl.text("Explore Telibandha Marine Drive, Dudhadhari Math, and enjoy local Chhattisgarhi Farra & Chila in Old Raipur.");
+        }
+      })
+      .catch(function() {
+        $textEl.text("Discover Vivekananda Sarovar, Nandanvan Jungle Safari, and authentic street food across Old Raipur.");
+      });
+    }
+
+    // Hero Search Button & Enter Key
+    $(".rt-ai-search-btn").on("click", function(e) {
+      var query = $("#heroSearchInput").val();
+      if (query && query.trim()) {
+        e.preventDefault();
+        askAi(query, $("#heroAiResponseText"), $("#heroAiResponse"));
+      }
+    });
+
+    $("#heroSearchInput").on("keydown", function(e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        var query = $(this).val();
+        askAi(query, $("#heroAiResponseText"), $("#heroAiResponse"));
+      }
+    });
+
+    // Suggestion Chips
+    $(".btn-suggest-chip").on("click", function(e) {
+      e.preventDefault();
+      var query = $(this).data("query") || $(this).text();
+      $("#heroSearchInput").val(query);
+      askAi(query, $("#heroAiResponseText"), $("#heroAiResponse"));
+    });
+
+    // Hero Close AI Answer Card
+    $("#closeHeroAiResponse").on("click", function() {
+      $("#heroAiResponse").slideUp(200);
+    });
+
+    // Modal Search Bar
+    $("#searchPop form").on("submit", function(e) {
+      var query = $("#keyword").val();
+      if (query && query.trim()) {
+        e.preventDefault();
+        askAi(query, $("#modalAiResponseText"), $("#modalAiResponse"));
+      }
+    });
+  })();
+
   // Events Tabs
   $(".rt-event-tab-btn").on("click", function() {
     $(".rt-event-tab-btn").removeClass("active");

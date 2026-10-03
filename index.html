@@ -69,6 +69,15 @@
         <label class="search-filter-check"><input type="checkbox" name="type[]" value="experiences" checked> Experiences</label>
       </div>
     </form>
+    <!-- AI Quick Answer Card in Modal -->
+    <div class="rt-ai-response-card modal-ai-card" id="modalAiResponse" style="display: none;">
+      <div class="rt-ai-response-header">
+        <span class="rt-ai-badge"><i data-lucide="sparkles"></i> HAMARA RAIPUR AI</span>
+      </div>
+      <div class="rt-ai-response-text" id="modalAiResponseText">
+        Asking AI assistant...
+      </div>
+    </div>
   </div>
 </div>
 
@@ -132,6 +141,16 @@
               <button class="rt-ai-chip btn-suggest-chip" data-query="Things to do this weekend">Things to do this weekend</button>
               <button class="rt-ai-chip btn-suggest-chip" data-query="Raipur hidden gems">Raipur hidden gems</button>
               <button class="rt-ai-chip btn-suggest-chip" data-query="Historical places">Historical places</button>
+            </div>
+            <!-- AI Live Answer Card in Hero Search Overlay -->
+            <div class="rt-ai-response-card" id="heroAiResponse" style="display: none;">
+              <div class="rt-ai-response-header">
+                <span class="rt-ai-badge"><i data-lucide="sparkles"></i> HAMARA RAIPUR AI</span>
+                <button class="rt-ai-close-btn" id="closeHeroAiResponse" aria-label="Close answer">&times;</button>
+              </div>
+              <div class="rt-ai-response-text" id="heroAiResponseText">
+                Asking AI assistant...
+              </div>
             </div>
           </div>
         </div>

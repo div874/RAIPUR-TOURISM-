@@ -859,6 +859,100 @@ p {
   transition: all 0.25s ease;
 }
 
+/* AI RESPONSE CARD IN SEARCH BAR */
+.rt-ai-response-card {
+  margin-top: 14px;
+  background: var(--rt-offwhite);
+  border: 1px solid var(--rt-border);
+  border-left: 3px solid var(--rt-orange);
+  border-radius: 6px;
+  padding: 14px 16px;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 36, 36, 0.08);
+  animation: rtFadeIn 0.3s ease-out forwards;
+}
+
+.modal-ai-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.rt-ai-response-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.rt-ai-badge {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--rt-orange);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rt-ai-badge [data-lucide],
+.rt-ai-badge svg {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+.rt-ai-close-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--rt-muted-text);
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+  transition: color 0.2s ease;
+}
+
+.rt-ai-close-btn:hover {
+  color: var(--rt-dark-text);
+}
+
+.rt-ai-response-text {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--rt-dark-text);
+  font-weight: 500;
+}
+
+.rt-ai-loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--rt-muted-text);
+  font-size: 13px;
+}
+
+.rt-ai-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rt-orange);
+  display: inline-block;
+  animation: rtPulse 1.2s infinite ease-in-out;
+}
+
+@keyframes rtPulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
+
+@keyframes rtFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* ==========================================
    BREAKPOINTS & RESPONSIVE BEHAVIOR
    ========================================== */
