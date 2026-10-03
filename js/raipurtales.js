@@ -414,12 +414,7 @@ jQuery(function($) {
         var editFade = smoothstep(0.72, 0.96, p);
         editorial.style.opacity = editFade.toFixed(3);
         editorial.style.pointerEvents = editFade > 0.5 ? "auto" : "none";
-        var isMobile = window.innerWidth < 768;
-        if (!isMobile) {
-          editorial.style.transform = "translateY(calc(-50% + " + (20 * (1 - editFade)).toFixed(1) + "px))";
-        } else {
-          editorial.style.transform = "translateY(" + (20 * (1 - editFade)).toFixed(1) + "px)";
-        }
+        editorial.style.transform = "translateY(" + (20 * (1 - editFade)).toFixed(1) + "px)";
       }
 
       if (eyebrowEl) {
@@ -450,12 +445,7 @@ jQuery(function($) {
         var wFade = smoothstep(0.72, 0.96, p);
         weatherWidget.style.opacity = wFade.toFixed(3);
         weatherWidget.style.pointerEvents = wFade > 0.5 ? "auto" : "none";
-        var isMobile = window.innerWidth < 768;
-        if (!isMobile) {
-          weatherWidget.style.transform = "translateY(calc(-50% + " + (20 * (1 - wFade)).toFixed(1) + "px))";
-        } else {
-          weatherWidget.style.transform = "translateY(" + (20 * (1 - wFade)).toFixed(1) + "px)";
-        }
+        weatherWidget.style.transform = "translateY(" + (20 * (1 - wFade)).toFixed(1) + "px)";
       }
     }
 

@@ -626,9 +626,9 @@ p {
 /* 3, 4, 5. HERO TEXT CONTAINER & CONTROLLED WIDTH & VERTICAL POSITION */
 .rt-hero-editorial {
   position: absolute;
-  top: 36%;
+  top: clamp(80px, 14vh, 125px);
   left: max(40px, calc((100% - 1280px) / 2 + 40px));
-  transform: translateY(-50%);
+  transform: none;
   width: 48%;
   max-width: 620px;
   z-index: 15;
@@ -699,9 +699,9 @@ p {
 /* LIVE WEATHER WIDGET OVERLAY (HERO RIGHT) */
 .rt-hero-weather-widget {
   position: absolute;
-  top: 32%;
+  top: clamp(80px, 14vh, 125px);
   right: max(140px, calc((100% - 1280px) / 2 + 140px));
-  transform: translateY(-50%);
+  transform: none;
   width: 275px;
   z-index: 15;
   opacity: 0;
@@ -800,7 +800,7 @@ p {
 /* 10, 14, 23. SEARCH PANEL CONTAINER — shifted 20% upwards */
 .rt-hero-search-overlay {
   position: absolute;
-  bottom: clamp(120px, 20vh, 180px);
+  bottom: clamp(30px, 5vh, 60px);
   left: 0;
   right: 0;
   z-index: 20;
@@ -904,6 +904,16 @@ p {
   text-align: left;
   box-shadow: 0 4px 16px rgba(0, 36, 36, 0.08);
   animation: rtFadeIn 0.3s ease-out forwards;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.rt-ai-response-card::-webkit-scrollbar {
+  width: 4px;
+}
+.rt-ai-response-card::-webkit-scrollbar-thumb {
+  background: rgba(0, 56, 56, 0.2);
+  border-radius: 4px;
 }
 
 .modal-ai-card {
@@ -1025,14 +1035,14 @@ p {
     width: 58%;
     max-width: 540px;
     left: max(24px, calc((100% - 768px) / 2 + 24px));
-    top: 38%;
+    top: clamp(65px, 10vh, 95px);
   }
   .rt-hero-headline {
     font-size: clamp(44px, 6vw, 60px);
     line-height: 0.94;
   }
   .rt-hero-search-overlay {
-    bottom: clamp(70px, 10vh, 110px);
+    bottom: clamp(20px, 3vh, 40px);
   }
   .rt-hero-search-overlay .container {
     width: calc(100% - 48px);
