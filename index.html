@@ -215,54 +215,87 @@
       <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
     </div>
 
-    <div class="row align-items-stretch">
-      <!-- One Large Featured Place (Left) -->
-      <div class="col-lg-7 mb-4">
-        <div class="rt-place-card-lead">
-          <div class="rt-place-card-lead-img">
-            <img src="images/heritage.jpg" alt="Dudhadhari Math">
-            <span class="rt-place-badge">RAIPUR CITY</span>
-          </div>
-          <div class="rt-place-card-lead-body">
-            <span class="rt-label">HERITAGE TEMPLE</span>
-            <h3>Dudhadhari Math</h3>
-            <p>17th-century temple complex dedicated to Lord Rama, adorned with exquisite ancient murals, peaceful courtyards, and centuries of spiritual heritage.</p>
-            <div class="d-flex justify-content-between align-items-center mt-3">
-              <span class="small text-muted"><i class="fa-solid fa-location-dot me-1"></i> Mathpara, Old Raipur</span>
-              <a href="explore.html" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- React Bits Interactive Accordion Gallery -->
+    <div class="accordion-gallery" id="accordionGallery" role="list" aria-label="Places worth discovering accordion gallery">
+      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Dudhadhari Math">
+        <span class="ag-panel__frame">
+          <span class="ag-panel__media">
+            <img src="images/heritage.jpg" alt="Dudhadhari Math" draggable="false">
+          </span>
+          <span class="ag-panel__overlay" aria-hidden="true"></span>
+        </span>
+        <span class="ag-panel__label" aria-hidden="true">
+          <span class="ag-panel__bar"></span>
+          <span class="ag-panel__text-wrap">
+            <span class="ag-panel__tag">HERITAGE TEMPLE</span>
+            <span class="ag-panel__text">Dudhadhari Math</span>
+          </span>
+        </span>
+      </a>
 
-      <!-- Two Smaller Featured Places (Right) -->
-      <div class="col-lg-5 mb-4 d-flex flex-column justify-content-between">
-        <div class="rt-place-card-sm mb-4">
-          <div class="rt-place-card-sm-img">
-            <img src="images/wildlife.jpg" alt="Nandan Van Jungle Safari">
-            <span class="rt-place-badge">RAIPUR CITY</span>
-          </div>
-          <div class="rt-place-card-sm-body">
-            <span class="rt-label">WILDLIFE & SAFARI</span>
-            <h4>Nandan Van Jungle Safari</h4>
-            <p>800-acre wildlife sanctuary featuring tiger, lion, bear safaris and botanical gardens.</p>
-            <a href="explore.html" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
+      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Nandan Van Jungle Safari">
+        <span class="ag-panel__frame">
+          <span class="ag-panel__media">
+            <img src="images/wildlife.jpg" alt="Nandan Van Jungle Safari" draggable="false">
+          </span>
+          <span class="ag-panel__overlay" aria-hidden="true"></span>
+        </span>
+        <span class="ag-panel__label" aria-hidden="true">
+          <span class="ag-panel__bar"></span>
+          <span class="ag-panel__text-wrap">
+            <span class="ag-panel__tag">WILDLIFE & SAFARI</span>
+            <span class="ag-panel__text">Nandan Van Safari</span>
+          </span>
+        </span>
+      </a>
 
-        <div class="rt-place-card-sm">
-          <div class="rt-place-card-sm-img">
-            <img src="images/museum.jpg" alt="Sirpur Archaeological Site">
-            <span class="rt-place-badge around">AROUND RAIPUR</span>
-          </div>
-          <div class="rt-place-card-sm-body">
-            <span class="rt-label">ARCHAEOLOGY</span>
-            <h4>Sirpur Archaeological Site</h4>
-            <p>Ancient 5th-8th century capital along the Mahanadi river, famous for Laxman Brick Temple.</p>
-            <a href="explore.html" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
+      <a class="ag-panel ag-panel--active" href="explore.html" role="listitem" aria-label="Sirpur Archaeological Site">
+        <span class="ag-panel__frame">
+          <span class="ag-panel__media">
+            <img src="images/museum.jpg" alt="Sirpur Archaeological Site" draggable="false">
+          </span>
+          <span class="ag-panel__overlay" aria-hidden="true"></span>
+        </span>
+        <span class="ag-panel__label" aria-hidden="true">
+          <span class="ag-panel__bar"></span>
+          <span class="ag-panel__text-wrap">
+            <span class="ag-panel__tag">ARCHAEOLOGY</span>
+            <span class="ag-panel__text">Sirpur Monuments</span>
+          </span>
+        </span>
+      </a>
+
+      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Purkhauti Muktangan">
+        <span class="ag-panel__frame">
+          <span class="ag-panel__media">
+            <img src="images/purkhauti.jpg" alt="Purkhauti Muktangan" draggable="false">
+          </span>
+          <span class="ag-panel__overlay" aria-hidden="true"></span>
+        </span>
+        <span class="ag-panel__label" aria-hidden="true">
+          <span class="ag-panel__bar"></span>
+          <span class="ag-panel__text-wrap">
+            <span class="ag-panel__tag">OPEN-AIR MUSEUM</span>
+            <span class="ag-panel__text">Purkhauti Muktangan</span>
+          </span>
+        </span>
+      </a>
+
+      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Cultural Festivals & Traditions">
+        <span class="ag-panel__frame">
+          <span class="ag-panel__media">
+            <img src="images/tribal_dance.jpg" alt="Cultural Festivals" draggable="false">
+          </span>
+          <span class="ag-panel__overlay" aria-hidden="true"></span>
+        </span>
+        <span class="ag-panel__label" aria-hidden="true">
+          <span class="ag-panel__bar"></span>
+          <span class="ag-panel__text-wrap">
+            <span class="ag-panel__tag">LIVING TRADITIONS</span>
+            <span class="ag-panel__text">Tribal Heritage & Arts</span>
+          </span>
+        </span>
+      </a>
     </div>
 
     <div class="text-center mt-4">
@@ -668,6 +701,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scrolla.jquery.min.js"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="js/raipurtales.js"></script>
 <script>if (typeof lucide !== 'undefined') { lucide.createIcons(); }</script>
 </body>

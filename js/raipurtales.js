@@ -722,11 +722,11 @@ jQuery(function($) {
     if ($(this).scrollTop() > 40) {
       $(".header").addClass("scrolled");
       $("#heroWeatherLine").addClass("nav-visible");
-      $("#heroScrollDown").addClass("fade-out");
+      $("#heroScrollDown").addClass("nav-visible");
     } else {
       $(".header").removeClass("scrolled");
       $("#heroWeatherLine").removeClass("nav-visible");
-      $("#heroScrollDown").removeClass("fade-out");
+      $("#heroScrollDown").removeClass("nav-visible");
     }
   }).trigger("scroll");
 
@@ -861,5 +861,151 @@ jQuery(function($) {
       .catch(function() {
         showErrorState();
       });
+  })();
+
+  // React Bits AccordionGallery Component Implementation
+  (function initAccordionGallery() {
+    var rootEl = document.getElementById("accordionGallery");
+    if (!rootEl) return;
+
+    var count = 5;
+    var defaultIndex = 2;
+    var expandRatio = 0.52;
+    var duration = 0.6;
+    var ease = "power3.out";
+    var tilt = 8;
+    var parallax = 0.5;
+    var grayscale = true;
+    var stagger = 0.06;
+
+    var active = Math.min(Math.max(defaultIndex, 0), count - 1);
+    var mediaSize = 340;
+    var tl = null;
+    var firstRun = true;
+
+    var prefersReduced = typeof window !== "undefined" && window.matchMedia
+      ? window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      : false;
+
+    var panelEls = Array.prototype.slice.call(rootEl.querySelectorAll(".ag-panel"));
+    var mediaEls = Array.prototype.slice.call(rootEl.querySelectorAll(".ag-panel__media"));
+    var barEls = Array.prototype.slice.call(rootEl.querySelectorAll(".ag-panel__bar"));
+    var textEls = Array.prototype.slice.call(rootEl.querySelectorAll(".ag-panel__text-wrap"));
+
+    function applyLayout(animate) {
+      if (!panelEls.length) return;
+
+      var r = Math.min(Math.max(expandRatio, 0.2), 0.9);
+      var grow = count > 1 ? (r * (count - 1)) / (1 - r) : 1;
+
+      if (tl) tl.kill();
+      var dur = animate && !prefersReduced ? duration : 0;
+
+      if (typeof gsap !== "undefined") {
+        tl = gsap.timeline();
+
+        panelEls.forEach(function(panel, i) {
+          if (!panel) return;
+          var isActive = i === active;
+          var media = mediaEls[i];
+          var bar = barEls[i];
+          var text = textEls[i];
+
+          if (isActive) {
+            panel.classList.add("ag-panel--active");
+          } else {
+            panel.classList.remove("ag-panel--active");
+          }
+
+          var rot = isActive ? 0 : i < active ? tilt : -tilt;
+
+          tl.to(panel, { flexGrow: isActive ? grow : 1, rotateY: rot, duration: dur, ease: ease }, 0);
+
+          if (media) {
+            var drift = Math.max(-1.5, Math.min(1.5, active - i));
+            var shift = drift * parallax * mediaSize * 0.06;
+            var gray = grayscale ? (isActive ? 0 : 1) : 0;
+            var dim = 0;
+
+            tl.to(media, {
+              xPercent: -50,
+              yPercent: -50,
+              x: isActive ? 0 : shift,
+              y: 0,
+              "--ag-gray": gray,
+              "--ag-dim": dim,
+              duration: dur,
+              ease: ease
+            }, 0);
+          }
+
+          if (bar && text) {
+            var labelText = text.querySelector(".ag-panel__text");
+            if (isActive) {
+              tl.to([bar, text], { opacity: 1, x: 0, duration: dur, ease: ease, stagger: prefersReduced ? 0 : stagger }, 0);
+              if (labelText) tl.to(labelText, { opacity: 1, duration: dur, ease: ease }, 0);
+            } else {
+              tl.to([bar, text], { opacity: 0, x: -14, duration: dur * 0.6, ease: ease }, 0);
+              if (labelText) tl.to(labelText, { opacity: 0, duration: dur * 0.6, ease: ease }, 0);
+            }
+          }
+        });
+      }
+    }
+
+    function measure() {
+      var rect = rootEl.getBoundingClientRect();
+      var total = rect.width;
+      var gap = 12;
+      var usable = Math.max(total - gap * (count - 1), 120);
+      mediaSize = Math.max(140, usable * Math.min(Math.max(expandRatio, 0.2), 0.9) * 1.22);
+      rootEl.style.setProperty("--ag-media-size", mediaSize + "px");
+      applyLayout(!firstRun);
+    }
+
+    measure();
+
+    if (typeof ResizeObserver !== "undefined") {
+      var ro = new ResizeObserver(measure);
+      ro.observe(rootEl);
+    }
+
+    applyLayout(false);
+    firstRun = false;
+
+    panelEls.forEach(function(panel, i) {
+      panel.addEventListener("mouseenter", function() {
+        if (active !== i) {
+          active = i;
+          applyLayout(true);
+        }
+      });
+      panel.addEventListener("focus", function() {
+        if (active !== i) {
+          active = i;
+          applyLayout(true);
+        }
+      });
+      panel.addEventListener("click", function(e) {
+        if (active !== i) {
+          e.preventDefault();
+          active = i;
+          applyLayout(true);
+        }
+      });
+      panel.addEventListener("keydown", function(e) {
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+          e.preventDefault();
+          active = (i + 1) % count;
+          panelEls[active].focus();
+          applyLayout(true);
+        } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+          e.preventDefault();
+          active = (i - 1 + count) % count;
+          panelEls[active].focus();
+          applyLayout(true);
+        }
+      });
+    });
   })();
 });
