@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Events in Raipur — Live Cultural Calendar | Hamara Raipur</title>
-  <meta name="description" content="Discover upcoming events in Raipur: National Tribal Dance Festival, Rajim Kumbh Mela, crafts exhibitions, live music, and community workshops.">
+  <title>Events in Raipur — Live Events & Activities | Hamara Raipur</title>
+  <meta name="description" content="Discover upcoming events in Raipur: Garba nights, standup comedy, DJ parties, cultural festivals, and BookMyShow live shows.">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="css/raipurtales.css?v=14" rel="stylesheet">
+  <link href="css/raipurtales.css?v=15" rel="stylesheet">
 </head>
 <body>
 
@@ -50,18 +50,41 @@
 <!-- PAGE HERO HEADER -->
 <section class="rt-section" style="padding-top: 140px; background-color: var(--rt-offwhite); border-bottom: 1px solid var(--rt-border);">
   <div class="container">
-    <div class="rt-section-header m-0 text-left">
-      <span class="rt-label">LIVE EVENT CALENDAR</span>
-      <h1 class="rt-title">EVENTS IN RAIPUR</h1>
-      <p class="rt-subtitle">Cultural celebrations, tribal music festivals, food fairs, and community gatherings.</p>
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="rt-section-header m-0 text-left">
+          <div class="d-inline-flex align-items-center gap-2 mb-2" style="background: rgba(0, 56, 56, 0.08); padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; color: var(--rt-darkgreen);">
+            <span style="width: 8px; height: 8px; background-color: #10b981; border-radius: 50%; display: inline-block;"></span>
+            LIVE BOOKMYSHOW & LOCAL EVENT FEED
+          </div>
+          <h1 class="rt-title">EVENTS IN RAIPUR</h1>
+          <p class="rt-subtitle">Live concerts, Garba celebrations, standup comedy, DJ nights, and cultural festivals happening across Raipur.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3 mt-lg-0 text-lg-end">
+        <span id="eventsCountBadge" class="badge" style="background-color: var(--rt-darkgreen); color: #fff; padding: 10px 18px; font-size: 14px; border-radius: 8px;">
+          <i class="fa-solid fa-ticket me-1"></i> Loading Events...
+        </span>
+      </div>
     </div>
 
-    <!-- Filter Tabs -->
-    <div class="rt-event-tabs justify-content-start mt-4">
-      <button class="rt-event-tab-btn active" data-tab="all">ALL EVENTS</button>
-      <button class="rt-event-tab-btn" data-tab="today">TODAY</button>
-      <button class="rt-event-tab-btn" data-tab="week">THIS WEEK</button>
-      <button class="rt-event-tab-btn" data-tab="month">THIS MONTH</button>
+    <!-- Search & Filter Controls Bar -->
+    <div class="mt-4 p-3" style="background: #ffffff; border: 1px solid var(--rt-border); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-6">
+          <div class="position-relative">
+            <i class="fa-solid fa-magnifying-glass position-absolute" style="left: 14px; top: 50%; transform: translateY(-50%); color: #888;"></i>
+            <input type="text" id="eventSearchInput" class="form-control" placeholder="Search events by title or venue..." style="padding-left: 40px; height: 46px; border-radius: 8px; border: 1px solid var(--rt-border);">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="rt-event-tabs justify-content-md-end m-0">
+            <button class="rt-event-tab-btn active" data-tab="all">ALL</button>
+            <button class="rt-event-tab-btn" data-tab="garba">GARBA & ACTIVITIES</button>
+            <button class="rt-event-tab-btn" data-tab="comedy">COMEDY & SHOWS</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -69,33 +92,13 @@
 <!-- EVENTS DIRECTORY GRID -->
 <section class="rt-section" style="background-color: var(--rt-offwhite);">
   <div class="container">
-    <div class="rt-events-grid">
-      <div class="rt-event-card rt-event-card-item" data-tab="month">
-        <span class="rt-event-date">DECEMBER 2026 · SCIENCE COLLEGE GROUND</span>
-        <h4>National Tribal Dance Festival 2026</h4>
-        <p>India's largest tribal dance celebration showcasing indigenous dance forms, music, and crafts across 3 days.</p>
-        <a href="contribute.html" class="rt-culture-link">Get Details & Register <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="rt-event-card rt-event-card-item" data-tab="week">
-        <span class="rt-event-date">THIS WEEKEND · PURKHAUTI MUKTANGAN</span>
-        <h4>Aadi Parab Tribal Crafts Exhibition</h4>
-        <p>Fair showcasing authentic Dhokra brass castings, Kosa silk sarees, and organic forest honey crafted by local artisans.</p>
-        <a href="contribute.html" class="rt-culture-link">Get Details & Register <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="rt-event-card rt-event-card-item" data-tab="today">
-        <span class="rt-event-date">EVERY EVENING · BUDHA TALAB</span>
-        <h4>Vivekananda Sarovar Light & Sound Show</h4>
-        <p>Evening musical laser fountain show detailing Chhattisgarh's history against the illuminated lake statue.</p>
-        <a href="contribute.html" class="rt-culture-link">Get Details & Register <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-
-      <div class="rt-event-card rt-event-card-item" data-tab="month">
-        <span class="rt-event-date">FEB-MARCH 2026 · RAJIM TRIVENI SANGAM</span>
-        <h4>Rajim Kumbh Mela 2026</h4>
-        <p>Sacred holy gathering at the confluence of three rivers featuring thousands of saints, rituals, and folk performances.</p>
-        <a href="contribute.html" class="rt-culture-link">Get Details & Register <i class="fa-solid fa-arrow-right"></i></a>
+    <div id="eventsContainer" class="w-100">
+      <!-- Dynamic cards loaded from events.json via JS -->
+      <div class="col-12 text-center py-5">
+        <div class="spinner-border text-success" role="status">
+          <span class="visually-hidden">Loading events...</span>
+        </div>
+        <p class="mt-3 text-muted">Fetching live events in Raipur...</p>
       </div>
     </div>
   </div>
@@ -113,6 +116,94 @@
     </div>
   </div>
 </footer>
+
+<!-- FIND A GROUP / COMMUNITY MODAL -->
+<div class="modal fade" id="eventGroupModal" tabindex="-1" aria-labelledby="eventGroupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content" style="border-radius: 20px; border: none; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15);">
+      <div class="modal-header text-white" style="background-color: var(--rt-darkgreen); padding: 20px 24px;">
+        <div>
+          <span class="badge bg-success mb-1" style="font-size: 11px;">COMMUNITY GROUPS & DISCUSSION</span>
+          <h5 class="modal-title font-weight-bold" id="eventGroupModalTitle" style="color: #ffffff; margin: 0;">Event Groups</h5>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-4" style="background-color: #f8fafc;">
+        <!-- Group View Container -->
+        <div id="groupListView">
+          <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+            <div>
+              <h6 class="m-0 font-weight-bold text-dark"><i class="fa-solid fa-users text-primary me-2"></i> Active Community Groups</h6>
+              <small class="text-muted">Find fellow locals going to this event, coordinate rides, or form groups!</small>
+            </div>
+            <button class="btn btn-sm btn-success rounded-pill px-3 fw-bold" id="btnToggleCreateGroup">
+              <i class="fa-solid fa-plus me-1"></i> Create New Group
+            </button>
+          </div>
+
+          <!-- Create Group Collapsible Form -->
+          <div id="createGroupFormCard" class="p-3 mb-4 bg-white rounded-3 border" style="display: none;">
+            <h6 class="fw-bold mb-3 text-success"><i class="fa-solid fa-square-plus me-2"></i> Start a Group for this Event</h6>
+            <form id="formCreateGroup">
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Group Name / Plan</label>
+                <input type="text" id="inputGroupName" class="form-control form-control-sm" placeholder="e.g. Garba Squad Civil Lines / Carpool from Marine Drive" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Your Name / Handle</label>
+                <input type="text" id="inputLeaderName" class="form-control form-control-sm" placeholder="e.g. Rahul S. / Priya M." required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Initial Message / Plan Details</label>
+                <input type="text" id="inputGroupMsg" class="form-control form-control-sm" placeholder="e.g. Meeting near gate #2 at 7 PM. Anyone welcome to join!" required>
+              </div>
+              <div class="d-flex gap-2 justify-content-end">
+                <button type="button" class="btn btn-sm btn-light" id="btnCancelCreateGroup">Cancel</button>
+                <button type="submit" class="btn btn-sm btn-success px-3 fw-bold">Publish Group</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Groups List Placeholder -->
+          <div id="activeGroupsContainer">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Chat View Container (Hidden initially) -->
+        <div id="groupChatView" style="display: none;">
+          <button class="btn btn-sm btn-outline-secondary mb-3 rounded-pill px-3 fw-bold" id="btnBackToGroups">
+            <i class="fa-solid fa-arrow-left me-1"></i> Back to All Groups
+          </button>
+          
+          <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+              <div>
+                <h6 class="m-0 fw-bold text-dark" id="chatGroupName">Group Chat Name</h6>
+                <small class="text-success fw-bold" id="chatGroupMembersCount"><i class="fa-solid fa-circle text-success me-1" style="font-size: 8px;"></i> Active Community Group</small>
+              </div>
+            </div>
+            
+            <div class="card-body p-3">
+              <div class="rt-chat-msg-box" id="chatMessagesContainer">
+                <!-- Chat messages loaded here -->
+              </div>
+              
+              <form id="formSendChatMessage" class="mt-3 d-flex gap-2">
+                <input type="text" id="inputChatMessage" class="form-control rounded-pill px-3" placeholder="Type your message to the group..." required>
+                <button type="submit" class="btn btn-success rounded-circle px-3">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

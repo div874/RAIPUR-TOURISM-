@@ -2202,6 +2202,202 @@ p {
   flex: 1;
 }
 
+/* MODERN EVENT CARD STYLING (MATCHING REFERENCE UI) */
+.rt-modern-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rt-modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.09);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.rt-modern-poster-wrap {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  max-height: 220px;
+  background: #f4f4f4;
+}
+
+.rt-modern-poster-wrap img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.rt-modern-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(16, 185, 129, 0.92);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
+
+.rt-modern-body {
+  padding: 16px 4px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rt-modern-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.rt-modern-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rt-modern-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.rt-modern-icon-box.location-icon {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.rt-modern-info-text strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.rt-modern-info-text span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.rt-modern-desc {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+  margin-top: 6px;
+  margin-bottom: 22px;
+  flex: 1;
+}
+
+.btn-book-bms {
+  background: #059669;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25);
+}
+
+.btn-book-bms:hover {
+  background: #047857;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(5, 150, 105, 0.35);
+}
+
+/* FIND A GROUP BUTTON & COMMUNITY CHAT */
+.btn-find-group {
+  background: #f0fdf4;
+  color: #047857 !important;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 11px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none !important;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  margin-top: 10px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-find-group:hover {
+  background: #dcfce7;
+  border-color: #10b981;
+  color: #065f46 !important;
+  transform: translateY(-1px);
+}
+
+.rt-group-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.rt-group-card:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.rt-chat-msg-box {
+  max-height: 320px;
+  overflow-y: auto;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.rt-chat-bubble {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.rt-chat-bubble.my-msg {
+  background: #dcfce7;
+}
+
 /* EDITORIAL ARTICLES ("STORIES FROM RAIPUR") */
 .rt-stories-sec {
   background-color: var(--rt-offwhite);

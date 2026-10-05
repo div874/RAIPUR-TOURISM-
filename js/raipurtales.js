@@ -256,6 +256,353 @@ jQuery(function($) {
     });
   })();
 
+  // Dynamic Events Loader from events.json with Live Search & Tabs
+  (function loadDynamicEvents() {
+    var $grid = $("#eventsContainer");
+    if (!$grid.length) return;
+
+    var allEventsData = [];
+
+    function createCardHtml(ev) {
+      var cat = (ev.category || "").toLowerCase();
+      var dataTab = cat.includes("garba") || cat.includes("activity") ? "garba" : "comedy";
+      var linkUrl = ev.link || "https://in.bookmyshow.com/explore/events-raipur";
+      var posterImg = ev.image || "images/tribal_dance.jpg";
+      var dateText = ev.date && ev.date !== "Upcoming · Check BookMyShow" ? ev.date : "Upcoming Event";
+      var venueText = ev.venue || "Raipur Venue / Cultural Center";
+
+      var cardHtml = '<div class="col-lg-4 col-md-6 mb-4">';
+      cardHtml += '  <div class="rt-modern-card" data-tab="' + dataTab + '">';
+      cardHtml += '    <div class="rt-modern-poster-wrap">';
+      cardHtml += '      <span class="rt-modern-badge"><i class="fa-regular fa-calendar-check"></i> UPCOMING</span>';
+      cardHtml += '      <img src="' + posterImg + '" alt="' + ev.title + '" onerror="this.src=\'images/tribal_dance.jpg\'">';
+      cardHtml += '    </div>';
+      cardHtml += '    <div class="rt-modern-body">';
+      cardHtml += '      <h3 class="rt-modern-title">' + ev.title + '</h3>';
+      
+      // Date Row
+      cardHtml += '      <div class="rt-modern-info-row">';
+      cardHtml += '        <div class="rt-modern-icon-box"><i class="fa-regular fa-calendar-days"></i></div>';
+      cardHtml += '        <div class="rt-modern-info-text">';
+      cardHtml += '          <strong>' + dateText + '</strong>';
+      cardHtml += '          <span>Evening onwards</span>';
+      cardHtml += '        </div>';
+      cardHtml += '      </div>';
+
+      // Location Row
+      cardHtml += '      <div class="rt-modern-info-row">';
+      cardHtml += '        <div class="rt-modern-icon-box location-icon"><i class="fa-solid fa-location-dot"></i></div>';
+      cardHtml += '        <div class="rt-modern-info-text">';
+      cardHtml += '          <strong>' + venueText + '</strong>';
+      cardHtml += '          <span>Raipur, Chhattisgarh</span>';
+      cardHtml += '        </div>';
+      cardHtml += '      </div>';
+
+      // Description Paragraph
+      cardHtml += '      <p class="rt-modern-desc">' + (ev.description || "Live event in Raipur. Get tickets directly on BookMyShow.") + '</p>';
+
+      // Platform Specific Booking Button
+      var sourceName = ev.source || "BookMyShow";
+      var buttonText = "Book tickets on " + sourceName;
+
+      cardHtml += '      <a href="' + linkUrl + '" target="_blank" rel="noopener" class="btn-book-bms">';
+      cardHtml += '        <span><i class="fa-solid fa-ticket me-2"></i> ' + buttonText + '</span>';
+      cardHtml += '        <i class="fa-solid fa-arrow-right"></i>';
+      cardHtml += '      </a>';
+
+      // Find a Group / Join Community Button
+      cardHtml += '      <button type="button" class="btn-find-group btn-open-group-modal" data-event-title="' + ev.title.replace(/"/g, '&quot;') + '">';
+      cardHtml += '        <i class="fa-solid fa-users text-success me-1"></i> Find a Group / Join Community';
+      cardHtml += '      </button>';
+
+      cardHtml += '    </div>';
+      cardHtml += '  </div>';
+      cardHtml += '</div>';
+
+      return cardHtml;
+    }
+
+    function renderEvents(list) {
+      if (!list || !list.length) {
+        $grid.html('<div class="col-12 text-center py-5"><p class="text-muted fs-5">No events found matching your search query.</p></div>');
+        $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> 0 Events Found');
+        return;
+      }
+
+      $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> ' + list.length + ' Live Events (BookMyShow & District)');
+
+      var cardsHtml = "";
+      list.forEach(function(ev) {
+        cardsHtml += createCardHtml(ev);
+      });
+
+      $grid.html('<div class="row g-4">' + cardsHtml + '</div>');
+    }
+
+    fetch("events.json")
+      .then(function(res) {
+        if (!res.ok) throw new Error("Could not load events.json");
+        return res.json();
+      })
+      .then(function(eventsList) {
+        allEventsData = eventsList || [];
+        renderEvents(allEventsData);
+      })
+      .catch(function(err) {
+        console.log("Using default events grid:", err);
+      });
+
+    // Search filter input listener
+    $("#eventSearchInput").on("input", function() {
+      var query = $(this).val().toLowerCase().trim();
+      var activeTab = $(".rt-event-tab-btn.active").data("tab") || "all";
+      var filtered = allEventsData.filter(function(ev) {
+        var matchesSearch = (ev.title || "").toLowerCase().includes(query) ||
+                            (ev.venue || "").toLowerCase().includes(query) ||
+                            (ev.category || "").toLowerCase().includes(query);
+
+        var cat = (ev.category || "").toLowerCase();
+        var matchesTab = true;
+        if (activeTab === "garba") matchesTab = cat.includes("garba") || cat.includes("activity");
+        if (activeTab === "comedy") matchesTab = !cat.includes("garba") && !cat.includes("activity");
+
+        return matchesSearch && matchesTab;
+      });
+      renderEvents(filtered);
+    });
+
+    // Tab filter listener
+    $(".rt-event-tab-btn").on("click", function() {
+      $(".rt-event-tab-btn").removeClass("active");
+      $(this).addClass("active");
+      var tab = $(this).data("tab");
+      var query = $("#eventSearchInput").val().toLowerCase().trim();
+
+      var filtered = allEventsData.filter(function(ev) {
+        var matchesSearch = !query || (ev.title || "").toLowerCase().includes(query) ||
+                            (ev.venue || "").toLowerCase().includes(query) ||
+                            (ev.category || "").toLowerCase().includes(query);
+
+        var cat = (ev.category || "").toLowerCase();
+        var matchesTab = true;
+        if (tab === "garba") matchesTab = cat.includes("garba") || cat.includes("activity");
+        if (tab === "comedy") matchesTab = !cat.includes("garba") && !cat.includes("activity");
+
+        return matchesSearch && matchesTab;
+      });
+
+      renderEvents(filtered);
+    });
+  })();
+
+  // Community Event Groups & Live Chat Manager
+  (function initCommunityEventGroups() {
+    var activeEventTitle = "";
+    var activeGroupId = null;
+
+    function getStorageKey(title) {
+      return "rt_groups_" + encodeURIComponent(title.toLowerCase().trim());
+    }
+
+    function getDefaultGroups(title) {
+      return [
+        {
+          id: "g1_" + Date.now(),
+          name: title + " — Squad Raipur",
+          leader: "Rahul Sharma",
+          membersCount: 6,
+          description: "Heading together around 7:30 PM! Anyone from Civil Lines / Shankar Nagar welcome.",
+          messages: [
+            { sender: "Rahul Sharma", text: "Hey everyone! We are meeting near the main gate at 7:30 PM.", time: "18:30", isMe: false },
+            { sender: "Priya S.", text: "Awesome! I am coming with 2 friends.", time: "18:45", isMe: false }
+          ]
+        },
+        {
+          id: "g2_" + Date.now(),
+          name: "Carpool & Ride Sharing (Marine Drive)",
+          leader: "Amit Verma",
+          membersCount: 4,
+          description: "Pooling cabs from Telibandha Marine Drive at 6:45 PM. 2 spots open!",
+          messages: [
+            { sender: "Amit Verma", text: "Starting from Marine Drive at 6:45 PM. Message if you want to share a cab!", time: "17:15", isMe: false }
+          ]
+        }
+      ];
+    }
+
+    function loadGroups(title) {
+      try {
+        var raw = localStorage.getItem(getStorageKey(title));
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      var defaults = getDefaultGroups(title);
+      saveGroups(title, defaults);
+      return defaults;
+    }
+
+    function saveGroups(title, groups) {
+      try {
+        localStorage.setItem(getStorageKey(title), JSON.stringify(groups));
+      } catch (e) {}
+    }
+
+    function renderGroupsList(title) {
+      var groups = loadGroups(title);
+      var $container = $("#activeGroupsContainer");
+
+      if (!groups.length) {
+        $container.html('<div class="text-center py-4"><p class="text-muted">No groups created yet. Be the first to start a group for this event!</p></div>');
+        return;
+      }
+
+      var html = "";
+      groups.forEach(function(g) {
+        html += '<div class="rt-group-card d-flex justify-content-between align-items-center flex-wrap gap-2">';
+        html += '  <div>';
+        html += '    <h6 class="fw-bold text-dark mb-1"><i class="fa-solid fa-users-line text-success me-2"></i>' + g.name + '</h6>';
+        html += '    <p class="small text-muted mb-2">' + g.description + '</p>';
+        html += '    <small class="badge bg-light text-dark border"><i class="fa-solid fa-user-group text-primary me-1"></i> ' + g.membersCount + ' Members · Leader: ' + g.leader + '</small>';
+        html += '  </div>';
+        html += '  <button class="btn btn-sm btn-success rounded-pill px-4 fw-bold btn-join-group" data-group-id="' + g.id + '">';
+        html += '    Join & Chat <i class="fa-solid fa-comments ms-1"></i>';
+        html += '  </button>';
+        html += '</div>';
+      });
+
+      $container.html(html);
+    }
+
+    function renderChatView(group) {
+      $("#chatGroupName").text(group.name);
+      $("#chatGroupMembersCount").html('<i class="fa-solid fa-circle text-success me-1" style="font-size: 8px;"></i> ' + group.membersCount + ' Members Online · Leader: ' + group.leader);
+
+      var msgsHtml = "";
+      if (group.messages && group.messages.length) {
+        group.messages.forEach(function(m) {
+          var meClass = m.isMe ? " my-msg ms-auto" : "";
+          msgsHtml += '<div class="rt-chat-bubble' + meClass + '" style="max-width: 80%;">';
+          msgsHtml += '  <div class="d-flex justify-content-between align-items-center mb-1">';
+          msgsHtml += '    <small class="fw-bold text-success">' + m.sender + '</small>';
+          msgsHtml += '    <small class="text-muted" style="font-size: 10px;">' + (m.time || "Just now") + '</small>';
+          msgsHtml += '  </div>';
+          msgsHtml += '  <p class="m-0 text-dark small">' + m.text + '</p>';
+          msgsHtml += '</div>';
+        });
+      } else {
+        msgsHtml = '<div class="text-center py-4 text-muted small">No messages in group chat yet. Say hi to start the conversation!</div>';
+      }
+
+      $("#chatMessagesContainer").html(msgsHtml);
+
+      // Scroll to bottom
+      var box = document.getElementById("chatMessagesContainer");
+      if (box) box.scrollTop = box.scrollHeight;
+    }
+
+    // Open Modal Listener
+    $(document).on("click", ".btn-open-group-modal", function(e) {
+      e.preventDefault();
+      activeEventTitle = $(this).data("event-title") || "Raipur Event";
+      $("#eventGroupModalTitle").text(activeEventTitle);
+      
+      // Reset view to Group List
+      $("#createGroupFormCard").hide();
+      $("#groupChatView").hide();
+      $("#groupListView").show();
+
+      renderGroupsList(activeEventTitle);
+
+      var modal = new bootstrap.Modal(document.getElementById("eventGroupModal"));
+      modal.show();
+    });
+
+    // Toggle Create Group Form
+    $("#btnToggleCreateGroup").on("click", function() {
+      $("#createGroupFormCard").slideToggle(200);
+    });
+
+    $("#btnCancelCreateGroup").on("click", function() {
+      $("#createGroupFormCard").slideUp(200);
+    });
+
+    // Create Group Form Submit
+    $("#formCreateGroup").on("submit", function(e) {
+      e.preventDefault();
+      var gName = $("#inputGroupName").val().trim();
+      var leader = $("#inputLeaderName").val().trim();
+      var msg = $("#inputGroupMsg").val().trim();
+
+      if (!gName || !leader) return;
+
+      var groups = loadGroups(activeEventTitle);
+      var nowStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      var newGroup = {
+        id: "g_" + Date.now(),
+        name: gName,
+        leader: leader,
+        membersCount: 1,
+        description: msg,
+        messages: [
+          { sender: leader, text: msg, time: nowStr, isMe: true }
+        ]
+      };
+
+      groups.unshift(newGroup);
+      saveGroups(activeEventTitle, groups);
+
+      $("#formCreateGroup")[0].reset();
+      $("#createGroupFormCard").slideUp(200);
+
+      renderGroupsList(activeEventTitle);
+    });
+
+    // Join & Chat Button Listener
+    $(document).on("click", ".btn-join-group", function() {
+      activeGroupId = $(this).data("group-id");
+      var groups = loadGroups(activeEventTitle);
+      var group = groups.find(function(g) { return g.id === activeGroupId; });
+
+      if (group) {
+        $("#groupListView").hide();
+        $("#groupChatView").fadeIn(200);
+        renderChatView(group);
+      }
+    });
+
+    // Back to Groups List
+    $("#btnBackToGroups").on("click", function() {
+      $("#groupChatView").hide();
+      $("#groupListView").fadeIn(200);
+      renderGroupsList(activeEventTitle);
+    });
+
+    // Send Chat Message Form Submit
+    $("#formSendChatMessage").on("submit", function(e) {
+      e.preventDefault();
+      var text = $("#inputChatMessage").val().trim();
+      if (!text || !activeGroupId) return;
+
+      var groups = loadGroups(activeEventTitle);
+      var group = groups.find(function(g) { return g.id === activeGroupId; });
+
+      if (group) {
+        var nowStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        group.messages = group.messages || [];
+        group.messages.push({
+          sender: "You (Member)",
+          text: text,
+          time: nowStr,
+          isMe: true
+        });
+
+        saveGroups(activeEventTitle, groups);
+        $("#inputChatMessage").val("");
+        renderChatView(group);
+      }
+    });
+  })();
+
   // Events Tabs
   $(".rt-event-tab-btn").on("click", function() {
     $(".rt-event-tab-btn").removeClass("active");
