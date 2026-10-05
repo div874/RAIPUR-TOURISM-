@@ -1,5 +1,6 @@
 [
     {
+        "id": "evt_dandiyaxgarbaevebysoulescape",
         "title": "Dandiya x Garba Eve by SoulEscape",
         "date": "Sat, 17 Oct 2026",
         "time": "7:00 PM onwards",
@@ -10,9 +11,16 @@
         "link": "https://in.bookmyshow.com/activities/dandiya-x-garba-eve-by-soulescape/ET00520242",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Dandiya x Garba Eve by SoulEscape'. Get tickets directly on BookMyShow."
+        "description": "Live event at Raipur, Chhattisgarh: 'Dandiya x Garba Eve by SoulEscape'. Get tickets directly on BookMyShow.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_fashionistaraipurexhibition",
         "title": "Fashionista Raipur Exhibition",
         "date": "Fri, 09 Oct 2026",
         "time": "11:00 AM onwards",
@@ -23,9 +31,16 @@
         "link": "https://allevents.in/raipur/fashionista-raipur-exhibition/200030644565915",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Fashionista Raipur Exhibition'. Get tickets directly on District."
+        "description": "Live event at Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Fashionista Raipur Exhibition'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_screeningofmanchesterunitedvst",
         "title": "Screening of Manchester United vs Tottenham Hotspur",
         "date": "Sat, 10 Oct 2026",
         "time": "10:00 PM onwards",
@@ -36,9 +51,16 @@
         "link": "https://allevents.in/raipur/screening-of-manchester-united-vs-tottenham-hotspur/4100030763481045",
         "category": "Sports",
         "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Manchester United vs Tottenham Hotspur'. Get tickets directly on District."
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Manchester United vs Tottenham Hotspur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_air1standupcomedybyharshitmaha",
         "title": "AIR 1: Standup Comedy by Harshit Mahawar",
         "date": "Sat, 31 Oct 2026",
         "time": "7:00 PM onwards",
@@ -49,9 +71,16 @@
         "link": "https://allevents.in/raipur/air-1-standup-comedy-by-harshit-mahawar/3900030311897858",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Akhada By RCC, Capital (NOT TOWER, Hotel Babylon, 512, VIP chowk, Jivan Vihar, Raipur: 'AIR 1: Standup Comedy by Harshit Mahawar'. Get tickets directly on District."
+        "description": "Live event at Akhada By RCC, Capital (NOT TOWER, Hotel Babylon, 512, VIP chowk, Jivan Vihar, Raipur: 'AIR 1: Standup Comedy by Harshit Mahawar'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_bastartribaltrail5daychhattisg",
         "title": "Bastar Tribal Trail: 5-Day Chhattisgarh Cultural & Waterfall Tour",
         "date": "Wed, 07 Oct 2026",
         "time": "11:00 AM onwards",
@@ -62,9 +91,16 @@
         "link": "https://allevents.in/raipur/bastar-tribal-trail-5-day-chhattisgarh-cultural-and-waterfall-tour/200030347173955",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Raipur City, Raipur: 'Bastar Tribal Trail: 5-Day Chhattisgarh Cultural & Waterfall Tour'. Get tickets directly on District."
+        "description": "Live event at Raipur City, Raipur: 'Bastar Tribal Trail: 5-Day Chhattisgarh Cultural & Waterfall Tour'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T06:02:12Z"
     },
     {
+        "id": "evt_satyabratmohapatralive",
         "title": "Satyabrat Mohapatra LIVE",
         "date": "Sat, 14 Nov 2026",
         "time": "6:00 PM onwards",
@@ -75,22 +111,16 @@
         "link": "https://allevents.in/raipur/satyabrat-mohapatra-live/3900030678881043",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Akhada, 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur: 'Satyabrat Mohapatra LIVE'. Get tickets directly on District."
+        "description": "Live event at Akhada, 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur: 'Satyabrat Mohapatra LIVE'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
-        "title": "BEHRUPIYE - Sketch comedy show",
-        "date": "Sat, 24 Oct 2026",
-        "time": "7:00 PM onwards",
-        "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events6/banners/dc39ecb0-c0c5-11f1-aa7e-893ff00ac3f2-rimg-w1200-h600-dc282868-gmir.jpg?v=1791209146",
-        "link": "https://allevents.in/raipur/behrupiye-sketch-comedy-show/3900030781308046",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur: 'BEHRUPIYE - Sketch comedy show'. Get tickets directly on District."
-    },
-    {
+        "id": "evt_saptamirsokal",
         "title": "Saptamir sokal",
         "date": "Sat, 17 Oct 2026",
         "time": "12:30 PM onwards",
@@ -101,9 +131,16 @@
         "link": "https://allevents.in/raipur/saptamir-sokal/200030764749034",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Kanhera, Raipur: 'Saptamir sokal'. Get tickets directly on District."
+        "description": "Live event at Kanhera, Raipur: 'Saptamir sokal'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_rhythmsofbastaradussehraimmers",
         "title": "Rhythms of Bastar — A Dussehra Immersion",
         "date": "Sun, 18 Oct 2026",
         "time": "6:00 AM onwards",
@@ -114,9 +151,16 @@
         "link": "https://allevents.in/raipur/rhythms-of-bastar-a-dussehra-immersion/200030757825259",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Rhythms of Bastar — A Dussehra Immersion'. Get tickets directly on District."
+        "description": "Live event at Raipur, Chhattisgarh: 'Rhythms of Bastar — A Dussehra Immersion'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_giggleguru",
         "title": "Giggle Guru",
         "date": "Sun, 11 Oct 2026",
         "time": "6:00 PM onwards",
@@ -127,9 +171,16 @@
         "link": "https://allevents.in/raipur/giggle-guru/3900030779314013",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Akhada, 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur: 'Giggle Guru'. Get tickets directly on District."
+        "description": "Live event at Akhada, 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur: 'Giggle Guru'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_greateducationexpo2027raipur",
         "title": "Great Education Expo 2027 – Raipur",
         "date": "Sat, 21 Nov 2026",
         "time": "12:30 AM onwards",
@@ -140,9 +191,16 @@
         "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District."
+        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_sevenvowsaholisticweddingexhib",
         "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
         "date": "Thu, 24 Dec 2026",
         "time": "11:00 AM onwards",
@@ -153,9 +211,16 @@
         "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on District."
+        "description": "Live event at Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_raipurcomedyfestival",
         "title": "Raipur Comedy Festival",
         "date": "Sun, 20 Dec 2026",
         "time": "7:00 PM onwards",
@@ -166,9 +231,16 @@
         "link": "https://allevents.in/raipur/raipur-comedy-festival/3900030722293502",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Venue To Be Announced: 'Raipur Comedy Festival'. Get tickets directly on District."
+        "description": "Live event at Venue To Be Announced: 'Raipur Comedy Festival'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_resolution2027india",
         "title": "RESOLUTION 2027 INDIA",
         "date": "Thu, 31 Dec 2026",
         "time": "7:00 PM onwards",
@@ -179,9 +251,16 @@
         "link": "https://allevents.in/raipur/resolution-2027-india/3900030707945208",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Venue To Be Announced: 'RESOLUTION 2027 INDIA'. Get tickets directly on District."
+        "description": "Live event at Venue To Be Announced: 'RESOLUTION 2027 INDIA'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_avinashparte",
         "title": "Avinash parte",
         "date": "Mon, 02 Nov 2026",
         "time": "1:30 PM onwards",
@@ -192,9 +271,16 @@
         "link": "https://allevents.in/raipur/avinash-parte/200030108649553",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Nakati, Raipur: 'Avinash parte'. Get tickets directly on District."
+        "description": "Live event at Nakati, Raipur: 'Avinash parte'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_aanganhumaresapnoka",
         "title": "Aangan ,humare sapno ka",
         "date": "Thu, 26 Nov 2026",
         "time": "12:00 AM onwards",
@@ -205,9 +291,16 @@
         "link": "https://allevents.in/raipur/aangan-humare-sapno-ka/200030299655839",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Jawahar Nagar, Station Road, Raipur: 'Aangan ,humare sapno ka'. Get tickets directly on District."
+        "description": "Live event at Jawahar Nagar, Station Road, Raipur: 'Aangan ,humare sapno ka'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
+        "id": "evt_chhathpuja2025",
         "title": "Chhath Puja 2025",
         "date": "Sat, 14 Nov 2026",
         "time": "12:00 AM onwards",
@@ -218,22 +311,16 @@
         "link": "https://allevents.in/raipur/chhath-puja-2025/200030181719335",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Dumartala, Raipur: 'Chhath Puja 2025'. Get tickets directly on District."
+        "description": "Live event at Dumartala, Raipur: 'Chhath Puja 2025'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     },
     {
-        "title": "Screening of Bahrain Grand Prix at Underdoggs Raipur",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events5/banners/88a3c880-bcdf-11f1-8f98-6f91b752ec17-rimg-w1200-h675-dc080808-gmir.jpg?v=1790780368",
-        "link": "https://allevents.in/raipur/screening-of-bahrain-grand-prix-at-underdoggs-raipur/4100030755471728",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Screening of Bahrain Grand Prix at Underdoggs Raipur'. Get tickets directly on District."
-    },
-    {
+        "id": "evt_11poolofferatunderdoggsraipur",
         "title": "1+1 Pool Offer At Underdoggs Raipur",
         "date": "Tue, 06 Oct 2026",
         "time": "12:00 PM TO 06:00 PM",
@@ -244,9 +331,16 @@
         "link": "https://sortmyscene.com/event/1-1-pool-offer-at-underdoggs-raipur-tuesday-pool-deal-play-one-get-one-free-oct-06-2026",
         "category": "Clubs",
         "tag": "week",
-        "description": "Live event at Underdoggs Raipur: '1+1 Pool Offer At Underdoggs Raipur'. Get tickets directly on SortMyScene."
+        "description": "Live event at Underdoggs Raipur: '1+1 Pool Offer At Underdoggs Raipur'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T06:02:12Z"
     },
     {
+        "id": "evt_wtfcocinemarave",
         "title": "WTF & Co. Cinema Rave",
         "date": "Fri, 09 Oct 2026",
         "time": "04:00 PM TO 08:30 PM",
@@ -257,9 +351,16 @@
         "link": "https://sortmyscene.com/event/wtf-co-cinema-rave-oct-09-2026",
         "category": "Clubs",
         "tag": "week",
-        "description": "Live event at TBA, Raipur: 'WTF & Co. Cinema Rave'. Get tickets directly on SortMyScene."
+        "description": "Live event at TBA, Raipur: 'WTF & Co. Cinema Rave'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_fakeresignationparty",
         "title": "Fake Resignation Party",
         "date": "Sat, 10 Oct 2026",
         "time": "04:00 PM onwards",
@@ -270,9 +371,16 @@
         "link": "https://sortmyscene.com/event/fake-resignation-party-oct-03-2026",
         "category": "Clubs",
         "tag": "week",
-        "description": "Live event at Edo, Raipur: 'Fake Resignation Party'. Get tickets directly on SortMyScene."
+        "description": "Live event at Edo, Raipur: 'Fake Resignation Party'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_exkishaadi",
         "title": "Ex Ki Shaadi",
         "date": "Sat, 10 Oct 2026",
         "time": "06:00 PM TO 00:30 AM",
@@ -283,9 +391,16 @@
         "link": "https://sortmyscene.com/event/ex-ki-shaadi-oct-10-2026",
         "category": "Clubs",
         "tag": "week",
-        "description": "Live event at The Haunt Dive 2.0, Raipur: 'Ex Ki Shaadi'. Get tickets directly on SortMyScene."
+        "description": "Live event at The Haunt Dive 2.0, Raipur: 'Ex Ki Shaadi'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_saturdayglamwithyogeshrawat",
         "title": "Saturday Glam With Yogesh Rawat",
         "date": "Sat, 10 Oct 2026",
         "time": "07:00 PM onwards",
@@ -296,9 +411,16 @@
         "link": "https://sortmyscene.com/event/saturday-glam-oct-10-2026",
         "category": "Clubs",
         "tag": "week",
-        "description": "Live event at F Lounge by FTV, Raipur: 'Saturday Glam With Yogesh Rawat'. Get tickets directly on SortMyScene."
+        "description": "Live event at F Lounge by FTV, Raipur: 'Saturday Glam With Yogesh Rawat'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_manchesterunitedvstottenhamhot",
         "title": "Manchester United Vs Tottenham Hotspur",
         "date": "Sat, 10 Oct 2026",
         "time": "10:00 PM TO 11:55 PM",
@@ -309,9 +431,16 @@
         "link": "https://sortmyscene.com/event/manchester-united-vs-tottenham-hotspur-underdoggs-raipur-raipur-oct-10-2026",
         "category": "Sports",
         "tag": "week",
-        "description": "Live event at Underdoggs Raipur: 'Manchester United Vs Tottenham Hotspur'. Get tickets directly on SortMyScene."
+        "description": "Live event at Underdoggs Raipur: 'Manchester United Vs Tottenham Hotspur'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_raaserang",
         "title": "Raas-E-Rang",
         "date": "Sun, 11 Oct 2026",
         "time": "07:00 PM TO 01:30 AM",
@@ -322,9 +451,16 @@
         "link": "https://sortmyscene.com/event/raas-e-rang-oct-11-2026",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at The Soul Garden, Raipur: 'Raas-E-Rang'. Get tickets directly on SortMyScene."
+        "description": "Live event at The Soul Garden, Raipur: 'Raas-E-Rang'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_royalgarbaraipur",
         "title": "Royal Garba Raipur",
         "date": "Sun, 11 Oct 2026",
         "time": "08:00 PM TO 08:00 PM",
@@ -335,9 +471,16 @@
         "link": "https://sortmyscene.com/event/royal-garba-oct-11-2026",
         "category": "Culture",
         "tag": "week",
-        "description": "Live event at Hotel Royal Castle, Raipur: 'Royal Garba Raipur'. Get tickets directly on SortMyScene."
+        "description": "Live event at Hotel Royal Castle, Raipur: 'Royal Garba Raipur'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-06T16:02:12Z"
     },
     {
+        "id": "evt_trickortreat",
         "title": "Trick OR Treat",
         "date": "Sat, 31 Oct 2026",
         "time": "07:00 PM TO 12:00 AM",
@@ -348,6 +491,12 @@
         "link": "https://sortmyscene.com/event/trick-or-treat-oct-31-2026",
         "category": "Clubs",
         "tag": "week",
-        "description": "Live event at TBA, Raipur: 'Trick OR Treat'. Get tickets directly on SortMyScene."
+        "description": "Live event at TBA, Raipur: 'Trick OR Treat'. Get tickets directly on SortMyScene.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-06T04:02:12Z",
+        "next_check_due": "2026-10-09T04:02:12Z"
     }
 ]

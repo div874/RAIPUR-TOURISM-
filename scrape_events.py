@@ -525,39 +525,233 @@ def auto_categorize_event(ev):
 
 
 # ----------------------------------------------------
-# MAIN PIPELINE
+# ADAPTIVE FRESHNESS & VERIFICATION STATE MACHINE
 # ----------------------------------------------------
-def main():
+from datetime import timedelta
+
+def parse_event_date(date_str):
+    """
+    Parses human-readable date strings (e.g. 'Sat, 17 Oct 2026', '09 Oct 2026')
+    into a Python datetime object. Defaults to 7 days out for unspecified/upcoming dates.
+    """
+    if not date_str or "upcoming" in date_str.lower():
+        return datetime.now() + timedelta(days=7)
+
+    # Clean leading day name if present
+    clean_str = re.sub(r'^[A-Za-z]{3},\s*', '', date_str.strip())
+    for fmt in ("%d %b %Y", "%d %B %Y", "%Y-%m-%d", "%d/%m/%Y"):
+        try:
+            return datetime.strptime(clean_str, fmt)
+        except ValueError:
+            pass
+    return datetime.now() + timedelta(days=7)
+
+
+def calculate_freshness_rules(event_date_dt, now_dt):
+    """
+    Adaptive Freshness Policy:
+    - HIGH Tier   (<= 2 days out)  : Re-verify every 2 hours (catch last-minute cancellations/updates)
+    - MEDIUM Tier (3 - 14 days out): Re-verify every 12 hours
+    - SPARSE Tier (> 14 days out)  : Re-verify every 72 hours (3 days)
+    """
+    days_until = (event_date_dt.date() - now_dt.date()).days
+
+    if days_until <= 2:
+        tier = "HIGH"
+        interval_hours = 2
+    elif days_until <= 14:
+        tier = "MEDIUM"
+        interval_hours = 12
+    else:
+        tier = "SPARSE"
+        interval_hours = 72
+
+    next_check = now_dt + timedelta(hours=interval_hours)
+    return tier, next_check.strftime("%Y-%m-%dT%H:%M:%SZ"), interval_hours
+
+
+def run_pipeline():
+    """
+    Executes the full Event Ingestion Pipeline:
+    1. Scrapes BookMyShow, District, and SortMyScene.
+    2. Loads existing stored database from `events.json`.
+    3. Compares scraped events against stored events.
+    4. Applies verification statuses: NEW, CONFIRMED, UPDATED, DUPLICATE, EXPIRED.
+    5. Applies adaptive freshness check intervals.
+    6. Saves updated state database.
+    """
+    now_dt = datetime.now()
+    now_iso = now_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
     print("=========================================")
-    print("   Raipur Multi-Source Verified Events Scraper")
-    print("   (BookMyShow + District + SortMyScene)")
+    print("   Raipur Scheduled Event Pipeline v2.0")
+    print("   (Adaptive Freshness & State Verification)")
+    print(f"   Execution Time: {now_dt.strftime('%Y-%m-%d %H:%M:%S')}")
     print("=========================================\n")
 
+    # Load existing database if available
+    db_filename = "events.json"
+    existing_events = []
+    try:
+        with open(db_filename, "r", encoding="utf-8") as f:
+            existing_events = json.load(f)
+    except Exception:
+        existing_events = []
+
+    existing_map = {}
+    for ev in existing_events:
+        fp = re.sub(r'[^a-z0-9]', '', (ev.get("title") or "").lower())[:30]
+        if fp:
+            existing_map[fp] = ev
+
+    # 1. Scrape live sources
     bms_events = scrape_bookmyshow_events()
     district_events = scrape_district_events()
     sms_events = scrape_sortmyscene_events()
+    scraped_pool = bms_events + district_events + sms_events
 
-    all_events = bms_events + district_events + sms_events
+    # 2. State Machine Verification & Deduplication
+    processed_events = []
+    seen_in_run = set()
 
-    # De-duplicate by title across all platforms and apply Auto-Categorization Algorithm
-    unique_events = []
-    seen_all = set()
-    for ev in all_events:
-        title_key = ev["title"].lower().strip()
-        short_key = re.sub(r'[^a-z0-9]', '', title_key)[:25]
-        if short_key not in seen_all:
-            seen_all.add(short_key)
-            ev["category"] = auto_categorize_event(ev)
-            unique_events.append(ev)
+    stats = {
+        "new": 0,
+        "confirmed": 0,
+        "updated": 0,
+        "duplicate": 0,
+        "expired": 0,
+        "high_tier": 0,
+        "medium_tier": 0,
+        "sparse_tier": 0
+    }
 
-    output_filename = "events.json"
-    with open(output_filename, "w", encoding="utf-8") as file:
-        json.dump(unique_events, file, indent=4, ensure_ascii=False)
+    for ev in scraped_pool:
+        raw_title = ev.get("title", "").strip()
+        fp = re.sub(r'[^a-z0-9]', '', raw_title.lower())[:30]
+        if not fp:
+            continue
+
+        # Handle intra-batch duplicates (Cross-Platform Merging)
+        if fp in seen_in_run:
+            stats["duplicate"] += 1
+            # Find primary entry and append cross-platform source if different
+            for p in processed_events:
+                if p["id"] == f"evt_{fp}":
+                    if ev["source"] not in p["source"]:
+                        p["source"] = f"{p['source']} / {ev['source']}"
+            continue
+
+        seen_in_run.add(fp)
+
+        # Categorize
+        cat = auto_categorize_event(ev)
+
+        # Freshness calculation
+        event_dt = parse_event_date(ev.get("date", ""))
+        tier, next_check_iso, check_interval = calculate_freshness_rules(event_dt, now_dt)
+
+        if tier == "HIGH":
+            stats["high_tier"] += 1
+        elif tier == "MEDIUM":
+            stats["medium_tier"] += 1
+        else:
+            stats["sparse_tier"] += 1
+
+        # Check if already in stored database
+        if fp in existing_map:
+            prev = existing_map[fp]
+            
+            # Check for changes in key fields
+            fields_changed = (
+                prev.get("venue") != ev.get("venue") or
+                prev.get("date") != ev.get("date") or
+                prev.get("time") != ev.get("time") or
+                prev.get("price") != ev.get("price")
+            )
+
+            status = "UPDATED" if fields_changed else "CONFIRMED"
+            if fields_changed:
+                stats["updated"] += 1
+            else:
+                stats["confirmed"] += 1
+
+            first_seen = prev.get("first_seen_at", now_iso)
+        else:
+            status = "NEW"
+            stats["new"] += 1
+            first_seen = now_iso
+
+        event_entry = {
+            "id": f"evt_{fp}",
+            "title": raw_title,
+            "date": ev.get("date", "Upcoming Event"),
+            "time": ev.get("time", "Evening onwards"),
+            "venue": ev.get("venue", "Raipur Venue"),
+            "price": ev.get("price", "Book Online"),
+            "source": ev.get("source", "Verified Source"),
+            "image": ev.get("image", THEMED_POSTERS["default"]),
+            "link": ev.get("link", "#"),
+            "category": cat,
+            "tag": ev.get("tag", "week"),
+            "description": ev.get("description", f"Verified event in Raipur: {raw_title}"),
+            "verification_status": status,
+            "freshness_tier": tier,
+            "check_interval_hours": check_interval,
+            "first_seen_at": first_seen,
+            "last_verified_at": now_iso,
+            "next_check_due": next_check_iso
+        }
+
+        processed_events.append(event_entry)
+
+    # 3. Archive / Prune Expired Events (Past events)
+    active_final_events = []
+    for ev in processed_events:
+        event_dt = parse_event_date(ev["date"])
+        # If event ended more than 1 day ago
+        if event_dt.date() < (now_dt - timedelta(days=1)).date():
+            ev["verification_status"] = "EXPIRED"
+            stats["expired"] += 1
+        else:
+            active_final_events.append(ev)
+
+    # 4. Save state database
+    with open(db_filename, "w", encoding="utf-8") as f:
+        json.dump(active_final_events, f, indent=4, ensure_ascii=False)
 
     print("=========================================")
-    print(f"[SUCCESS] Verified & Saved {len(unique_events)} total Raipur/CG events with Date & Time to '{output_filename}'!")
+    print("        PIPELINE EXECUTION SUMMARY       ")
     print("=========================================")
+    print(f" Total Live Scraped    : {len(scraped_pool)}")
+    print(f" Unique Active Events  : {len(active_final_events)}")
+    print(f"   * NEW Events Flagged : {stats['new']}")
+    print(f"   * CONFIRMED Active   : {stats['confirmed']}")
+    print(f"   * UPDATED Events     : {stats['updated']}")
+    print(f"   * DUPLICATES Merged  : {stats['duplicate']}")
+    print(f"   * EXPIRED Archived   : {stats['expired']}")
+    print("\n ADAPTIVE FRESHNESS TIER DISTRIBUTION:")
+    print(f"   * HIGH Tier   (<= 2 days out, re-check every  2h) : {stats['high_tier']} events")
+    print(f"   * MEDIUM Tier (3-14 days out, re-check every 12h) : {stats['medium_tier']} events")
+    print(f"   * SPARSE Tier (> 14 days out, re-check every 72h) : {stats['sparse_tier']} events")
+    print("=========================================\n")
+    return active_final_events
+
+
+def main():
+    import sys
+    if "--daemon" in sys.argv:
+        import time
+        print("Starting Raipur Event Ingestion Pipeline in Daemon Mode (Runs every 3 hours)...")
+        while True:
+            try:
+                run_pipeline()
+            except Exception as err:
+                print(f"[PIPELINE ERROR] {err}")
+            time.sleep(10800)  # 3 hours
+    else:
+        run_pipeline()
 
 
 if __name__ == "__main__":
     main()
+
