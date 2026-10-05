@@ -303,7 +303,7 @@ jQuery(function($) {
 
       // Platform Specific Booking Button
       var sourceName = ev.source || "BookMyShow";
-      var buttonText = "Book tickets on " + sourceName;
+      var buttonText = sourceName.indexOf("Google") !== -1 ? "View details on Google Search" : "Book tickets on " + sourceName;
 
       cardHtml += '      <a href="' + linkUrl + '" target="_blank" rel="noopener" class="btn-book-bms">';
       cardHtml += '        <span><i class="fa-solid fa-ticket me-2"></i> ' + buttonText + '</span>';
@@ -329,7 +329,7 @@ jQuery(function($) {
         return;
       }
 
-      $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> ' + list.length + ' Live Events (BookMyShow & District)');
+      $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> ' + list.length + ' Live Events (BMS, District & Google)');
 
       var cardsHtml = "";
       list.forEach(function(ev) {
