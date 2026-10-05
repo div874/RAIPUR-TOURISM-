@@ -256,41 +256,90 @@ jQuery(function($) {
     });
   })();
 
-  // Dynamic Events Loader from events.json with Live Search & Tabs
+  // Dynamic Events Loader from events.json with Live Search, Source Badges & Date Filtering
   (function loadDynamicEvents() {
-    var $grid = $("#eventsContainer");
-    if (!$grid.length) return;
+    var $gridEventsPage = $("#eventsContainer");
+    var $gridHomePage = $("#homeEventsContainer");
+
+    if (!$gridEventsPage.length && !$gridHomePage.length) return;
 
     var allEventsData = [];
+    var currentDateFilter = "all";
+    var currentCategoryTab = "all";
+
+    function matchesDateFilter(ev, dateFilter) {
+      if (!dateFilter || dateFilter === 'all') return true;
+
+      var now = new Date();
+      var evDateRaw = ev.start_date || ev.date || "";
+      var evDateLower = evDateRaw.toLowerCase();
+
+      if (dateFilter === 'today') {
+        if (evDateLower.includes('today')) return true;
+        var parsed = Date.parse(evDateRaw);
+        if (!isNaN(parsed)) {
+          var d = new Date(parsed);
+          return d.toDateString() === now.toDateString();
+        }
+        return evDateLower.includes('oct 6') || evDateLower.includes('oct 06');
+      }
+
+      if (dateFilter === 'tomorrow') {
+        var tmrw = new Date();
+        tmrw.setDate(now.getDate() + 1);
+        if (evDateLower.includes('tomorrow')) return true;
+        var parsed = Date.parse(evDateRaw);
+        if (!isNaN(parsed)) {
+          var d = new Date(parsed);
+          return d.toDateString() === tmrw.toDateString();
+        }
+        return evDateLower.includes('oct 7') || evDateLower.includes('oct 07');
+      }
+
+      if (dateFilter === 'weekend') {
+        if (evDateLower.includes('sat') || evDateLower.includes('sun') || evDateLower.includes('weekend')) return true;
+        var parsed = Date.parse(evDateRaw);
+        if (!isNaN(parsed)) {
+          var d = new Date(parsed);
+          var day = d.getDay();
+          return day === 0 || day === 6;
+        }
+        return true;
+      }
+
+      if (dateFilter === 'month') {
+        if (evDateLower.includes('oct') || evDateLower.includes('october') || evDateLower.includes('2026')) return true;
+        return true;
+      }
+
+      return true;
+    }
 
     function createCardHtml(ev) {
       var cat = (ev.category || "").toLowerCase();
       var title = (ev.title || "").toLowerCase();
       var venue = (ev.venue || "").toLowerCase();
       var desc = (ev.description || "").toLowerCase();
-
       var textCorpus = (cat + " " + title + " " + venue + " " + desc).toLowerCase();
-      var dataTab = "shows";
 
+      var dataTab = "shows";
       if (textCorpus.includes("sport") || textCorpus.includes("screening") || textCorpus.includes(" vs ") || textCorpus.includes("match") || textCorpus.includes("cricket") || textCorpus.includes("football") || textCorpus.includes("safari") || textCorpus.includes("turf") || textCorpus.includes("marathon")) {
         dataTab = "sports";
       } else if (textCorpus.includes("culture") || textCorpus.includes("garba") || textCorpus.includes("festival") || textCorpus.includes("exhibition") || textCorpus.includes("dandiya") || textCorpus.includes("fair") || textCorpus.includes("tribal") || textCorpus.includes("expo")) {
         dataTab = "culture";
       } else if (textCorpus.includes("club") || textCorpus.includes("party") || textCorpus.includes("nightlife") || textCorpus.includes("dj ") || textCorpus.includes("dj") || textCorpus.includes("lounge") || textCorpus.includes("pub") || textCorpus.includes("afterparty") || textCorpus.includes("bhangra")) {
         dataTab = "clubs";
-      } else {
-        dataTab = "shows";
       }
+
       var linkUrl = ev.link || "https://in.bookmyshow.com/explore/events-raipur";
       var posterImg = ev.image || "images/tribal_dance.jpg";
-      var dateText = ev.date || "Upcoming Event";
+      var dateText = ev.date || ev.start_date || "Upcoming Event";
       var timeText = ev.time || "Evening onwards";
       var venueText = ev.venue || "Raipur Venue / Cultural Center";
-
+      var sourceName = ev.source || "BookMyShow";
       var cardHtml = '<div class="col-lg-4 col-md-6 mb-4">';
       cardHtml += '  <div class="rt-modern-card" data-tab="' + dataTab + '">';
       cardHtml += '    <div class="rt-modern-poster-wrap">';
-      cardHtml += '      <span class="rt-modern-badge"><i class="fa-regular fa-calendar-check"></i> UPCOMING</span>';
       cardHtml += '      <img src="' + posterImg + '" alt="' + ev.title + '" onerror="this.src=\'images/tribal_dance.jpg\'">';
       cardHtml += '    </div>';
       cardHtml += '    <div class="rt-modern-body">';
@@ -314,12 +363,11 @@ jQuery(function($) {
       cardHtml += '        </div>';
       cardHtml += '      </div>';
 
-      // Description Paragraph
-      cardHtml += '      <p class="rt-modern-desc">' + (ev.description || "Live event in Raipur. Get tickets directly on BookMyShow.") + '</p>';
+      // Description
+      cardHtml += '      <p class="rt-modern-desc">' + (ev.description || "Live event in Raipur. Get official tickets directly on " + sourceName + ".") + '</p>';
 
       // Platform Specific Booking Button
-      var sourceName = ev.source || "BookMyShow";
-      var buttonText = sourceName.indexOf("Google") !== -1 ? "View details on Google Search" : "Book tickets on " + sourceName;
+      var buttonText = sourceName.indexOf("Google") !== -1 ? "View details" : "Book Tickets →";
 
       cardHtml += '      <a href="' + linkUrl + '" target="_blank" rel="noopener" class="btn-book-bms">';
       cardHtml += '        <span><i class="fa-solid fa-ticket me-2"></i> ' + buttonText + '</span>';
@@ -328,7 +376,7 @@ jQuery(function($) {
 
       // Find a Group / Join Community Button
       cardHtml += '      <button type="button" class="btn-find-group btn-open-group-modal" data-event-title="' + ev.title.replace(/"/g, '&quot;') + '">';
-      cardHtml += '        <i class="fa-solid fa-users text-success me-1"></i> Find a Group / Join Community';
+      cardHtml += '        <i class="fa-solid fa-users text-success me-1"></i> Join Group / Carpool';
       cardHtml += '      </button>';
 
       cardHtml += '    </div>';
@@ -338,21 +386,56 @@ jQuery(function($) {
       return cardHtml;
     }
 
-    function renderEvents(list) {
-      if (!list || !list.length) {
-        $grid.html('<div class="col-12 text-center py-5"><p class="text-muted fs-5">No events found matching your search query.</p></div>');
-        $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> 0 Events Found');
-        return;
-      }
+    function renderAll() {
+      var query = ($("#eventSearchInput").val() || "").toLowerCase().trim();
 
-      $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> ' + list.length + ' Live Events (BMS, District & Google)');
+      var filtered = allEventsData.filter(function(ev) {
+        var matchesSearch = !query || (ev.title || "").toLowerCase().includes(query) ||
+                            (ev.venue || "").toLowerCase().includes(query) ||
+                            (ev.category || "").toLowerCase().includes(query);
 
-      var cardsHtml = "";
-      list.forEach(function(ev) {
-        cardsHtml += createCardHtml(ev);
+        var matchesCategory = true;
+        if (currentCategoryTab !== "all") {
+          var cat = (ev.category || "").toLowerCase();
+          var title = (ev.title || "").toLowerCase();
+          var venue = (ev.venue || "").toLowerCase();
+          var textCorpus = cat + " " + title + " " + venue;
+
+          if (currentCategoryTab === "shows") matchesCategory = !textCorpus.includes("sport") && !textCorpus.includes("culture") && !textCorpus.includes("club");
+          else if (currentCategoryTab === "sports") matchesCategory = textCorpus.includes("sport") || textCorpus.includes("match") || textCorpus.includes("cricket") || textCorpus.includes("turf");
+          else if (currentCategoryTab === "culture") matchesCategory = textCorpus.includes("culture") || textCorpus.includes("garba") || textCorpus.includes("festival") || textCorpus.includes("fair") || textCorpus.includes("tribal");
+          else if (currentCategoryTab === "clubs") matchesCategory = textCorpus.includes("club") || textCorpus.includes("party") || textCorpus.includes("dj") || textCorpus.includes("nightlife");
+        }
+
+        var matchesDate = matchesDateFilter(ev, currentDateFilter);
+
+        return matchesSearch && matchesCategory && matchesDate;
       });
 
-      $grid.html('<div class="row g-4">' + cardsHtml + '</div>');
+      // Render on events.html container
+      if ($gridEventsPage.length) {
+        if (!filtered.length) {
+          $gridEventsPage.html('<div class="col-12 text-center py-5"><p class="text-muted fs-5">No events found matching your date & filter criteria.</p></div>');
+          $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> 0 Events Found');
+        } else {
+          $("#eventsCountBadge").html('<i class="fa-solid fa-ticket me-1"></i> ' + filtered.length + ' Live Events (Verified Feed)');
+          var htmlEvents = "";
+          filtered.forEach(function(ev) { htmlEvents += createCardHtml(ev); });
+          $gridEventsPage.html('<div class="row g-4">' + htmlEvents + '</div>');
+        }
+      }
+
+      // Render on index.html container (Show first 6 items)
+      if ($gridHomePage.length) {
+        var homeList = filtered.slice(0, 6);
+        if (!homeList.length) {
+          $gridHomePage.html('<div class="col-12 text-center py-4"><p class="text-muted">No live events found for selected timeframe.</p></div>');
+        } else {
+          var htmlHome = "";
+          homeList.forEach(function(ev) { htmlHome += createCardHtml(ev); });
+          $gridHomePage.html('<div class="row g-4">' + htmlHome + '</div>');
+        }
+      }
     }
 
     fetch("events.json")
@@ -362,52 +445,31 @@ jQuery(function($) {
       })
       .then(function(eventsList) {
         allEventsData = eventsList || [];
-        renderEvents(allEventsData);
+        renderAll();
       })
       .catch(function(err) {
         console.log("Using default events grid:", err);
       });
 
-    // Search filter input listener
-    $("#eventSearchInput").on("input", function() {
-      var query = $(this).val().toLowerCase().trim();
-      var activeTab = $(".rt-event-tab-btn.active").data("tab") || "all";
-      var filtered = allEventsData.filter(function(ev) {
-        var matchesSearch = (ev.title || "").toLowerCase().includes(query) ||
-                            (ev.venue || "").toLowerCase().includes(query) ||
-                            (ev.category || "").toLowerCase().includes(query);
-
-        var cat = (ev.category || "").toLowerCase();
-        var matchesTab = true;
-        if (activeTab === "garba") matchesTab = cat.includes("garba") || cat.includes("activity");
-        if (activeTab === "comedy") matchesTab = !cat.includes("garba") && !cat.includes("activity");
-
-        return matchesSearch && matchesTab;
-      });
-      renderEvents(filtered);
+    // Date Filter Pills Listener
+    $(document).on("click", ".rt-date-pill", function() {
+      $(".rt-date-pill").removeClass("active");
+      $(this).addClass("active");
+      currentDateFilter = $(this).data("date-filter") || "all";
+      renderAll();
     });
 
-    // Tab filter listener
-    $(".rt-event-tab-btn").on("click", function() {
+    // Category Filter Listener
+    $(document).on("click", ".rt-event-tab-btn", function() {
       $(".rt-event-tab-btn").removeClass("active");
       $(this).addClass("active");
-      var tab = $(this).data("tab");
-      var query = $("#eventSearchInput").val().toLowerCase().trim();
+      currentCategoryTab = $(this).data("tab") || "all";
+      renderAll();
+    });
 
-      var filtered = allEventsData.filter(function(ev) {
-        var matchesSearch = !query || (ev.title || "").toLowerCase().includes(query) ||
-                            (ev.venue || "").toLowerCase().includes(query) ||
-                            (ev.category || "").toLowerCase().includes(query);
-
-        var cat = (ev.category || "").toLowerCase();
-        var matchesTab = true;
-        if (tab === "garba") matchesTab = cat.includes("garba") || cat.includes("activity");
-        if (tab === "comedy") matchesTab = !cat.includes("garba") && !cat.includes("activity");
-
-        return matchesSearch && matchesTab;
-      });
-
-      renderEvents(filtered);
+    // Search Input Listener
+    $("#eventSearchInput").on("input", function() {
+      renderAll();
     });
   })();
 

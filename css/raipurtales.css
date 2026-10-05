@@ -3855,18 +3855,46 @@ body:not(.rt-home-page) .header {
 
 @media (max-width: 768px) {
   .accordion-gallery {
-    flex-direction: column;
-    perspective: none;
+    flex-direction: column !important;
+    perspective: none !important;
     height: auto !important;
+    gap: 12px !important;
   }
   .ag-panel {
-    min-height: 120px;
-    height: 120px;
+    min-height: 130px !important;
+    height: 130px !important;
+    width: 100% !important;
+    flex: none !important;
     transform: none !important;
+    border-radius: 12px !important;
   }
   .accordion-gallery .ag-panel__media {
-    width: 100%;
-    height: var(--ag-media-size);
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important;
+    filter: brightness(0.65) !important;
+  }
+  .ag-panel__label {
+    left: 16px !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    gap: 8px !important;
+  }
+  .ag-panel__tag {
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+  }
+  .ag-panel__text {
+    opacity: 1 !important;
+    white-space: normal !important;
+    font-size: 1.15rem !important;
+    line-height: 1.25 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
   }
 }
 
@@ -3876,5 +3904,252 @@ body:not(.rt-home-page) .header {
     will-change: auto;
   }
 }
+
+/* ==========================================================================
+   MASTER MOBILE RESPONSIVENESS & TOUCH OPTIMIZATION (PHONES & TABLETS)
+   ========================================================================== */
+
+/* 1. Global Touch & Viewport Boundaries */
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  .container, .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .rt-section-padding, section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* 2. Navigation Bar Mobile Tweaks */
+@media (max-width: 1023px) {
+  .custom-navbar {
+    padding: 0 16px !important;
+    height: 70px !important;
+  }
+  .navbar-brand-tab {
+    left: 14px !important;
+    width: 140px !important;
+    padding: 6px 10px !important;
+  }
+  .menu-icon {
+    right: 14px !important;
+    width: 42px !important;
+    height: 42px !important;
+  }
+  .collapse-menu {
+    width: 280px !important;
+    max-width: 85vw !important;
+    padding: 70px 20px 30px !important;
+  }
+  .collapse-menu .btn-rt-header {
+    width: 100% !important;
+    justify-content: center !important;
+    margin-top: 16px !important;
+  }
+}
+
+/* 3. Hero Section Mobile Optimization */
+@media (max-width: 768px) {
+  .rt-scroll-expand-root {
+    min-height: 560px !important;
+    height: 100vh !important;
+  }
+  .rt-hero-editorial {
+    width: 94% !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 0 4px !important;
+  }
+  .rt-hero-eyebrow {
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 8px !important;
+  }
+  .rt-hero-headline {
+    font-size: clamp(28px, 7.2vw, 44px) !important;
+    line-height: 1.06 !important;
+    margin-bottom: 10px !important;
+    letter-spacing: -0.01em !important;
+  }
+  .rt-hero-tagline {
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 6px !important;
+  }
+  .rt-hero-sub {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+  }
+  .rt-hero-weather-line {
+    top: 14px !important;
+    right: 14px !important;
+    font-size: 11.5px !important;
+  }
+  .rt-hero-weather-line.nav-visible,
+  .header.scrolled ~ .rt-hero-editorial-section .rt-hero-weather-line,
+  .header.scrolled ~ main .rt-hero-weather-line {
+    top: 78px !important;
+  }
+  .rt-hero-scroll-down {
+    bottom: 16px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* 4. Inline Hero Search Bar Mobile Layout */
+@media (max-width: 576px) {
+  .rt-hero-inline-search {
+    margin-top: 14px !important;
+    max-width: 100% !important;
+  }
+  .rt-inline-search-wrap {
+    padding: 4px 6px 4px 14px !important;
+    gap: 6px !important;
+    border-radius: 30px !important;
+  }
+  .rt-inline-search-input {
+    font-size: 13px !important;
+  }
+  .rt-inline-search-btn {
+    padding: 9px 15px !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    border-radius: 24px !important;
+  }
+  .rt-ai-prompt-chips {
+    margin-top: 10px !important;
+    gap: 6px !important;
+  }
+  .rt-ai-chip {
+    font-size: 10px !important;
+    padding: 4px 10px !important;
+  }
+  .rt-ai-chip-label {
+    display: none !important;
+  }
+}
+
+/* 5. Horizontal Touch Scrolling for Filter Pills & Category Tabs */
+@media (max-width: 768px) {
+  .rt-event-tabs,
+  .rt-category-pills,
+  .rt-filter-tabs,
+  .nav-pills {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px !important;
+    margin-bottom: 14px !important;
+    gap: 8px !important;
+    width: 100% !important;
+    scrollbar-width: none;
+  }
+  .rt-event-tabs::-webkit-scrollbar,
+  .rt-category-pills::-webkit-scrollbar,
+  .rt-filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .rt-event-tab,
+  .rt-event-tab-btn,
+  .rt-category-pill,
+  .rt-filter-btn {
+    flex-shrink: 0 !important;
+    scroll-snap-align: start;
+    white-space: nowrap !important;
+    padding: 8px 16px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* 6. Card Layouts & Grids on Phone Screens */
+@media (max-width: 576px) {
+  .rt-story-card-sm {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .rt-story-card-sm-img {
+    width: 100% !important;
+    height: 160px !important;
+  }
+  .rt-story-card-sm-body {
+    padding: 14px 16px !important;
+  }
+  .rt-cat-card {
+    height: 200px !important;
+  }
+  .rt-cat-overlay {
+    padding: 16px !important;
+  }
+  .rt-cat-overlay h3 {
+    font-size: 20px !important;
+  }
+}
+
+/* 7. Modals & Dialogs on Mobile */
+@media (max-width: 768px) {
+  .rt-modal-dialog,
+  .modal-dialog {
+    max-width: 94vw !important;
+    margin: 12px auto !important;
+  }
+  .rt-modal-content,
+  .modal-content {
+    padding: 18px 16px !important;
+    border-radius: 12px !important;
+    max-height: 88vh !important;
+    overflow-y: auto !important;
+  }
+/* 8. Date Filter Pills & Event Card Badges */
+.rt-event-date-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.rt-date-pill {
+  background: var(--rt-white);
+  color: var(--rt-teal);
+  border: 1px solid var(--rt-border);
+  border-radius: 20px;
+  padding: 7px 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.rt-date-pill:hover,
+.rt-date-pill.active {
+  background: var(--rt-orange) !important;
+  color: #FFFFFF !important;
+  border-color: var(--rt-orange) !important;
+  box-shadow: 0 4px 14px rgba(216, 80, 32, 0.35) !important;
+}
+
+@media (max-width: 768px) {
+  .rt-event-date-pills {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 6px !important;
+  }
+  .rt-date-pill {
+    flex-shrink: 0 !important;
+  }
+}
+
+
 
 

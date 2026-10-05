@@ -71,15 +71,26 @@
 
     <!-- Search & Filter Controls Bar -->
     <div class="mt-4 p-3" style="background: #ffffff; border: 1px solid var(--rt-border); border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.03);">
+      <!-- Date Filter Toggles -->
+      <div class="rt-event-date-pills mb-3 border-bottom pb-2">
+        <span class="fw-bold me-2 align-middle text-uppercase" style="font-size: 11px; letter-spacing: 1px; color: var(--rt-teal);">WHEN:</span>
+        <button class="rt-date-pill active" data-date-filter="all">ALL DATES</button>
+        <button class="rt-date-pill" data-date-filter="today">⚡ TODAY</button>
+        <button class="rt-date-pill" data-date-filter="tomorrow">📅 TOMORROW</button>
+        <button class="rt-date-pill" data-date-filter="weekend">🔥 THIS WEEKEND</button>
+        <button class="rt-date-pill" data-date-filter="month">🗓️ THIS MONTH</button>
+      </div>
+
       <div class="row g-2 align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="position-relative">
             <i class="fa-solid fa-magnifying-glass position-absolute" style="left: 14px; top: 50%; transform: translateY(-50%); color: #888;"></i>
-            <input type="text" id="eventSearchInput" class="form-control" placeholder="Search events by title or venue..." style="padding-left: 40px; height: 46px; border-radius: 8px; border: 1px solid var(--rt-border);">
+            <input type="text" id="eventSearchInput" class="form-control" placeholder="Search events by title or venue..." style="padding-left: 40px; height: 44px; border-radius: 8px; border: 1px solid var(--rt-border); font-size: 13.5px;">
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div class="rt-event-tabs justify-content-md-end m-0">
+            <span class="fw-bold me-2 align-self-center text-uppercase" style="font-size: 11px; letter-spacing: 1px; color: var(--rt-teal);">CATEGORY:</span>
             <button class="rt-event-tab-btn active" data-tab="all">ALL</button>
             <button class="rt-event-tab-btn" data-tab="shows">SHOWS</button>
             <button class="rt-event-tab-btn" data-tab="culture">CULTURE</button>
