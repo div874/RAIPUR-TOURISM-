@@ -14,10 +14,10 @@
 </head>
 <body>
 
-<!-- WhatsApp Chat Button -->
-<a class="as_chat_icon" href="https://api.whatsapp.com/send?phone=+91XXXXXXXXXX" aria-label="Ask Hamara Raipur on WhatsApp">
-  <i class="fa-brands fa-whatsapp fa-2x"></i>
-</a>
+<!-- Mobile Menu Backdrop Blur -->
+<div class="menu-backdrop" id="menuBackdrop"></div>
+
+
 
 <!-- HEADER / NAVIGATION -->
 <header class="header">
@@ -36,19 +36,15 @@
       <div class="collapse-menu">
         <div class="close-rt-pnl"><i data-lucide="x"></i></div>
         <ul class="navbar-menu">
-          <li class="nav-item"><a class="nav-link" href="#explore">EXPLORE</a></li>
           <li class="nav-item"><a class="nav-link" href="#eat">EAT</a></li>
-          <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
           <li class="nav-item"><a class="nav-link" href="#experiences">EXPERIENCES</a></li>
           <li class="nav-item"><a class="nav-link" href="#stories">STORIES</a></li>
           <li class="nav-item"><a class="nav-link" href="#plan">PLAN</a></li>
-          <li class="nav-item search-item">
-            <a class="nav-link" id="search-trigger" href="javascript:void(0)"><i data-lucide="search"></i> SEARCH</a>
-          </li>
         </ul>
       </div>
 
-      <a href="#explore" class="btn-rt-header d-none d-md-inline-flex">
+      <a href="explore.html" class="btn-rt-header d-none d-md-inline-flex">
         EXPLORE RAIPUR <i data-lucide="arrow-right"></i>
       </a>
     </nav>
@@ -86,71 +82,39 @@
   <div class="rt-scroll-expand-track" id="scrollExpandTrack">
     <div class="rt-scroll-expand-stage" id="scrollExpandStage">
       <div class="rt-scroll-expand-frame" id="scrollExpandFrame">
-        <video class="rt-scroll-expand-media" src="videos/golbazar_hero.mp4" poster="images/hero_banner.jpg" autoplay muted loop playsinline></video>
+        <video class="rt-scroll-expand-media" src="videos/hero_compressed.mp4" poster="images/hero_banner.jpg" autoplay muted loop playsinline></video>
         <div class="rt-scroll-expand-scrim" id="scrollExpandScrim"></div>
       </div>
       <!-- Left gradient scrim for text readability -->
       <div class="rt-hero-left-scrim" id="heroLeftScrim"></div>
 
-      <!-- Editorial text overlay (fades in after video expands) -->
+      <!-- Top Right Weather Info -->
+      <div class="rt-hero-weather-line" id="heroWeatherLine" aria-label="Current weather in Raipur">
+        <span class="rt-weather-line-icon" id="weatherIconWrap"><i data-lucide="sun" class="rt-weather-icon"></i></span>
+        <span class="rt-weather-line-text" id="weatherLineText">Raipur: 28°C · Partly Cloudy · Feels like 29°C</span>
+      </div>
+
+      <!-- Editorial text overlay -->
       <div class="rt-hero-editorial" id="heroEditorial">
         <h1 class="rt-hero-headline">RAIPUR,<br>TOLD DIFFERENTLY.</h1>
         <p class="rt-hero-tagline">Places. People. Food. Stories. Experiences.</p>
         <p class="rt-hero-sub">Curated places, local stories, hidden eats, and everyday Raipur.</p>
-      </div>
 
-      <!-- Right Weather Widget overlay (fades in with scroll) -->
-      <div class="rt-hero-weather-widget" id="heroWeatherWidget" aria-label="Current weather in Raipur">
-        <div class="rt-weather-inner" id="weatherWidgetContent">
-          <div class="rt-weather-head">
-            <span class="rt-weather-loc">RAIPUR · TODAY</span>
+        <!-- Transparent Search Bar below Description -->
+        <div class="rt-hero-inline-search" id="heroInlineSearch">
+          <div class="rt-inline-search-wrap">
+            <i data-lucide="search" class="rt-inline-search-icon"></i>
+            <input type="text" class="rt-inline-search-input" id="heroSearchInput" placeholder="What are you looking for in Raipur?">
+            <button class="rt-inline-search-btn rt-ai-search-btn" type="button">SEARCH <i data-lucide="arrow-right"></i></button>
           </div>
-          <div class="rt-weather-body">
-            <div class="rt-weather-temp-row">
-              <span class="rt-weather-icon-wrap" id="weatherIconWrap">
-                <i data-lucide="sun" class="rt-weather-icon"></i>
-              </span>
-              <span class="rt-weather-temp" id="weatherTemp">--°C</span>
+          <!-- AI Live Answer Card -->
+          <div class="rt-ai-response-card" id="heroAiResponse" style="display: none;">
+            <div class="rt-ai-response-header">
+              <span class="rt-ai-badge"><i data-lucide="sparkles"></i> HAMARA RAIPUR AI</span>
+              <button class="rt-ai-close-btn" id="closeHeroAiResponse" aria-label="Close answer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
             </div>
-            <div class="rt-weather-cond-row">
-              <span class="rt-weather-cond" id="weatherCond">Loading weather…</span>
-            </div>
-            <div class="rt-weather-meta-row">
-              <span class="rt-weather-feels" id="weatherFeels">--</span>
-              <span class="rt-weather-hl" id="weatherHL">H: --°  L: --°</span>
-            </div>
-            <div class="rt-weather-context" id="weatherContext">
-              <span>Checking live conditions...</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Search Bar — fades in after video expands -->
-      <div class="rt-hero-search-overlay" id="heroSearchOverlay">
-        <div class="container">
-          <div class="rt-ai-discovery-bar">
-            <div class="rt-ai-input-wrap">
-              <input type="text" class="rt-ai-input" id="heroSearchInput" placeholder="What are you looking for in Raipur?">
-              <a href="#explore" class="btn-rt-primary rt-ai-search-btn">SEARCH <i data-lucide="arrow-right"></i></a>
-            </div>
-            <div class="rt-ai-prompt-chips">
-              <span class="rt-ai-chip-label">Suggestions:</span>
-              <button class="rt-ai-chip btn-suggest-chip" data-query="Places to visit this evening">Places to visit this evening</button>
-              <button class="rt-ai-chip btn-suggest-chip" data-query="Best local food">Best local food</button>
-              <button class="rt-ai-chip btn-suggest-chip" data-query="Things to do this weekend">Things to do this weekend</button>
-              <button class="rt-ai-chip btn-suggest-chip" data-query="Raipur hidden gems">Raipur hidden gems</button>
-              <button class="rt-ai-chip btn-suggest-chip" data-query="Historical places">Historical places</button>
-            </div>
-            <!-- AI Live Answer Card in Hero Search Overlay -->
-            <div class="rt-ai-response-card" id="heroAiResponse" style="display: none;">
-              <div class="rt-ai-response-header">
-                <span class="rt-ai-badge"><i data-lucide="sparkles"></i> HAMARA RAIPUR AI</span>
-                <button class="rt-ai-close-btn" id="closeHeroAiResponse" aria-label="Close answer">&times;</button>
-              </div>
-              <div class="rt-ai-response-text" id="heroAiResponseText">
-                Asking AI assistant...
-              </div>
+            <div class="rt-ai-response-text" id="heroAiResponseText">
+              Asking AI assistant...
             </div>
           </div>
         </div>
@@ -173,7 +137,7 @@
 
     <div class="rt-discover-asymmetric-grid">
       <!-- 1. Large Feature Tile: PLACES -->
-      <a href="#explore" class="rt-cat-tile tile-large">
+      <a href="explore.html" class="rt-cat-tile tile-large">
         <div class="rt-cat-tile-img"><img src="images/heritage.jpg" alt="Places in Raipur"></div>
         <div class="rt-cat-tile-overlay">
           <span class="rt-tile-badge">DISCOVER</span>
@@ -184,7 +148,7 @@
       </a>
 
       <!-- 2. Medium Tile: FOOD -->
-      <a href="#eat" class="rt-cat-tile tile-medium">
+      <a href="eat.html" class="rt-cat-tile tile-medium">
         <div class="rt-cat-tile-img"><img src="images/food.jpg" alt="Food in Raipur"></div>
         <div class="rt-cat-tile-overlay">
           <span class="rt-tile-badge">CUISINE</span>
@@ -206,7 +170,7 @@
       </a>
 
       <!-- 4. Small Tile: EXPERIENCES -->
-      <a href="#experiences" class="rt-cat-tile tile-small">
+      <a href="experiences.html" class="rt-cat-tile tile-small">
         <div class="rt-cat-tile-img"><img src="images/wildlife.jpg" alt="Experiences in Raipur"></div>
         <div class="rt-cat-tile-overlay">
           <h3>EXPERIENCES</h3>
@@ -215,7 +179,7 @@
       </a>
 
       <!-- 5. Small Tile: STORIES -->
-      <a href="#stories" class="rt-cat-tile tile-small">
+      <a href="stories.html" class="rt-cat-tile tile-small">
         <div class="rt-cat-tile-img"><img src="images/museum.jpg" alt="Stories of Raipur"></div>
         <div class="rt-cat-tile-overlay">
           <h3>STORIES</h3>
@@ -224,7 +188,7 @@
       </a>
 
       <!-- 6. Small Tile: HIDDEN GEMS -->
-      <a href="#explore" class="rt-cat-tile tile-small">
+      <a href="explore.html" class="rt-cat-tile tile-small">
         <div class="rt-cat-tile-img"><img src="images/purkhauti.jpg" alt="Hidden Gems Raipur"></div>
         <div class="rt-cat-tile-overlay">
           <h3>HIDDEN GEMS</h3>
@@ -259,7 +223,7 @@
             <p>17th-century temple complex dedicated to Lord Rama, adorned with exquisite ancient murals, peaceful courtyards, and centuries of spiritual heritage.</p>
             <div class="d-flex justify-content-between align-items-center mt-3">
               <span class="small text-muted"><i class="fa-solid fa-location-dot me-1"></i> Mathpara, Old Raipur</span>
-              <a href="#explore" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="explore.html" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -276,7 +240,7 @@
             <span class="rt-label">WILDLIFE & SAFARI</span>
             <h4>Nandan Van Jungle Safari</h4>
             <p>800-acre wildlife sanctuary featuring tiger, lion, bear safaris and botanical gardens.</p>
-            <a href="#explore" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="explore.html" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
@@ -289,14 +253,14 @@
             <span class="rt-label">ARCHAEOLOGY</span>
             <h4>Sirpur Archaeological Site</h4>
             <p>Ancient 5th-8th century capital along the Mahanadi river, famous for Laxman Brick Temple.</p>
-            <a href="#explore" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="explore.html" class="rt-culture-link">EXPLORE <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="text-center mt-4">
-      <a href="#explore" class="btn-rt-primary">EXPLORE ALL PLACES →</a>
+      <a href="explore.html" class="btn-rt-primary">EXPLORE ALL PLACES →</a>
     </div>
   </div>
 </section>
@@ -418,7 +382,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="#eat" class="btn-rt-primary">DISCOVER RAIPUR FOOD →</a>
+      <a href="eat.html" class="btn-rt-primary">DISCOVER RAIPUR FOOD →</a>
     </div>
   </div>
 </section>
@@ -472,7 +436,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="#experiences" class="btn-rt-primary">EXPLORE EXPERIENCES →</a>
+      <a href="experiences.html" class="btn-rt-primary">EXPLORE EXPERIENCES →</a>
     </div>
   </div>
 </section>
@@ -498,7 +462,7 @@
             <span class="rt-story-readtime">HISTORY · 5 MIN READ</span>
             <h3>The Story Behind Old Raipur's Historic Bazaars</h3>
             <p>Tracing 18th-century Maratha spice lanes and copper smith shops that still thrive in Gole Bazaar today, carrying centuries of oral trading history.</p>
-            <a href="#stories" class="rt-culture-link">READ STORY <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="stories.html" class="rt-culture-link">READ STORY <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -513,7 +477,7 @@
             <span class="rt-story-readtime">CUISINE · 4 MIN READ</span>
             <h4>Finding the Perfect Farra in Old Raipur</h4>
             <p>How three generations of local home cooks perfected Chhattisgarhi rice flour rolls.</p>
-            <a href="#stories" class="rt-culture-link">READ STORY <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="stories.html" class="rt-culture-link">READ STORY <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
 
@@ -525,14 +489,14 @@
             <span class="rt-story-readtime">CULTURE · 6 MIN READ</span>
             <h4>What Hareli Means to a Chhattisgarhi Family</h4>
             <p>An intimate narrative of stilt-walking and monsoon agricultural blessings.</p>
-            <a href="#stories" class="rt-culture-link">READ STORY <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="stories.html" class="rt-culture-link">READ STORY <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="text-center mt-4">
-      <a href="#stories" class="btn-rt-primary">READ MORE STORIES →</a>
+      <a href="stories.html" class="btn-rt-primary">READ MORE STORIES →</a>
     </div>
   </div>
 </section>
@@ -548,17 +512,12 @@
     </div>
 
     <div style="max-width: 900px; margin: 0 auto;">
-      <div class="main-video-container" id="mainVideoContainer">
-        <img src="images/hero_banner.jpg" alt="Raipur Tourism Video" class="main-video-thumb" data-video-id="dQw4w9WgXcQ">
-        <div class="video-overlay-gradient"></div>
-        <svg class="youtube-play-button" viewBox="0 0 68 48">
-          <path d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="var(--rt-orange)"></path>
-          <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-        </svg>
+      <div class="main-video-container rt-cinematic-video-wrap" id="mainVideoContainer" data-video-id="KC3JigEr35E">
+        <iframe id="cinematicIframe" src="https://www.youtube.com/embed/KC3JigEr35E?enablejsapi=1&autoplay=0&mute=0&loop=1&playlist=KC3JigEr35E&controls=1&rel=0&modestbranding=1" title="Explore Raipur Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 100%; border: 0; border-radius: 16px;"></iframe>
       </div>
-      <div class="text-center mt-4">
-        <button id="btnWatchRaipur" class="btn-rt-primary" style="border:none; cursor:pointer;">WATCH RAIPUR →</button>
-      </div>
+      <p class="text-center mt-3" style="font-size: 11.5px; color: rgba(255, 255, 255, 0.55); letter-spacing: 0.5px; margin-bottom: 0;">
+        Video Credit: <a href="https://youtu.be/KC3JigEr35E" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.75); text-decoration: underline; font-weight: 500;">Chhattisgarh Tourism Official (YouTube)</a>
+      </p>
     </div>
   </div>
 </section>
@@ -575,7 +534,7 @@
 
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#plan" class="rt-plan-compact-item">
+        <a href="plan-your-visit.html" class="rt-plan-compact-item">
           <i data-lucide="plane-takeoff" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>GETTING HERE</h4>
           <p>Flight, train & highway connectivity to Raipur.</p>
@@ -583,7 +542,7 @@
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#plan" class="rt-plan-compact-item">
+        <a href="plan-your-visit.html" class="rt-plan-compact-item">
           <i data-lucide="building" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>WHERE TO STAY</h4>
           <p>Heritage homestays & city business hotels.</p>
@@ -591,7 +550,7 @@
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#plan" class="rt-plan-compact-item">
+        <a href="plan-your-visit.html" class="rt-plan-compact-item">
           <i data-lucide="car" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>GETTING AROUND</h4>
           <p>Cabs, autos & Naya Raipur bus corridors.</p>
@@ -599,7 +558,7 @@
       </div>
 
       <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#plan" class="rt-plan-compact-item">
+        <a href="plan-your-visit.html" class="rt-plan-compact-item">
           <i data-lucide="map" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
           <h4>ITINERARIES</h4>
           <p>Curated 1-day, weekend & culinary itineraries.</p>
@@ -608,7 +567,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="#plan" class="btn-rt-primary">PLAN YOUR VISIT →</a>
+      <a href="plan-your-visit.html" class="btn-rt-primary">PLAN YOUR VISIT →</a>
     </div>
   </div>
 </section>
@@ -619,7 +578,7 @@
     <span class="rt-label" style="color: var(--rt-orange) !important;">HAMARA RAIPUR</span>
     <h2 class="rt-serif text-white font-weight-bold display-4 mb-3">RAIPUR IS WAITING.<br>GO FIND YOUR VERSION OF IT.</h2>
     <p style="color: rgba(255,255,255,0.85); font-size: 16px;" class="mb-4">Discover the city beyond the usual.</p>
-    <a href="#explore" class="btn-rt-primary" style="padding: 16px 40px;">EXPLORE RAIPUR</a>
+    <a href="explore.html" class="btn-rt-primary" style="padding: 16px 40px;">EXPLORE RAIPUR</a>
   </div>
 </section>
 
@@ -638,21 +597,21 @@
       <div class="col-lg-2 col-md-4 mb-4">
         <h5>DISCOVER</h5>
         <ul class="footer-links">
-          <li><a href="#explore">Explore</a></li>
-          <li><a href="#eat">Eat</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="eat.html">Eat</a></li>
           <li><a href="events.html">Events</a></li>
-          <li><a href="#experiences">Experiences</a></li>
-          <li><a href="#stories">Stories</a></li>
-          <li><a href="#plan">Plan Your Visit</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="plan-your-visit.html">Plan Your Visit</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-4 mb-4">
         <h5>COMPANY</h5>
         <ul class="footer-links">
-          <li><a href="#discover-sec">About</a></li>
-          <li><a href="#discover-sec">Contact</a></li>
-          <li><a href="#stories">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
         </ul>
       </div>
 
@@ -678,8 +637,8 @@
     <div class="d-flex justify-content-between align-items-center flex-wrap" style="font-size: 12px; color: rgba(255,255,255,0.6);">
       <p class="m-0">© 2026 Hamara Raipur Platform. All Rights Reserved.</p>
       <div>
-        <a href="#discover-sec" style="color: rgba(255,255,255,0.6); text-decoration: none; margin-left: 14px;">About</a>
-        <a href="#stories" style="color: rgba(255,255,255,0.6); text-decoration: none; margin-left: 14px;">Contribute</a>
+        <a href="about.html" style="color: rgba(255,255,255,0.6); text-decoration: none; margin-left: 14px;">About</a>
+        <a href="contribute.html" style="color: rgba(255,255,255,0.6); text-decoration: none; margin-left: 14px;">Contribute</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,111 @@
+/*
+ * HAMARA RAIPUR - ORGANIC FLOW LINE DECORATION SYSTEM
+ * Lines pass THROUGH cutouts (lines z-index > cutouts z-index).
+ *
+ * z-index stack:
+ *   bg            0
+ *   cutouts       2   <- cultural images float here
+ *   flowlines     3   <- lines pass in front of cutouts
+ *   content      10   <- text/cards always on top
+ */
+
+/* -- FLOW LINES LAYER -- */
+.rt-flow-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.rt-flow-section {
+  position: relative !important;
+  overflow: visible;
+}
+
+/* Ensure text/card content is always above lines */
+.rt-flow-section > .container {
+  position: relative;
+  z-index: 10;
+}
+
+.rt-flow-lines svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+/* -- PATH BASE -- */
+.rt-flow-path {
+  fill: none;
+  stroke: #005F5B;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.rt-flow-path--primary {
+  stroke-width: 1.6px;
+  stroke-opacity: 0.45;
+}
+
+.rt-flow-path--secondary {
+  stroke-width: 1.1px;
+  stroke-opacity: 0.28;
+}
+
+.rt-flow-path--tertiary {
+  stroke-width: 0.9px;
+  stroke-opacity: 0.18;
+}
+
+.rt-flow-path--dashed {
+  stroke-width: 1px;
+  stroke-opacity: 0.30;
+  stroke-dasharray: 5 11;
+}
+
+.rt-flow-dot {
+  fill: #005F5B;
+  fill-opacity: 0.38;
+}
+
+/* -- CUTOUT IMAGES -- */
+/*
+  mix-blend-mode: multiply removes the white/near-white background
+  on the off-white section background automatically.
+  No Photoshop needed.
+*/
+.rt-cutout {
+  position: absolute;
+  z-index: 2;               /* below lines (z:3), above bg (z:0) */
+  pointer-events: none;
+  user-select: none;
+  mix-blend-mode: multiply; /* ? this erases the white background */
+  filter: drop-shadow(0 12px 32px rgba(0, 60, 40, 0.12))
+          saturate(1.08)
+          contrast(1.04);
+  transition: transform 0.4s ease;
+}
+
+/* -- REDUCED MOTION -- */
+@media (prefers-reduced-motion: reduce) {
+  .rt-flow-lines { display: none; }
+}
+
+/* -- TABLET -- */
+@media (max-width: 1023px) {
+  .rt-flow-path--tertiary { display: none; }
+  .rt-flow-path--dashed { display: none; }
+}
+
+/* -- MOBILE -- */
+@media (max-width: 767px) {
+  .rt-flow-path--secondary { display: none; }
+  .rt-flow-path--primary { stroke-opacity: 0.32; stroke-width: 1.2px; }
+  .rt-cutout { display: none; }
+}
