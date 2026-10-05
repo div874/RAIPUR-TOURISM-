@@ -265,7 +265,22 @@ jQuery(function($) {
 
     function createCardHtml(ev) {
       var cat = (ev.category || "").toLowerCase();
-      var dataTab = cat.includes("garba") || cat.includes("activity") ? "garba" : "comedy";
+      var title = (ev.title || "").toLowerCase();
+      var venue = (ev.venue || "").toLowerCase();
+      var desc = (ev.description || "").toLowerCase();
+
+      var textCorpus = (cat + " " + title + " " + venue + " " + desc).toLowerCase();
+      var dataTab = "shows";
+
+      if (textCorpus.includes("sport") || textCorpus.includes("screening") || textCorpus.includes(" vs ") || textCorpus.includes("match") || textCorpus.includes("cricket") || textCorpus.includes("football") || textCorpus.includes("safari") || textCorpus.includes("turf") || textCorpus.includes("marathon")) {
+        dataTab = "sports";
+      } else if (textCorpus.includes("culture") || textCorpus.includes("garba") || textCorpus.includes("festival") || textCorpus.includes("exhibition") || textCorpus.includes("dandiya") || textCorpus.includes("fair") || textCorpus.includes("tribal") || textCorpus.includes("expo")) {
+        dataTab = "culture";
+      } else if (textCorpus.includes("club") || textCorpus.includes("party") || textCorpus.includes("nightlife") || textCorpus.includes("dj ") || textCorpus.includes("dj") || textCorpus.includes("lounge") || textCorpus.includes("pub") || textCorpus.includes("afterparty") || textCorpus.includes("bhangra")) {
+        dataTab = "clubs";
+      } else {
+        dataTab = "shows";
+      }
       var linkUrl = ev.link || "https://in.bookmyshow.com/explore/events-raipur";
       var posterImg = ev.image || "images/tribal_dance.jpg";
       var dateText = ev.date || "Upcoming Event";
@@ -702,16 +717,26 @@ jQuery(function($) {
     }
   });
 
-  // Sticky Header & Weather Line Alignment on Scroll
+  // Sticky Header, Weather Line & Scroll Indicator Alignment on Scroll
   $(window).on("scroll", function() {
     if ($(this).scrollTop() > 40) {
       $(".header").addClass("scrolled");
       $("#heroWeatherLine").addClass("nav-visible");
+      $("#heroScrollDown").addClass("fade-out");
     } else {
       $(".header").removeClass("scrolled");
       $("#heroWeatherLine").removeClass("nav-visible");
+      $("#heroScrollDown").removeClass("fade-out");
     }
-  }).trigger("scroll");  // Hero Parallax Scroll Script
+  }).trigger("scroll");
+
+  $("#heroScrollDown").on("click", function(e) {
+    e.preventDefault();
+    var target = $("#discover-sec");
+    if (target.length) {
+      $("html, body").animate({ scrollTop: target.offset().top - 40 }, 600);
+    }
+  });  // Hero Parallax Scroll Script
   (function initHeroParallax() {
     var media = document.querySelector(".rt-scroll-expand-media");
     var editorial = document.getElementById("heroEditorial");

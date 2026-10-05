@@ -489,6 +489,41 @@ def scrape_sortmyscene_events():
     return events_list
 
 
+def auto_categorize_event(ev):
+    """
+    Multi-Signal Event Auto-Categorization Algorithm (MSPT)
+    Categorizes events into one-word standard tabs:
+    - 'Sports'  : Live sports, match screenings (cricket, football, vs), turfs, marathons, safaris.
+    - 'Culture' : Garba, Navratri, heritage tours, handicraft expos, cultural fairs.
+    - 'Clubs'   : Nightlife, DJ parties, lounges, pub nights, afterparties.
+    - 'Shows'   : Live comedy, music concerts, theater plays, solo performances (Default).
+    """
+    title = (ev.get("title") or "").lower()
+    raw_cat = (ev.get("category") or "").lower()
+    venue = (ev.get("venue") or "").lower()
+    desc = (ev.get("description") or "").lower()
+
+    text_corpus = f"{title} {raw_cat} {venue} {desc}"
+
+    # 1. SPORTS Signal: Live match screenings, sports, turfs, safaris, marathons
+    sports_keywords = ["sport", "screening", "vs", "match", "cricket", "football", "turf", "safari", "marathon", "badminton", "tennis", "trek", "outdoor", "camping", "stadium", "ipl", "f1", "race"]
+    if any(kw in text_corpus for kw in sports_keywords):
+        return "Sports"
+
+    # 2. CULTURE Signal: Garba, Navratri, exhibitions, heritage tours, art fairs
+    culture_keywords = ["garba", "dandiya", "navratri", "exhibition", "expo", "heritage", "bastar", "tribal", "handicraft", "handloom", "cultural", "fair", "fest", "craft", "puja", "pujo"]
+    if any(kw in text_corpus for kw in culture_keywords):
+        return "Culture"
+
+    # 3. CLUBS Signal: DJ, nightlife, club parties, lounge venues, pub nights
+    club_keywords = ["club", "dj", "nightclub", "party", "pub", "lounge", "haunt dive", "f lounge", "edo", "afterparty", "dance floor", "nightlife", "bhangra night", "underdoggs"]
+    if any(kw in text_corpus for kw in club_keywords):
+        return "Clubs"
+
+    # 4. Default: Live Shows, Standup Comedy, Music Concerts & Theater
+    return "Shows"
+
+
 # ----------------------------------------------------
 # MAIN PIPELINE
 # ----------------------------------------------------
@@ -504,7 +539,7 @@ def main():
 
     all_events = bms_events + district_events + sms_events
 
-    # De-duplicate by title across all platforms
+    # De-duplicate by title across all platforms and apply Auto-Categorization Algorithm
     unique_events = []
     seen_all = set()
     for ev in all_events:
@@ -512,6 +547,7 @@ def main():
         short_key = re.sub(r'[^a-z0-9]', '', title_key)[:25]
         if short_key not in seen_all:
             seen_all.add(short_key)
+            ev["category"] = auto_categorize_event(ev)
             unique_events.append(ev)
 
     output_filename = "events.json"
