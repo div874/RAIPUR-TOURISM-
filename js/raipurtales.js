@@ -334,50 +334,50 @@ jQuery(function($) {
       var linkUrl = ev.link || "https://in.bookmyshow.com/explore/events-raipur";
       var posterImg = ev.image || "images/tribal_dance.jpg";
       var dateText = ev.date || ev.start_date || "Upcoming Event";
-      var timeText = ev.time || "Evening onwards";
+      var timeText = ev.time || "7:00 PM onwards";
       var venueText = ev.venue || "Raipur Venue / Cultural Center";
-      var sourceName = ev.source || "BookMyShow";
+      var titleText = ev.title || "Live Event in Raipur";
+
       var cardHtml = '<div class="col-lg-4 col-md-6 mb-4">';
-      cardHtml += '  <div class="rt-modern-card" data-tab="' + dataTab + '">';
-      cardHtml += '    <div class="rt-modern-poster-wrap">';
-      cardHtml += '      <img src="' + posterImg + '" alt="' + ev.title + '" onerror="this.src=\'images/tribal_dance.jpg\'">';
-      cardHtml += '    </div>';
-      cardHtml += '    <div class="rt-modern-body">';
-      cardHtml += '      <h3 class="rt-modern-title">' + ev.title + '</h3>';
+      cardHtml += '  <div class="rt-event-card-exact" data-tab="' + dataTab + '">';
       
-      // Date Row
-      cardHtml += '      <div class="rt-modern-info-row">';
-      cardHtml += '        <div class="rt-modern-icon-box"><i class="fa-regular fa-calendar-days"></i></div>';
-      cardHtml += '        <div class="rt-modern-info-text">';
-      cardHtml += '          <strong>' + dateText + '</strong>';
-      cardHtml += '          <span>' + timeText + '</span>';
-      cardHtml += '        </div>';
+      // 1. Poster Image (16:9 rounded)
+      cardHtml += '    <div class="rt-poster-exact">';
+      cardHtml += '      <img src="' + posterImg + '" alt="' + titleText.replace(/"/g, '&quot;') + '" onerror="this.src=\'images/tribal_dance.jpg\'">';
+      cardHtml += '    </div>';
+      
+      // 2. Card Content Body
+      cardHtml += '    <div class="rt-body-exact">';
+      
+      // Title
+      cardHtml += '      <h3 class="rt-title-exact">' + titleText + '</h3>';
+      
+      // Date & Time Row
+      cardHtml += '      <div class="rt-datetime-row-exact">';
+      cardHtml += '        <span class="rt-date-green">' + dateText + '</span>';
+      cardHtml += '        <span class="rt-time-text">' + timeText + '</span>';
       cardHtml += '      </div>';
 
       // Location Row
-      cardHtml += '      <div class="rt-modern-info-row">';
-      cardHtml += '        <div class="rt-modern-icon-box location-icon"><i class="fa-solid fa-location-dot"></i></div>';
-      cardHtml += '        <div class="rt-modern-info-text">';
-      cardHtml += '          <strong>' + venueText + '</strong>';
-      cardHtml += '          <span>Raipur, Chhattisgarh</span>';
+      cardHtml += '      <div class="rt-location-row-exact">';
+      cardHtml += '        <div class="rt-loc-icon-exact">';
+      cardHtml += '          <svg width="15" height="15" viewBox="0 0 24 24" fill="#047857" stroke="#047857" stroke-width="1"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>';
+      cardHtml += '        </div>';
+      cardHtml += '        <div class="rt-loc-text-exact">';
+      cardHtml += '          <div class="rt-loc-venue">' + venueText + '</div>';
+      cardHtml += '          <div class="rt-loc-city">Raipur, Chhattisgarh</div>';
       cardHtml += '        </div>';
       cardHtml += '      </div>';
 
-      // Description
-      cardHtml += '      <p class="rt-modern-desc">' + (ev.description || "Live event in Raipur. Get official tickets directly on " + sourceName + ".") + '</p>';
-
-      // Platform Specific Booking Button
-      var buttonText = sourceName.indexOf("Google") !== -1 ? "View details" : "Book Tickets →";
-
-      cardHtml += '      <a href="' + linkUrl + '" target="_blank" rel="noopener" class="btn-book-bms">';
-      cardHtml += '        <span><i class="fa-solid fa-ticket me-2"></i> ' + buttonText + '</span>';
-      cardHtml += '        <i class="fa-solid fa-arrow-right"></i>';
-      cardHtml += '      </a>';
-
-      // Find a Group / Join Community Button
-      cardHtml += '      <button type="button" class="btn-find-group btn-open-group-modal" data-event-title="' + ev.title.replace(/"/g, '&quot;') + '">';
-      cardHtml += '        <i class="fa-solid fa-users text-success me-1"></i> Join Group / Carpool';
-      cardHtml += '      </button>';
+      // Dual Action Buttons Side by Side
+      cardHtml += '      <div class="rt-actions-exact">';
+      cardHtml += '        <a href="' + linkUrl + '" target="_blank" rel="noopener" class="rt-btn-book-exact">';
+      cardHtml += '          Book Tickets <i class="fa-solid fa-arrow-right"></i>';
+      cardHtml += '        </a>';
+      cardHtml += '        <button type="button" class="rt-btn-group-exact btn-open-group-modal" data-event-title="' + titleText.replace(/"/g, '&quot;') + '">';
+      cardHtml += '          Join Group / Carpool';
+      cardHtml += '        </button>';
+      cardHtml += '      </div>';
 
       cardHtml += '    </div>';
       cardHtml += '  </div>';
