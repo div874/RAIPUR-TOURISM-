@@ -16,8 +16,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_air1standupcomedybyharshitmaha",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_screeningofmanchesterunitedvst",
@@ -56,8 +56,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_bollywooddripsaturday",
@@ -76,8 +76,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -87,7 +87,7 @@
         "venue": "Akhada, 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur",
         "price": "Book on District",
         "source": "District",
-        "image": "https://cdn-az.allevents.in/events5/banners/405b1b70-c1b5-11f1-9327-f517d77d7b98-rimg-w1200-h600-dc282828-gmir.jpg?v=1791311975",
+        "image": "https://cdn-az.allevents.in/events1/banners/f6145510-c3c4-11f1-8f47-ffe011d0a69e-rimg-w1200-h600-dc282828-gmir.jpg?v=1791538624",
         "link": "https://allevents.in/raipur/satyabrat-mohapatra-live/3900030678881043",
         "category": "Shows",
         "tag": "week",
@@ -96,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_samaesufinightftdjmosh",
@@ -116,8 +116,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_futuresteel2026",
@@ -136,28 +136,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
-    },
-    {
-        "id": "evt_behrupiyesketchcomedyshow",
-        "title": "BEHRUPIYE - Sketch comedy show",
-        "date": "Sat, 24 Oct 2026",
-        "time": "7:00 PM onwards",
-        "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events6/banners/dc39ecb0-c0c5-11f1-aa7e-893ff00ac3f2-rimg-w1200-h600-dc282868-gmir.jpg?v=1791209146",
-        "link": "https://allevents.in/raipur/behrupiye-sketch-comedy-show/3900030781308046",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur: 'BEHRUPIYE - Sketch comedy show'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_rhythmsofbastaradussehraimmers",
@@ -176,8 +156,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T13:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T22:20:40Z"
     },
     {
         "id": "evt_screeningofliverpoolvsmancitya",
@@ -196,8 +176,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_screeningofsingaporegrandprix",
@@ -216,8 +196,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -236,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_giggleguru",
@@ -247,7 +227,7 @@
         "venue": "Akhada, 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur",
         "price": "Book on District",
         "source": "District",
-        "image": "https://cdn-az.allevents.in/events3/banners/51e25280-c1ee-11f1-848b-1578c9159971-rimg-w1200-h600-dc080808-gmir.jpg?v=1791336474",
+        "image": "https://cdn-az.allevents.in/events7/banners/a1c7caf0-c388-11f1-8964-5b65d1557b86-rimg-w1200-h600-dc080808-gmir.jpg?v=1791512702",
         "link": "https://allevents.in/raipur/giggle-guru/3900030779314013",
         "category": "Shows",
         "tag": "week",
@@ -256,8 +236,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -276,8 +256,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
+    },
+    {
+        "id": "evt_behrupiyesketchcomedyshow",
+        "title": "BEHRUPIYE - Sketch comedy show",
+        "date": "Sat, 24 Oct 2026",
+        "time": "7:00 PM onwards",
+        "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events1/banners/736bea50-c39d-11f1-8964-5b65d1557b86-rimg-w1200-h600-dc282868-gmir.jpg?v=1791521643",
+        "link": "https://allevents.in/raipur/behrupiye-sketch-comedy-show/3900030781308046",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur: 'BEHRUPIYE - Sketch comedy show'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T06:39:59Z",
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_2026",
@@ -296,8 +296,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -316,8 +316,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -336,8 +336,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -356,8 +356,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -376,8 +376,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_saptamirsokal",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T13:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T22:20:40Z"
     },
     {
         "id": "evt_avinashparte",
@@ -416,8 +416,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -436,8 +436,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -456,28 +456,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
-    },
-    {
-        "id": "evt_retronightmixtapememoriesofthe",
-        "title": "Retro Night – Mixtape Memories of the 80s & 90s",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events7/banners/cde43800-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc180808-gmir.jpg?v=1791387363",
-        "link": "https://allevents.in/raipur/retro-night-mixtape-memories-of-the-80s-and-90s/4100030800753303",
-        "category": "Clubs",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Retro Night – Mixtape Memories of the 80s & 90s'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T13:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -496,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T13:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T22:20:40Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -516,8 +496,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -536,8 +516,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -556,8 +536,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -576,8 +556,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -596,8 +576,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_raaserang",
@@ -616,8 +596,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -636,8 +616,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-09T03:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-09T12:20:40Z"
     },
     {
         "id": "evt_trickortreat",
@@ -656,7 +636,7 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-09T01:07:44Z",
-        "next_check_due": "2026-10-12T01:07:44Z"
+        "last_verified_at": "2026-10-09T10:20:40Z",
+        "next_check_due": "2026-10-12T10:20:40Z"
     }
 ]
