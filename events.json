@@ -16,48 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
-    },
-    {
-        "id": "evt_screeningofmanchesterunitedvst",
-        "title": "Screening of Manchester United vs Tottenham Hotspur",
-        "date": "Sat, 10 Oct 2026",
-        "time": "10:00 PM onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events2/banners/aafe0ee0-be6f-11f1-8a18-b3e52d4bf2d6-rimg-w1200-h675-dc080808-gmir.jpg?v=1790952224",
-        "link": "https://allevents.in/raipur/screening-of-manchester-united-vs-tottenham-hotspur/4100030763481045",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Manchester United vs Tottenham Hotspur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
-    },
-    {
-        "id": "evt_bollywooddripsaturday",
-        "title": "Bollywood Drip Saturday",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events8/banners/cd3c1120-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc080808-gmir.jpg?v=1791387362",
-        "link": "https://allevents.in/raipur/bollywood-drip-saturday/4100030800753202",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Bollywood Drip Saturday'. Get tickets directly on District.",
-        "verification_status": "UPDATED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-11T05:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -76,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_rhythmsofbastaradussehraimmers",
@@ -96,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-11T05:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_screeningofliverpoolvsmancitya",
@@ -116,8 +76,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-10T23:28:39Z"
     },
     {
         "id": "evt_screeningofsingaporegrandprix",
@@ -136,8 +96,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-10T23:28:39Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -156,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -176,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -196,8 +156,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-11T05:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_2026",
@@ -216,8 +176,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-10T23:28:39Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -236,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -256,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -276,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -296,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_saptamirsokal",
@@ -316,8 +276,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-11T05:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_giggleguru",
@@ -336,8 +296,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-10T23:28:39Z"
     },
     {
         "id": "evt_avinashparte",
@@ -356,8 +316,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -376,8 +336,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -396,8 +356,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
+    },
+    {
+        "id": "evt_bollywooddripsaturday",
+        "title": "Bollywood Drip Saturday",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events8/banners/cd3c1120-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc080808-gmir.jpg?v=1791387362",
+        "link": "https://allevents.in/raipur/bollywood-drip-saturday/4100030800753202",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'Bollywood Drip Saturday'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-07T18:47:26Z",
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -416,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-11T05:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -436,88 +416,88 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-11T05:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_fakeresignationparty",
         "title": "Fake Resignation Party",
-        "date": "Sat, 10 Oct 2026",
-        "time": "04:00 PM onwards",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
         "venue": "Edo, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "https://cdn.sortmyscene.com/fake-resignation-party1789119921026-preview.webp",
+        "image": "$OG_IMAGE",
         "link": "https://sortmyscene.com/event/fake-resignation-party-oct-03-2026",
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at Edo, Raipur: 'Fake Resignation Party'. Get tickets directly on SortMyScene.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
+        "verification_status": "UPDATED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_exkishaadi",
         "title": "Ex Ki Shaadi",
-        "date": "Sat, 10 Oct 2026",
-        "time": "06:00 PM TO 00:30 AM",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
         "venue": "The Haunt Dive 2.0, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "https://cdn.sortmyscene.com/ex-ki-shaadi1789845190249-preview.webp",
+        "image": "$OG_IMAGE",
         "link": "https://sortmyscene.com/event/ex-ki-shaadi-oct-10-2026",
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at The Haunt Dive 2.0, Raipur: 'Ex Ki Shaadi'. Get tickets directly on SortMyScene.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
+        "verification_status": "UPDATED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
         "title": "Saturday Glam With Yogesh Rawat",
-        "date": "Sat, 10 Oct 2026",
-        "time": "07:00 PM onwards",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
         "venue": "F Lounge by FTV, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "https://cdn.sortmyscene.com/saturday-glam1790706686257-preview.webp",
+        "image": "$OG_IMAGE",
         "link": "https://sortmyscene.com/event/saturday-glam-oct-10-2026",
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at F Lounge by FTV, Raipur: 'Saturday Glam With Yogesh Rawat'. Get tickets directly on SortMyScene.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
+        "verification_status": "UPDATED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
         "title": "Manchester United Vs Tottenham Hotspur",
-        "date": "Sat, 10 Oct 2026",
-        "time": "10:00 PM TO 11:55 PM",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
         "venue": "Underdoggs Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "https://cdn.sortmyscene.com/manchester-united-vs-tottenham-hotspur1790774380077-preview.webp",
+        "image": "$OG_IMAGE",
         "link": "https://sortmyscene.com/event/manchester-united-vs-tottenham-hotspur-underdoggs-raipur-raipur-oct-10-2026",
         "category": "Sports",
         "tag": "week",
         "description": "Live event at Underdoggs Raipur: 'Manchester United Vs Tottenham Hotspur'. Get tickets directly on SortMyScene.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
+        "verification_status": "UPDATED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-11T09:28:39Z"
     },
     {
         "id": "evt_raaserang",
@@ -536,8 +516,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-10T23:28:39Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -556,8 +536,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-10T19:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-10T23:28:39Z"
     },
     {
         "id": "evt_trickortreat",
@@ -576,7 +556,7 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T17:14:43Z",
-        "next_check_due": "2026-10-13T17:14:43Z"
+        "last_verified_at": "2026-10-10T21:28:39Z",
+        "next_check_due": "2026-10-13T21:28:39Z"
     }
 ]
