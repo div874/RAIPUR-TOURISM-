@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_rhythmsofbastaradussehraimmers",
@@ -56,28 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
-    },
-    {
-        "id": "evt_screeningofliverpoolvsmancitya",
-        "title": "Screening of Liverpool vs Man City at Underdoggs Raipur",
-        "date": "Sun, 11 Oct 2026",
-        "time": "9:00 PM onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events7/banners/c44e9b00-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc081848-gmir.jpg?v=1791387347",
-        "link": "https://allevents.in/raipur/screening-of-liverpool-vs-man-city-at-underdoggs-raipur/4100030800752847",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Liverpool vs Man City at Underdoggs Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-10T23:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_screeningofsingaporegrandprix",
@@ -96,8 +76,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-10T23:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T07:24:19Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -116,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -136,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -147,7 +127,7 @@
         "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
         "price": "Book on District",
         "source": "District",
-        "image": "https://cdn-az.allevents.in/events1/banners/736bea50-c39d-11f1-8964-5b65d1557b86-rimg-w1200-h600-dc282868-gmir.jpg?v=1791521643",
+        "image": "https://cdn-az.allevents.in/events2/banners/2dd65030-c50e-11f1-ba03-b7505d4e7d42-rimg-w1200-h600-dc282868-gmir.jpg?v=1791680011",
         "link": "https://allevents.in/raipur/behrupiye-sketch-comedy-show/3900030781308046",
         "category": "Shows",
         "tag": "week",
@@ -156,8 +136,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_2026",
@@ -176,8 +156,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-10T23:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T07:24:19Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -196,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -216,28 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
-    },
-    {
-        "id": "evt_air1astandupcomedyshowbyharshi",
-        "title": "AIR 1 - A Standup Comedy Show by Harshit Mahawar",
-        "date": "Sat, 31 Oct 2026",
-        "time": "1:30 PM onwards",
-        "venue": "Akhada By RCC, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/143389e0-c220-11f1-848b-1578c9159971-rimg-w900-h1200-dc080808-gmir.jpg?v=1791357845",
-        "link": "https://allevents.in/raipur/air-1-a-standup-comedy-show-by-harshit-mahawar/4100030796335806",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Akhada By RCC, Raipur: 'AIR 1 - A Standup Comedy Show by Harshit Mahawar'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -256,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_saptamirsokal",
@@ -276,8 +236,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_giggleguru",
@@ -296,8 +256,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-10T23:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T07:24:19Z"
     },
     {
         "id": "evt_avinashparte",
@@ -316,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -336,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -356,28 +316,48 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     },
     {
-        "id": "evt_bollywooddripsaturday",
-        "title": "Bollywood Drip Saturday",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
+        "id": "evt_air1astandupcomedyshowbyharshi",
+        "title": "AIR 1 - A Standup Comedy Show by Harshit Mahawar",
+        "date": "Sat, 31 Oct 2026",
+        "time": "1:30 PM onwards",
+        "venue": "Akhada By RCC, Raipur",
         "price": "Book on District",
         "source": "District",
-        "image": "https://cdn-az.allevents.in/events8/banners/cd3c1120-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc080808-gmir.jpg?v=1791387362",
-        "link": "https://allevents.in/raipur/bollywood-drip-saturday/4100030800753202",
+        "image": "https://cdn-az.allevents.in/events4/banners/143389e0-c220-11f1-848b-1578c9159971-rimg-w900-h1200-dc080808-gmir.jpg?v=1791357845",
+        "link": "https://allevents.in/raipur/air-1-a-standup-comedy-show-by-harshit-mahawar/4100030796335806",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Bollywood Drip Saturday'. Get tickets directly on District.",
+        "description": "Live event at Akhada By RCC, Raipur: 'AIR 1 - A Standup Comedy Show by Harshit Mahawar'. Get tickets directly on District.",
         "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-07T10:05:57Z",
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
+    },
+    {
+        "id": "evt_screeningofliverpoolvsmancitya",
+        "title": "Screening of Liverpool vs Man City at Underdoggs Raipur",
+        "date": "Sun, 11 Oct 2026",
+        "time": "9:00 PM onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events7/banners/c44e9b00-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc081848-gmir.jpg?v=1791387347",
+        "link": "https://allevents.in/raipur/screening-of-liverpool-vs-man-city-at-underdoggs-raipur/4100030800752847",
+        "category": "Sports",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Liverpool vs Man City at Underdoggs Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
         "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T07:24:19Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -396,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -416,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -432,12 +412,12 @@
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at Edo, Raipur: 'Fake Resignation Party'. Get tickets directly on SortMyScene.",
-        "verification_status": "UPDATED",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -452,12 +432,12 @@
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at The Haunt Dive 2.0, Raipur: 'Ex Ki Shaadi'. Get tickets directly on SortMyScene.",
-        "verification_status": "UPDATED",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -472,12 +452,12 @@
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at F Lounge by FTV, Raipur: 'Saturday Glam With Yogesh Rawat'. Get tickets directly on SortMyScene.",
-        "verification_status": "UPDATED",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -492,12 +472,12 @@
         "category": "Sports",
         "tag": "week",
         "description": "Live event at Underdoggs Raipur: 'Manchester United Vs Tottenham Hotspur'. Get tickets directly on SortMyScene.",
-        "verification_status": "UPDATED",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-11T09:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T17:24:19Z"
     },
     {
         "id": "evt_raaserang",
@@ -516,8 +496,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-10T23:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T07:24:19Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -536,8 +516,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-10T23:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-11T07:24:19Z"
     },
     {
         "id": "evt_trickortreat",
@@ -556,7 +536,7 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-10T21:28:39Z",
-        "next_check_due": "2026-10-13T21:28:39Z"
+        "last_verified_at": "2026-10-11T05:24:19Z",
+        "next_check_due": "2026-10-14T05:24:19Z"
     }
 ]
