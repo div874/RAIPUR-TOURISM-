@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -56,8 +56,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_rhythmsofbastaradussehraimmers",
@@ -76,8 +76,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
+    },
+    {
+        "id": "evt_growyourbrandwithdigitalhub",
+        "title": "Grow Your Brand with Digital Hub",
+        "date": "Fri, 16 Oct 2026",
+        "time": "8:00 AM onwards",
+        "venue": "Jagriti Nagar, beside City Center Mall, Devendra Nagar, Raipur, City Center Mall, Devendra Nagar Road, Govind Nagar, Pandri",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events6/banners/1e7eb35a57d6ee9177c635440f47bdeecb23a51a1798b8f936f9afee163a8a05-rimg-w1200-h447-dcf8f8e8-gmir?v=1791814913",
+        "link": "https://allevents.in/raipur/grow-your-brand-with-digital-hub/200030825949553",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Jagriti Nagar, beside City Center Mall, Devendra Nagar, Raipur, City Center Mall, Devendra Nagar Road, Govind Nagar, Pandri: 'Grow Your Brand with Digital Hub'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-12T21:11:01Z",
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -96,8 +116,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -116,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -136,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_saptamirsokal",
@@ -156,8 +176,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -176,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_5",
@@ -196,8 +216,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-12T00:24:02Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_avinashparte",
@@ -216,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -236,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -256,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -276,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -296,8 +316,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -316,8 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -336,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -356,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -376,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -396,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -416,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_raaserang",
@@ -436,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T22:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-13T09:11:01Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -456,8 +476,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-12T12:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-12T23:11:01Z"
     },
     {
         "id": "evt_trickortreat",
@@ -476,7 +496,7 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-12T10:34:22Z",
-        "next_check_due": "2026-10-15T10:34:22Z"
+        "last_verified_at": "2026-10-12T21:11:01Z",
+        "next_check_due": "2026-10-15T21:11:01Z"
     }
 ]
