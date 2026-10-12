@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,28 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
-    },
-    {
-        "id": "evt_rhythmsofbastaradussehraimmers",
-        "title": "Rhythms of Bastar — A Dussehra Immersion",
-        "date": "Sun, 18 Oct 2026",
-        "time": "6:00 AM onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events6/banners/134074ff950b0c53b697177f7eae00a3919e6c9b0f0129ab165d0e6c18fa6294-rimg-w1200-h900-dcc8d8d8-gmir?v=1790841178",
-        "link": "https://allevents.in/raipur/rhythms-of-bastar-a-dussehra-immersion/200030757825259",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Rhythms of Bastar — A Dussehra Immersion'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -76,8 +56,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
+    },
+    {
+        "id": "evt_rhythmsofbastaradussehraimmers",
+        "title": "Rhythms of Bastar — A Dussehra Immersion",
+        "date": "Sun, 18 Oct 2026",
+        "time": "6:00 AM onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events6/banners/134074ff950b0c53b697177f7eae00a3919e6c9b0f0129ab165d0e6c18fa6294-rimg-w1200-h900-dcc8d8d8-gmir?v=1790841178",
+        "link": "https://allevents.in/raipur/rhythms-of-bastar-a-dussehra-immersion/200030757825259",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'Rhythms of Bastar — A Dussehra Immersion'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -96,8 +96,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -116,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -136,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_saptamirsokal",
@@ -156,8 +156,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -176,8 +176,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
+    },
+    {
+        "id": "evt_5",
+        "title": "मां मातंगी दिव्य दरबार 5 दिवसीय महातंत्र काट रायपुर छत्तीसगढ़",
+        "date": "Sat, 24 Oct 2026",
+        "time": "10:25 AM onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/115ecd9684ab9cef204ed93d560536715b852858082581261274e0e0d4e643ff-rimg-w1200-h675-dc280808-gmir?v=1791717202",
+        "link": "https://allevents.in/raipur/मां-मातंगी-दिव्य-दरबार-5-दिवसीय-महातंत्र-काट-रायपुर-छत्तीसगढ़/200030820848222",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'मां मातंगी दिव्य दरबार 5 दिवसीय महातंत्र काट रायपुर छत्तीसगढ़'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-12T00:24:02Z",
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_avinashparte",
@@ -196,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -216,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -236,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -256,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -276,48 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
-    },
-    {
-        "id": "evt_2026",
-        "title": "श्रीराम प्रेरणा महोत्सव 2026",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events10/banners/14f904c9317569d59b54af5768f68fcc355b97eacac71a4d47fb3d484b555a14-rimg-w1024-h1024-dcf8f8d8-gmir?v=1791451469",
-        "link": "https://allevents.in/raipur/श्रीराम-प्रेरणा-महोत्सव-2026/200030805297528",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'श्रीराम प्रेरणा महोत्सव 2026'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
-    },
-    {
-        "id": "evt_screeningofliverpoolvsmancitya",
-        "title": "Screening of Liverpool vs Man City at Underdoggs Raipur",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events7/banners/c44e9b00-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc081848-gmir.jpg?v=1791387347",
-        "link": "https://allevents.in/raipur/screening-of-liverpool-vs-man-city-at-underdoggs-raipur/4100030800752847",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'Screening of Liverpool vs Man City at Underdoggs Raipur'. Get tickets directly on District.",
-        "verification_status": "UPDATED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-07T18:47:26Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     },
     {
         "id": "evt_screeningofsingaporegrandprix",
@@ -332,12 +312,32 @@
         "category": "Sports",
         "tag": "week",
         "description": "Live event at Raipur, Chhattisgarh: 'Screening of Singapore Grand Prix'. Get tickets directly on District.",
-        "verification_status": "UPDATED",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-08T10:20:02Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
+    },
+    {
+        "id": "evt_screeningofliverpoolvsmancitya",
+        "title": "Screening of Liverpool vs Man City at Underdoggs Raipur",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events7/banners/c44e9b00-c264-11f1-8343-39970249843c-rimg-w1200-h675-dc081848-gmir.jpg?v=1791387347",
+        "link": "https://allevents.in/raipur/screening-of-liverpool-vs-man-city-at-underdoggs-raipur/4100030800752847",
+        "category": "Sports",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'Screening of Liverpool vs Man City at Underdoggs Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-07T18:47:26Z",
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -356,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -376,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -456,28 +456,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-12T07:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_raaserang",
         "title": "Raas-E-Rang",
-        "date": "Sun, 11 Oct 2026",
-        "time": "07:00 PM TO 01:30 AM",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
         "venue": "The Soul Garden, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "https://cdn.sortmyscene.com/raas-e-rang1790971527568-preview.webp",
+        "image": "$OG_IMAGE",
         "link": "https://sortmyscene.com/event/raas-e-rang-oct-11-2026",
         "category": "Culture",
         "tag": "week",
         "description": "Live event at The Soul Garden, Raipur: 'Raas-E-Rang'. Get tickets directly on SortMyScene.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
+        "verification_status": "UPDATED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-11T21:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T12:24:02Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -496,8 +496,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-11T21:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-12T02:24:02Z"
     },
     {
         "id": "evt_trickortreat",
@@ -516,7 +516,7 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-11T19:26:51Z",
-        "next_check_due": "2026-10-14T19:26:51Z"
+        "last_verified_at": "2026-10-12T00:24:02Z",
+        "next_check_due": "2026-10-15T00:24:02Z"
     }
 ]
