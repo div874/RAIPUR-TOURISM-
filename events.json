@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -56,8 +56,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_rhythmsofbastaradussehraimmers",
@@ -76,8 +76,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_growyourbrandwithdigitalhub",
@@ -96,8 +96,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-12T21:11:01Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -116,8 +116,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -136,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -156,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_saptamirsokal",
@@ -176,8 +176,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -196,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_5",
@@ -216,8 +216,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-12T00:24:02Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_avinashparte",
@@ -236,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -256,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -276,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -296,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -316,8 +316,88 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
+    },
+    {
+        "id": "evt_raipurraas50",
+        "title": "Raipur Raas 5.0",
+        "date": "Fri, 16 Oct 2026",
+        "time": "7:00 PM onwards",
+        "venue": "Babylon International, Raipur, Vishal Nagar",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events9/banners/66587680-c6e5-11f1-b689-9594e1faa8b2-rimg-w1200-h675-dc380808-gmir.jpg?v=1791882399",
+        "link": "https://allevents.in/raipur/raipur-raas-50/4100030829060539",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Babylon International, Raipur, Vishal Nagar: 'Raipur Raas 5.0'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-13T16:51:40Z",
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
+    },
+    {
+        "id": "evt_rasgarbalalitmahalraipur",
+        "title": "RAS GARBA LALIT MAHAL RAIPUR",
+        "date": "Sat, 17 Oct 2026",
+        "time": "8:00 PM onwards",
+        "venue": "Hotel Hukam`s Lalit Mahal, Interchange, Kolkata - Mumbai Hwy, Serikhedi, Atal Nagar-Nava, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events7/banners/c88caff0-c6f0-11f1-b689-9594e1faa8b2-rimg-w1200-h600-dcf89828-gmir.jpg?v=1791887288",
+        "link": "https://allevents.in/raipur/ras-garba-lalit-mahal-raipur/3900030829213909",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Hukam`s Lalit Mahal, Interchange, Kolkata - Mumbai Hwy, Serikhedi, Atal Nagar-Nava, Raipur: 'RAS GARBA LALIT MAHAL RAIPUR'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-13T16:51:40Z",
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
+    },
+    {
+        "id": "evt_dcclub20garbanight2026",
+        "title": "DC CLUB 2.0 GARBA NIGHT 2026",
+        "date": "Wed, 14 Oct 2026",
+        "time": "10:14 AM onwards",
+        "venue": "DC Club - The Open Garden Restro & Resort, Parghani Restaurant, Mujgahan, Sejbahar, Raipur 493661",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events1/banners/8e0ae850-c6f6-11f1-b689-9594e1faa8b2-rimg-w1200-h600-dc180808-gmir.jpg?v=1791889767",
+        "link": "https://allevents.in/raipur/dc-club-20-garba-night-2026/3900030829293527",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at DC Club - The Open Garden Restro & Resort, Parghani Restaurant, Mujgahan, Sejbahar, Raipur 493661: 'DC CLUB 2.0 GARBA NIGHT 2026'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-10-13T16:51:40Z",
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-13T18:51:40Z"
+    },
+    {
+        "id": "evt_beatpegarba",
+        "title": "Beat pe Garba",
+        "date": "Wed, 14 Oct 2026",
+        "time": "6:30 PM onwards",
+        "venue": "Omaya, VIP Road, Near Horeca Studio, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events3/banners/9c604890-c6fc-11f1-b689-9594e1faa8b2-rimg-w1200-h600-dc084818-gmir.jpg?v=1791892368",
+        "link": "https://allevents.in/raipur/beat-pe-garba/3900030829379948",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Omaya, VIP Road, Near Horeca Studio, Raipur: 'Beat pe Garba'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-10-13T16:51:40Z",
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-13T18:51:40Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -336,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -356,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -376,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -396,28 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
-    },
-    {
-        "id": "evt_saturdayglamwithyogeshrawat",
-        "title": "Saturday Glam With Yogesh Rawat",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "F Lounge by FTV, Raipur",
-        "price": "Book on SortMyScene",
-        "source": "SortMyScene",
-        "image": "$OG_IMAGE",
-        "link": "https://sortmyscene.com/event/saturday-glam-oct-10-2026",
-        "category": "Clubs",
-        "tag": "week",
-        "description": "Live event at F Lounge by FTV, Raipur: 'Saturday Glam With Yogesh Rawat'. Get tickets directly on SortMyScene.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -436,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_raaserang",
@@ -456,8 +516,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-13T18:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
+    },
+    {
+        "id": "evt_royalgarbaraipur",
+        "title": "Royal Garba Raipur",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Hotel Royal Castle, Raipur",
+        "price": "Book on SortMyScene",
+        "source": "SortMyScene",
+        "image": "$OG_IMAGE",
+        "link": "https://sortmyscene.com/event/royal-garba-oct-11-2026",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Royal Castle, Raipur: 'Royal Garba Raipur'. Get tickets directly on SortMyScene.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-13T16:51:40Z",
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-14T04:51:40Z"
     },
     {
         "id": "evt_trickortreat",
@@ -476,7 +556,7 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-13T06:32:01Z",
-        "next_check_due": "2026-10-16T06:32:01Z"
+        "last_verified_at": "2026-10-13T16:51:40Z",
+        "next_check_due": "2026-10-16T16:51:40Z"
     }
 ]
