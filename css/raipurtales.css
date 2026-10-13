@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 /* ==========================================================================
-   HAMARA RAIPUR — OFFICIAL BRAND SYSTEM & DESIGN LANGUAGE
+   HUMARA RAIPUR — OFFICIAL BRAND SYSTEM & DESIGN LANGUAGE
    ========================================================================== */
 
 :root {
@@ -2250,7 +2250,7 @@ body:not(.rt-home-page) .header {
   color: var(--rt-white);
 }
 
-/* AI LOCAL ASSISTANT SECTION ("ASK HAMARA") */
+/* AI LOCAL ASSISTANT SECTION ("ASK HUMARA") */
 .rt-ai-sec {
   background-color: var(--rt-teal);
   color: var(--rt-white);
@@ -3501,7 +3501,8 @@ body:not(.rt-home-page) .header {
   border: 1px solid var(--rt-border);
   box-shadow: var(--rt-shadow);
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  flex: 1;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -3511,8 +3512,8 @@ body:not(.rt-home-page) .header {
 }
 
 .rt-story-card-sm-img {
-  width: 170px;
-  height: 160px;
+  width: 175px;
+  min-height: 155px;
   flex-shrink: 0;
   overflow: hidden;
 }
@@ -3529,8 +3530,11 @@ body:not(.rt-home-page) .header {
 }
 
 .rt-story-card-sm-body {
-  padding: 16px 20px;
+  padding: 18px 22px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .rt-story-card-sm-body h4 {
@@ -4148,39 +4152,83 @@ body:not(.rt-home-page) .header {
 /* ==========================================================================
    EXACT EVENT CARD SPECIFICATION MATCH (AS PER DESIGN REFERENCE SCREENSHOT)
    ========================================================================== */
+#eventsContainer > .row,
+#homeEventsContainer > .row {
+  align-items: flex-start !important;
+}
+
+#eventsContainer .col-lg-4,
+#homeEventsContainer .col-lg-4,
+#eventsContainer .col-md-6,
+#homeEventsContainer .col-md-6 {
+  align-self: flex-start !important;
+}
+
 .rt-event-card-exact {
   background: #FFFFFF !important;
   border: 1px solid #E5E7EB !important;
   border-radius: 20px !important;
   padding: 16px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
-  height: 100% !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.3s ease !important;
+  height: auto !important; /* Compact natural size initially - no blank space */
   display: flex !important;
   flex-direction: column !important;
   min-width: 0 !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
+  overflow: hidden !important;
+  position: relative !important;
+  will-change: transform, box-shadow !important;
 }
 
 .rt-event-card-exact:hover {
-  transform: translateY(-4px) !important;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09) !important;
-  border-color: #D1D5DB !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 16px 36px rgba(4, 120, 87, 0.12), 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  border-color: #A7F3D0 !important;
 }
 
+/* Stable 16:9 Poster Container (Never jumps or changes height) */
 .rt-poster-exact {
   position: relative !important;
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
   height: 0 !important;
-  padding-bottom: 56.25% !important; /* 16:9 Aspect Ratio Container */
+  padding-bottom: 56.25% !important; /* Fixed 16:9 Aspect Ratio */
   border-radius: 14px !important;
   overflow: hidden !important;
   background: #F3F4F6 !important;
   flex-shrink: 0 !important;
   box-sizing: border-box !important;
+}
+
+/* Floating Tag Badge */
+.rt-card-tag {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  background: rgba(4, 120, 87, 0.92) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #FFFFFF !important;
+  padding: 5px 12px !important;
+  border-radius: 20px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  z-index: 3 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  pointer-events: none !important;
+  transition: transform 0.3s ease !important;
+}
+
+.rt-event-card-exact:hover .rt-card-tag {
+  transform: scale(1.05) !important;
 }
 
 .rt-poster-exact img {
@@ -4192,40 +4240,41 @@ body:not(.rt-home-page) .header {
   height: 100% !important;
   max-height: 100% !important;
   object-fit: cover !important;
+  object-position: center !important;
   display: block !important;
-  transition: transform 0.5s ease !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .rt-event-card-exact:hover .rt-poster-exact img {
-  transform: scale(1.03) !important;
+  transform: scale(1.04) !important;
 }
 
 .rt-body-exact {
-  padding-top: 18px !important;
+  padding-top: 14px !important;
   display: flex !important;
   flex-direction: column !important;
-  flex: 1 !important;
 }
 
 .rt-title-exact {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-  font-size: 20px !important;
+  font-size: 19px !important;
   font-weight: 800 !important;
   color: #0F172A !important;
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 8px 0 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.02em !important;
   display: -webkit-box !important;
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
+  min-height: 48px !important;
 }
 
 .rt-datetime-row-exact {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 10px !important;
 }
 
 .rt-date-green {
@@ -4246,7 +4295,7 @@ body:not(.rt-home-page) .header {
   display: flex !important;
   align-items: flex-start !important;
   gap: 12px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 0 !important;
 }
 
 .rt-loc-icon-exact {
@@ -4276,6 +4325,7 @@ body:not(.rt-home-page) .header {
   -webkit-line-clamp: 2 !important;
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
+  min-height: 36px !important;
 }
 
 .rt-loc-city {
@@ -4286,20 +4336,42 @@ body:not(.rt-home-page) .header {
   margin-top: 2px !important;
 }
 
+/* Expansion Action Dock (Collapsed initially, expands ONLY on hover) */
 .rt-actions-exact {
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
-  margin-top: auto !important;
+  margin-top: 0 !important;
   width: 100% !important;
+  max-height: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  transform: translateY(8px) !important;
+  pointer-events: none !important;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.25s ease,
+              margin-top 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  will-change: max-height, opacity, transform !important;
+}
+
+/* On Hover: ONLY the hovered card expands to reveal buttons */
+.rt-event-card-exact:hover .rt-actions-exact,
+.rt-event-card-exact:focus-within .rt-actions-exact {
+  max-height: 52px !important;
+  opacity: 1 !important;
+  margin-top: 14px !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
 }
 
 .rt-btn-book-exact {
   flex: 1 1 0% !important;
+  height: 42px !important;
   background: #047857 !important;
   color: #FFFFFF !important;
   border-radius: 12px !important;
-  padding: 12px 14px !important;
+  padding: 0 14px !important;
   font-family: 'Inter', sans-serif !important;
   font-size: 14px !important;
   font-weight: 700 !important;
@@ -4309,7 +4381,7 @@ body:not(.rt-home-page) .header {
   justify-content: center !important;
   gap: 6px !important;
   border: none !important;
-  transition: all 0.25s ease !important;
+  transition: all 0.2s ease !important;
   box-shadow: 0 4px 12px rgba(4, 120, 87, 0.2) !important;
 }
 
@@ -4322,11 +4394,12 @@ body:not(.rt-home-page) .header {
 
 .rt-btn-group-exact {
   flex: 1 1 0% !important;
+  height: 42px !important;
   background: #E6F4EA !important;
   color: #047857 !important;
   border: 1px solid #A7F3D0 !important;
   border-radius: 12px !important;
-  padding: 12px 10px !important;
+  padding: 0 10px !important;
   font-family: 'Inter', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
@@ -4334,7 +4407,7 @@ body:not(.rt-home-page) .header {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  transition: all 0.25s ease !important;
+  transition: all 0.2s ease !important;
   white-space: nowrap !important;
 }
 
@@ -4342,6 +4415,17 @@ body:not(.rt-home-page) .header {
   background: #D1FAE5 !important;
   border-color: #6EE7B7 !important;
   transform: translateY(-1px) !important;
+}
+
+/* Touch & Mobile Fallback: keep buttons visible on touchscreens */
+@media (hover: none), (max-width: 768px) {
+  .rt-actions-exact {
+    max-height: 52px !important;
+    opacity: 1 !important;
+    margin-top: 14px !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
 }
 
 @media (max-width: 480px) {

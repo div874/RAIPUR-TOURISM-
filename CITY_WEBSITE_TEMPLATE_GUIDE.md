@@ -1,7 +1,7 @@
 # City Portal Website Expansion Framework & Template Guide
-> **"Hamara [City Name]" City Website Replication Blueprint**
+> **"Humara [City Name]" City Website Replication Blueprint**
 
-This document serves as the master guide, technical specification, and asset checklist for building personalized, state-of-the-art city portal websites (similar to *Hamara Raipur / RaipurTales*) for any city in India (e.g., *Hamara Jaipur, Hamara Indore, Hamara Varanasi, Hamara Kochi, Hamara Chandigarh*).
+This document serves as the master guide, technical specification, and asset checklist for building personalized, state-of-the-art city portal websites (similar to *Humara Raipur / RaipurTales*) for any city in India (e.g., *Humara Jaipur, Humara Indore, Humara Varanasi, Humara Kochi, Humara Chandigarh*).
 
 ---
 
@@ -95,7 +95,7 @@ To launch a new city website, **someone must explicitly provide the following as
 
 ---
 
-## 4. Key Learnings & Architecture Findings from *Hamara Raipur*
+## 4. Key Learnings & Architecture Findings from *Humara Raipur*
 
 1. **Resilient AI Search Assistant (Zero-Downtime Design)**
    - External LLM APIs can face CORS limits, expired keys, or latency.
@@ -116,7 +116,7 @@ To launch a new city website, **someone must explicitly provide the following as
 
 ### Step 1: Copy Template Structure
 ```
-/hamara-[city-name]/
+/humara-[city-name]/
 ├── index.html              <-- Main Home Page Template
 ├── explore.html            <-- Attractions & Landmarks
 ├── culture.html            <-- History, Heritage & Arts

@@ -118,7 +118,7 @@ jQuery(function($) {
     if(userQuery) $("#aiQueryInput").val(userQuery);
 
     var res = aiKnowledgeBase[promptKey] || {
-      title: "Hamara Raipur AI Recommendation",
+      title: "Humara Raipur AI Recommendation",
       body: "Raipur offers incredible living traditions! For a tailored experience, we recommend exploring <strong>Purkhauti Muktangan</strong> for open-air tribal heritage or enjoying authentic Chhattisgarhi flavours in Old Raipur."
     };
 
@@ -163,7 +163,7 @@ jQuery(function($) {
       } else if (q.includes("stay") || q.includes("hotel") || q.includes("flight") || q.includes("airport") || q.includes("train") || q.includes("station")) {
         return "Raipur is easily accessible via <strong>Swami Vivekananda Airport (Mana)</strong> and <strong>Raipur Junction Railway Station</strong>. Premier stays and business hotels are clustered around VIP Road and GE Road.";
       } else {
-        return "Hamara Raipur offers a wonderful blend of heritage and modern charm! You can explore <strong>Purkhauti Muktangan</strong> for open-air tribal culture, enjoy sunset views at <strong>Telibandha Lake</strong>, or try traditional <strong>Farra & Chila</strong> in Old Raipur.";
+        return "Humara Raipur offers a wonderful blend of heritage and modern charm! You can explore <strong>Purkhauti Muktangan</strong> for open-air tribal culture, enjoy sunset views at <strong>Telibandha Lake</strong>, or try traditional <strong>Farra & Chila</strong> in Old Raipur.";
       }
     }
 
@@ -172,9 +172,9 @@ jQuery(function($) {
       var cleanQuery = query.trim();
 
       $cardEl.slideDown(250);
-      $textEl.html('<div class="rt-ai-loading"><span class="rt-ai-pulse"></span> Asking Hamara Raipur AI...</div>');
+      $textEl.html('<div class="rt-ai-loading"><span class="rt-ai-pulse"></span> Asking Humara Raipur AI...</div>');
 
-      var systemPrompt = "You are Hamara Raipur AI, a highly knowledgeable, precise local guide for Raipur, Chhattisgarh. Answer the user prompt with exact, highly specific details about Raipur (such as real sports turfs, food spots, places, events, or local advice). Provide a clear, detailed, and accurate response (2 to 4 sentences).";
+      var systemPrompt = "You are Humara Raipur AI, a highly knowledgeable, precise local guide for Raipur, Chhattisgarh. Answer the user prompt with exact, highly specific details about Raipur (such as real sports turfs, food spots, places, events, or local advice). Provide a clear, detailed, and accurate response (2 to 4 sentences).";
 
       var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
       var timeoutId = controller ? setTimeout(function() { controller.abort(); }, 4000) : null;
@@ -342,7 +342,9 @@ jQuery(function($) {
       cardHtml += '  <div class="rt-event-card-exact" data-tab="' + dataTab + '">';
       
       // 1. Poster Image (16:9 rounded)
+      var displayTag = (ev.category || dataTab || "Event").toUpperCase();
       cardHtml += '    <div class="rt-poster-exact">';
+      cardHtml += '      <span class="rt-card-tag">' + displayTag + '</span>';
       cardHtml += '      <img src="' + posterImg + '" alt="' + titleText.replace(/"/g, '&quot;') + '" onerror="this.src=\'images/tribal_dance.jpg\'">';
       cardHtml += '    </div>';
       
