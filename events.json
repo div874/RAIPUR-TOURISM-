@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -36,8 +36,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -56,8 +56,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_rhythmsofbastaradussehraimmers",
@@ -76,28 +76,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-17T22:25:51Z"
-    },
-    {
-        "id": "evt_greateducationexpo2027raipur",
-        "title": "Great Education Expo 2027 – Raipur",
-        "date": "Sat, 21 Nov 2026",
-        "time": "12:30 AM onwards",
-        "venue": "Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg",
-        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T00:59:42Z"
     },
     {
         "id": "evt_afronoonsmascara",
@@ -112,12 +92,12 @@
         "category": "Shows",
         "tag": "week",
         "description": "Live event at Diablo Raipur, LG-24, Zora the Mall, NH-6, opposite Agriculture college, Serikhedi, Jora, Raipur: 'Afronoons Mascara'. Get tickets directly on District.",
-        "verification_status": "NEW",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_screeningofliverpoolvsbrentfor",
@@ -136,8 +116,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-16T04:11:40Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-17T22:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T00:59:42Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -156,8 +136,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
+    },
+    {
+        "id": "evt_greateducationexpo2027raipur",
+        "title": "Great Education Expo 2027 – Raipur",
+        "date": "Sat, 21 Nov 2026",
+        "time": "12:30 AM onwards",
+        "venue": "Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg",
+        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-08T00:53:44Z",
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -176,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -196,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_5",
@@ -216,8 +216,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-12T00:24:02Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_avinashparte",
@@ -236,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -256,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour",
@@ -272,12 +272,12 @@
         "category": "Shows",
         "tag": "week",
         "description": "Live event at Pandit Dindayal Upadhyay Auditorium, Near Science College Auditorium, Great Eastern Road, Raipur: 'Osho Jain - Mere Ghar Chalo - India Tour'. Get tickets directly on District.",
-        "verification_status": "NEW",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -296,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-20T20:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-20T22:59:42Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -316,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -336,28 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
-    },
-    {
-        "id": "evt_indiagrotrainingbymrgurunathla",
-        "title": "INDIAGRO Training By Mr. GURUNATH LAMTURE In RAIPUR (CG)",
-        "date": "Upcoming Event",
-        "time": "Evening onwards",
-        "venue": "Raipur, Chhattisgarh",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events9/banners/2785b29b3f14dba4732740f2b4eda176773e420010f2122243cd4237da749e3f-rimg-w980-h428-dcf8f8f8-gmir?v=1792045578",
-        "link": "https://allevents.in/raipur/indiagro-training-by-mr-gurunath-lamture-in-raipur-cg/200030837294018",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Raipur, Chhattisgarh: 'INDIAGRO Training By Mr. GURUNATH LAMTURE In RAIPUR (CG)'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-16T04:11:40Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_screeningofmanchestercityvsips",
@@ -372,12 +352,12 @@
         "category": "Sports",
         "tag": "week",
         "description": "Live event at Raipur, Chhattisgarh: 'Screening of Manchester City vs Ipswich Town at Underdoggs Raipur'. Get tickets directly on District.",
-        "verification_status": "UPDATED",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-16T04:11:40Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_rasgarbalalitmahalraipur",
@@ -396,8 +376,28 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-17T22:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T00:59:42Z"
+    },
+    {
+        "id": "evt_indiagrotrainingbymrgurunathla",
+        "title": "INDIAGRO Training By Mr. GURUNATH LAMTURE In RAIPUR (CG)",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events9/banners/2785b29b3f14dba4732740f2b4eda176773e420010f2122243cd4237da749e3f-rimg-w980-h428-dcf8f8f8-gmir?v=1792045578",
+        "link": "https://allevents.in/raipur/indiagro-training-by-mr-gurunath-lamture-in-raipur-cg/200030837294018",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'INDIAGRO Training By Mr. GURUNATH LAMTURE In RAIPUR (CG)'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-16T04:11:40Z",
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -516,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_raaserang",
@@ -536,8 +536,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -556,8 +556,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     },
     {
         "id": "evt_trickortreat",
@@ -576,7 +576,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-17T20:25:51Z",
-        "next_check_due": "2026-10-18T08:25:51Z"
+        "last_verified_at": "2026-10-17T22:59:42Z",
+        "next_check_due": "2026-10-18T10:59:42Z"
     }
 ]
