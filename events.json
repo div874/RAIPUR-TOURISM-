@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -56,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_screeningofchelseavstottenham",
@@ -76,8 +76,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_afronoonsmascara",
@@ -96,8 +96,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_thegoldenfive",
@@ -116,8 +116,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -136,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -156,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -176,28 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
-    },
-    {
-        "id": "evt_nationalexporaipur2026",
-        "title": "National Expo Raipur 2026",
-        "date": "Fri, 27 Nov 2026",
-        "time": "10:00 AM onwards",
-        "venue": "Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/b6a0449d6b861139114ad365012ef12a41d4dc9741498a0ce50fd7e70b18a9eb-rimg-w1024-h541-dcf8d808-gmir?v=1792434215",
-        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -216,8 +196,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
+    },
+    {
+        "id": "evt_nationalexporaipur2026",
+        "title": "National Expo Raipur 2026",
+        "date": "Fri, 27 Nov 2026",
+        "time": "10:00 AM onwards",
+        "venue": "Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/b6a0449d6b861139114ad365012ef12a41d4dc9741498a0ce50fd7e70b18a9eb-rimg-w1024-h541-dcf8d808-gmir?v=1792434215",
+        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-19T20:30:32Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
     },
     {
         "id": "evt_5",
@@ -236,128 +236,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-12T00:24:02Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
-    },
-    {
-        "id": "evt_avinashparte",
-        "title": "Avinash parte",
-        "date": "Mon, 02 Nov 2026",
-        "time": "1:30 PM onwards",
-        "venue": "Nakati, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/5b3e9510c1a386b466edc2ca750327eae5542099b344f0e44be160c11307f177-rimg-w1200-h669-dc280878-gmir?v=1787627015",
-        "link": "https://allevents.in/raipur/avinash-parte/200030108649553",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Nakati, Raipur: 'Avinash parte'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
-    },
-    {
-        "id": "evt_aanganhumaresapnoka",
-        "title": "Aangan ,humare sapno ka",
-        "date": "Thu, 26 Nov 2026",
-        "time": "12:00 AM onwards",
-        "venue": "Jawahar Nagar, Station Road, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events5/banners/40ee0c7fc4c193b8a7266a31548d3dbfd8a5c71d9b42e9e91b580aa7ef5cfa7a-rimg-w900-h1600-dcf8f8f8-gmir?v=1786935698",
-        "link": "https://allevents.in/raipur/aangan-humare-sapno-ka/200030299655839",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Jawahar Nagar, Station Road, Raipur: 'Aangan ,humare sapno ka'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
-    },
-    {
-        "id": "evt_oshojainmeregharchaloindiatour",
-        "title": "Osho Jain - Mere Ghar Chalo - India Tour",
-        "date": "Sun, 07 Feb 2027",
-        "time": "7:00 PM onwards",
-        "venue": "Pandit Dindayal Upadhyay Auditorium, Near Science College Auditorium, Great Eastern Road, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events9/banners/e7adf960-ca57-11f1-87af-a5fe78201b78-rimg-w1200-h600-dca89838-gmir.jpg?v=1792261498",
-        "link": "https://allevents.in/raipur/osho-jain-mere-ghar-chalo-india-tour/3900030847499059",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Pandit Dindayal Upadhyay Auditorium, Near Science College Auditorium, Great Eastern Road, Raipur: 'Osho Jain - Mere Ghar Chalo - India Tour'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
-    },
-    {
-        "id": "evt_chhathpuja2025",
-        "title": "Chhath Puja 2025",
-        "date": "Sat, 14 Nov 2026",
-        "time": "12:00 AM onwards",
-        "venue": "Dumartala, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events2/banners/1266863bba261491ce0811004e5bafaaff57b5f7b096a261f3f9c565d195330f-rimg-w673-h1037-dc082858-gmir?v=1788175456",
-        "link": "https://allevents.in/raipur/chhath-puja-2025/200030181719335",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Dumartala, Raipur: 'Chhath Puja 2025'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
-    },
-    {
-        "id": "evt_air1astandupcomedyshowbyharshi",
-        "title": "AIR 1 - A Standup Comedy Show by Harshit Mahawar",
-        "date": "Sat, 31 Oct 2026",
-        "time": "1:30 PM onwards",
-        "venue": "Akhada By RCC, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/143389e0-c220-11f1-848b-1578c9159971-rimg-w900-h1200-dc080808-gmir.jpg?v=1791357845",
-        "link": "https://allevents.in/raipur/air-1-a-standup-comedy-show-by-harshit-mahawar/4100030796335806",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Akhada By RCC, Raipur: 'AIR 1 - A Standup Comedy Show by Harshit Mahawar'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
-    },
-    {
-        "id": "evt_indersahaniliveastandupspecial",
-        "title": "INDER SAHANI LIVE - A STANDUP SPECIAL",
-        "date": "Sat, 31 Oct 2026",
-        "time": "7:00 PM onwards",
-        "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events7/banners/9ccecc60-c96e-11f1-8579-3b3fe6ab2704-rimg-w1200-h600-dc287868-gmir.jpg?v=1792161233",
-        "link": "https://allevents.in/raipur/inder-sahani-live-a-standup-special/3900030794257721",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur: 'INDER SAHANI LIVE - A STANDUP SPECIAL'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanha",
@@ -376,8 +256,128 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-23T19:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
+    },
+    {
+        "id": "evt_avinashparte",
+        "title": "Avinash parte",
+        "date": "Mon, 02 Nov 2026",
+        "time": "1:30 PM onwards",
+        "venue": "Nakati, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/5b3e9510c1a386b466edc2ca750327eae5542099b344f0e44be160c11307f177-rimg-w1200-h669-dc280878-gmir?v=1787627015",
+        "link": "https://allevents.in/raipur/avinash-parte/200030108649553",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Nakati, Raipur: 'Avinash parte'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
+    },
+    {
+        "id": "evt_aanganhumaresapnoka",
+        "title": "Aangan ,humare sapno ka",
+        "date": "Thu, 26 Nov 2026",
+        "time": "12:00 AM onwards",
+        "venue": "Jawahar Nagar, Station Road, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events5/banners/40ee0c7fc4c193b8a7266a31548d3dbfd8a5c71d9b42e9e91b580aa7ef5cfa7a-rimg-w900-h1600-dcf8f8f8-gmir?v=1786935698",
+        "link": "https://allevents.in/raipur/aangan-humare-sapno-ka/200030299655839",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Jawahar Nagar, Station Road, Raipur: 'Aangan ,humare sapno ka'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
+    },
+    {
+        "id": "evt_oshojainmeregharchaloindiatour",
+        "title": "Osho Jain - Mere Ghar Chalo - India Tour",
+        "date": "Sun, 07 Feb 2027",
+        "time": "7:00 PM onwards",
+        "venue": "Pandit Dindayal Upadhyay Auditorium, Near Science College Auditorium, Great Eastern Road, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events9/banners/e7adf960-ca57-11f1-87af-a5fe78201b78-rimg-w1200-h600-dca89838-gmir.jpg?v=1792261498",
+        "link": "https://allevents.in/raipur/osho-jain-mere-ghar-chalo-india-tour/3900030847499059",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Pandit Dindayal Upadhyay Auditorium, Near Science College Auditorium, Great Eastern Road, Raipur: 'Osho Jain - Mere Ghar Chalo - India Tour'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-17T20:25:51Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
+    },
+    {
+        "id": "evt_chhathpuja2025",
+        "title": "Chhath Puja 2025",
+        "date": "Sat, 14 Nov 2026",
+        "time": "12:00 AM onwards",
+        "venue": "Dumartala, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events2/banners/1266863bba261491ce0811004e5bafaaff57b5f7b096a261f3f9c565d195330f-rimg-w673-h1037-dc082858-gmir?v=1788175456",
+        "link": "https://allevents.in/raipur/chhath-puja-2025/200030181719335",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Dumartala, Raipur: 'Chhath Puja 2025'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-23T23:44:51Z"
+    },
+    {
+        "id": "evt_air1astandupcomedyshowbyharshi",
+        "title": "AIR 1 - A Standup Comedy Show by Harshit Mahawar",
+        "date": "Sat, 31 Oct 2026",
+        "time": "1:30 PM onwards",
+        "venue": "Akhada By RCC, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/143389e0-c220-11f1-848b-1578c9159971-rimg-w900-h1200-dc080808-gmir.jpg?v=1791357845",
+        "link": "https://allevents.in/raipur/air-1-a-standup-comedy-show-by-harshit-mahawar/4100030796335806",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Akhada By RCC, Raipur: 'AIR 1 - A Standup Comedy Show by Harshit Mahawar'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-07T10:05:57Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
+    },
+    {
+        "id": "evt_indersahaniliveastandupspecial",
+        "title": "INDER SAHANI LIVE - A STANDUP SPECIAL",
+        "date": "Sat, 31 Oct 2026",
+        "time": "7:00 PM onwards",
+        "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events7/banners/9ccecc60-c96e-11f1-8579-3b3fe6ab2704-rimg-w1200-h600-dc287868-gmir.jpg?v=1792161233",
+        "link": "https://allevents.in/raipur/inder-sahani-live-a-standup-special/3900030794257721",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur: 'INDER SAHANI LIVE - A STANDUP SPECIAL'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-07T10:05:57Z",
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_raaserang",
@@ -516,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -536,8 +536,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     },
     {
         "id": "evt_trickortreat",
@@ -556,7 +556,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T19:06:56Z",
-        "next_check_due": "2026-10-21T07:06:56Z"
+        "last_verified_at": "2026-10-20T23:44:51Z",
+        "next_check_due": "2026-10-21T11:44:51Z"
     }
 ]
