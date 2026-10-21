@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_behrupiyesketchcomedyshow",
@@ -56,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T06:39:59Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_screeningofchelseavstottenham",
@@ -76,28 +76,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
-    },
-    {
-        "id": "evt_afronoonsmascara",
-        "title": "Afronoons Mascara",
-        "date": "Sun, 01 Nov 2026",
-        "time": "7:00 PM onwards",
-        "venue": "Diablo Raipur, LG-24, Zora the Mall, NH-6, opposite Agriculture college, Serikhedi, Jora, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events2/banners/1dd36330-ca3b-11f1-87af-a5fe78201b78-rimg-w1200-h675-dc081808-gmir.jpg?v=1792249067",
-        "link": "https://allevents.in/raipur/afronoons-mascara/4100030847244448",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Diablo Raipur, LG-24, Zora the Mall, NH-6, opposite Agriculture college, Serikhedi, Jora, Raipur: 'Afronoons Mascara'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_thegoldenfive",
@@ -116,8 +96,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -136,28 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
-    },
-    {
-        "id": "evt_greateducationexpo2027raipur",
-        "title": "Great Education Expo 2027 – Raipur",
-        "date": "Sat, 21 Nov 2026",
-        "time": "12:30 AM onwards",
-        "venue": "Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg",
-        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -176,8 +136,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
+    },
+    {
+        "id": "evt_greateducationexpo2027raipur",
+        "title": "Great Education Expo 2027 – Raipur",
+        "date": "Sat, 21 Nov 2026",
+        "time": "12:30 AM onwards",
+        "venue": "Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg",
+        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-08T00:53:44Z",
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -196,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_nationalexporaipur2026",
@@ -216,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_5",
@@ -236,8 +216,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-12T00:24:02Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanha",
@@ -256,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_avinashparte",
@@ -276,8 +256,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -296,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour",
@@ -316,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -336,8 +316,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-23T23:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-24T04:21:01Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -356,8 +336,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
+    },
+    {
+        "id": "evt_afronoonsmascara",
+        "title": "Afronoons Mascara",
+        "date": "Sun, 01 Nov 2026",
+        "time": "7:00 PM onwards",
+        "venue": "Diablo Raipur, LG-24, Zora the Mall, NH-6, opposite Agriculture college, Serikhedi, Jora, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events2/banners/1dd36330-ca3b-11f1-87af-a5fe78201b78-rimg-w1200-h675-dc081808-gmir.jpg?v=1792249067",
+        "link": "https://allevents.in/raipur/afronoons-mascara/4100030847244448",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Diablo Raipur, LG-24, Zora the Mall, NH-6, opposite Agriculture college, Serikhedi, Jora, Raipur: 'Afronoons Mascara'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-17T20:25:51Z",
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -376,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_raaserang",
@@ -516,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -536,8 +536,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     },
     {
         "id": "evt_trickortreat",
@@ -556,7 +556,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-20T23:44:51Z",
-        "next_check_due": "2026-10-21T11:44:51Z"
+        "last_verified_at": "2026-10-21T04:21:01Z",
+        "next_check_due": "2026-10-21T16:21:01Z"
     }
 ]
