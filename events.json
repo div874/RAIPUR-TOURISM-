@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,28 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
-    },
-    {
-        "id": "evt_nationalexporaipur2026",
-        "title": "National Expo Raipur 2026",
-        "date": "Fri, 27 Nov 2026",
-        "time": "10:00 AM onwards",
-        "venue": "Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/b6a0449d6b861139114ad365012ef12a41d4dc9741498a0ce50fd7e70b18a9eb-rimg-w1024-h541-dcf8d808-gmir?v=1792434215",
-        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -76,8 +56,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -96,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -116,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -136,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_thegoldenfive",
@@ -156,8 +136,28 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-24T22:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T01:03:07Z"
+    },
+    {
+        "id": "evt_nationalexporaipur2026",
+        "title": "National Expo Raipur 2026",
+        "date": "Fri, 27 Nov 2026",
+        "time": "10:00 AM onwards",
+        "venue": "Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/b6a0449d6b861139114ad365012ef12a41d4dc9741498a0ce50fd7e70b18a9eb-rimg-w1024-h541-dcf8d808-gmir?v=1792434215",
+        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-19T20:30:32Z",
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanha",
@@ -176,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_avinashparte",
@@ -196,8 +196,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -216,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour",
@@ -236,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -256,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-27T20:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-27T23:03:07Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -276,8 +276,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_afronoonsmascara",
@@ -296,8 +296,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -316,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_halloweennightftdjmv",
@@ -336,28 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-24T15:45:45Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
-    },
-    {
-        "id": "evt_screeningofchelseavsmanchester",
-        "title": "Screening of Chelsea vs Manchester United at Underdoggs Raipur",
-        "date": "Sat, 31 Oct 2026",
-        "time": "6:00 PM onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/084479f0-cfbd-11f1-958f-31ad8555babb-rimg-w1200-h675-dcf8f8f8-gmir.jpg?v=1792854622",
-        "link": "https://allevents.in/raipur/screening-of-chelsea-vs-manchester-united-at-underdoggs-raipur/4100030903299222",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Chelsea vs Manchester United at Underdoggs Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-24T15:45:45Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -376,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -396,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -416,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -436,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -456,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -476,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_raaserang",
@@ -496,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -516,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     },
     {
         "id": "evt_trickortreat",
@@ -536,7 +516,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-24T20:34:28Z",
-        "next_check_due": "2026-10-25T08:34:28Z"
+        "last_verified_at": "2026-10-24T23:03:07Z",
+        "next_check_due": "2026-10-25T11:03:07Z"
     }
 ]
