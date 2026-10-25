@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,28 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
-    },
-    {
-        "id": "evt_thegoldenfive",
-        "title": "The Golden Five",
-        "date": "Sun, 25 Oct 2026",
-        "time": "7:30 PM onwards",
-        "venue": "Atal Bihari Bajpayee Auditorium, Medical College, Pt jawahar lal Nehru Memorial Medical College, Moudhapara, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events2/banners/98c42610-ceff-11f1-958f-31ad8555babb-rimg-w1200-h600-dc380808-gmir.jpg?v=1792773260",
-        "link": "https://allevents.in/raipur/the-golden-five/3900030854386000",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Atal Bihari Bajpayee Auditorium, Medical College, Pt jawahar lal Nehru Memorial Medical College, Moudhapara, Raipur: 'The Golden Five'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-25T17:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_halloweennightftdjmv",
@@ -76,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-24T15:45:45Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_nationalexporaipur2026",
@@ -96,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_screeningofchelseavsmanchester",
@@ -116,8 +96,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-25T04:18:19Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -136,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -156,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -176,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -196,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanha",
@@ -216,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_avinashparte",
@@ -236,8 +216,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -256,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour",
@@ -276,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -296,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-28T15:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -316,8 +296,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_afronoonsmascara",
@@ -336,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -356,8 +336,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
+    },
+    {
+        "id": "evt_entrepreneursmixerraipur",
+        "title": "Entrepreneur's Mixer (Raipur)",
+        "date": "Fri, 27 Nov 2026",
+        "time": "3:00 PM onwards",
+        "venue": "Kursi Cowork, 3rd Floor, LK Logistics and Corporate Park, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn2.allevents.in/thumbs/thumb6ade45c4c4a38.jpg",
+        "link": "https://allevents.in/raipur/entrepreneurs-mixer-raipur-tickets/80003073980732",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Kursi Cowork, 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on District.",
+        "verification_status": "NEW",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-25T20:41:39Z",
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-28T20:41:39Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -376,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_raaserang",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -516,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     },
     {
         "id": "evt_trickortreat",
@@ -536,7 +536,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T15:56:49Z",
-        "next_check_due": "2026-10-26T03:56:49Z"
+        "last_verified_at": "2026-10-25T20:41:39Z",
+        "next_check_due": "2026-10-26T08:41:39Z"
     }
 ]
