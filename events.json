@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,148 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
-    },
-    {
-        "id": "evt_halloweennightftdjmv",
-        "title": "Halloween Night ft. DJ MV",
-        "date": "Sat, 31 Oct 2026",
-        "time": "8:00 PM onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events9/banners/519c2270-cf7b-11f1-958f-31ad8555babb-rimg-w1200-h675-dc080808-gmir.jpg?v=1792826398",
-        "link": "https://allevents.in/raipur/halloween-night-ft-dj-mv/4100030901294558",
-        "category": "Clubs",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Halloween Night ft. DJ MV'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-24T15:45:45Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
-    },
-    {
-        "id": "evt_nationalexporaipur2026",
-        "title": "National Expo Raipur 2026",
-        "date": "Fri, 27 Nov 2026",
-        "time": "10:00 AM onwards",
-        "venue": "Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/b6a0449d6b861139114ad365012ef12a41d4dc9741498a0ce50fd7e70b18a9eb-rimg-w1024-h541-dcf8d808-gmir?v=1792434215",
-        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
-    },
-    {
-        "id": "evt_screeningofchelseavsmanchester",
-        "title": "Screening of Chelsea vs Manchester United at Underdoggs Raipur",
-        "date": "Sat, 31 Oct 2026",
-        "time": "6:00 PM onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events4/banners/084479f0-cfbd-11f1-958f-31ad8555babb-rimg-w1200-h675-dcf8f8f8-gmir.jpg?v=1792854622",
-        "link": "https://allevents.in/raipur/screening-of-chelsea-vs-manchester-united-at-underdoggs-raipur/4100030903299222",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Chelsea vs Manchester United at Underdoggs Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-10-25T04:18:19Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
-    },
-    {
-        "id": "evt_raipurcomedyfestival",
-        "title": "Raipur Comedy Festival",
-        "date": "Sun, 20 Dec 2026",
-        "time": "7:00 PM onwards",
-        "venue": "Venue To Be Announced",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events6/banners/98291730-cf02-11f1-958f-31ad8555babb-rimg-w1200-h600-dc38b8f8-gmir.jpg?v=1792774547",
-        "link": "https://allevents.in/raipur/raipur-comedy-festival/3900030722293502",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Venue To Be Announced: 'Raipur Comedy Festival'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
-    },
-    {
-        "id": "evt_sevenvowsaholisticweddingexhib",
-        "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
-        "date": "Thu, 24 Dec 2026",
-        "time": "11:00 AM onwards",
-        "venue": "Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events6/banners/262d489afe8205fd8872f0bb1e94a7f5554656a6daa29405c6cbbc030269e9de-rimg-w1127-h633-dc770f34-gmir?v=1777745416",
-        "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
-    },
-    {
-        "id": "evt_resolution2027india",
-        "title": "RESOLUTION 2027 INDIA",
-        "date": "Thu, 31 Dec 2026",
-        "time": "7:00 PM onwards",
-        "venue": "Venue To Be Announced",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn-az.allevents.in/events5/banners/010e0690-cde4-11f1-982a-093ef56d654d-rimg-w1200-h600-dc080818-gmir.jpg?v=1792651457",
-        "link": "https://allevents.in/raipur/resolution-2027-india/3900030707945208",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Venue To Be Announced: 'RESOLUTION 2027 INDIA'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
-    },
-    {
-        "id": "evt_greateducationexpo2027raipur",
-        "title": "Great Education Expo 2027 – Raipur",
-        "date": "Sat, 21 Nov 2026",
-        "time": "12:30 AM onwards",
-        "venue": "Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
-        "price": "Book on District",
-        "source": "District",
-        "image": "https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg",
-        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
     },
     {
         "id": "evt_thegoldenfive",
@@ -196,8 +56,148 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-20T00:11:55Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T13:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-25T17:56:49Z"
+    },
+    {
+        "id": "evt_halloweennightftdjmv",
+        "title": "Halloween Night ft. DJ MV",
+        "date": "Sat, 31 Oct 2026",
+        "time": "8:00 PM onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events9/banners/519c2270-cf7b-11f1-958f-31ad8555babb-rimg-w1200-h675-dc080808-gmir.jpg?v=1792826398",
+        "link": "https://allevents.in/raipur/halloween-night-ft-dj-mv/4100030901294558",
+        "category": "Clubs",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Halloween Night ft. DJ MV'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-24T15:45:45Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
+    },
+    {
+        "id": "evt_nationalexporaipur2026",
+        "title": "National Expo Raipur 2026",
+        "date": "Fri, 27 Nov 2026",
+        "time": "10:00 AM onwards",
+        "venue": "Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/b6a0449d6b861139114ad365012ef12a41d4dc9741498a0ce50fd7e70b18a9eb-rimg-w1024-h541-dcf8d808-gmir?v=1792434215",
+        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Science College Ground, Raipur, 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-19T20:30:32Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
+    },
+    {
+        "id": "evt_screeningofchelseavsmanchester",
+        "title": "Screening of Chelsea vs Manchester United at Underdoggs Raipur",
+        "date": "Sat, 31 Oct 2026",
+        "time": "6:00 PM onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events4/banners/084479f0-cfbd-11f1-958f-31ad8555babb-rimg-w1200-h675-dcf8f8f8-gmir.jpg?v=1792854622",
+        "link": "https://allevents.in/raipur/screening-of-chelsea-vs-manchester-united-at-underdoggs-raipur/4100030903299222",
+        "category": "Sports",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur: 'Screening of Chelsea vs Manchester United at Underdoggs Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-25T04:18:19Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
+    },
+    {
+        "id": "evt_raipurcomedyfestival",
+        "title": "Raipur Comedy Festival",
+        "date": "Sun, 20 Dec 2026",
+        "time": "7:00 PM onwards",
+        "venue": "Venue To Be Announced",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events6/banners/98291730-cf02-11f1-958f-31ad8555babb-rimg-w1200-h600-dc38b8f8-gmir.jpg?v=1792774547",
+        "link": "https://allevents.in/raipur/raipur-comedy-festival/3900030722293502",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Venue To Be Announced: 'Raipur Comedy Festival'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
+    },
+    {
+        "id": "evt_sevenvowsaholisticweddingexhib",
+        "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
+        "date": "Thu, 24 Dec 2026",
+        "time": "11:00 AM onwards",
+        "venue": "Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events6/banners/262d489afe8205fd8872f0bb1e94a7f5554656a6daa29405c6cbbc030269e9de-rimg-w1127-h633-dc770f34-gmir?v=1777745416",
+        "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Sayaji Raipur, The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
+    },
+    {
+        "id": "evt_resolution2027india",
+        "title": "RESOLUTION 2027 INDIA",
+        "date": "Thu, 31 Dec 2026",
+        "time": "7:00 PM onwards",
+        "venue": "Venue To Be Announced",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn-az.allevents.in/events5/banners/010e0690-cde4-11f1-982a-093ef56d654d-rimg-w1200-h600-dc080818-gmir.jpg?v=1792651457",
+        "link": "https://allevents.in/raipur/resolution-2027-india/3900030707945208",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Venue To Be Announced: 'RESOLUTION 2027 INDIA'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
+    },
+    {
+        "id": "evt_greateducationexpo2027raipur",
+        "title": "Great Education Expo 2027 – Raipur",
+        "date": "Sat, 21 Nov 2026",
+        "time": "12:30 AM onwards",
+        "venue": "Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
+        "price": "Book on District",
+        "source": "District",
+        "image": "https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg",
+        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Babylon Inn, Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur: 'Great Education Expo 2027 – Raipur'. Get tickets directly on District.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-08T00:53:44Z",
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanha",
@@ -216,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
     },
     {
         "id": "evt_avinashparte",
@@ -236,8 +236,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -256,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour",
@@ -276,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -296,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-28T11:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-28T15:56:49Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -316,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_afronoonsmascara",
@@ -336,8 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -356,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -376,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_raaserang",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -516,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     },
     {
         "id": "evt_trickortreat",
@@ -536,7 +536,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-25T11:08:47Z",
-        "next_check_due": "2026-10-25T23:08:47Z"
+        "last_verified_at": "2026-10-25T15:56:49Z",
+        "next_check_due": "2026-10-26T03:56:49Z"
     }
 ]
