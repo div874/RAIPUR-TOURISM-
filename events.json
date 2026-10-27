@@ -16,8 +16,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_satyabratmohapatralive",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_halloweennightftdjmv",
@@ -56,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-24T15:45:45Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur",
@@ -76,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_nationalexporaipur2026",
@@ -96,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_screeningofchelseavsmanchester",
@@ -116,8 +116,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-25T04:18:19Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_raipurcomedyfestival",
@@ -136,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhib",
@@ -156,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_resolution2027india",
@@ -176,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur",
@@ -196,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanha",
@@ -216,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_avinashparte",
@@ -236,8 +236,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_aanganhumaresapnoka",
@@ -256,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour",
@@ -276,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_chhathpuja2025",
@@ -296,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-29T20:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-30T00:19:45Z"
     },
     {
         "id": "evt_air1astandupcomedyshowbyharshi",
@@ -316,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_afronoonsmascara",
@@ -336,8 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_indersahaniliveastandupspecial",
@@ -347,7 +347,7 @@
         "venue": "MAIC Auditorium, Maharaja Agrasen International College, Samta Colony, Sri Ramnath Bhimsen Marg, Amapara, Raipur",
         "price": "Book on District",
         "source": "District",
-        "image": "https://cdn-az.allevents.in/events6/banners/7b874c30-cf4a-11f1-958f-31ad8555babb-rimg-w1200-h600-dc287868-gmir.jpg?v=1792805423",
+        "image": "https://cdn-az.allevents.in/events7/banners/19693a00-d188-11f1-9547-cd6e084cb72b-rimg-w1200-h600-dc287868-gmir.jpg?v=1793051789",
         "link": "https://allevents.in/raipur/inder-sahani-live-a-standup-special/3900030794257721",
         "category": "Shows",
         "tag": "week",
@@ -356,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-07T10:05:57Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur",
@@ -376,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_wtfcocinemarave",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_fakeresignationparty",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_exkishaadi",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhot",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_raaserang",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_royalgarbaraipur",
@@ -516,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     },
     {
         "id": "evt_trickortreat",
@@ -536,7 +536,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-10-26T20:23:56Z",
-        "next_check_due": "2026-10-27T08:23:56Z"
+        "last_verified_at": "2026-10-27T00:19:45Z",
+        "next_check_due": "2026-10-27T12:19:45Z"
     }
 ]
