@@ -1,0 +1,65 @@
+{
+  "city_id": "raipur",
+  "display_name": "Raipur",
+  "brand_name": "Hamara Raipur",
+  "state": "Chhattisgarh",
+  "country": "India",
+  "country_code": "IN",
+  "timezone": "Asia/Kolkata",
+  "currency": "INR",
+  "locale": "en-IN",
+  "aliases": [
+    "Raipur",
+    "Raipur City",
+    "Nava Raipur",
+    "Naya Raipur",
+    "Bhilai-Durg Twin Region"
+  ],
+  "coordinates": {
+    "latitude": 21.2514,
+    "longitude": 81.6296
+  },
+  "boundaries": {
+    "min_lat": 21.10,
+    "max_lat": 21.40,
+    "min_lon": 81.45,
+    "max_lon": 81.88
+  },
+  "enabled_categories": [
+    "destinations",
+    "food",
+    "experiences",
+    "events",
+    "culture",
+    "shopping",
+    "nature",
+    "heritage"
+  ],
+  "sources": [
+    "cg_tourism",
+    "raipur_district",
+    "osm_places",
+    "raipur_eateries_registry",
+    "local_experiences"
+  ],
+  "seo": {
+    "meta_title": "Humara Raipur — The Definitive City Discovery Guide",
+    "meta_description": "Discover 17th-century heritage temples, lakeside promenades, authentic rice-flour delicacies, street food hubs, and verified live events across Raipur.",
+    "keywords": [
+      "Raipur tourism",
+      "places to visit in Raipur",
+      "Dudhadhari Math",
+      "Purkhauti Muktangan",
+      "Telibandha Marine Drive",
+      "Farra Chila Raipur",
+      "Raipur events"
+    ]
+  },
+  "theme": {
+    "primary_color": "#0d3b36",
+    "accent_color": "#d94e28",
+    "background_color": "#fbfbf8"
+  },
+  "enabled": true
+}
+

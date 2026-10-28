@@ -13,7 +13,9 @@
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="css/raipurtales.css?v=21" rel="stylesheet">
 
   <style>
@@ -85,7 +87,7 @@
     }
 
     .hs-hero-title {
-      font-family: 'Playfair Display', Georgia, serif !important;
+      font-family: var(--rt-font-heading) !important;
       font-size: clamp(34px, 4.3vw, 60px);
       font-weight: 700;
       line-height: 1.05;
@@ -97,7 +99,7 @@
     }
 
     .hs-hero-kicker {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: clamp(10px, 0.8vw, 11px);
       font-weight: 700;
       letter-spacing: 3px;
@@ -107,7 +109,7 @@
     }
 
     .hs-hero-sub {
-      font-family: 'Manrope', sans-serif !important;
+      font-family: var(--rt-font-sans) !important;
       font-size: clamp(13.5px, 1.1vw, 16px);
       font-weight: 400;
       color: rgba(248, 248, 240, 0.9);
@@ -138,7 +140,7 @@
       align-items: center;
       gap: 8px;
       color: rgba(255, 255, 255, 0.9) !important;
-      font-family: 'Manrope', sans-serif !important;
+      font-family: var(--rt-font-sans) !important;
       font-size: 12.5px;
       font-weight: 600;
       letter-spacing: 0.5px;
@@ -294,7 +296,7 @@
     }
 
     .hs-rect-city-name {
-      font-family: 'Playfair Display', Georgia, serif !important;
+      font-family: var(--rt-font-heading) !important;
       font-size: 26px;
       font-weight: 700;
       color: #073F3B;
@@ -303,14 +305,14 @@
     }
 
     .hs-rect-city-native {
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: 16px;
       font-weight: 700;
       color: #C94C2B;
     }
 
     .hs-rect-persona {
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: 13.5px;
       color: #4A605B;
       line-height: 1.6;
@@ -366,7 +368,7 @@
       background: transparent;
       color: #073F3B !important;
       border: 1.5px solid #073F3B;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 1.2px;
@@ -457,7 +459,7 @@
       padding: 80px 0 36px !important;
       border-top: 1px solid rgba(255, 255, 255, 0.12);
       position: relative;
-      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: var(--rt-font-sans);
       overflow: hidden;
     }
 
@@ -493,7 +495,7 @@
     }
 
     .hi-footer-tagline {
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: var(--rt-font-heading);
       font-size: 19px;
       font-style: italic;
       font-weight: 600;
@@ -511,7 +513,7 @@
     }
 
     .hi-footer-heading {
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 2px;
@@ -583,7 +585,7 @@
       border-radius: 6px;
       color: #FFFFFF;
       font-size: 14px;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       transition: all 0.25s ease;
       outline: none;
       box-sizing: border-box;
@@ -605,7 +607,7 @@
       border: none;
       border-radius: 6px;
       padding: 12px 22px;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: 12px;
       font-weight: 800;
       letter-spacing: 1.5px;
@@ -763,7 +765,7 @@
       border: 1px solid rgba(0, 56, 56, 0.22);
       padding: 7px 16px;
       border-radius: 24px;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       font-size: 13px;
       font-weight: 600;
       color: #003838;
@@ -914,7 +916,7 @@
       width: 100%;
       padding: 13px 18px 13px 44px;
       font-size: 15px;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       color: #1F2937;
       border: 1px solid #E5E7EB;
       border-radius: 6px;
@@ -949,7 +951,7 @@
       border: none;
       padding: 4px 0;
       transition: opacity 0.2s;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
     }
 
     .city-detect-btn:hover {
@@ -998,7 +1000,7 @@
       transition: all 0.25s ease;
       position: relative;
       width: 100%;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
     }
 
     .city-landmark-btn:hover {
@@ -1082,7 +1084,7 @@
       border-radius: 8px;
       background: #FFFFFF;
       cursor: pointer;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
       text-align: left;
       transition: all 0.2s ease;
     }
@@ -1123,7 +1125,7 @@
       cursor: pointer;
       transition: opacity 0.2s;
       text-decoration: none;
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--rt-font-sans);
     }
 
     .city-view-all-link:hover {

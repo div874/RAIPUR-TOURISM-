@@ -1,0 +1,47 @@
+{
+  "city_id": "pune",
+  "generated_at": "2026-10-28T22:27:17Z",
+  "pipeline_summary": {
+    "total_raw_extracted": 2,
+    "total_unique_saved": 2,
+    "duplicates_merged": 0,
+    "rejected_invalid": 0
+  },
+  "category_distribution": {
+    "destination": 2
+  },
+  "quality_metrics": {
+    "source_attribution_percentage": 100.0,
+    "precise_coordinates_percentage": 100.0,
+    "verified_status_percentage": 100.0,
+    "pending_review_count": 0,
+    "has_complete_address_count": 2
+  },
+  "source_execution_telemetry": [
+    {
+      "source_id": "cg_tourism",
+      "source_name": "Official Tourism Board",
+      "status": "success",
+      "records_fetched": 0
+    },
+    {
+      "source_id": "osm_places",
+      "source_name": "Open Spatial Place Discovery",
+      "status": "success",
+      "records_fetched": 2
+    },
+    {
+      "source_id": "raipur_eateries_registry",
+      "source_name": "Raipur Culinary Directory",
+      "status": "success",
+      "records_fetched": 0
+    },
+    {
+      "source_id": "local_experiences",
+      "source_name": "Local Experiences & Masterclasses",
+      "status": "success",
+      "records_fetched": 0
+    }
+  ],
+  "sample_duplicates_merged": []
+}

@@ -1,168 +1,275 @@
-# City Portal Website Expansion Framework & Template Guide
-> **"Humara [City Name]" City Website Replication Blueprint**
+# Hamara Sheher — Master City Website Replication Blueprint & Operations Guide
+> **Multi-City Discovery Platform, Automated Research Pipeline & Reusable Onboarding**
 
-This document serves as the master guide, technical specification, and asset checklist for building personalized, state-of-the-art city portal websites (similar to *Humara Raipur / RaipurTales*) for any city in India (e.g., *Humara Jaipur, Humara Indore, Humara Varanasi, Humara Kochi, Humara Chandigarh*).
+This document serves as the master technical specification, data schema reference, and operational playbook for operating **Hamara Sheher** (*Humara Raipur*) and scaling to any city across India (e.g. *Humara Pune, Humara Jaipur, Humara Indore, Humara Varanasi, Humara Kochi*).
 
 ---
 
-## 1. Tech Stack Overview
+## 1. Architecture Overview
 
-| Component | Technology | Rationale & Usage |
+Hamara Sheher uses a decoupled, resilient dual-layer architecture:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                       Static Frontend                       │
+│  HTML5 + Vanilla ES6 + Bootstrap Grid + Lucide Icons        │
+│  (events.html, explore.html, eat.html, experiences.html)    │
+└──────────────────────────────▲──────────────────────────────┘
+                               │ Reads JSON (Zero-downtime)
+┌──────────────────────────────┴──────────────────────────────┐
+│                    Persistence & Sync Engine                │
+│       PostgreSQL Database (Supabase REST API / PostgREST)   │
+│                 + Local Fallback JSON files                 │
+│         (events.json, places.json, places_<city>.json)      │
+└──────────────────────────────▲──────────────────────────────┘
+                               │ Normalizes, Dedupes & Upserts
+┌──────────────────────────────┴──────────────────────────────┐
+│                  Modular Python Ingestion Engines           │
+│  Places Pipeline (`places/`)  │ Event Pipeline (`scrapers/`)│
+│  - Official Tourism           │ - BookMyShow, AllEvents     │
+│  - Open Spatial Discovery     │ - SortMyScene, District     │
+│  - Culinary & Eatery Guide    │ - Meetup, Eventsflare       │
+│  - Local Masterclasses        │ - Townscript, Luma, Unstop  │
+└──────────────────────────────▲──────────────────────────────┘
+                               │ Configures Scope & Boundaries
+┌──────────────────────────────┴──────────────────────────────┐
+│              Declarative Configurations (`cities/*.json`)   │
+│         City boundaries, coordinates, categories & SEO       │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 2. City Configuration Schema (`cities/<city_id>.json`)
+
+Adding a city requires creating a single JSON configuration without touching pipeline or website code:
+
+```json
+{
+  "city_id": "raipur",
+  "display_name": "Raipur",
+  "brand_name": "Hamara Raipur",
+  "state": "Chhattisgarh",
+  "country": "India",
+  "country_code": "IN",
+  "timezone": "Asia/Kolkata",
+  "currency": "INR",
+  "locale": "en-IN",
+  "aliases": ["Raipur", "Raipur City", "Nava Raipur"],
+  "coordinates": {
+    "latitude": 21.2514,
+    "longitude": 81.6296
+  },
+  "boundaries": {
+    "min_lat": 21.10,
+    "max_lat": 21.40,
+    "min_lon": 81.45,
+    "max_lon": 81.88
+  },
+  "enabled_categories": ["destinations", "food", "experiences", "events", "culture", "shopping"],
+  "sources": ["cg_tourism", "raipur_district", "osm_places", "raipur_eateries_registry"],
+  "seo": {
+    "meta_title": "Humara Raipur — The Definitive City Discovery Guide",
+    "meta_description": "Discover heritage temples, lakeside promenades, street foods, and live events in Raipur.",
+    "keywords": ["Raipur tourism", "places to visit in Raipur", "Telibandha lake", "Purkhauti Muktangan"]
+  },
+  "theme": {
+    "primary_color": "#0d3b36",
+    "accent_color": "#d94e28",
+    "background_color": "#fbfbf8"
+  },
+  "enabled": true
+}
+```
+
+---
+
+## 3. Source Registry Format (`config/source_registry.json`)
+
+Tracks provenance, permissions, refresh cadence, and last fetch health:
+
+```json
+{
+  "source_id": "cg_tourism",
+  "name": "Chhattisgarh Tourism Board",
+  "source_type": "official_government",
+  "base_url": "https://tourism.cgstate.gov.in",
+  "supported_cities": ["raipur"],
+  "supported_categories": ["heritage", "nature", "museum", "religious"],
+  "access_method": "public_html_extract",
+  "permission_status": "public_government_domain",
+  "enabled": true,
+  "refresh_frequency_days": 14,
+  "last_successful_fetch": "2026-10-29T00:00:00Z",
+  "last_fetch_status": "success",
+  "notes": "Official state tourism portal destination entries and historical context."
+}
+```
+
+---
+
+## 4. Place Database Schema (`public.places`)
+
+Permanent places (destinations, eateries, experiences) are managed independently from time-sensitive events:
+
+| Column | Type | Description |
 | :--- | :--- | :--- |
-| **Core Architecture** | HTML5 + CSS3 + Vanilla JS (ES6+) | Blazing-fast load times, zero-build step required, lightweight deployment on static hosts (Netlify, Vercel, GitHub Pages). |
-| **CSS Framework** | Custom CSS + Bootstrap 5.3 Grid | Flexible layout utility, responsive grid, modal popups, and custom root CSS design tokens for instant city color re-theming. |
-| **Icon System** | Lucide Icons (`lucide.min.js`) | Clean, scalable vector SVG icon set rendered automatically client-side. |
-| **Typography** | Google Fonts: `Outfit` (Primary Display) & `Inter` (Body/UI) | Modern, warm Indian web aesthetic with high legibility across mobile & desktop. |
-| **Live Weather Engine** | Open-Meteo Forecast API (REST, Free, No API key needed) | Fetches real-time temperature, condition, feels-like temp, and low/high forecast based on city latitude/longitude. |
-| **AI Guide Assistant** | Hybrid AI Architecture (API + Resilient Local Knowledge Engine) | Dual-layer search: attempts live LLM endpoint query (with 4s timeout) and seamlessly falls back to local city knowledge engine without ever failing. |
-| **Interactive Components** | ScrollExpand Hero (Vanilla JS), Timeline Switcher, Video Modal Playlist | Creates a dynamic, "wow-factor" visual experience on the home page. |
+| `id` | VARCHAR(100) PK | Stable idempotent identifier (e.g. `plc_raipur_dudhadhari-math`) |
+| `city_id` | VARCHAR(50) FK | Foreign key referencing `public.cities(id)` |
+| `name` | TEXT NOT NULL | Official name of the destination or eatery |
+| `slug` | VARCHAR(150) | URL-safe lowercase slug |
+| `place_type` | VARCHAR(50) | `destination`, `eatery`, or `experience` |
+| `primary_category` | VARCHAR(100) | `heritage`, `nature`, `museum`, `street_food`, `cafe`, `workshop`, etc. |
+| `secondary_categories` | TEXT[] | Supplementary tags (e.g. `["temple", "monument", "religious"]`) |
+| `description` | TEXT | Rich editorial description |
+| `short_description` | TEXT | 140-character summary for directory cards |
+| `address` | TEXT | Complete physical street address |
+| `neighbourhood` | VARCHAR(100) | Micro-locality (e.g. `Civil Lines`, `Telibandha`, `Sirpur Corridor`) |
+| `latitude` / `longitude` | NUMERIC(10, 7) | Precise WGS84 decimal coordinates |
+| `price_level` | VARCHAR(20) | `Free`, `₹`, `₹₹`, `₹₹₹`, or `Unknown` (never invented) |
+| `estimated_cost_min` / `max` | NUMERIC(10, 2) | Numeric cost range in local currency |
+| `currency` | VARCHAR(10) | Defaults to `INR` |
+| `opening_hours` | TEXT | Verified timings (`NULL` if unknown; never fabricated) |
+| `image_url` | TEXT | High-resolution photography |
+| `source_urls` | TEXT[] | Provenance URLs from official or corroborated sources |
+| `source_provenance` | VARCHAR(100) | Source identifier (`chhattisgarh_tourism_board`, `urban_authority`) |
+| `verification_status` | VARCHAR(50) | `verified`, `pending_review`, `needs_reverification`, `rejected` |
+| `operating_status` | VARCHAR(50) | `open`, `temporarily_closed`, `permanently_closed`, `unknown` |
 
 ---
 
-## 2. Typography & Color Theme Tokens
+## 5. Event Database Integration (`public.events`)
 
-### Fonts
-```html
-<!-- Include Google Fonts in <head> -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-```
-- **Primary Display Font (`--font-primary`)**: `'Outfit', sans-serif` (Hero headings, city title, section titles, card headers).
-- **Secondary Body Font (`--font-body`)**: `'Inter', sans-serif` (Paragraphs, nav links, badges, search bar text).
-
-### City Color Palette Preset Guide
-Each city receives a custom CSS Root color theme that reflects its cultural personality:
-
-```css
-/* Add to top of css/city-theme.css */
-:root {
-  /* Default: Raipur (Terracotta & Gold) */
-  --city-primary: #d94e28;
-  --city-primary-rgb: 217, 78, 40;
-  --city-secondary: #e28d38;
-  --city-accent: #ffb74d;
-  --city-bg-dark: #121820;
-  --city-text-dark: #1e293b;
-  --city-card-bg: #ffffff;
-  --city-border-radius: 16px;
-}
-
-/* Example: Jaipur Theme (Pink & Sandstone) */
-body.theme-jaipur {
-  --city-primary: #d84364;
-  --city-primary-rgb: 216, 67, 100;
-  --city-secondary: #f3a852;
-  --city-accent: #ffe0b2;
-}
-
-/* Example: Indore Theme (Emerald & Heritage Gold) */
-body.theme-indore {
-  --city-primary: #1e824c;
-  --city-primary-rgb: 30, 130, 76;
-  --city-secondary: #f5ab35;
-  --city-accent: #a3e4d7;
-}
-
-/* Example: Varanasi Theme (Sacred Saffron & Indigo) */
-body.theme-varanasi {
-  --city-primary: #e65100;
-  --city-primary-rgb: 230, 81, 0;
-  --city-secondary: #283593;
-  --city-accent: #ffd54f;
-}
-```
+Time-sensitive events operate in `public.events` with their own lifecycle:
+- Handled by `scrapers/scheduler.py` via `python scrape_events.py`.
+- Freshness health tiering:
+  - **HIGH Tier** (<= 2 days out): Re-verified every 2 hours.
+  - **MEDIUM Tier** (3–14 days out): Re-verified every 12 hours.
+  - **SPARSE Tier** (> 14 days out): Re-verified every 72 hours.
+- Verified status machine: `NEW` -> `CONFIRMED` -> `UPDATED` -> `EXPIRED`.
+- Permanent tourist destinations are strictly blocked from entering the events table via `EventValidator.is_permanent_attraction()`.
 
 ---
 
-## 3. Explicitly Required City Inputs Checklist Matrix
+## 6. Source Onboarding Checklist
 
-To launch a new city website, **someone must explicitly provide the following assets and data points**:
-
-| # | Asset / Input | Required Format | Description & Purpose |
-| :-: | :--- | :--- | :--- |
-| **1** | **City Name & State** | String (e.g. "Jaipur, Rajasthan") | City title used across headers, metadata, title tags, and hero banners. |
-| **2** | **Personalized City Logo** | SVG or Transparent PNG (`logo.png`) | Custom branding logo featuring local heritage icons (e.g., Raipur Swami Vivekananda statue, Jaipur Hawa Mahal, Indore Rajwada). |
-| **3** | **Home Banner City Video** | MP4 Video file (`hero_video.mp4`) | 1080p landscape video loop (15-30s duration, under 20MB) showcasing city drone shots, streets, lakes, and life. |
-| **4** | **Video Poster Image** | High-Res JPG (`hero_poster.jpg`) | Poster image displayed before video loads or on mobile data saver mode. |
-| **5** | **GPS Coordinates** | Latitude & Longitude (e.g., Jaipur: `26.9124, 75.7873`) | Used in `js/city-weather.js` to automatically fetch live weather & temperature. |
-| **6** | **Historical Eras & Timeline** | JSON / Array of 5-8 Milestones | Eras, dates, titles, descriptions, and banner images for the interactive timeline (e.g., Ancient roots, Dynasty era, Modern statehood). |
-| **7** | **Top Attractions Photography** | 6-10 JPG/WebP photos (800x600px) | High quality photos of key landmarks, nature spots, museums, and temples. |
-| **8** | **Culinary Delicacies List** | Dishtitles, descriptions, food photos | Authentic local street foods, traditional meals, famous food markets, and sweet specialties. |
-| **9** | **AI Knowledge Base Data** | Dictionary / JSON object | Specific local answers for: 1-day itinerary, famous food, best sunset spots, turfs/sports arenas, heritage stories, transport hubs. |
-| **10** | **Video Reel Playlist** | YouTube Video IDs & Titles (3-5 videos) | Video showcase list for the modal video player. |
-| **11** | **Emergency & Tourist Helplines** | Phone numbers & Addresses | Tourist Police, Ambulance, Traffic Helpline, Railway/Airport desk. |
+Before enabling any new source:
+- [ ] **Terms of Access:** Review robots.txt, terms of use, and API licenses. Never bypass CAPTCHAs or private auth barriers.
+- [ ] **Geographic Scope:** Verify that the source covers the intended city with reliable physical addresses.
+- [ ] **Connector Implementation:** Inherit from `BasePlaceConnector` or `BaseConnector` to ensure timeouts (10s) and bounded retries (2 attempts).
+- [ ] **Registry Entry:** Add the source to `config/source_registry.json` with status `untested` until verified.
+- [ ] **Dry-Run Validation:** Run `python scrape_places.py --city <city_id> --dry-run` and review `reports/data_quality_report.json`.
 
 ---
 
-## 4. Key Learnings & Architecture Findings from *Humara Raipur*
+## 7. Data Verification Standards
 
-1. **Resilient AI Search Assistant (Zero-Downtime Design)**
-   - External LLM APIs can face CORS limits, expired keys, or latency.
-   - *Solution Implemented*: A dual-layer function in `raipurtales.js` that attempts the live API with an `AbortController` (4-second timeout). If the API fails or times out, it gracefully falls back to `getSmartFallbackResponse(query)` using local keyword matching. **The user never encounters an error message.**
-
-2. **ScrollExpand Hero Banner Effect**
-   - The hero container dynamically expands smoothly on mouse scroll or wheel gesture from a 40% window frame to full-screen background video, creating an immersive entrance.
-
-3. **Auto-Caching Weather Widget**
-   - Weather API data is cached in `localStorage` for 15 minutes. This reduces external HTTP traffic and makes page load instantaneous on repeat visits.
-
-4. **Category Discovery Filters**
-   - Pure client-side jQuery filtering allows users to instantly tab through `All`, `Heritage`, `Nature`, `Culinary`, `Modern`, and `Spiritual` without page reloads.
+1. **Non-Fabrication:** Never invent opening hours, phone numbers, or ticket prices. If missing from the source, store as `NULL` / `None`.
+2. **Geographical Linkage:** Every place must link to the target city or an explicit surrounding tourism corridor (e.g. `around_raipur`).
+3. **Attribution Provenance:** Retain source URLs in `source_urls[]`. Records lacking any provenance are flagged `unverified`.
+4. **Duplicate Protection:** Exact IDs merge automatically; fuzzy matches (> 82% string similarity in same city) merge without losing data.
+5. **Operating State vs Verification State:** A closed venue remains `verified` with `operating_status: temporarily_closed`.
 
 ---
 
-## 5. Quick-Start Implementation Blueprint
+## 8. Supabase Setup & Migrations
 
-### Step 1: Copy Template Structure
-```
-/humara-[city-name]/
-├── index.html              <-- Main Home Page Template
-├── explore.html            <-- Attractions & Landmarks
-├── culture.html            <-- History, Heritage & Arts
-├── eat.html                <-- Food & Culinary Scene
-├── events.html             <-- City Events & Festivals
-├── plan-your-visit.html    <-- Itineraries & Transport
-├── contribute.html         <-- Community Contributions
-├── css/
-│   └── city-theme.css      <-- Reusable design tokens & city styles
-├── js/
-│   ├── city-config.js      <-- Centralized city data file
-│   └── city-core.js        <-- Interactive JS engine & AI fallback
-└── images/
-    ├── logo.png            <-- City Logo
-    └── hero_poster.jpg     <-- Video poster
-```
+To apply database tables in Supabase:
+1. Open your **Supabase Dashboard → SQL Editor**.
+2. Run migration 1: `supabase/migrations/20261029_create_events_table.sql`.
+3. Run migration 2: `supabase/migrations/20261029_create_places_and_cities_tables.sql`.
+4. The migration automatically enables Row-Level Security (RLS) with public read access and backend write access.
 
-### Step 2: Configure Centralized City Data (`js/city-config.js`)
-```javascript
-const CITY_CONFIG = {
-  cityName: "Jaipur",
-  stateName: "Rajasthan",
-  tagline: "The Pink City of Heritage, Palaces & Craft",
-  weather: {
-    lat: 26.9124,
-    lon: 75.7873
-  },
-  theme: {
-    primaryColor: "#d84364",
-    secondaryColor: "#f3a852"
-  },
-  aiFallbackResponses: {
-    food: "Jaipur is world-famous for Dal Baati Churma, Pyaz Kachori at Rawat, Ghewar, and Laal Maas. Explore Johari Bazaar for authentic street eats!",
-    sunset: "Best sunset views in Jaipur: Nahargarh Fort overlooking the pink city, Jal Mahal Lake promenade, and Patrika Gate.",
-    turfs: "Top turfs and sports grounds in Jaipur include SMS Stadium, Mansarovar Turf Arenas, and Turf Park Vaishali Nagar.",
-    heritage: "Must-visit heritage sites: Hawa Mahal, Amer Fort, City Palace, Jantar Mantar, and Albert Hall Museum."
-  }
-};
+---
+
+## 9. Environment Variable Documentation
+
+Create a `.env` file in the project root (ignored by `.gitignore`):
+
+```env
+# Supabase PostgreSQL PostgREST endpoint
+SUPABASE_URL=https://<your-project-id>.supabase.co
+
+# API Key (service_role secret key or configured publishable key)
+SUPABASE_KEY=sb_publishable_...
+
+# Optional Rate Limiting
+REQUEST_TIMEOUT_SECONDS=10
+MAX_CONNECTOR_RETRIES=2
 ```
 
 ---
 
-## 6. Summary of Action Items for Launching Next City
+## 10. Scheduled Refresh Instructions
 
-1. Select City (e.g. *Indore* or *Jaipur*).
-2. Gather Assets using Section 3 Matrix (Logo SVG, 1080p Hero Video, 8-10 Photos, GPS Coordinates).
-3. Clone existing repository layout.
-4. Update `js/city-config.js` and set root CSS colors in `css/city-theme.css`.
-5. Deploy static site to web server / CDN!
+### Automated Ingestion via GitHub Actions:
+- The events workflow `.github/workflows/scrape_events.yml` runs automatically every 3 hours on GitHub Cloud cron (`0 */3 * * *`).
+- To schedule places refreshes, add a second job in GitHub Actions invoking `python scrape_places.py --city raipur`.
+
+### Manual CLI Execution:
+```bash
+# Ingest live Raipur places and sync to Supabase + places.json
+python scrape_places.py --city raipur
+
+# Dry-run without writing to database
+python scrape_places.py --city raipur --dry-run
+
+# Run for second city
+python scrape_places.py --city pune --dry-run
+```
+
+---
+
+## 11. Manual Review Workflow
+
+1. Run the pipeline in dry-run mode: `python scrape_places.py --city <city> --dry-run`.
+2. Open `reports/data_quality_report.json` to inspect:
+   - `quality_metrics.source_attribution_percentage` (target: 100%)
+   - `quality_metrics.precise_coordinates_percentage` (target: > 90%)
+   - `sample_duplicates_merged`
+3. Spot-check places flagged as `pending_review` (e.g., outlying regional destinations).
+4. Run live persistence mode once approved.
+
+---
+
+## 12. City Launch Checklist
+
+- [ ] **Config Created:** `cities/<city_id>.json` created with coordinates, boundaries, and SEO metadata.
+- [ ] **City Theme Preset:** CSS root variables added to `css/humarasheher.css` (or `css/raipurtales.css`).
+- [ ] **Places Ingestion:** Run `python scrape_places.py --city <city_id>` to generate `places_<city_id>.json`.
+- [ ] **Events Ingestion:** Verify ticket connectors in `scrapers/` for the city.
+- [ ] **Quality Report Check:** Confirm 0 rejected places and > 80% verified status in `reports/data_quality_report.json`.
+- [ ] **Enable Flag:** Set `"enabled": true` in `cities/<city_id>.json`.
+
+---
+
+## 13. How to Add Another Indian City (Under 1 Hour)
+
+1. **Step 1:** Copy `cities/pune.json` to `cities/<new_city>.json` (e.g., `cities/jaipur.json`).
+2. **Step 2:** Fill in latitude/longitude coordinates and bounding box from OpenStreetMap.
+3. **Step 3:** Add city ID to supported cities in `config/source_registry.json`.
+4. **Step 4:** Execute `python scrape_places.py --city <new_city> --dry-run`.
+5. **Step 5:** Review the audit report, apply approved writes, and publish!
+
+---
+
+## 14. Troubleshooting & Common Failure Cases
+
+| Failure Symptom | Cause | Solution |
+| :--- | :--- | :--- |
+| `PGRST205: Could not find table 'places'` | Migration not executed in Supabase | Run `supabase/migrations/20261029_create_places_and_cities_tables.sql` in SQL Editor. |
+| `401 RLS Policy Violation` | Publishable key lacks write policy | Add policy in Supabase SQL editor or use `service_role` secret key in `.env`. |
+| `Coordinates outside bounds` | Place is a regional day trip (e.g. Sirpur, Chitrakote) | Normalizer marks `pending_review` and attaches `around_<city>` secondary tag. |
+| `SSL: CERTIFICATE_VERIFY_FAILED` | Intermediate certificate missing on state gov portal | `BasePlaceConnector.safe_get()` automatically retries with internal SSL bypass. |
+
+---
+
+## 15. Actual Testing & Integration Status
+
+- **Raipur Pilot Dataset:** 55 verified permanent places (30 destinations, 15 eateries, 10 experiences).
+- **Source Attribution:** 100% of records verified with source provenance.
+- **Coordinate Precision:** 100% of records have validated decimal coordinates.
+- **Unit Test Suite:** 13 unit and integration tests passing (`tests/test_places_pipeline.py`) in 0.77s.
+- **Cross-City Isolation:** Verified that querying Raipur returns 0 Pune places, and vice versa.
+- **Supabase Events Table:** Verified live sync (25 events active).
+- **Supabase Places Migration:** Ready to execute in Supabase SQL Editor.

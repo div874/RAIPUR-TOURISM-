@@ -1,0 +1,62 @@
+{
+  "city_id": "pune",
+  "display_name": "Pune",
+  "brand_name": "Hamara Pune",
+  "state": "Maharashtra",
+  "country": "India",
+  "country_code": "IN",
+  "timezone": "Asia/Kolkata",
+  "currency": "INR",
+  "locale": "en-IN",
+  "aliases": [
+    "Pune",
+    "Poona",
+    "PCMC",
+    "Pune City"
+  ],
+  "coordinates": {
+    "latitude": 18.5204,
+    "longitude": 73.8567
+  },
+  "boundaries": {
+    "min_lat": 18.35,
+    "max_lat": 18.72,
+    "min_lon": 73.65,
+    "max_lon": 74.05
+  },
+  "enabled_categories": [
+    "destinations",
+    "food",
+    "experiences",
+    "events",
+    "culture",
+    "shopping",
+    "outdoors",
+    "heritage"
+  ],
+  "sources": [
+    "maharashtra_tourism",
+    "pune_district",
+    "osm_places",
+    "pune_eateries_registry"
+  ],
+  "seo": {
+    "meta_title": "Humara Pune — City Discovery & Cultural Guide",
+    "meta_description": "Explore historical Maratha forts, heritage wadas, Irani cafes, student culture, and upcoming events in Pune.",
+    "keywords": [
+      "Pune tourism",
+      "places to visit in Pune",
+      "Shaniwar Wada",
+      "Aga Khan Palace",
+      "FC Road cafes",
+      "Pune events"
+    ]
+  },
+  "theme": {
+    "primary_color": "#800020",
+    "accent_color": "#f39c12",
+    "background_color": "#faf9f6"
+  },
+  "enabled": false
+}
+

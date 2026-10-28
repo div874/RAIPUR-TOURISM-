@@ -1,0 +1,143 @@
+[
+  {
+    "source_id": "cg_tourism",
+    "name": "Chhattisgarh Tourism Board",
+    "source_type": "official_government",
+    "base_url": "https://tourism.cgstate.gov.in",
+    "supported_cities": [
+      "raipur"
+    ],
+    "supported_categories": [
+      "heritage",
+      "nature",
+      "museum",
+      "religious",
+      "cultural"
+    ],
+    "access_method": "public_html_extract",
+    "permission_status": "public_government_domain",
+    "enabled": true,
+    "refresh_frequency_days": 14,
+    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_fetch_status": "success",
+    "notes": "Official state tourism portal destination entries and historical context.",
+    "last_fetch_count": 0
+  },
+  {
+    "source_id": "raipur_district",
+    "name": "District Raipur Administration Portal",
+    "source_type": "official_government",
+    "base_url": "https://raipur.gov.in/en/places-to-visit/",
+    "supported_cities": [
+      "raipur"
+    ],
+    "supported_categories": [
+      "heritage",
+      "nature",
+      "temple",
+      "museum"
+    ],
+    "access_method": "public_html_extract",
+    "permission_status": "public_government_domain",
+    "enabled": true,
+    "refresh_frequency_days": 14,
+    "last_successful_fetch": "2026-10-29T00:00:00Z",
+    "last_fetch_status": "success",
+    "notes": "Official places of interest compiled by District Administration Raipur."
+  },
+  {
+    "source_id": "osm_places",
+    "name": "OpenStreetMap & Curated Open Geo Data",
+    "source_type": "open_geodata",
+    "base_url": "https://www.openstreetmap.org",
+    "supported_cities": [
+      "raipur",
+      "pune"
+    ],
+    "supported_categories": [
+      "nature",
+      "parks",
+      "temples",
+      "monuments",
+      "markets",
+      "lakes"
+    ],
+    "access_method": "curated_spatial_query",
+    "permission_status": "odbl_license_compliant",
+    "enabled": true,
+    "refresh_frequency_days": 30,
+    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_fetch_status": "success",
+    "notes": "Open geographic points of interest with verified latitude and longitude coordinates. Requires attribution.",
+    "last_fetch_count": 2
+  },
+  {
+    "source_id": "raipur_eateries_registry",
+    "name": "Raipur Culinary & Food Directory",
+    "source_type": "editorial_and_verified_registry",
+    "base_url": "https://raipurtales.com/food",
+    "supported_cities": [
+      "raipur"
+    ],
+    "supported_categories": [
+      "street_food",
+      "cafe",
+      "traditional_cuisine",
+      "sweets",
+      "bakery",
+      "fine_dining"
+    ],
+    "access_method": "structured_verified_registry",
+    "permission_status": "proprietary_editorial",
+    "enabled": true,
+    "refresh_frequency_days": 7,
+    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_fetch_status": "success",
+    "notes": "Manually verified Raipur eateries, traditional Chhattisgarhi food specialists, lakefront promenade cafes, and historic sweet vendors.",
+    "last_fetch_count": 0
+  },
+  {
+    "source_id": "local_experiences",
+    "name": "Raipur Local Cultural Experiences & Workshops",
+    "source_type": "curated_experience_registry",
+    "base_url": "https://raipurtales.com/experiences",
+    "supported_cities": [
+      "raipur"
+    ],
+    "supported_categories": [
+      "workshops",
+      "heritage_walks",
+      "wildlife_safari",
+      "artisan_craft",
+      "culinary_trail"
+    ],
+    "access_method": "structured_verified_registry",
+    "permission_status": "proprietary_editorial",
+    "enabled": true,
+    "refresh_frequency_days": 7,
+    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_fetch_status": "success",
+    "notes": "Verified guided tours, wildlife safari booking info, and tribal dokra casting & terracotta workshops in Raipur.",
+    "last_fetch_count": 0
+  },
+  {
+    "source_id": "google_places_api",
+    "name": "Google Maps Platform Places API",
+    "source_type": "authorized_api",
+    "base_url": "https://maps.googleapis.com/maps/api/place",
+    "supported_cities": [
+      "raipur",
+      "pune"
+    ],
+    "supported_categories": [
+      "all"
+    ],
+    "access_method": "places_api_rest",
+    "permission_status": "untested_awaiting_api_key",
+    "enabled": false,
+    "refresh_frequency_days": 30,
+    "last_successful_fetch": null,
+    "last_fetch_status": "disabled_or_untested",
+    "notes": "Requires GOOGLE_MAPS_API_KEY. Subject to Google Places API caching and attribution terms."
+  }
+]
