@@ -16,32 +16,32 @@
 
   <style>
     /* ==========================================================================
-       HUMARA RAIPUR — CINEMATIC TELIBANDHA MARINE DRIVE HERO SECTION
+       HUMARA RAIPUR — EDITORIAL TELIBANDHA MARINE DRIVE HERO SECTION
        ========================================================================== */
     .raipur-cinematic-hero {
       position: relative;
       width: 100%;
-      height: 780px;
-      min-height: 680px;
-      max-height: 850px;
+      height: 600px;
+      min-height: 550px;
+      max-height: 640px;
       display: flex;
       align-items: center;
-      background: #001A1A url('images/raipur_marine_drive_sunset.jpg') right 6% center / cover no-repeat;
+      background: #123D32 url('images/raipur_marine_drive_sunset.jpg') right 12% center / cover no-repeat;
       overflow: hidden;
-      padding: 110px 0 60px;
+      padding: 92px 0 36px;
     }
 
-    /* Sunset Gradient Scrim: Deep on left for contrast, clear on right for Telibandha landscape */
+    /* Sunset Gradient Scrim: Deep forest green on left for contrast, open on right for Telibandha landscape */
     .raipur-hero-scrim {
       position: absolute;
       inset: 0;
       background: linear-gradient(
         to right,
-        rgba(0, 24, 24, 0.94) 0%,
-        rgba(0, 30, 30, 0.88) 38%,
-        rgba(0, 34, 34, 0.60) 58%,
-        rgba(0, 26, 26, 0.15) 80%,
-        rgba(0, 20, 20, 0.35) 100%
+        rgba(18, 61, 50, 0.88) 0%,
+        rgba(18, 61, 50, 0.72) 36%,
+        rgba(18, 61, 50, 0.32) 60%,
+        rgba(18, 61, 50, 0.04) 82%,
+        rgba(7, 63, 59, 0.18) 100%
       );
       z-index: 2;
       pointer-events: none;
@@ -53,23 +53,23 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 12px;
+      height: 10px;
       z-index: 5;
       overflow: hidden;
-      opacity: 0.6;
+      opacity: 0.55;
       pointer-events: none;
     }
     .raipur-godna-top-border svg {
-      width: 100%;
-      height: 12px;
+      width: 100% !important;
+      height: 10px;
       display: block;
     }
 
-    /* Top-Right Meta Container (Weather & Landmark Pin) */
+    /* Top-Right Meta Container (Weather) */
     .raipur-top-right-meta {
       position: absolute;
-      top: 100px;
-      right: 32px;
+      top: 96px;
+      right: 36px;
       z-index: 20;
       display: flex;
       align-items: center;
@@ -79,223 +79,206 @@
 
     .raipur-cinematic-hero .rt-hero-weather-line {
       position: static !important;
-      background: rgba(0, 36, 36, 0.65) !important;
-      backdrop-filter: blur(10px) !important;
-      -webkit-backdrop-filter: blur(10px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.22) !important;
+      background: rgba(18, 61, 50, 0.55) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(247, 240, 227, 0.22) !important;
       border-radius: 30px !important;
       padding: 6px 16px !important;
       font-size: 12px !important;
-      color: #F8F6F0 !important;
-      box-shadow: 0 4px 16px rgba(0, 20, 20, 0.25) !important;
+      color: #F7F0E3 !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
       margin: 0 !important;
       transition: all 0.25s ease;
     }
     .raipur-cinematic-hero .rt-hero-weather-line:hover {
-      background: rgba(0, 48, 48, 0.85) !important;
-      border-color: rgba(232, 85, 37, 0.5) !important;
-    }
-
-    /* Floating Landmark Verification Tag */
-    .raipur-landmark-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0, 36, 36, 0.72);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 30px;
-      padding: 5px 14px 5px 10px;
-      box-shadow: 0 4px 18px rgba(0, 20, 20, 0.3);
-      font-family: 'Manrope', sans-serif;
-      transition: all 0.25s ease;
-    }
-    .raipur-landmark-tag:hover {
-      background: rgba(0, 48, 48, 0.9);
-      border-color: rgba(232, 85, 37, 0.6);
-      transform: translateY(-2px);
-    }
-    .raipur-landmark-pin {
-      width: 20px;
-      height: 20px;
-      background: rgba(232, 85, 37, 0.22);
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #E85525;
-      font-size: 11px;
-    }
-    .raipur-landmark-title {
-      font-size: 11px;
-      font-weight: 600;
-      color: #F8F6F0;
-      letter-spacing: 0.3px;
-    }
-    .raipur-landmark-badge {
-      font-size: 9px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      background: #E85525;
-      color: #FFFFFF;
-      padding: 2px 7px;
-      border-radius: 12px;
-      margin-left: 2px;
+      background: rgba(18, 61, 50, 0.8) !important;
+      border-color: rgba(201, 76, 43, 0.5) !important;
     }
 
     /* Content Container */
     .raipur-hero-content-container {
       z-index: 10;
-      padding-top: 10px;
-      padding-bottom: 25px;
+      width: 100%;
     }
 
-    /* Soft Sunset Frosted Text Card for Flawless Readability */
+    /* Refined Translucent Forest-Green Editorial Text Card */
     .raipur-hero-text-card {
-      background: linear-gradient(135deg, rgba(0, 26, 26, 0.82) 0%, rgba(0, 36, 36, 0.72) 100%);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      border-radius: 20px;
-      padding: 34px 38px 28px;
-      box-shadow: 0 16px 45px rgba(0, 16, 16, 0.45);
-      max-width: 610px;
+      background: rgba(18, 61, 50, 0.45);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(247, 240, 227, 0.18);
+      border-radius: 22px;
+      padding: 30px 34px 26px;
+      box-shadow: 0 14px 36px rgba(7, 30, 25, 0.35);
+      max-width: 535px;
     }
 
-    /* Eyebrow Badge */
-    .raipur-hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0, 40, 40, 0.75);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      border-radius: 30px;
-      padding: 5px 16px;
-      font-family: 'Manrope', sans-serif;
-      margin-bottom: 18px;
-    }
-    .raipur-badge-pulse-dot {
-      width: 7px;
-      height: 7px;
-      background: #10B981;
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(16, 185, 129, 0.8);
-      animation: rtPulseDot 2s infinite;
-      display: inline-block;
-    }
-    .raipur-badge-text {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 2.2px;
-      color: #F8E6DD;
-      text-transform: uppercase;
-    }
-    .raipur-badge-sep {
-      color: #E85525;
-      font-size: 10px;
-    }
-    .raipur-badge-loc {
-      font-size: 10.5px;
-      font-weight: 700;
-      letter-spacing: 1.8px;
-      color: #E85525;
-      text-transform: uppercase;
-    }
-
-    /* Headline */
+    /* Editorial Headline */
     .raipur-hero-headline {
       font-family: 'Playfair Display', Georgia, serif !important;
-      font-size: clamp(34px, 4.0vw, 54px);
+      font-size: clamp(30px, 3.2vw, 44px);
       font-weight: 700;
-      line-height: 1.08;
+      line-height: 1.14;
       letter-spacing: -0.01em;
-      color: #FFFDF7;
+      color: #F7F0E3;
       text-transform: uppercase;
-      margin-bottom: 14px;
-      text-shadow: 0 4px 24px rgba(0, 16, 16, 0.5);
+      margin-bottom: 12px;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
     }
     .raipur-headline-terracotta {
-      color: #E85525;
+      color: #C94C2B !important;
       display: block;
-      background: linear-gradient(135deg, #FF7A45 0%, #E85525 60%, #C2410C 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background: none !important;
+      -webkit-text-fill-color: #C94C2B !important;
     }
 
     /* Supporting Text */
     .raipur-hero-sub {
-      font-family: 'Manrope', sans-serif !important;
-      font-size: clamp(14px, 1.15vw, 17px);
+      font-family: 'Manrope', -apple-system, sans-serif !important;
+      font-size: clamp(14px, 1.0vw, 15.5px);
       font-weight: 400;
       line-height: 1.5;
-      color: #F0E8DC;
-      max-width: 580px;
-      margin-bottom: 26px;
-      text-shadow: 0 2px 10px rgba(0, 16, 16, 0.4);
+      color: #F7F0E3;
+      opacity: 0.92;
+      max-width: 470px;
+      margin-bottom: 22px;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
     }
 
-    /* Left-aligned Search & Quick Lookup Chips */
+    /* Left-aligned Search Bar */
     .raipur-cinematic-hero .rt-hero-inline-search {
       margin-left: 0 !important;
       margin-right: 0 !important;
-      max-width: 620px !important;
+      max-width: 100% !important;
       text-align: left !important;
     }
-    .raipur-cinematic-hero .rt-ai-prompt-chips {
-      justify-content: flex-start !important;
+    .raipur-cinematic-hero .rt-inline-search-wrap {
+      background: rgba(247, 240, 227, 0.12) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(247, 240, 227, 0.28) !important;
+      border-radius: 34px !important;
+      height: 64px !important;
+      padding: 5px 6px 5px 18px !important;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22) !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      transition: all 0.25s ease !important;
+    }
+    .raipur-cinematic-hero .rt-inline-search-wrap:hover,
+    .raipur-cinematic-hero .rt-inline-search-wrap:focus-within {
+      background: rgba(247, 240, 227, 0.18) !important;
+      border-color: rgba(247, 240, 227, 0.5) !important;
+      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.32) !important;
+    }
+    .raipur-cinematic-hero .rt-inline-search-icon {
+      color: #C94C2B !important;
+      width: 19px !important;
+      height: 19px !important;
+      flex-shrink: 0 !important;
+    }
+    .raipur-cinematic-hero .rt-inline-search-input {
+      flex: 1 !important;
+      background: transparent !important;
+      border: none !important;
+      outline: none !important;
+      color: #F7F0E3 !important;
+      font-family: 'Manrope', -apple-system, sans-serif !important;
+      font-size: 13.5px !important;
+      font-weight: 500 !important;
+      padding: 0 4px !important;
+      min-width: 0 !important;
+    }
+    .raipur-cinematic-hero .rt-inline-search-input::placeholder {
+      color: rgba(247, 240, 227, 0.72) !important;
+      font-weight: 400 !important;
+      font-size: 13px !important;
+    }
+    .raipur-cinematic-hero .rt-inline-search-btn {
+      background: #C94C2B !important;
+      color: #F7F0E3 !important;
+      border: none !important;
+      border-radius: 26px !important;
+      height: 48px !important;
+      padding: 10px 22px !important;
+      font-family: 'Manrope', -apple-system, sans-serif !important;
+      font-size: 11.5px !important;
+      font-weight: 700 !important;
+      letter-spacing: 1.2px !important;
+      text-transform: uppercase !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      box-shadow: 0 4px 14px rgba(201, 76, 43, 0.35) !important;
+      flex-shrink: 0 !important;
+      cursor: pointer !important;
+      transition: all 0.25s ease !important;
+      white-space: nowrap !important;
+    }
+    .raipur-cinematic-hero .rt-inline-search-btn:hover {
+      background: #B23E20 !important;
+      transform: translateY(-1px) !important;
+      box-shadow: 0 6px 18px rgba(201, 76, 43, 0.5) !important;
     }
 
-    /* Bottom Cultural Frieze */
-    .raipur-cultural-bottom-frieze {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 52px;
-      z-index: 4;
-      pointer-events: none;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      padding: 0 40px 10px;
-      border-bottom: 2px solid rgba(232, 85, 37, 0.45);
-      background: linear-gradient(to top, rgba(0, 20, 20, 0.75) 0%, transparent 100%);
-    }
-    .raipur-dhokra-svg {
-      display: block;
-    }
-    .raipur-frieze-caption {
-      font-family: 'Manrope', sans-serif;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-      color: rgba(245, 239, 224, 0.45);
+    /* Scroll Down Button Position in Hero */
+    .raipur-cinematic-hero .rt-hero-scroll-down {
+      bottom: 16px !important;
     }
 
     /* Responsive adjustments */
     @media (max-width: 991px) {
       .raipur-cinematic-hero {
-        background-position: center center !important;
-        padding: 120px 0 75px;
+        height: auto;
+        min-height: 560px;
+        background-position: 70% center !important;
+        padding: 100px 0 50px;
       }
       .raipur-hero-scrim {
         background: linear-gradient(
           to bottom,
-          rgba(0, 24, 24, 0.92) 0%,
-          rgba(0, 32, 32, 0.78) 45%,
-          rgba(0, 20, 20, 0.94) 100%
+          rgba(18, 61, 50, 0.88) 0%,
+          rgba(18, 61, 50, 0.65) 50%,
+          rgba(18, 61, 50, 0.90) 100%
         );
       }
       .raipur-top-right-meta {
-        top: 92px;
-        right: 18px;
+        top: 86px;
+        right: 20px;
       }
-      .raipur-cultural-bottom-frieze {
-        padding: 0 20px 8px;
+    }
+
+    @media (max-width: 576px) {
+      .raipur-cinematic-hero {
+        padding: 90px 0 40px;
+      }
+      .raipur-hero-text-card {
+        padding: 22px 20px 20px !important;
+        border-radius: 18px !important;
+        max-width: 100% !important;
+      }
+      .raipur-hero-headline {
+        font-size: 26px !important;
+        line-height: 1.18 !important;
+      }
+      .raipur-hero-sub {
+        font-size: 13.5px !important;
+        margin-bottom: 18px !important;
+      }
+      .raipur-cinematic-hero .rt-inline-search-wrap {
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 12px 14px !important;
+        gap: 10px !important;
+        border-radius: 20px !important;
+      }
+      .raipur-cinematic-hero .rt-inline-search-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        height: 44px !important;
       }
     }
 
@@ -1620,41 +1603,14 @@
 <section class="raipur-cinematic-hero" id="heroScrollExpand">
   <!-- Subtle Godna Terracotta Top Border -->
   <div class="raipur-godna-top-border" aria-hidden="true">
-    <svg viewBox="0 0 1200 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 6 L1200 6" stroke="#E85525" stroke-width="1" stroke-dasharray="2 6" opacity="0.6"/>
-      <!-- Repeating Godna diamond sequence -->
-      <g stroke="#E85525" stroke-width="1.2" fill="#E85525" fill-opacity="0.2">
-        <polygon points="20,6 26,1 32,6 26,11"/>
-        <polygon points="60,6 66,1 72,6 66,11"/>
-        <polygon points="100,6 106,1 112,6 106,11"/>
-        <polygon points="140,6 146,1 152,6 146,11"/>
-        <polygon points="180,6 186,1 192,6 186,11"/>
-        <polygon points="220,6 226,1 232,6 226,11"/>
-        <polygon points="260,6 266,1 272,6 266,11"/>
-        <polygon points="300,6 306,1 312,6 306,11"/>
-        <polygon points="340,6 346,1 352,6 346,11"/>
-        <polygon points="380,6 386,1 392,6 386,11"/>
-        <polygon points="420,6 426,1 432,6 426,11"/>
-        <polygon points="460,6 466,1 472,6 466,11"/>
-        <polygon points="500,6 506,1 512,6 506,11"/>
-        <polygon points="540,6 546,1 552,6 546,11"/>
-        <polygon points="580,6 586,1 592,6 586,11"/>
-        <polygon points="620,6 626,1 632,6 626,11"/>
-        <polygon points="660,6 666,1 672,6 666,11"/>
-        <polygon points="700,6 706,1 712,6 706,11"/>
-        <polygon points="740,6 746,1 752,6 746,11"/>
-        <polygon points="780,6 786,1 792,6 786,11"/>
-        <polygon points="820,6 826,1 832,6 826,11"/>
-        <polygon points="860,6 866,1 872,6 866,11"/>
-        <polygon points="900,6 906,1 912,6 906,11"/>
-        <polygon points="940,6 946,1 952,6 946,11"/>
-        <polygon points="980,6 986,1 992,6 986,11"/>
-        <polygon points="1020,6 1026,1 1032,6 1026,11"/>
-        <polygon points="1060,6 1066,1 1072,6 1066,11"/>
-        <polygon points="1100,6 1106,1 1112,6 1106,11"/>
-        <polygon points="1140,6 1146,1 1152,6 1146,11"/>
-        <polygon points="1180,6 1186,1 1192,6 1186,11"/>
-      </g>
+    <svg width="100%" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="heroGodnaPattern" x="0" y="0" width="40" height="10" patternUnits="userSpaceOnUse">
+          <path d="M0 5 L40 5" stroke="#C94C2B" stroke-width="1" stroke-dasharray="2 4" opacity="0.6"/>
+          <polygon points="20,5 25,1 30,5 25,9" stroke="#C94C2B" stroke-width="1.2" fill="#C94C2B" fill-opacity="0.3"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="10" fill="url(#heroGodnaPattern)"/>
     </svg>
   </div>
 
@@ -1673,7 +1629,7 @@
   <!-- Main Hero Content Container (Spacious Editorial Layout Positioned Left) -->
   <div class="container position-relative raipur-hero-content-container">
     <div class="row">
-      <div class="col-xl-7 col-lg-8 col-md-11 text-start">
+      <div class="col-xl-6 col-lg-7 col-md-10 text-start">
         
         <!-- Soft Frosted Editorial Text Card for High Readability -->
         <div class="raipur-hero-text-card">
@@ -1711,66 +1667,6 @@
 
       </div>
     </div>
-  </div>
-
-  <!-- Bottom Cultural Silhouette Frieze (Bastar Dhokra & Folk Dance Silhouettes Framing Edges) -->
-  <div class="raipur-cultural-bottom-frieze" aria-hidden="true">
-    <div class="raipur-frieze-craft">
-      <svg width="420" height="48" viewBox="0 0 420 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="raipur-dhokra-svg">
-        <!-- Bastar Dhokra Deer Silhouette -->
-        <g fill="#D97706" opacity="0.32">
-          <path d="M40 38 L42 26 L46 22 L52 24 L56 30 L54 38 Z"/>
-          <path d="M46 22 L44 14 L42 10 L44 8 L46 11 L48 14 Z"/>
-          <path d="M44 10 C40 6 36 8 34 11 C32 14 36 12 40 12"/>
-          <path d="M45 9 C47 5 52 4 55 6 C56 8 52 8 47 10"/>
-          <line x1="42" y1="38" x2="42" y2="46" stroke="#D97706" stroke-width="1.8"/>
-          <line x1="45" y1="38" x2="45" y2="46" stroke="#D97706" stroke-width="1.8"/>
-          <line x1="53" y1="38" x2="53" y2="46" stroke="#D97706" stroke-width="1.8"/>
-          <line x1="55" y1="38" x2="55" y2="46" stroke="#D97706" stroke-width="1.8"/>
-        </g>
-
-        <!-- Traditional Folk Dancer / Musician Silhouettes (Karma / Panthi rhythm) -->
-        <g stroke="#D97706" stroke-width="1.6" fill="none" opacity="0.28" stroke-linecap="round">
-          <!-- Musician with Horn (Turiya) -->
-          <circle cx="110" cy="14" r="3.5" fill="#D97706"/>
-          <line x1="110" y1="18" x2="110" y2="34"/>
-          <line x1="110" y1="34" x2="105" y2="46"/>
-          <line x1="110" y1="34" x2="115" y2="46"/>
-          <path d="M110 22 L116 26 L124 20 L130 18"/>
-          <path d="M128 16 C131 16 133 20 130 22"/>
-
-          <!-- Folk Dancer in rhythmic pose -->
-          <circle cx="160" cy="13" r="3.5" fill="#D97706"/>
-          <line x1="160" y1="17" x2="160" y2="32"/>
-          <line x1="160" y1="32" x2="153" y2="46"/>
-          <line x1="160" y1="32" x2="167" y2="46"/>
-          <path d="M150 20 L160 23 L170 19"/>
-
-          <!-- Second Dancer linking hands -->
-          <circle cx="190" cy="13" r="3.5" fill="#D97706"/>
-          <line x1="190" y1="17" x2="190" y2="32"/>
-          <line x1="190" y1="32" x2="183" y2="46"/>
-          <line x1="190" y1="32" x2="197" y2="46"/>
-          <path d="M180 19 L190 23 L200 20"/>
-
-          <!-- Third Dancer -->
-          <circle cx="220" cy="13" r="3.5" fill="#D97706"/>
-          <line x1="220" y1="17" x2="220" y2="32"/>
-          <line x1="220" y1="32" x2="213" y2="46"/>
-          <line x1="220" y1="32" x2="227" y2="46"/>
-          <path d="M210 20 L220 23 L230 19"/>
-
-          <!-- Stylized Sal Nature Motif Tree -->
-          <path d="M290 46 L290 16 M290 22 L278 14 M290 26 L302 18 M290 32 L276 24 M290 36 L304 28" stroke="#E85525" stroke-width="1.4"/>
-          <circle cx="290" cy="14" r="2" fill="#E85525"/>
-        </g>
-      </svg>
-    </div>
-
-    <!-- Micro Cultural Label -->
-    <span class="raipur-frieze-caption d-none d-md-inline-block">
-      Bastar Dhokra &amp; Godna Folk Craft Heritage · Chhattisgarh
-    </span>
   </div>
 
   <!-- Bottom Bouncing Scroll Indicator -->
