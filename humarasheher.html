@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Humara Sheher — India, Told Differently | National City Discovery & Tourism Portal</title>
+  <meta name="description" content="Discover Incredible India through hyper-local eyes. Explore iconic cities, living heritage, sacred ghats, regional food trails, live festivals, and untold cultural stories across Bharat.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  
+  <!-- CSS Dependencies matching Humara Raipur Theme -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="css/raipurtales.css?v=21" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       HUMARA SHEHER — PAN-INDIA TOURISM EXTENSIONS (HUMARA RAIPUR PALETTE)
+       ========================================================================== */
+
+    /* ==========================================================================
+       HERO VIEWPORT CALIBRATION — 100% VISIBILITY AT 100% ZOOM
+       ========================================================================== */
+    .hs-tourism-hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #001818 url('images/india_tourism_hero.jpg') center center / cover no-repeat;
+      overflow: hidden;
+      padding: clamp(75px, 9vh, 95px) 20px clamp(25px, 4vh, 38px);
+    }
+
+    @media (max-height: 820px) {
+      .hs-tourism-hero {
+        min-height: calc(100vh - 15px);
+        padding-top: 72px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .hs-tourism-hero-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 20, 20, 0.74) 0%,
+        rgba(0, 32, 32, 0.40) 45%,
+        rgba(0, 18, 18, 0.88) 100%
+      );
+      z-index: 2;
+    }
+
+    .hs-tourism-hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+    }
+
+    .hs-national-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 36, 36, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 30px;
+      padding: 5px 16px;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #F8E5DC;
+      margin-bottom: 12px;
+    }
+
+    .hs-hero-title {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: clamp(34px, 4.3vw, 60px);
+      font-weight: 700;
+      line-height: 1.05;
+      color: #F8F8F0;
+      letter-spacing: -0.015em;
+      margin-bottom: 12px;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+      text-transform: uppercase;
+    }
+
+    .hs-hero-kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(10px, 0.8vw, 11px);
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--rt-orange);
+      margin-bottom: 10px;
+    }
+
+    .hs-hero-sub {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: clamp(13.5px, 1.1vw, 16px);
+      font-weight: 400;
+      color: rgba(248, 248, 240, 0.9);
+      max-width: 640px;
+      margin: 0 auto 18px;
+      line-height: 1.55;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Transparent Search Bar inline in Hero */
+    .rt-hero-inline-search {
+      width: 100%;
+      max-width: 660px;
+      margin: 0 auto 16px;
+    }
+
+    /* Scroll Down Indicator — always visible with breathing room */
+    .rt-hero-scroll-down {
+      position: relative !important;
+      bottom: auto !important;
+      left: auto !important;
+      transform: none !important;
+      margin-top: 8px !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: auto !important;
+      display: inline-flex !important;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-decoration: none !important;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+      transition: color 0.25s ease, opacity 0.25s ease;
+    }
+
+    .rt-hero-scroll-down:hover {
+      color: #FFFFFF !important;
+      opacity: 1;
+    }
+
+    /* National Header Tourism Pill on Top Right */
+    .hs-national-stat-line {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      z-index: 25;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #F8F8F0;
+      font-size: 11.5px;
+      font-weight: 600;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    /* ==========================================================================
+       FIXED EDITORIAL CITY CARDS — 100% VISIBLE, NO TRUNCATION
+       ========================================================================== */
+    .hs-rect-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(7, 63, 59, 0.12);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-shadow: 0 4px 18px rgba(7, 63, 59, 0.05);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .hs-rect-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(7, 63, 59, 0.12);
+      border-color: rgba(201, 76, 43, 0.35);
+    }
+
+    .hs-rect-card.is-live-card {
+      border: 1.5px solid #10b981;
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.12);
+    }
+
+    /* Media Banner on Top */
+    .hs-rect-media {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      min-height: 190px;
+      background: #002828;
+      overflow: hidden;
+    }
+
+    .hs-rect-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .hs-rect-card:hover .hs-rect-img {
+      transform: scale(1.06);
+    }
+
+    .hs-rect-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0, 36, 36, 0.82) 0%,
+        rgba(0, 36, 36, 0.2) 55%,
+        rgba(0, 36, 36, 0.05) 100%
+      );
+    }
+
+    .hs-rect-tag-live {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: #10b981;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    }
+
+    .hs-rect-tag-upcoming {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(0, 36, 36, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #F8E5DC;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 4px;
+      backdrop-filter: blur(6px);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .hs-rect-state-badge {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      color: #FFFFFF;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+    }
+
+    /* Card Body Content */
+    .hs-rect-content {
+      width: 100%;
+      padding: 22px 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+    }
+
+    .hs-rect-title-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      gap: 12px;
+    }
+
+    .hs-rect-city-name {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 26px;
+      font-weight: 700;
+      color: #073F3B;
+      margin: 0;
+      line-height: 1.15;
+    }
+
+    .hs-rect-city-native {
+      font-family: 'Manrope', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #C94C2B;
+    }
+
+    .hs-rect-persona {
+      font-family: 'Manrope', sans-serif;
+      font-size: 13.5px;
+      color: #4A605B;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /* Pillars Strip inside Card — 100% readable across full width */
+    .hs-rect-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 12px 14px;
+      background: rgba(7, 63, 59, 0.05);
+      border: 1px solid rgba(7, 63, 59, 0.07);
+      border-radius: 8px;
+      margin-bottom: 18px;
+    }
+
+    .hs-pillar-item {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .hs-pillar-label {
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #C94C2B;
+      margin-bottom: 3px;
+    }
+
+    .hs-pillar-val {
+      font-size: 12px;
+      font-weight: 600;
+      color: #073F3B;
+      white-space: normal;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+
+    .hs-rect-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid rgba(7, 63, 59, 0.09);
+      gap: 12px;
+    }
+
+    .btn-rt-secondary-teal {
+      background: transparent;
+      color: #073F3B !important;
+      border: 1.5px solid #073F3B;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 9px 18px;
+      border-radius: 6px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      text-decoration: none !important;
+    }
+
+    .btn-rt-secondary-teal:hover {
+      background: #073F3B;
+      color: #FFFFFF !important;
+    }
+
+    .btn-rt-secondary-teal.is-primary {
+      background: #C94C2B;
+      border-color: #C94C2B;
+      color: #FFFFFF !important;
+    }
+
+    .btn-rt-secondary-teal.is-primary:hover {
+      background: #B03E20;
+      border-color: #B03E20;
+    }
+
+    /* Small Mobile Tweaks for Cards */
+    @media (max-width: 576px) {
+      .hs-rect-media {
+        height: 185px;
+      }
+      .hs-rect-content {
+        padding: 18px 16px;
+      }
+      .hs-rect-pillars {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .hs-rect-city-name {
+        font-size: 22px;
+      }
+    }
+
+    /* Tourism Regions Feature Strip */
+    .hs-region-tile {
+      background: var(--rt-white);
+      border: 1px solid var(--rt-border);
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      height: 100%;
+      transition: all 0.3s ease;
+      box-shadow: var(--rt-shadow);
+    }
+
+    .hs-region-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 56, 56, 0.08);
+      border-color: var(--rt-orange);
+    }
+
+    .hs-region-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      background: var(--rt-light-teal);
+      color: var(--rt-teal);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    /* ==========================================================================
+       HAMARA INDIA — REDESIGNED PRODUCTION FOOTER
+       Deep forest green (#003B38), vibrant burnt orange (#E85525),
+       warm white (#F8F8F0), muted sage (#A2B5B0)
+       ========================================================================== */
+    .hi-footer {
+      background-color: #003B38 !important;
+      color: #F8F8F0 !important;
+      padding: 80px 0 36px !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      position: relative;
+      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow: hidden;
+    }
+
+    .hi-footer-brand-wrap {
+      max-width: 380px;
+    }
+
+    .hi-footer-logo-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      text-decoration: none !important;
+      transition: opacity 0.25s ease;
+    }
+
+    .hi-footer-logo-link:hover {
+      opacity: 0.9;
+    }
+
+    .hi-footer-logo-link:focus-visible {
+      outline: 2px solid #E85525;
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .hi-footer-logo-img {
+      max-height: 52px !important;
+      height: 52px !important;
+      width: auto !important;
+      max-width: 240px !important;
+      object-fit: contain !important;
+      filter: brightness(1.1);
+      display: block;
+    }
+
+    .hi-footer-tagline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      letter-spacing: 0.2px;
+      line-height: 1.45;
+    }
+
+    .hi-footer-desc {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #A2B5B0;
+      margin-bottom: 0;
+    }
+
+    .hi-footer-heading {
+      font-family: 'Manrope', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #E85525;
+      margin-bottom: 20px;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .hi-footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hi-footer-nav li {
+      margin-bottom: 12px;
+    }
+
+    .hi-footer-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: #D6E2DE;
+      text-decoration: none !important;
+      transition: color 0.25s ease, transform 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .hi-footer-link:hover {
+      color: #FFFFFF;
+      transform: translateX(4px);
+    }
+
+    .hi-footer-link:focus-visible {
+      outline: 2px solid #E85525;
+      outline-offset: 3px;
+      border-radius: 2px;
+      color: #FFFFFF;
+    }
+
+    .hi-footer-newsletter-wrap {
+      max-width: 360px;
+    }
+
+    .hi-newsletter-subtext {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #A2B5B0;
+      margin-bottom: 16px;
+    }
+
+    .hi-newsletter-form {
+      position: relative;
+    }
+
+    .hi-newsletter-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .hi-newsletter-input {
+      width: 100%;
+      padding: 12px 16px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 6px;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-family: 'Manrope', sans-serif;
+      transition: all 0.25s ease;
+      outline: none;
+      box-sizing: border-box;
+    }
+
+    .hi-newsletter-input::placeholder {
+      color: rgba(214, 226, 222, 0.6);
+    }
+
+    .hi-newsletter-input:focus {
+      border-color: #E85525;
+      background-color: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 0 3px rgba(232, 85, 37, 0.25);
+    }
+
+    .hi-newsletter-btn {
+      background-color: #E85525;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 22px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(232, 85, 37, 0.3);
+      width: 100%;
+    }
+
+    .hi-newsletter-btn:hover {
+      background-color: #d14619;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(232, 85, 37, 0.4);
+    }
+
+    .hi-newsletter-btn:focus-visible {
+      outline: 2px solid #FFFFFF;
+      outline-offset: 2px;
+    }
+
+    .hi-newsletter-btn:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .hi-newsletter-status {
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.5;
+      border-radius: 4px;
+      min-height: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .hi-newsletter-status.status-error {
+      color: #FFA599;
+    }
+
+    .hi-newsletter-status.status-success {
+      color: #9CE7C8;
+    }
+
+    .hi-newsletter-status.status-info {
+      color: #D6E2DE;
+    }
+
+    .hi-footer-bottom {
+      margin-top: 56px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hi-footer-copy {
+      font-size: 13px;
+      color: #A2B5B0;
+      margin: 0;
+    }
+
+    .hi-footer-bottom-nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hi-footer-bottom-link {
+      font-size: 13px;
+      color: #A2B5B0;
+      text-decoration: none !important;
+      transition: color 0.25s ease;
+    }
+
+    .hi-footer-bottom-link:hover {
+      color: #FFFFFF;
+    }
+
+    .hi-footer-bottom-link:focus-visible {
+      outline: 2px solid #E85525;
+      outline-offset: 3px;
+      border-radius: 2px;
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 991px) {
+      .hi-footer {
+        padding: 60px 0 32px !important;
+      }
+      .hi-footer-brand-wrap {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+      .hi-footer-newsletter-wrap {
+        max-width: 100%;
+      }
+      .hi-footer-bottom {
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hi-footer-bottom-nav {
+        gap: 12px 16px;
+      }
+      .hi-footer-heading {
+        margin-bottom: 14px;
+      }
+    }
+
+    /* ==========================================================================
+       HEADER VISIBILITY ON HAMARA INDIA PORTAL
+       ========================================================================== */
+    body.rt-home-page .header:not(.scrolled),
+    body.rt-home-page .header,
+    .header {
+      transform: translateY(0) !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      visibility: visible !important;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      background: #FFFFFF !important;
+      border-bottom: 1px solid rgba(0, 56, 56, 0.12) !important;
+      box-shadow: 0 4px 18px rgba(0, 56, 56, 0.06) !important;
+      z-index: 9999 !important;
+    }
+
+    /* ==========================================================================
+       CITY SELECTOR NAVBAR PILL & MODAL (BookMyShow Style)
+       ========================================================================== */
+    .nav-city-select-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 56, 56, 0.22);
+      padding: 7px 16px;
+      border-radius: 24px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #003838;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 8px rgba(0, 56, 56, 0.06);
+      margin-left: 215px; /* Offset beyond the absolute 195px brand logo badge */
+      vertical-align: middle;
+      position: relative;
+      z-index: 1205;
+    }
+
+    .header .container {
+      max-width: 1400px !important;
+    }
+
+    .header .navbar-menu {
+      gap: 24px !important;
+    }
+
+    .nav-city-select-pill:hover {
+      background: #003838;
+      color: #FFFFFF !important;
+      border-color: #003838;
+      box-shadow: 0 4px 14px rgba(0, 56, 56, 0.18);
+      transform: translateY(-1px);
+    }
+
+    .nav-city-select-pill:focus-visible {
+      outline: 2px solid #E85525;
+      outline-offset: 2px;
+    }
+
+    .nav-city-pin-dot {
+      width: 7px;
+      height: 7px;
+      background: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(16, 185, 129, 0.7);
+      display: inline-block;
+      animation: rtPulseDot 2s infinite;
+    }
+
+    .nav-city-chevron-icon {
+      width: 12px;
+      height: 12px;
+      opacity: 0.75;
+      transition: transform 0.25s ease;
+    }
+
+    .nav-city-select-pill:hover .nav-city-chevron-icon {
+      transform: translateY(2px);
+    }
+
+    /* City Selector Modal Dialog */
+    .city-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 25, 25, 0.65);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      z-index: 999999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .city-modal-backdrop.show {
+      display: flex;
+      opacity: 1;
+    }
+
+    .city-modal-dialog {
+      background: #FFFFFF;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 860px;
+      box-shadow: 0 24px 64px rgba(0, 20, 20, 0.25);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 56, 56, 0.08);
+      transform: scale(0.95) translateY(-8px);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .city-modal-backdrop.show .city-modal-dialog {
+      transform: scale(1) translateY(0);
+    }
+
+    .city-modal-header {
+      padding: 20px 24px 16px;
+      position: relative;
+      border-bottom: 1px solid #F1F3F5;
+    }
+
+    .city-modal-top-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .city-modal-search-wrap {
+      position: relative;
+      flex: 1;
+      margin-bottom: 0;
+    }
+
+    .city-modal-close-btn {
+      position: static;
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: #6B7280;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.2s;
+    }
+
+    .city-modal-close-btn:hover {
+      background: #F3F4F6;
+      color: #111827;
+    }
+
+    .city-modal-search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #9CA3AF;
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    .city-modal-search-input {
+      width: 100%;
+      padding: 13px 18px 13px 44px;
+      font-size: 15px;
+      font-family: 'Manrope', sans-serif;
+      color: #1F2937;
+      border: 1px solid #E5E7EB;
+      border-radius: 6px;
+      outline: none;
+      transition: all 0.2s;
+      background: #FFFFFF;
+      box-sizing: border-box;
+    }
+
+    .city-modal-search-input:focus {
+      border-color: #003838;
+      box-shadow: 0 0 0 3px rgba(0, 56, 56, 0.1);
+    }
+
+    .city-detect-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .city-detect-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #E85525;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px 0;
+      transition: opacity 0.2s;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .city-detect-btn:hover {
+      opacity: 0.85;
+      text-decoration: underline;
+    }
+
+    .city-detect-status {
+      font-size: 12px;
+      color: #059669;
+      font-weight: 600;
+    }
+
+    .city-modal-body {
+      padding: 24px 28px;
+      overflow-y: auto;
+      max-height: calc(90vh - 180px);
+    }
+
+    .city-popular-heading {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+      color: #6B7280;
+      margin-bottom: 22px;
+      letter-spacing: 0.5px;
+    }
+
+    .city-popular-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+      gap: 16px 8px;
+      justify-items: center;
+    }
+
+    .city-landmark-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 8px 4px;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+      position: relative;
+      width: 100%;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .city-landmark-btn:hover {
+      background: #F9FAFB;
+      transform: translateY(-3px);
+    }
+
+    .city-landmark-btn:focus-visible {
+      outline: 2px solid #E85525;
+      outline-offset: 2px;
+    }
+
+    .city-landmark-svg-wrap {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      color: #4B5563;
+      transition: all 0.25s ease;
+    }
+
+    .city-landmark-svg-wrap svg {
+      width: 44px;
+      height: 44px;
+      display: block;
+    }
+
+    .city-landmark-btn:hover .city-landmark-svg-wrap {
+      color: #E85525;
+    }
+
+    .city-landmark-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #4B5563;
+      line-height: 1.25;
+      transition: color 0.2s ease;
+    }
+
+    .city-landmark-btn:hover .city-landmark-label {
+      color: #003838;
+      font-weight: 700;
+    }
+
+    .city-badge-live {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      font-size: 9px;
+      font-weight: 800;
+      background: #10B981;
+      color: #FFFFFF;
+      padding: 1px 5px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
+    }
+
+    /* Filtered Search Results List */
+    .city-search-results-list {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .city-search-results-list.active {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .city-result-item-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #E5E7EB;
+      border-radius: 8px;
+      background: #FFFFFF;
+      cursor: pointer;
+      font-family: 'Manrope', sans-serif;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .city-result-item-btn:hover {
+      border-color: #003838;
+      background: #F8F8F0;
+      transform: translateY(-1px);
+    }
+
+    .city-result-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #003838;
+      display: block;
+    }
+
+    .city-result-state {
+      font-size: 11px;
+      color: #6B7280;
+      display: block;
+    }
+
+    /* Modal Footer */
+    .city-modal-footer {
+      padding: 14px 28px 18px;
+      text-align: center;
+      border-top: 1px solid #F1F3F5;
+      background: #FAFAFA;
+    }
+
+    .city-view-all-link {
+      color: #E85525;
+      font-size: 13px;
+      font-weight: 700;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      text-decoration: none;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .city-view-all-link:hover {
+      text-decoration: underline;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 991px) {
+      .nav-city-select-pill {
+        margin-left: 155px;
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+      .city-popular-grid {
+        grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
+        gap: 12px 6px;
+      }
+      .city-modal-dialog {
+        max-height: 94vh;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .nav-city-select-pill {
+        margin-left: 142px;
+        padding: 5px 9px;
+        font-size: 11px;
+        gap: 5px;
+      }
+      .nav-city-name {
+        max-width: 75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body class="rt-home-page">
+
+<!-- Mobile Menu Backdrop Blur -->
+<div class="menu-backdrop" id="menuBackdrop"></div>
+
+<!-- HEADER / NAVIGATION (Exact Humara Raipur Theme) -->
+<header class="header">
+  <div class="container position-relative">
+    <nav class="custom-navbar">
+      <div class="d-flex align-items-center gap-2">
+        <a class="navbar-brand-tab" href="index.html">
+          <img src="images/logo_india.png" alt="Humara India — Places, People, Events, Stories" class="rt-logo-img">
+        </a>
+
+        <!-- CITY SELECTOR NAVBAR PILL (BookMyShow Style) -->
+        <button class="nav-city-select-pill" id="openCityModalBtn" type="button" aria-haspopup="dialog" aria-expanded="false" title="Select your location or city">
+          <span class="nav-city-pin-dot"></span>
+          <i data-lucide="map-pin" style="width: 14px; height: 14px;"></i>
+          <span class="nav-city-name" id="currentSelectedCityNav">Select City</span>
+          <i data-lucide="chevron-down" class="nav-city-chevron-icon"></i>
+        </button>
+      </div>
+
+      <button class="menu-icon" type="button" aria-label="Menu">
+        <span style="display:block;width:24px;height:2px;background:#003838;margin:5px 0;"></span>
+        <span style="display:block;width:24px;height:2px;background:#003838;margin:5px 0;"></span>
+        <span style="display:block;width:24px;height:2px;background:#003838;margin:5px 0;"></span>
+      </button>
+
+      <div class="collapse-menu">
+        <div class="close-rt-pnl"><i data-lucide="x"></i></div>
+        <ul class="navbar-menu">
+          <li class="nav-item"><a class="nav-link" href="#cities">DESTINATIONS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">EXPERIENCES</a></li>
+          <li class="nav-item"><a class="nav-link" href="#heritage">HERITAGE</a></li>
+          <li class="nav-item"><a class="nav-link" href="#philosophy">MISSION</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nominate">NOMINATE</a></li>
+          <li class="nav-item"><a class="nav-link" href="contribute.html">CONTRIBUTE</a></li>
+        </ul>
+      </div>
+
+      <a href="#cities" class="btn-rt-header d-none d-md-inline-flex">
+        EXPLORE CITIES <i data-lucide="compass"></i>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- CITY SELECTOR MODAL (BookMyShow Style) -->
+<div class="city-modal-backdrop" id="citySelectorModal" role="dialog" aria-modal="true" aria-labelledby="cityModalSearchInput">
+  <div class="city-modal-dialog">
+    <!-- Header with Search & Detect Location -->
+    <div class="city-modal-header">
+      <div class="city-modal-top-row">
+        <div class="city-modal-search-wrap">
+          <i class="fa-solid fa-magnifying-glass city-modal-search-icon"></i>
+          <input type="text" id="cityModalSearchInput" class="city-modal-search-input" placeholder="Search for your city" autocomplete="off" aria-label="Search for your city">
+        </div>
+        <button type="button" class="city-modal-close-btn" id="closeCityModalBtn" aria-label="Close City Selector" title="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="city-detect-row">
+        <button type="button" class="city-detect-btn" id="cityDetectLocationBtn">
+          <i class="fa-solid fa-location-crosshairs" style="color: #E85525;"></i>
+          <span>Detect my location</span>
+        </button>
+        <span id="cityDetectStatus" class="city-detect-status"></span>
+      </div>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="city-modal-body">
+      <!-- Popular Cities Grid -->
+      <div id="cityPopularSection">
+        <div class="city-popular-heading">Popular Cities</div>
+        <div class="city-popular-grid">
+
+          <!-- 1. Mumbai -->
+          <button type="button" class="city-landmark-btn" data-city="Mumbai" data-state="Maharashtra">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M6 42V16h6v26M36 42V16h6v26M12 42V24c0-6.6 5.4-12 12-12s12 5.4 12 12v18"/>
+                <path d="M6 16l3-5 3 5M36 16l3-5 3 5M12 16h24M16 42V24c0-4.4 3.6-8 8-8s8 3.6 8 8v18"/>
+                <path d="M6 11h6M36 11h6M14 12h20"/>
+                <circle cx="24" cy="9" r="2"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Mumbai</span>
+          </button>
+
+          <!-- 2. Delhi-NCR -->
+          <button type="button" class="city-landmark-btn" data-city="Delhi-NCR" data-state="Delhi">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M8 42V15h8v27M32 42V15h8v27"/>
+                <path d="M16 42V25c0-4.4 3.6-8 8-8s8 3.6 8 8v17"/>
+                <path d="M6 15h36M8 11h32M12 7h24M20 4h8"/>
+                <path d="M12 25h-4M40 25h-4"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Delhi-NCR</span>
+          </button>
+
+          <!-- 3. Bengaluru -->
+          <button type="button" class="city-landmark-btn" data-city="Bengaluru" data-state="Karnataka">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M8 42V22h32v20"/>
+                <path d="M19 22V13c0-2.8 2.2-5 5-5s5 2.2 5 5v9"/>
+                <path d="M24 4v4M13 22v-6l3-3 3 3v6M29 22v-6l3-3 3 3v6"/>
+                <path d="M14 42V28h20v14M20 42V32h8v10"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Bengaluru</span>
+          </button>
+
+          <!-- 4. Hyderabad -->
+          <button type="button" class="city-landmark-btn" data-city="Hyderabad" data-state="Telangana">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M8 42V10M40 42V10"/>
+                <path d="M8 10l2-4 2 4M40 10l-2-4-2 4M6 22h36M6 14h36"/>
+                <path d="M14 42V26c0-5.5 4.5-10 10-10s10 4.5 10 10v16"/>
+                <path d="M18 42V28c0-3.3 2.7-6 6-6s6 2.7 6 6v14"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Hyderabad</span>
+          </button>
+
+          <!-- 5. Chandigarh -->
+          <button type="button" class="city-landmark-btn" data-city="Chandigarh" data-state="Punjab">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 42h20M24 42V28"/>
+                <path d="M24 28c4 0 7-3 8-7l4-10c0-2-2-4-4-2l-4 5-1-8c0-2-2-3-4-2l-3 7-2-9c0-2-2-3-4-2l-2 9-3-6c-1-2-3-2-4 0l-1 9c0 8 7 14 15 14z"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Chandigarh</span>
+          </button>
+
+          <!-- 6. Ahmedabad -->
+          <button type="button" class="city-landmark-btn" data-city="Ahmedabad" data-state="Gujarat">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M10 42V14h6v28M32 42V14h6v28"/>
+                <path d="M10 14l3-6 3 6M32 14l3-6 3 6"/>
+                <path d="M16 42V26c0-4.4 3.6-8 8-8s8 3.6 8 8v16"/>
+                <path d="M24 18v8M20 22c2 2 6 2 8 0"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Ahmedabad</span>
+          </button>
+
+          <!-- 7. Pune -->
+          <button type="button" class="city-landmark-btn" data-city="Pune" data-state="Maharashtra">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M8 42V16l4-4h24l4 4v26"/>
+                <path d="M8 16h32M14 12V8h4v4M30 12V8h4v4M22 12V6h4v6"/>
+                <path d="M16 42V26c0-4.4 3.6-8 8-8s8 3.6 8 8v16"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Pune</span>
+          </button>
+
+          <!-- 8. Chennai -->
+          <button type="button" class="city-landmark-btn" data-city="Chennai" data-state="Tamil Nadu">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 42h28M12 42l3-28h18l3 28"/>
+                <path d="M15 14h18M13 28h22M14 21h20M12 35h24"/>
+                <path d="M18 14V9c0-1.5 1-3 3-3h6c2 0 3 1.5 3 3v5M24 6V2"/>
+                <path d="M20 42V32h8v10"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Chennai</span>
+          </button>
+
+          <!-- 9. Kolkata -->
+          <button type="button" class="city-landmark-btn" data-city="Kolkata" data-state="West Bengal">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M8 42V24h32v18"/>
+                <path d="M18 24V16c0-3.3 2.7-6 6-6s6 2.7 6 6v8"/>
+                <path d="M24 6v4M22 6h4"/>
+                <path d="M10 24V18h4v6M34 24V18h4v6"/>
+                <path d="M14 42V30h20v12"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Kolkata</span>
+          </button>
+
+          <!-- 10. Kochi -->
+          <button type="button" class="city-landmark-btn" data-city="Kochi" data-state="Kerala">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 40c8 3 16-3 24 0s12 3 16 0"/>
+                <path d="M6 35c3-1 6-3 12-3h16c6 0 8 2 10 3-4 3-8 4-18 4H14c-5 0-7-2-8-4z"/>
+                <path d="M14 32V24c0-4 4-7 10-7s10 3 10 7v8"/>
+                <path d="M6 12c3 2 5 6 4 12M6 12c-1 4 0 8 4 12M6 12c4-2 7 1 8 6"/>
+                <path d="M40 10c-3 2-4 6-3 12M40 10c2 4 1 8-3 12M40 10c-4-2-6 1-7 6"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Kochi</span>
+          </button>
+
+          <!-- 11. Raipur (Featured Live Portal) -->
+          <button type="button" class="city-landmark-btn" data-city="Raipur" data-state="Chhattisgarh">
+            <span class="city-badge-live">LIVE</span>
+            <div class="city-landmark-svg-wrap" style="color: #003838;">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M18 42V16h12v26"/>
+                <path d="M16 16h16M18 16l6-8 6 8"/>
+                <circle cx="24" cy="24" r="3"/>
+                <path d="M24 22v2l1.5 1"/>
+                <path d="M6 38c6 2 12-2 18 0s12 2 18 0"/>
+                <path d="M10 42v-6M38 42v-6"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label" style="color: #003838; font-weight: 700;">Raipur</span>
+          </button>
+
+          <!-- 12. Varanasi -->
+          <button type="button" class="city-landmark-btn" data-city="Varanasi" data-state="Uttar Pradesh">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M6 42l4-4h28l4 4M10 38l4-4h20l4 4"/>
+                <path d="M18 34V16l6-10 6 10v18"/>
+                <path d="M24 6V2M22 3h4"/>
+                <circle cx="36" cy="14" r="4"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Varanasi</span>
+          </button>
+
+          <!-- 13. Jaipur -->
+          <button type="button" class="city-landmark-btn" data-city="Jaipur" data-state="Rajasthan">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M10 42V26l4-6h20l4 6v16"/>
+                <path d="M16 20V12l8-6 8 6v8"/>
+                <path d="M20 42V32h8v10M14 26h4M30 26h4M22 24h4"/>
+                <circle cx="24" cy="14" r="1.5"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Jaipur</span>
+          </button>
+
+          <!-- 14. Indore -->
+          <button type="button" class="city-landmark-btn" data-city="Indore" data-state="Madhya Pradesh">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 42h32M12 42V12h24v30"/>
+                <path d="M10 12h28M14 12V8h20v4M18 8l6-4 6 4"/>
+                <path d="M18 42V30h12v12M12 24h24M12 18h24"/>
+                <path d="M16 18v6M24 18v6M32 18v6"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Indore</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Realtime Filtered Results List (Shown when typing in search) -->
+      <ul class="city-search-results-list" id="citySearchResultsList">
+        <!-- Dynamically rendered via JS -->
+      </ul>
+    </div>
+
+    <!-- Modal Footer -->
+    <div class="city-modal-footer">
+      <button type="button" class="city-view-all-link" id="cityViewAllBtn">
+        View All Cities <i class="fa-solid fa-angle-right ms-1"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP SEARCH BAR MODAL -->
+<div class="serch-pop" id="searchPop">
+  <div class="close-pop" id="closeSearch"><span></span><span></span></div>
+  <div class="ser-input">
+    <form action="#cities" method="get">
+      <input type="text" placeholder="Search any Indian city, monument, or delicacy..." id="keyword" name="keyword" aria-label="Search">
+      <button class="ser-triger" type="button" onclick="document.getElementById('keyword').value = ''; window.location.href='#cities';">Find Destinations <i class="fa fa-long-arrow-right"></i></button>
+      <div class="search-filter-row">
+        <label class="search-filter-check"><input type="checkbox" name="type[]" value="heritage" checked> Ancient Heritage</label>
+        <label class="search-filter-check"><input type="checkbox" name="type[]" value="food" checked> Culinary Trails</label>
+        <label class="search-filter-check"><input type="checkbox" name="type[]" value="lakes" checked> Lakes & Ghats</label>
+        <label class="search-filter-check"><input type="checkbox" name="type[]" value="coastal" checked> Coastal South</label>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- SECTION 1 — INDIAN TOURISM HERO SECTION (PHOTOGRAPHIC / NON-VIDEO) -->
+<section class="hs-tourism-hero" id="heroSection">
+  <div class="hs-tourism-hero-scrim"></div>
+
+  <!-- Top Right National Tourism Indicator -->
+  <div class="hs-national-stat-line d-none d-md-inline-flex">
+    <i class="fa-solid fa-om" style="color:var(--rt-orange);"></i>
+    <span>Incredible India · 28 States · Endless Cultural Stories</span>
+  </div>
+
+  <div class="hs-tourism-hero-content">
+    <div class="hs-national-badge">
+      <span style="width:7px; height:7px; background:#10b981; border-radius:50%; display:inline-block;"></span>
+      <span>India's Hyper-Local City Discovery Network</span>
+    </div>
+
+    <h1 class="hs-hero-title">
+      CITIES OF INDIA,<br>
+      TOLD DIFFERENTLY.
+    </h1>
+
+    <p class="hs-hero-kicker">
+      SACRED GHATS · ROYAL PALACES · STREET FOOD TRAILS · LIVING TRADITIONS
+    </p>
+
+    <p class="hs-hero-sub">
+      Every Indian city has an unspoken rhythm. Discover Bharat through the eyes of locals who cherish its heritage, savor its secret recipes, and celebrate its living spirit.
+    </p>
+
+    <!-- Transparent Search Bar below Description -->
+    <div class="rt-hero-inline-search" id="heroInlineSearch">
+      <div class="rt-inline-search-wrap">
+        <i data-lucide="search" class="rt-inline-search-icon"></i>
+        <input type="text" class="rt-inline-search-input" id="heroCitySearchInput" placeholder="What city or place are you looking for? (e.g. Varanasi, Jaipur, Raipur, Indore, Kochi)">
+        <button class="rt-inline-search-btn" id="heroSearchTrigger" type="button">EXPLORE <i data-lucide="arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator right under search bar -->
+    <a href="#cities" class="rt-hero-scroll-down" id="heroScrollDown" aria-label="Scroll down">
+      <span>Explore Indian Cities</span>
+      <i data-lucide="chevrons-down" class="rt-bounce-arrow"></i>
+    </a>
+  </div>
+</section>
+
+<!-- SECTION 2 — DESTINATIONS ACROSS INDIA (RECTANGULAR EDITORIAL CARDS) -->
+<section class="rt-section" id="cities" style="background-color: var(--rt-offwhite); border-bottom: 1px solid var(--rt-border); padding: 80px 0;">
+  <div class="container">
+    
+    <!-- Section Header matching Humara Raipur standard -->
+    <div class="rt-section-header text-center mb-4">
+      <span class="rt-label">NATIONAL TOURISM DIRECTORY</span>
+      <h2 class="rt-title">DISCOVER THE CITIES OF BHARAT</h2>
+      <p class="rt-subtitle">Select any city to immerse yourself in its regional culture, historic landmarks, street eats, and local pulse.</p>
+      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
+    </div>
+
+    <!-- Category / Filter Pills -->
+    <div class="rt-event-date-pills justify-content-center mb-5" id="cityFilterContainer">
+      <button class="rt-date-pill active" data-filter="all">ALL DESTINATIONS (<span id="cityCountText">8</span>)</button>
+      <button class="rt-date-pill" data-filter="heritage"><i class="fa-solid fa-landmark me-1"></i> ROYAL & HERITAGE</button>
+      <button class="rt-date-pill" data-filter="food"><i class="fa-solid fa-utensils me-1"></i> CULINARY CAPITALS</button>
+      <button class="rt-date-pill" data-filter="lakes"><i class="fa-solid fa-water me-1"></i> LAKES & GHATS</button>
+      <button class="rt-date-pill" data-filter="south"><i class="fa-solid fa-sun me-1"></i> COASTAL SOUTH</button>
+      <button class="rt-date-pill" data-filter="central"><i class="fa-solid fa-compass me-1"></i> CENTRAL & TRIBAL</button>
+    </div>
+
+    <!-- Rectangular Cards Grid (2 Columns of Wide Panoramic Cards) -->
+    <div class="row g-4" id="citiesCardsRow">
+
+      <!-- 1. VARANASI (UTTAR PRADESH) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="heritage lakes spiritual uttar-pradesh north" data-name="varanasi kashi banaras uttar pradesh ganga aarti ghats paan temples">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/varanasi.jpg" alt="Varanasi Ganga Ghats" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Uttar Pradesh · North</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Varanasi</h3>
+                <span class="hs-rect-city-native">वाराणसी</span>
+              </div>
+              <p class="hs-rect-persona">
+                The timeless eternal spiritual capital. Sacred morning boat rides, resonating temple bells, evening Ganga Aarti, and centuries-old silk weaving traditions.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">84 Sacred Ghats</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Banarasi Paan & Thandai</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">Subah-e-Banaras</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 80%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Varanasi', 'Uttar Pradesh', 'images/varanasi.jpg', 'The timeless eternal spiritual city of morning ragas, sacred ghats, evening Ganga Aarti chants, and authentic Banarasi paan.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. JAIPUR (RAJASTHAN) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="heritage food royal rajasthan north" data-name="jaipur rajasthan pink city hawa mahal amer fort dal baati bazaars">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/jaipur.jpg" alt="Jaipur Hawa Mahal" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Rajasthan · Desert & Royalty</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Jaipur</h3>
+                <span class="hs-rect-city-native">जयपुर</span>
+              </div>
+              <p class="hs-rect-persona">
+                The royal Pink City of fortified hill citadels, pink sandstone facades, gemstone bazaars, and traditional hospitality steeped in Rajputana valour.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Hawa Mahal & Amer</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Dal Baati & Pyaz Kachori</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">Johari Bazaars</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 85%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Jaipur', 'Rajasthan', 'images/jaipur.jpg', 'The Pink City of majestic hill forts, royal palaces, Johari Bazaar crafts, and legendary Dal Baati Churma.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. RAIPUR (CHHATTISGARH) -->
+      <div class="col-lg-6 city-card-col" data-status="featured" data-tags="featured heritage food lakes chhattisgarh central" data-name="raipur chhattisgarh marine drive telibandha dudhadhari math chana samosa farra">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/hero_banner.jpg" alt="Raipur City" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming" style="background:rgba(0,56,56,0.85);"><i class="fa-solid fa-compass"></i> City Portal</span>
+            <span class="hs-rect-state-badge">Chhattisgarh · Central</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Raipur</h3>
+                <span class="hs-rect-city-native">रायपुर</span>
+              </div>
+              <p class="hs-rect-persona">
+                The thriving capital of Chhattisgarh. Bustling lake promenades, centuries-old terracotta shrines, authentic tribal heritage crafts, and live youth gatherings.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Marine Drive Telibandha</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Chana Samosa & Farra</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">Live Events & AI Guide</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · Ready</span>
+              <a href="raipur.html" class="btn-rt-secondary-teal" style="background:var(--rt-teal); color:#FFFFFF !important;">
+                EXPLORE RAIPUR <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. INDORE (MADHYA PRADESH) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="upcoming food central madhya-pradesh night-market" data-name="indore madhya pradesh sarafa bazaar 56 dukaan rajwada poha jalebi">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/indore.jpg" alt="Indore Sarafa Bazaar" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Madhya Pradesh · Heart of India</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Indore</h3>
+                <span class="hs-rect-city-native">इंदौर</span>
+              </div>
+              <p class="hs-rect-persona">
+                India’s cleanest metropolis and reigning culinary capital. From Holkar royal heritage to midnight street-food wonderlands that never sleep.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Rajwada Palace</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Sarafa Night Food Bazaar</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">56 Dukaan Morning Poha</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 70%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Indore', 'Madhya Pradesh', 'images/indore.jpg', 'India’s cleanest city and street-food capital. Midnight magic at Sarafa Bazaar, Chhappan Dukaan, and Rajwada glory.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. UDAIPUR (RAJASTHAN) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="upcoming lakes heritage royal rajasthan west" data-name="udaipur rajasthan lake pichola city palace mewar saheliyon ki bari">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/udaipur.jpg" alt="Udaipur Lake Pichola" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Rajasthan · Mewar Heritage</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Udaipur</h3>
+                <span class="hs-rect-city-native">उदयपुर</span>
+              </div>
+              <p class="hs-rect-persona">
+                The Venetian gem of the East. Glistening lakes reflecting opulent white marble palaces, traditional boat journeys at dusk, and timeless Mewari hospitality.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Lake Pichola & City Palace</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Mewari Laal Maas</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">Bagore Ki Haveli Dance</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 75%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Udaipur', 'Rajasthan', 'images/udaipur.jpg', 'The City of Lakes, royal marble palaces, sunset boat rides on Lake Pichola, and timeless Mewari heritage.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. KOCHI (KERALA) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="upcoming south coastal lakes heritage kerala" data-name="kochi cochin kerala backwaters chinese fishing nets fort kochi spices kathakali">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/kochi.jpg" alt="Kochi Kerala Backwaters" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Kerala · Coastal South</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Kochi</h3>
+                <span class="hs-rect-city-native">കൊച്ചി</span>
+              </div>
+              <p class="hs-rect-persona">
+                Queen of the Arabian Sea. Chinese fishing nets silhouetted against glowing sunsets, Portuguese chapels, vibrant spice warehouses, and serene backwaters.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Fort Kochi & Fishing Nets</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Malabar Parotta & Fish Curry</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">Kathakali Art & Backwaters</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 65%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Kochi', 'Kerala', 'images/kochi.jpg', 'Queen of the Arabian Sea, iconic Chinese fishing nets, spice trails of Mattancherry, and peaceful Kerala backwaters.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. LUCKNOW (UTTAR PRADESH) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="upcoming heritage food nawabi uttar-pradesh north" data-name="lucknow uttar pradesh rumi darwaza tunday kababi imambara tehzeeb chikankari">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/lucknow.jpg" alt="Lucknow Rumi Darwaza" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Uttar Pradesh · Awadh Culture</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Lucknow</h3>
+                <span class="hs-rect-city-native">लखनऊ</span>
+              </div>
+              <p class="hs-rect-persona">
+                The city of Nawabs and peerless tehzeeb. Imambara architectural grandeur, delicate needlework of Chikankari, and melt-in-mouth Galauti kebabs.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Rumi Darwaza & Imambara</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Tunday Kababi & Biryani</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">Chowk Heritage Bazaars</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 60%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Lucknow', 'Uttar Pradesh', 'images/lucknow.jpg', 'The city of Nawabs and peerless tehzeeb. Imambara grandeur, melt-in-mouth Galauti Kebabs, and intricate Chikankari.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. BHOPAL (MADHYA PRADESH) -->
+      <div class="col-lg-6 city-card-col" data-status="upcoming" data-tags="upcoming lakes heritage madhya-pradesh central green" data-name="bhopal madhya pradesh upper lake bada talab tribal museum sulaimani chai">
+        <div class="hs-rect-card">
+          <div class="hs-rect-media">
+            <img src="images/bhopal.jpg" alt="Bhopal Upper Lake" class="hs-rect-img" loading="lazy">
+            <div class="hs-rect-scrim"></div>
+            <span class="hs-rect-tag-upcoming"><i class="fa-regular fa-clock"></i> Launching Soon</span>
+            <span class="hs-rect-state-badge">Madhya Pradesh · City of Lakes</span>
+          </div>
+          <div class="hs-rect-content">
+            <div>
+              <div class="hs-rect-title-row">
+                <h3 class="hs-rect-city-name">Bhopal</h3>
+                <span class="hs-rect-city-native">भोपाल</span>
+              </div>
+              <p class="hs-rect-persona">
+                The picturesque lake capital. Tranquil evening breezes over Bada Talab, world-renowned tribal art galleries, and serene hillside heritage sanctuaries.
+              </p>
+              <div class="hs-rect-pillars">
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🏛️ WONDER</span>
+                  <span class="hs-pillar-val">Upper Lake & Raja Bhoj</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🍲 FLAVOR</span>
+                  <span class="hs-pillar-val">Sulaimani Chai & Poha</span>
+                </div>
+                <div class="hs-pillar-item">
+                  <span class="hs-pillar-label">🎭 RHYTHM</span>
+                  <span class="hs-pillar-val">National Tribal Museum</span>
+                </div>
+              </div>
+            </div>
+            <div class="hs-rect-footer">
+              <span style="font-size:12px;color:var(--rt-muted-text);font-weight:600;">Cultural Curation · 55%</span>
+              <button class="btn-rt-secondary-teal" onclick="openNotifyModal('Bhopal', 'Madhya Pradesh', 'images/bhopal.jpg', 'The picturesque City of Lakes. Serene boat rides on Bada Talab, tribal museum treasures, and old-city Sulaimani chai.')">
+                <i class="fa-regular fa-bell"></i> NOTIFY ME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — PILLARS OF INDIAN TOURISM & CULTURAL DISCOVERY -->
+<section class="rt-section" id="experiences" style="padding: 75px 0; background: var(--rt-white);">
+  <div class="container">
+    <div class="rt-section-header text-center mb-5">
+      <span class="rt-label">EXPERIENCE BHARAT</span>
+      <h2 class="rt-title">FOUR CORNERSTONES OF HYPER-LOCAL TRAVEL</h2>
+      <p class="rt-subtitle">How Humara Sheher transforms ordinary tourism into deeply memorable, authentic cultural journeys.</p>
+      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6">
+        <div class="hs-region-tile">
+          <div class="hs-region-icon">
+            <i data-lucide="landmark"></i>
+          </div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:19px; color:var(--rt-teal); margin-bottom:10px;">Sacred & Regal Heritage</h4>
+          <p style="font-size:13.5px; color:var(--rt-muted-text); line-height:1.6; margin:0;">
+            Ancient temple architecture, fortified hilltops, living stepwells, and unheralded ruins documented with historic context.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="hs-region-tile">
+          <div class="hs-region-icon" style="background:var(--rt-light-orange); color:var(--rt-orange);">
+            <i data-lucide="utensils"></i>
+          </div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:19px; color:var(--rt-teal); margin-bottom:10px;">Regional Street Food Trails</h4>
+          <p style="font-size:13.5px; color:var(--rt-muted-text); line-height:1.6; margin:0;">
+            Generational sweet shops, sizzling evening tawa corners, and iconic street stalls with zero sponsored bias.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="hs-region-tile">
+          <div class="hs-region-icon">
+            <i data-lucide="calendar"></i>
+          </div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:19px; color:var(--rt-teal); margin-bottom:10px;">Live Verified Pulse</h4>
+          <p style="font-size:13.5px; color:var(--rt-muted-text); line-height:1.6; margin:0;">
+            Upcoming cultural festivals, heritage walks, classical concerts, artisanal flea markets, and live verified weekend schedules.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="hs-region-tile">
+          <div class="hs-region-icon" style="background:var(--rt-light-orange); color:var(--rt-orange);">
+            <i data-lucide="bot"></i>
+          </div>
+          <h4 style="font-family:'Playfair Display',serif; font-size:19px; color:var(--rt-teal); margin-bottom:10px;">Conversational Local AI</h4>
+          <p style="font-size:13.5px; color:var(--rt-muted-text); line-height:1.6; margin:0;">
+            Instant answers tailored to local idioms and neighborhoods, guiding your 24-hour itineraries with zero downtime.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 — WHY HUMARA SHEHER (OUR PHILOSOPHY) -->
+<section class="rt-section" id="philosophy" style="background-color: var(--rt-offwhite); border-top: 1px solid var(--rt-border); border-bottom: 1px solid var(--rt-border); padding: 75px 0;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="rt-section-header m-0 text-start">
+          <span class="rt-label">THE HUMARA SHEHER VISION</span>
+          <h2 class="rt-title">NO COMMERCIAL BIAS. JUST THE HEARTBEAT OF BHARAT.</h2>
+          <p class="rt-subtitle">Why we are building a city discovery platform unlike any other travel site.</p>
+          <div class="rt-motif-divider m-0 mt-3"><span class="rt-motif-dot"></span></div>
+        </div>
+        <p class="mt-4" style="color:var(--rt-muted-text); font-size:14.5px; line-height:1.75;">
+          Most travel portals promote whoever pays the highest advertising fees. Humara Sheher is built on a radically different principle: <strong>true hyper-local truth</strong>. Every street gully, every centuries-old chaat shop, every serene temple pond is documented by the writers, creators, and ordinary residents who truly love their city.
+        </p>
+        <div class="d-flex align-items-center gap-4 mt-4 flex-wrap">
+          <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:13px; color:var(--rt-teal);">
+            <i class="fa-solid fa-check-circle" style="color:var(--rt-orange);"></i> 100% Curated by Locals
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:13px; color:var(--rt-teal);">
+            <i class="fa-solid fa-check-circle" style="color:var(--rt-orange);"></i> Verified Event Feeds
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:13px; color:var(--rt-teal);">
+            <i class="fa-solid fa-check-circle" style="color:var(--rt-orange);"></i> Zero Algorithmic Spam
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div style="position:relative; border-radius:8px; overflow:hidden; box-shadow:0 14px 35px rgba(0,40,40,0.15); border:1px solid var(--rt-border);">
+          <img src="images/india_tourism_hero.jpg" alt="Incredible India Tourism" style="width:100%; height:auto; display:block;">
+          <div style="position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top, rgba(0,36,36,0.95), transparent); padding:24px; color:#fff;">
+            <div style="font-family:'Playfair Display',serif; font-size:20px; font-weight:700;">Every City Has A Story Waiting To Be Told</div>
+            <div style="font-size:12px; color:rgba(255,255,255,0.85); margin-top:4px;">From the riverbanks of the Ganges to the coconut groves of Kerala.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — NOMINATE A CITY / COMMUNITY NETWORK -->
+<section class="rt-section" id="nominate" style="padding: 75px 0; background: var(--rt-white);">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="rt-section-header m-0 text-start">
+          <span class="rt-label">EXPAND THE NETWORK</span>
+          <h2 class="rt-title">BRING HUMARA SHEHER TO YOUR CITY NEXT</h2>
+          <p class="rt-subtitle">Nominate your hometown or volunteer as a local curator, photographer, or food chronicler.</p>
+          <div class="rt-motif-divider m-0 mt-3"><span class="rt-motif-dot"></span></div>
+        </div>
+        <p class="mt-4" style="color:var(--rt-muted-text); font-size:14.5px; line-height:1.7;">
+          Whether it’s Amritsar, Mysore, Guwahati, Pune, or Madurai — every Indian city deserves its own dedicated, beautifully curated discovery portal. Help us build the next chapter.
+        </p>
+        <div class="d-flex align-items-center gap-4 mt-4">
+          <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:13px; color:var(--rt-teal);">
+            <i class="fa-solid fa-check-circle" style="color:var(--rt-orange);"></i> Fast Track Launch
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; font-weight:700; font-size:13px; color:var(--rt-teal);">
+            <i class="fa-solid fa-check-circle" style="color:var(--rt-orange);"></i> City Ambassador Credit
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div style="background:var(--rt-offwhite); border:1px solid var(--rt-border); border-radius:10px; padding:36px; box-shadow:var(--rt-shadow);">
+          <h4 style="font-family:'Playfair Display',serif; font-size:22px; color:var(--rt-teal); margin-bottom:20px;">City Nomination Form</h4>
+          <form id="hsNominateForm" onsubmit="handleNomination(event)">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nomCity" placeholder="City Name (e.g. Pune, Amritsar)" required style="border-radius:4px; font-size:13px; padding:12px 14px; border-color:var(--rt-border);">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nomState" placeholder="State (e.g. Punjab, Maharashtra)" required style="border-radius:4px; font-size:13px; padding:12px 14px; border-color:var(--rt-border);">
+              </div>
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nomName" placeholder="Your Name" required style="border-radius:4px; font-size:13px; padding:12px 14px; border-color:var(--rt-border);">
+              </div>
+              <div class="col-sm-6">
+                <input type="email" class="form-control" id="nomEmail" placeholder="Your Email Address" required style="border-radius:4px; font-size:13px; padding:12px 14px; border-color:var(--rt-border);">
+              </div>
+            </div>
+            <div class="mb-4">
+              <input type="text" class="form-control" id="nomNote" placeholder="One hidden landmark or dish travelers must know about..." style="border-radius:4px; font-size:13px; padding:12px 14px; border-color:var(--rt-border);">
+            </div>
+            <button type="submit" class="btn-rt-primary w-100" style="padding:14px; font-size:12px;">
+              NOMINATE MY CITY <i data-lucide="arrow-right"></i>
+            </button>
+            <div id="nominateSuccessBox" style="display:none; margin-top:14px; padding:12px; background:#e6f9f0; border:1px solid #10b981; border-radius:4px; color:#0e704a; font-size:13px; text-align:center;">
+              <i class="fa-solid fa-circle-check me-1"></i> Thank you! Your city nomination has been recorded.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL: CITY PREVIEW & VIP NOTIFICATION -->
+<div class="modal fade" id="notifyModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content" style="background:#ffffff; color:var(--rt-dark-text); border:1px solid var(--rt-border); border-radius:8px; overflow:hidden;">
+      <div style="position:relative; aspect-ratio:16/9; overflow:hidden; background:#002828;">
+        <img src="images/varanasi.jpg" alt="City Banner" id="modalImg" style="width:100%; height:100%; object-fit:cover;">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position:absolute; top:12px; right:12px; background-color:#fff; border-radius:50%; opacity:0.9; padding:8px;"></button>
+      </div>
+      <div class="p-4">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <h3 style="font-family:'Playfair Display',serif; font-size:24px; color:var(--rt-teal); margin:0;" id="modalCityTitle">Varanasi</h3>
+          <span style="font-size:12px; font-weight:700; color:var(--rt-orange);" id="modalCityState">Uttar Pradesh</span>
+        </div>
+        <p style="font-size:13.5px; color:var(--rt-muted-text); line-height:1.6; margin-bottom:20px;" id="modalCityDesc">
+          The timeless eternal spiritual city of morning ragas, sacred ghats, evening Ganga Aarti chants, and authentic Banarasi paan.
+        </p>
+
+        <form id="cityNotifyForm" onsubmit="handleNotifySubmit(event)">
+          <div style="font-size:13px; font-weight:700; color:var(--rt-teal); margin-bottom:8px;">
+            Get VIP early access when Humara <span id="modalCityNameSpan">Varanasi</span> launches:
+          </div>
+          <div class="d-flex gap-2 mb-2">
+            <input type="email" class="form-control" id="notifyEmailInput" placeholder="Enter your email address..." required style="border-radius:4px; font-size:13px;">
+            <button type="submit" class="btn-rt-primary" style="padding:10px 18px; font-size:11px; white-space:nowrap;">
+              NOTIFY ME
+            </button>
+          </div>
+          <div id="notifySuccessMsg" style="display:none; color:#10b981; font-size:12px; font-weight:600; margin-top:6px;">
+            <i class="fa-solid fa-check me-1"></i> You're on the VIP list! We'll alert you the moment this city goes live.
+          </div>
+        </form>
+
+        <div class="mt-4 pt-3 d-flex align-items-center justify-content-between" style="border-top:1px solid var(--rt-border); font-size:12px;">
+          <span class="text-muted">Want to explore our active guide?</span>
+          <a href="raipur.html" style="font-weight:700; color:var(--rt-orange); text-decoration:none;">
+            Explore Humara Raipur (Live) →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HAMARA INDIA — REDESIGNED PRODUCTION FOOTER -->
+<footer class="hi-footer" role="contentinfo">
+  <div class="container">
+    <div class="row g-4">
+      <!-- COLUMN 1 — BRAND IDENTITY -->
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <div class="hi-footer-brand-wrap">
+          <a class="hi-footer-logo-link" href="index.html" aria-label="Hamara India — Back to Home">
+            <img src="images/logo_india.png" alt="Hamara India" class="hi-footer-logo-img">
+          </a>
+          <div class="hi-footer-tagline">“Discover India, one city at a time.”</div>
+          <p class="hi-footer-desc">
+            Explore India's cities through local food, culture, events, hidden gems, and experiences worth discovering.
+          </p>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 — EXPLORE INDIA -->
+      <div class="col-lg-2 col-md-3 col-6 mb-4 mb-lg-0">
+        <h4 class="hi-footer-heading">EXPLORE INDIA</h4>
+        <nav aria-label="Explore India Navigation">
+          <ul class="hi-footer-nav">
+            <li><a href="#cities" class="hi-footer-link">All Destinations</a></li>
+            <li><a href="#cities" class="hi-footer-link">Cities &amp; Neighbourhoods</a></li>
+            <li><a href="eat.html" class="hi-footer-link">Food &amp; Cafés</a></li>
+            <li><a href="experiences.html" class="hi-footer-link">Events &amp; Experiences</a></li>
+            <li><a href="explore.html" class="hi-footer-link">Hidden Gems</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- COLUMN 3 — BE PART OF HAMARA -->
+      <div class="col-lg-3 col-md-3 col-6 mb-4 mb-lg-0">
+        <h4 class="hi-footer-heading">BE PART OF HAMARA</h4>
+        <nav aria-label="Community and Partnership Navigation">
+          <ul class="hi-footer-nav">
+            <li><a href="contribute.html" class="hi-footer-link">Suggest a Place</a></li>
+            <li><a href="contribute.html" class="hi-footer-link">Submit an Event</a></li>
+            <li><a href="contribute.html" class="hi-footer-link">Become a Local Contributor</a></li>
+            <li><a href="about.html#contact" class="hi-footer-link">List Your Business</a></li>
+            <li><a href="about.html#contact" class="hi-footer-link">Partner With Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- COLUMN 4 — NEWSLETTER -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="hi-footer-newsletter-wrap">
+          <h4 class="hi-footer-heading">STAY IN THE LOOP</h4>
+          <p class="hi-newsletter-subtext">A little more of India, delivered occasionally.</p>
+          <form id="hamaraNewsletterForm" class="hi-newsletter-form" novalidate>
+            <div class="hi-newsletter-input-group">
+              <label for="footerNewsletterEmail" class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Email address</label>
+              <input type="email" id="footerNewsletterEmail" name="email" class="hi-newsletter-input" placeholder="Enter your email address..." required autocomplete="email" aria-required="true">
+              <button type="submit" class="hi-newsletter-btn" id="footerNewsletterBtn">
+                <span>SUBSCRIBE</span>
+                <i data-lucide="arrow-right" style="width: 15px; height: 15px;"></i>
+              </button>
+            </div>
+            <div id="newsletterStatusMessage" class="hi-newsletter-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="hi-footer-bottom">
+      <p class="hi-footer-copy">
+        © <span id="hiCurrentYear">2026</span> Hamara India. Made for the curious.
+      </p>
+      <nav aria-label="Legal and Informational Links">
+        <ul class="hi-footer-bottom-nav">
+          <li><a href="about.html" class="hi-footer-bottom-link">About Us</a></li>
+          <li><a href="about.html#contact" class="hi-footer-bottom-link">Contact</a></li>
+          <li><a href="privacy.html" class="hi-footer-bottom-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hi-footer-bottom-link">Terms of Use</a></li>
+          <li><a href="#cities" class="hi-footer-bottom-link">All Destinations</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scrolla.jquery.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="js/raipurtales.js"></script>
+<script>
+  if (typeof lucide !== 'undefined') { 
+    lucide.createIcons(); 
+  }
+
+  // Interactive Search & Filtering on Rectangular City Cards
+  $(document).ready(function() {
+    var $searchInput = $("#heroCitySearchInput");
+    var $filterButtons = $("#cityFilterContainer .rt-date-pill");
+    var $cityCols = $(".city-card-col");
+    var $countText = $("#cityCountText");
+
+    var activeCategory = 'all';
+    var textQuery = '';
+
+    function applyCityFilters() {
+      var visibleCount = 0;
+      var q = textQuery.toLowerCase().trim();
+
+      $cityCols.each(function() {
+        var $col = $(this);
+        var status = $col.data("status");
+        var tags = ($col.data("tags") || "").toLowerCase();
+        var nameData = ($col.data("name") || "").toLowerCase();
+        var cardText = $col.text().toLowerCase();
+
+        var matchesCategory = false;
+        if (activeCategory === 'all') matchesCategory = true;
+        else if (activeCategory === 'live' && status === 'live') matchesCategory = true;
+        else if (tags.indexOf(activeCategory) !== -1) matchesCategory = true;
+
+        var matchesSearch = true;
+        if (q) {
+          matchesSearch = (nameData.indexOf(q) !== -1) || (tags.indexOf(q) !== -1) || (cardText.indexOf(q) !== -1);
+        }
+
+        if (matchesCategory && matchesSearch) {
+          $col.show();
+          visibleCount++;
+        } else {
+          $col.hide();
+        }
+      });
+
+      $countText.text(visibleCount);
+    }
+
+    // Search input typing
+    $searchInput.on("input", function() {
+      textQuery = $(this).val();
+      applyCityFilters();
+      if (textQuery.length > 1 && !isScrolledIntoView("#cities")) {
+        $('html, body').animate({
+          scrollTop: $("#cities").offset().top - 80
+        }, 500);
+      }
+    });
+
+    // Search button click
+    $("#heroSearchTrigger").on("click", function() {
+      textQuery = $searchInput.val();
+      applyCityFilters();
+      $('html, body').animate({
+        scrollTop: $("#cities").offset().top - 80
+      }, 500);
+    });
+
+    // Filter pills
+    $filterButtons.on("click", function() {
+      $filterButtons.removeClass("active");
+      $(this).addClass("active");
+      activeCategory = $(this).data("filter");
+      applyCityFilters();
+    });
+
+    // Quick lookup prompt chips
+    $(".btn-city-chip").on("click", function() {
+      var cityKey = $(this).data("city");
+      if (cityKey.toLowerCase() === 'raipur') {
+        window.location.href = "raipur.html";
+        return;
+      }
+      $searchInput.val(cityKey);
+      textQuery = cityKey;
+      applyCityFilters();
+      $('html, body').animate({
+        scrollTop: $("#cities").offset().top - 80
+      }, 500);
+    });
+
+    function isScrolledIntoView(elem) {
+      var docViewTop = $(window).scrollTop();
+      var elemTop = $(elem).offset().top;
+      return (elemTop <= docViewTop + 300);
+    }
+
+    // Dynamic Current Year for Hamara India Footer
+    var yearEl = document.getElementById('hiCurrentYear');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // Hamara India Newsletter Form Validation & State Feedback
+    $('#hamaraNewsletterForm').on('submit', function(e) {
+      e.preventDefault();
+      var $input = $('#footerNewsletterEmail');
+      var $btn = $('#footerNewsletterBtn');
+      var $status = $('#newsletterStatusMessage');
+      var email = $input.val().trim();
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!email) {
+        $status.removeClass('status-success status-info').addClass('status-error')
+               .html('<i class="fa-solid fa-circle-exclamation me-1"></i> Please enter an email address.');
+        $input.focus();
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        $status.removeClass('status-success status-info').addClass('status-error')
+               .html('<i class="fa-solid fa-circle-exclamation me-1"></i> Please enter a valid email address (e.g. name@example.com).');
+        $input.focus();
+        return;
+      }
+
+      // Accessible loading state
+      $btn.prop('disabled', true).html('<span>SUBSCRIBING...</span> <i class="fa-solid fa-spinner fa-spin ms-1"></i>');
+      $status.removeClass('status-error status-success').addClass('status-info')
+             .text('Validating email subscription...');
+
+      setTimeout(function() {
+        $btn.prop('disabled', false).html('<span>SUBSCRIBE</span> <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>');
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        $input.val('');
+        $status.removeClass('status-error status-info').addClass('status-success')
+               .html('<i class="fa-solid fa-circle-check me-1"></i> Thank you! Your email has been validated. <em>(Note: Newsletter subscription API remains to be connected to delivery backend.)</em>');
+      }, 700);
+    });
+
+    // ==========================================
+    // BOOKMYSHOW-STYLE CITY SELECTOR LOGIC
+    // ==========================================
+    var allCitiesData = [
+      { name: "Raipur", state: "Chhattisgarh", status: "Live Portal", isLive: true, link: "raipur.html" },
+      { name: "Varanasi", state: "Uttar Pradesh", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Jaipur", state: "Rajasthan", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Indore", state: "Madhya Pradesh", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Udaipur", state: "Rajasthan", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Kochi", state: "Kerala", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Lucknow", state: "Uttar Pradesh", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Bhopal", state: "Madhya Pradesh", status: "Launching Soon", isLive: false, cardId: "cities" },
+      { name: "Mumbai", state: "Maharashtra", status: "In Curation", isLive: false },
+      { name: "Navi Mumbai", state: "Maharashtra", status: "In Curation (Mumbai Hub)", isLive: false },
+      { name: "Thane", state: "Maharashtra", status: "In Curation (Mumbai Hub)", isLive: false },
+      { name: "Delhi-NCR", state: "Delhi", status: "In Curation", isLive: false },
+      { name: "Bengaluru", state: "Karnataka", status: "In Curation", isLive: false },
+      { name: "Hyderabad", state: "Telangana", status: "In Curation", isLive: false },
+      { name: "Chandigarh", state: "Punjab", status: "In Curation", isLive: false },
+      { name: "Ahmedabad", state: "Gujarat", status: "In Curation", isLive: false },
+      { name: "Pune", state: "Maharashtra", status: "In Curation", isLive: false },
+      { name: "Chennai", state: "Tamil Nadu", status: "In Curation", isLive: false },
+      { name: "Kolkata", state: "West Bengal", status: "In Curation", isLive: false },
+      { name: "Amritsar", state: "Punjab", status: "In Curation", isLive: false },
+      { name: "Agra", state: "Uttar Pradesh", status: "In Curation", isLive: false },
+      { name: "Mysore", state: "Karnataka", status: "In Curation", isLive: false },
+      { name: "Guwahati", state: "Assam", status: "In Curation", isLive: false },
+      { name: "Madurai", state: "Tamil Nadu", status: "In Curation", isLive: false },
+      { name: "Goa", state: "Goa", status: "In Curation", isLive: false },
+      { name: "Patna", state: "Bihar", status: "In Curation", isLive: false }
+    ];
+
+    var $cityModal = $("#citySelectorModal");
+    var $cityModalInput = $("#cityModalSearchInput");
+    var $popularSection = $("#cityPopularSection");
+    var $searchResultsList = $("#citySearchResultsList");
+    var $navDisplay = $("#currentSelectedCityNav");
+
+    // Check stored selection or default
+    var savedCity = localStorage.getItem("humara_selected_city");
+    if (savedCity) {
+      $navDisplay.text(savedCity);
+    }
+
+    function openCityModal() {
+      $cityModal.addClass("show");
+      $("body").css("overflow", "hidden");
+      $cityModalInput.val("");
+      $popularSection.show();
+      $searchResultsList.removeClass("active").empty();
+      $("#cityDetectStatus").text("");
+      setTimeout(function() {
+        $cityModalInput.focus();
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+      }, 100);
+    }
+
+    function closeCityModal() {
+      $cityModal.removeClass("show");
+      $("body").css("overflow", "");
+    }
+
+    $("#openCityModalBtn").on("click", function(e) {
+      e.preventDefault();
+      openCityModal();
+    });
+
+    if (window.location.search.indexOf("openCityModal=true") !== -1 || window.location.hash === "#city-select") {
+      openCityModal();
+    }
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var cityParam = urlParams.get("city");
+    if (cityParam) {
+      setTimeout(function() {
+        selectCity(cityParam);
+      }, 300);
+    }
+
+    $("#closeCityModalBtn").on("click", function(e) {
+      e.preventDefault();
+      closeCityModal();
+    });
+
+    $cityModal.on("click", function(e) {
+      if ($(e.target).is("#citySelectorModal")) {
+        closeCityModal();
+      }
+    });
+
+    $(document).on("keydown", function(e) {
+      if (e.key === "Escape" && $cityModal.hasClass("show")) {
+        closeCityModal();
+      }
+    });
+
+    // Realtime Search Filtering
+    $cityModalInput.on("input", function() {
+      var query = $(this).val().toLowerCase().trim();
+      if (!query) {
+        $popularSection.show();
+        $searchResultsList.removeClass("active").empty();
+        return;
+      }
+
+      var matches = allCitiesData.filter(function(c) {
+        return c.name.toLowerCase().indexOf(query) !== -1 || c.state.toLowerCase().indexOf(query) !== -1;
+      });
+
+      $popularSection.hide();
+      $searchResultsList.empty();
+
+      if (matches.length === 0) {
+        $searchResultsList.addClass("active").html(
+          '<li style="grid-column: 1 / -1; padding: 24px; text-align: center; color: #6B7280; font-size: 14px;">' +
+          '<i class="fa-solid fa-map-location-dot" style="font-size: 28px; color: #D1D5DB; margin-bottom: 8px; display: block;"></i>' +
+          'No matching city found for "<strong>' + $("<div>").text(query).html() + '</strong>".<br>' +
+          '<a href="#nominate" onclick="closeCityModal();" style="color: #E85525; font-weight: 700; text-decoration: underline; margin-top: 6px; display: inline-block;">Nominate this city to be added →</a>' +
+          '</li>'
+        );
+      } else {
+        matches.forEach(function(c) {
+          var liveBadge = c.isLive ? '<span class="badge" style="background: #10B981; color: #fff; font-size: 10px;">LIVE PORTAL</span>' : '<span style="font-size: 11px; color: #9CA3AF;">' + c.status + '</span>';
+          var $btn = $(
+            '<li><button type="button" class="city-result-item-btn" data-city="' + c.name + '" data-state="' + c.state + '">' +
+            '<div><span class="city-result-name">' + c.name + '</span><span class="city-result-state">' + c.state + '</span></div>' +
+            liveBadge +
+            '</button></li>'
+          );
+          $searchResultsList.append($btn);
+        });
+        $searchResultsList.addClass("active");
+      }
+    });
+
+    // City Selection handler (from popular grid or search list)
+    $(document).on("click", ".city-landmark-btn, .city-result-item-btn", function() {
+      var cityName = $(this).data("city");
+      selectCity(cityName);
+    });
+
+    function selectCity(cityName) {
+      if (!cityName) return;
+
+      closeCityModal();
+      localStorage.setItem("humara_selected_city", cityName);
+      $navDisplay.text(cityName);
+
+      if (cityName.toLowerCase() === "raipur") {
+        window.location.href = "raipur.html";
+        return;
+      }
+
+      // If city is on homepage
+      var homeCities = ["varanasi", "jaipur", "indore", "udaipur", "kochi", "lucknow", "bhopal"];
+      if (homeCities.indexOf(cityName.toLowerCase()) !== -1) {
+        $searchInput.val(cityName);
+        textQuery = cityName;
+        applyCityFilters();
+        $("html, body").animate({
+          scrollTop: $("#cities").offset().top - 80
+        }, 600);
+      } else {
+        // City in curation -> open notification modal
+        var match = allCitiesData.find(function(c) { return c.name.toLowerCase() === cityName.toLowerCase(); });
+        var stateName = match ? match.state : "India";
+        openNotifyModal(cityName, stateName, 'images/hero_banner.jpg', cityName + ' discovery guide is currently being curated by our local cultural contributors. Get notified first when it goes live!');
+      }
+    }
+
+    // Enhanced Real Geolocation Detection with Reverse Geocoding & Distance Fallback
+    var cityCoords = [
+      { name: "Mumbai", alt: ["navi mumbai", "thane", "kalyan", "panvel", "mumbai suburban", "bombay", "mumbai metropolitan region"], lat: 19.0760, lon: 72.8777, state: "Maharashtra" },
+      { name: "Pune", alt: ["pimpri", "chinchwad", "hadapsar", "hinjewadi"], lat: 18.5204, lon: 73.8567, state: "Maharashtra" },
+      { name: "Delhi-NCR", alt: ["delhi", "new delhi", "noida", "greater noida", "gurgaon", "gurugram", "ghaziabad", "faridabad"], lat: 28.6139, lon: 77.2090, state: "Delhi" },
+      { name: "Bengaluru", alt: ["bangalore", "whitefield", "electronic city"], lat: 12.9716, lon: 77.5946, state: "Karnataka" },
+      { name: "Hyderabad", alt: ["secunderabad", "cyberabad", "hitec city"], lat: 17.3850, lon: 78.4867, state: "Telangana" },
+      { name: "Ahmedabad", alt: ["gandhinagar"], lat: 23.0225, lon: 72.5714, state: "Gujarat" },
+      { name: "Chandigarh", alt: ["mohali", "panchkula", "zirakpur"], lat: 30.7333, lon: 76.7794, state: "Punjab" },
+      { name: "Chennai", alt: ["madras", "tambaram"], lat: 13.0827, lon: 80.2707, state: "Tamil Nadu" },
+      { name: "Kolkata", alt: ["calcutta", "howrah", "new town"], lat: 22.5726, lon: 88.3639, state: "West Bengal" },
+      { name: "Kochi", alt: ["cochin", "ernakulam"], lat: 9.9312, lon: 76.2673, state: "Kerala" },
+      { name: "Raipur", alt: ["bhilai", "durg", "naya raipur", "chhattisgarh"], lat: 21.2514, lon: 81.6296, state: "Chhattisgarh" },
+      { name: "Varanasi", alt: ["banaras", "kashi"], lat: 25.3176, lon: 82.9739, state: "Uttar Pradesh" },
+      { name: "Jaipur", alt: ["pink city"], lat: 26.9124, lon: 75.7873, state: "Rajasthan" },
+      { name: "Indore", alt: [], lat: 22.7196, lon: 75.8577, state: "Madhya Pradesh" },
+      { name: "Udaipur", alt: [], lat: 24.5854, lon: 73.7125, state: "Rajasthan" },
+      { name: "Lucknow", alt: [], lat: 26.8467, lon: 80.9462, state: "Uttar Pradesh" },
+      { name: "Bhopal", alt: [], lat: 23.2599, lon: 77.4126, state: "Madhya Pradesh" },
+      { name: "Goa", alt: ["panaji", "margao", "vasco", "north goa", "south goa"], lat: 15.2993, lon: 74.1240, state: "Goa" }
+    ];
+
+    function calculateDistanceKm(lat1, lon1, lat2, lon2) {
+      var R = 6371;
+      var dLat = (lat2 - lat1) * Math.PI / 180;
+      var dLon = (lon2 - lon1) * Math.PI / 180;
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      return R * c;
+    }
+
+    function findClosestHub(lat, lon) {
+      var best = cityCoords[0];
+      var bestDist = Infinity;
+      for (var i = 0; i < cityCoords.length; i++) {
+        var d = calculateDistanceKm(lat, lon, cityCoords[i].lat, cityCoords[i].lon);
+        if (d < bestDist) {
+          bestDist = d;
+          best = cityCoords[i];
+        }
+      }
+      return { hub: best, distanceKm: Math.round(bestDist) };
+    }
+
+    function matchHubFromText(text) {
+      if (!text) return null;
+      var lower = text.toLowerCase();
+      for (var i = 0; i < cityCoords.length; i++) {
+        if (lower.indexOf(cityCoords[i].name.toLowerCase()) !== -1) {
+          return cityCoords[i];
+        }
+        for (var j = 0; j < cityCoords[i].alt.length; j++) {
+          if (lower.indexOf(cityCoords[i].alt[j]) !== -1) {
+            return cityCoords[i];
+          }
+        }
+      }
+      return null;
+    }
+
+    // Detect My Location
+    $("#cityDetectLocationBtn").on("click", function() {
+      var $status = $("#cityDetectStatus");
+      if (!navigator.geolocation) {
+        $status.html('<i class="fa-solid fa-triangle-exclamation" style="color:#E85525;"></i> Geolocation not supported by your browser.');
+        return;
+      }
+
+      $status.html('<i class="fa-solid fa-spinner fa-spin"></i> Accessing GPS coordinates...');
+      navigator.geolocation.getCurrentPosition(function(pos) {
+        var lat = pos.coords.latitude;
+        var lon = pos.coords.longitude;
+        $status.html('<i class="fa-solid fa-spinner fa-spin"></i> Identifying city & region...');
+
+        var apiUrl = "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=" + lat + "&longitude=" + lon + "&localityLanguage=en";
+        var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+        var timeoutId = controller ? setTimeout(function() { controller.abort(); }, 3500) : null;
+
+        fetch(apiUrl, { signal: controller ? controller.signal : undefined })
+          .then(function(res) { return res.json(); })
+          .then(function(data) {
+            if (timeoutId) clearTimeout(timeoutId);
+            var detectedPlace = data.locality || data.city || data.principalSubdivision || "";
+            var detectedState = data.principalSubdivision || "";
+
+            var matchedHub = matchHubFromText(detectedPlace);
+            if (!matchedHub && data.localityInfo && data.localityInfo.administrative) {
+              for (var k = 0; k < data.localityInfo.administrative.length; k++) {
+                matchedHub = matchHubFromText(data.localityInfo.administrative[k].name);
+                if (matchedHub) break;
+              }
+            }
+
+            if (!matchedHub) {
+              matchedHub = findClosestHub(lat, lon).hub;
+            }
+
+            var displayName = detectedPlace || matchedHub.name;
+            $status.html('<i class="fa-solid fa-circle-check" style="color:#10B981;"></i> Location detected: <strong>' + displayName + '</strong>' + (detectedState ? ' (' + detectedState + ')' : '') + '! Selecting ' + matchedHub.name + '...');
+            setTimeout(function() {
+              selectCity(matchedHub.name);
+            }, 1300);
+          })
+          .catch(function() {
+            var fallback = findClosestHub(lat, lon);
+            $status.html('<i class="fa-solid fa-circle-check" style="color:#10B981;"></i> Location detected near: <strong>' + fallback.hub.name + '</strong>! Selecting ' + fallback.hub.name + '...');
+            setTimeout(function() {
+              selectCity(fallback.hub.name);
+            }, 1300);
+          });
+      }, function(err) {
+        var msg = "Location permission denied. Please pick a city manually.";
+        if (err.code === 2) msg = "Position unavailable. Please pick a city.";
+        else if (err.code === 3) msg = "Location request timed out.";
+        $status.html('<i class="fa-solid fa-circle-exclamation" style="color:#E85525;"></i> ' + msg);
+      }, { timeout: 10000, enableHighAccuracy: true });
+    });
+
+    // View All Cities click
+    $("#cityViewAllBtn").on("click", function() {
+      closeCityModal();
+      $("html, body").animate({
+        scrollTop: $("#cities").offset().top - 80
+      }, 500);
+    });
+  });
+
+  // Modal Handling
+  function openNotifyModal(city, state, img, desc) {
+    document.getElementById('modalCityTitle').textContent = city;
+    document.getElementById('modalCityState').textContent = state;
+    document.getElementById('modalCityDesc').textContent = desc;
+    document.getElementById('modalCityNameSpan').textContent = city;
+    document.getElementById('modalImg').src = img;
+    document.getElementById('notifySuccessMsg').style.display = 'none';
+    document.getElementById('notifyEmailInput').value = '';
+
+    var myModal = new bootstrap.Modal(document.getElementById('notifyModal'));
+    myModal.show();
+  }
+
+  function handleNotifySubmit(e) {
+    e.preventDefault();
+    var email = document.getElementById('notifyEmailInput').value;
+    var city = document.getElementById('modalCityTitle').textContent;
+    try {
+      var current = JSON.parse(localStorage.getItem('hs_city_alerts') || '[]');
+      current.push({ city: city, email: email, timestamp: new Date().toISOString() });
+      localStorage.setItem('hs_city_alerts', JSON.stringify(current));
+    } catch(err) {}
+
+    document.getElementById('notifySuccessMsg').style.display = 'block';
+    setTimeout(function() {
+      var modalEl = document.getElementById('notifyModal');
+      var modal = bootstrap.Modal.getInstance(modalEl);
+      if (modal) modal.hide();
+    }, 2000);
+  }
+
+  function handleNomination(e) {
+    e.preventDefault();
+    var city = document.getElementById('nomCity').value;
+    var state = document.getElementById('nomState').value;
+    var name = document.getElementById('nomName').value;
+    var email = document.getElementById('nomEmail').value;
+    var note = document.getElementById('nomNote').value;
+
+    try {
+      var list = JSON.parse(localStorage.getItem('hs_nominations') || '[]');
+      list.push({ city: city, state: state, name: name, email: email, note: note, timestamp: new Date().toISOString() });
+      localStorage.setItem('hs_nominations', JSON.stringify(list));
+    } catch(err) {}
+
+    document.getElementById('nominateSuccessBox').style.display = 'block';
+    document.getElementById('nomCity').value = '';
+    document.getElementById('nomState').value = '';
+    document.getElementById('nomName').value = '';
+    document.getElementById('nomEmail').value = '';
+    document.getElementById('nomNote').value = '';
+  }
+</script>
+</body>
+</html>

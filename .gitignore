@@ -4,6 +4,11 @@ hero.mp4
 __pycache__/
 scratch/
 
+# Environment secrets
+.env
+.env.*
+!.env.example
+
 # Exclude video formats by default except compressed banner video
 *.MOV
 *.avi
