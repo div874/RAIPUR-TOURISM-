@@ -12,7 +12,1533 @@
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="css/raipurtales.css?v=17" rel="stylesheet">
+  <link href="css/raipurtales.css?v=seaside2026" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       HUMARA RAIPUR — CINEMATIC TELIBANDHA MARINE DRIVE HERO SECTION
+       ========================================================================== */
+    .raipur-cinematic-hero {
+      position: relative;
+      width: 100%;
+      height: 780px;
+      min-height: 680px;
+      max-height: 850px;
+      display: flex;
+      align-items: center;
+      background: #001A1A url('images/raipur_marine_drive_sunset.jpg') right 6% center / cover no-repeat;
+      overflow: hidden;
+      padding: 110px 0 60px;
+    }
+
+    /* Sunset Gradient Scrim: Deep on left for contrast, clear on right for Telibandha landscape */
+    .raipur-hero-scrim {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(0, 24, 24, 0.94) 0%,
+        rgba(0, 30, 30, 0.88) 38%,
+        rgba(0, 34, 34, 0.60) 58%,
+        rgba(0, 26, 26, 0.15) 80%,
+        rgba(0, 20, 20, 0.35) 100%
+      );
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Godna Terracotta Top Border */
+    .raipur-godna-top-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 12px;
+      z-index: 5;
+      overflow: hidden;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .raipur-godna-top-border svg {
+      width: 100%;
+      height: 12px;
+      display: block;
+    }
+
+    /* Top-Right Meta Container (Weather & Landmark Pin) */
+    .raipur-top-right-meta {
+      position: absolute;
+      top: 100px;
+      right: 32px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      pointer-events: auto;
+    }
+
+    .raipur-cinematic-hero .rt-hero-weather-line {
+      position: static !important;
+      background: rgba(0, 36, 36, 0.65) !important;
+      backdrop-filter: blur(10px) !important;
+      -webkit-backdrop-filter: blur(10px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.22) !important;
+      border-radius: 30px !important;
+      padding: 6px 16px !important;
+      font-size: 12px !important;
+      color: #F8F6F0 !important;
+      box-shadow: 0 4px 16px rgba(0, 20, 20, 0.25) !important;
+      margin: 0 !important;
+      transition: all 0.25s ease;
+    }
+    .raipur-cinematic-hero .rt-hero-weather-line:hover {
+      background: rgba(0, 48, 48, 0.85) !important;
+      border-color: rgba(232, 85, 37, 0.5) !important;
+    }
+
+    /* Floating Landmark Verification Tag */
+    .raipur-landmark-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 36, 36, 0.72);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 30px;
+      padding: 5px 14px 5px 10px;
+      box-shadow: 0 4px 18px rgba(0, 20, 20, 0.3);
+      font-family: 'Manrope', sans-serif;
+      transition: all 0.25s ease;
+    }
+    .raipur-landmark-tag:hover {
+      background: rgba(0, 48, 48, 0.9);
+      border-color: rgba(232, 85, 37, 0.6);
+      transform: translateY(-2px);
+    }
+    .raipur-landmark-pin {
+      width: 20px;
+      height: 20px;
+      background: rgba(232, 85, 37, 0.22);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #E85525;
+      font-size: 11px;
+    }
+    .raipur-landmark-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: #F8F6F0;
+      letter-spacing: 0.3px;
+    }
+    .raipur-landmark-badge {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      background: #E85525;
+      color: #FFFFFF;
+      padding: 2px 7px;
+      border-radius: 12px;
+      margin-left: 2px;
+    }
+
+    /* Content Container */
+    .raipur-hero-content-container {
+      z-index: 10;
+      padding-top: 10px;
+      padding-bottom: 25px;
+    }
+
+    /* Soft Sunset Frosted Text Card for Flawless Readability */
+    .raipur-hero-text-card {
+      background: linear-gradient(135deg, rgba(0, 26, 26, 0.82) 0%, rgba(0, 36, 36, 0.72) 100%);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 20px;
+      padding: 34px 38px 28px;
+      box-shadow: 0 16px 45px rgba(0, 16, 16, 0.45);
+      max-width: 610px;
+    }
+
+    /* Eyebrow Badge */
+    .raipur-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 40, 40, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 30px;
+      padding: 5px 16px;
+      font-family: 'Manrope', sans-serif;
+      margin-bottom: 18px;
+    }
+    .raipur-badge-pulse-dot {
+      width: 7px;
+      height: 7px;
+      background: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.8);
+      animation: rtPulseDot 2s infinite;
+      display: inline-block;
+    }
+    .raipur-badge-text {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 2.2px;
+      color: #F8E6DD;
+      text-transform: uppercase;
+    }
+    .raipur-badge-sep {
+      color: #E85525;
+      font-size: 10px;
+    }
+    .raipur-badge-loc {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      color: #E85525;
+      text-transform: uppercase;
+    }
+
+    /* Headline */
+    .raipur-hero-headline {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: clamp(34px, 4.0vw, 54px);
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: #FFFDF7;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      text-shadow: 0 4px 24px rgba(0, 16, 16, 0.5);
+    }
+    .raipur-headline-terracotta {
+      color: #E85525;
+      display: block;
+      background: linear-gradient(135deg, #FF7A45 0%, #E85525 60%, #C2410C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Supporting Text */
+    .raipur-hero-sub {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: clamp(14px, 1.15vw, 17px);
+      font-weight: 400;
+      line-height: 1.5;
+      color: #F0E8DC;
+      max-width: 580px;
+      margin-bottom: 26px;
+      text-shadow: 0 2px 10px rgba(0, 16, 16, 0.4);
+    }
+
+    /* Left-aligned Search & Quick Lookup Chips */
+    .raipur-cinematic-hero .rt-hero-inline-search {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      max-width: 620px !important;
+      text-align: left !important;
+    }
+    .raipur-cinematic-hero .rt-ai-prompt-chips {
+      justify-content: flex-start !important;
+    }
+
+    /* Bottom Cultural Frieze */
+    .raipur-cultural-bottom-frieze {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 52px;
+      z-index: 4;
+      pointer-events: none;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 0 40px 10px;
+      border-bottom: 2px solid rgba(232, 85, 37, 0.45);
+      background: linear-gradient(to top, rgba(0, 20, 20, 0.75) 0%, transparent 100%);
+    }
+    .raipur-dhokra-svg {
+      display: block;
+    }
+    .raipur-frieze-caption {
+      font-family: 'Manrope', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: rgba(245, 239, 224, 0.45);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      .raipur-cinematic-hero {
+        background-position: center center !important;
+        padding: 120px 0 75px;
+      }
+      .raipur-hero-scrim {
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 24, 24, 0.92) 0%,
+          rgba(0, 32, 32, 0.78) 45%,
+          rgba(0, 20, 20, 0.94) 100%
+        );
+      }
+      .raipur-top-right-meta {
+        top: 92px;
+        right: 18px;
+      }
+      .raipur-cultural-bottom-frieze {
+        padding: 0 20px 8px;
+      }
+    }
+
+    /* ==========================================================================
+       SEASIDE-STYLE EDITORIAL EVENT CARDS (Warm Linen & High-End Serif)
+       ========================================================================== */
+    .rt-seaside-card {
+      display: flex !important;
+      flex-direction: column !important;
+      background: #F6F3EB !important;
+      border: 1px solid #E6E0D5 !important;
+      text-decoration: none !important;
+      color: inherit !important;
+      overflow: hidden !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.3s ease !important;
+      height: 100% !important;
+      border-radius: 0 !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+    }
+
+    .rt-seaside-card:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08) !important;
+      border-color: #D3C9B8 !important;
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+
+    .rt-seaside-img-wrap {
+      position: relative !important;
+      width: 100% !important;
+      height: 0 !important;
+      padding-bottom: 94% !important; /* Authentic Seaside near-square / editorial 1:1 image */
+      overflow: hidden !important;
+      background: #EAE5DB !important;
+      border-bottom: 1px solid #E8E2D7 !important;
+    }
+
+    .rt-seaside-img-wrap img {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      display: block !important;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .rt-seaside-card:hover .rt-seaside-img-wrap img {
+      transform: scale(1.035) !important;
+    }
+
+    .rt-seaside-content {
+      padding: 24px 26px 28px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      flex-grow: 1 !important;
+      background: #F6F3EB !important;
+    }
+
+    .rt-seaside-tags {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      margin-bottom: 16px !important;
+    }
+
+    .rt-seaside-tag {
+      display: inline-block !important;
+      border: 1px solid #CFC7BA !important;
+      background: transparent !important;
+      color: #4A463F !important;
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 9.5px !important;
+      font-weight: 600 !important;
+      letter-spacing: 1.2px !important;
+      text-transform: uppercase !important;
+      padding: 3px 8px !important;
+      border-radius: 1px !important;
+      line-height: 1.3 !important;
+    }
+
+    .rt-seaside-title {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 21px !important;
+      font-weight: 400 !important;
+      color: #1A1A1A !important;
+      margin: 0 0 12px 0 !important;
+      line-height: 1.28 !important;
+      letter-spacing: -0.01em !important;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2 !important;
+      -webkit-box-orient: vertical !important;
+      overflow: hidden !important;
+      min-height: 54px !important;
+      transition: color 0.2s ease !important;
+    }
+
+    .rt-seaside-card:hover .rt-seaside-title {
+      color: #073F3B !important;
+    }
+
+    .rt-seaside-datetime {
+      margin-top: auto !important;
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13px !important;
+      line-height: 1.45 !important;
+    }
+
+    .rt-seaside-date {
+      font-weight: 400 !important;
+      color: #4A463F !important;
+    }
+
+    .rt-seaside-time {
+      font-weight: 400 !important;
+      color: #6E685F !important;
+    }
+
+    /* ==========================================================================
+       PREMIUM CLOSING CTA — “RAIPUR IS WAITING”
+       Warm Ivory, Panoramic Waterfront Skyline & Restrained Folk Motifs
+       ========================================================================== */
+    .rt-closing-cta {
+      position: relative;
+      background: #F7F0E3;
+      color: #123D32;
+      padding: 105px 0 115px;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid rgba(18, 61, 50, 0.08);
+    }
+
+    /* Subtle Chhattisgarhi Godna Top Border */
+    .rt-cta-godna-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    /* Subtle Panoramic Silhouette of Telibandha Lake & Skyline at Bottom */
+    .rt-cta-panoramic-backdrop {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 140px;
+      pointer-events: none;
+      opacity: 0.14;
+    }
+
+    .rt-cta-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .rt-cta-eyebrow-accent {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .rt-cta-motif-line {
+      width: 28px;
+      height: 1px;
+      background: #C94C2B;
+    }
+
+    .rt-cta-motif-diamond {
+      width: 6px;
+      height: 6px;
+      background: #C94C2B;
+      transform: rotate(45deg);
+    }
+
+    .rt-cta-headline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(34px, 4.4vw, 54px);
+      font-weight: 600;
+      line-height: 1.16;
+      letter-spacing: -0.015em;
+      color: #123D32;
+      margin-bottom: 18px;
+    }
+
+    .rt-cta-headline span {
+      display: block;
+      color: #073F3B;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .rt-cta-sub {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(15px, 1.25vw, 17.5px);
+      font-weight: 400;
+      line-height: 1.6;
+      color: #385149;
+      max-width: 580px;
+      margin: 0 auto 34px;
+    }
+
+    .rt-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #C94C2B;
+      color: #FFFFFF !important;
+      font-family: 'Manrope', sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      padding: 15px 36px;
+      border-radius: 30px;
+      text-decoration: none !important;
+      box-shadow: 0 8px 24px rgba(201, 76, 43, 0.28);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rt-cta-btn:hover {
+      background: #B03E20;
+      color: #FFFFFF !important;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(201, 76, 43, 0.38);
+    }
+
+    /* ==========================================================================
+       PREMIUM 4-COLUMN FOOTER
+       Deep Forest Green (#123D32) / Dark Teal (#073F3B) & Warm Ivory (#F7F0E3)
+       ========================================================================== */
+    .rt-raipur-footer {
+      background: #073F3B;
+      color: #F7F0E3;
+      padding: 85px 0 35px;
+      position: relative;
+      border-top: 1px solid rgba(247, 240, 227, 0.12);
+    }
+
+    .rt-raipur-footer .footer-logo-link {
+      display: inline-block;
+      margin-bottom: 18px;
+      text-decoration: none;
+    }
+
+    .rt-raipur-footer .footer-logo-link img {
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .rt-raipur-footer .rt-footer-tagline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 15.5px;
+      color: #F7F0E3;
+      margin-bottom: 12px;
+      letter-spacing: 0.2px;
+    }
+
+    .rt-raipur-footer .rt-footer-desc {
+      font-family: 'Manrope', sans-serif;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: rgba(247, 240, 227, 0.78);
+      margin-bottom: 24px;
+      max-width: 320px;
+    }
+
+    /* Social Links */
+    .rt-raipur-footer .rt-footer-social {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rt-raipur-footer .rt-footer-social a {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid rgba(247, 240, 227, 0.22);
+      background: rgba(247, 240, 227, 0.05);
+      color: rgba(247, 240, 227, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .rt-raipur-footer .rt-footer-social a:hover {
+      background: #C94C2B;
+      border-color: #C94C2B;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    /* Footer Navigation Columns */
+    .rt-raipur-footer .rt-col-heading {
+      font-family: 'Manrope', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: #F7F0E3;
+      margin-bottom: 22px;
+      padding-bottom: 2px;
+    }
+
+    .rt-raipur-footer .rt-footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rt-raipur-footer .rt-footer-nav li {
+      margin-bottom: 13px;
+    }
+
+    .rt-raipur-footer .rt-footer-nav a {
+      font-family: 'Manrope', sans-serif;
+      font-size: 13.5px;
+      font-weight: 400;
+      color: rgba(247, 240, 227, 0.78);
+      text-decoration: none;
+      transition: color 0.2s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .rt-raipur-footer .rt-footer-nav a:hover {
+      color: #C94C2B;
+      transform: translateX(3px);
+    }
+
+    /* Newsletter Column */
+    .rt-raipur-footer .rt-news-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #F7F0E3;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+
+    .rt-raipur-footer .rt-news-sub {
+      font-family: 'Manrope', sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+      color: rgba(247, 240, 227, 0.78);
+      margin-bottom: 18px;
+    }
+
+    .rt-raipur-footer .rt-footer-form {
+      width: 100%;
+    }
+
+    .rt-raipur-footer .rt-footer-input-group {
+      display: flex;
+      align-items: stretch;
+      background: rgba(247, 240, 227, 0.08);
+      border: 1px solid rgba(247, 240, 227, 0.22);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .rt-raipur-footer .rt-footer-input-group:focus-within {
+      border-color: #C94C2B;
+      box-shadow: 0 0 0 2px rgba(201, 76, 43, 0.25);
+    }
+
+    .rt-raipur-footer .rt-footer-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      padding: 13px 16px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 13px;
+      color: #F7F0E3;
+      outline: none;
+      min-width: 0;
+    }
+
+    .rt-raipur-footer .rt-footer-input::placeholder {
+      color: rgba(247, 240, 227, 0.5);
+    }
+
+    .rt-raipur-footer .rt-footer-subscribe-btn {
+      background: #C94C2B;
+      color: #FFFFFF;
+      border: none;
+      padding: 0 20px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .rt-raipur-footer .rt-footer-subscribe-btn:hover {
+      background: #B03E20;
+    }
+
+    .rt-raipur-footer .rt-newsletter-status {
+      font-family: 'Manrope', sans-serif;
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    .rt-raipur-footer .rt-newsletter-status.success {
+      color: #86EFAC;
+    }
+
+    .rt-raipur-footer .rt-newsletter-status.error {
+      color: #FCA5A5;
+    }
+
+    /* Bottom Copyright Bar */
+    .rt-raipur-footer .rt-footer-bottom {
+      margin-top: 55px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(247, 240, 227, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .rt-raipur-footer .rt-copy-text {
+      font-family: 'Manrope', sans-serif;
+      font-size: 12.5px;
+      color: rgba(247, 240, 227, 0.65);
+      margin: 0;
+    }
+
+    .rt-raipur-footer .rt-legal-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rt-raipur-footer .rt-legal-links a {
+      font-family: 'Manrope', sans-serif;
+      font-size: 12.5px;
+      color: rgba(247, 240, 227, 0.65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .rt-raipur-footer .rt-legal-links a:hover {
+      color: #C94C2B;
+    }
+
+    /* Responsive Footer Queries */
+    @media (max-width: 991px) {
+      .rt-raipur-footer {
+        padding: 70px 0 30px;
+      }
+      .rt-closing-cta {
+        padding: 85px 0 95px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .rt-raipur-footer .rt-footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .rt-raipur-footer .rt-legal-links {
+        flex-wrap: wrap;
+        gap: 14px 18px;
+      }
+      .rt-raipur-footer .rt-footer-desc {
+        max-width: 100%;
+      }
+      .rt-raipur-footer .rt-footer-input-group {
+        flex-direction: column;
+        border-radius: 8px;
+      }
+      .rt-raipur-footer .rt-footer-subscribe-btn {
+        padding: 12px;
+        width: 100%;
+      }
+    }
+
+    /* Mobile Text Card Spacing */
+    @media (max-width: 576px) {
+      .raipur-hero-text-card {
+        padding: 24px 18px 20px !important;
+        border-radius: 16px !important;
+        width: 100% !important;
+      }
+      .raipur-hero-headline {
+        font-size: 32px !important;
+      }
+      .raipur-hero-sub {
+        font-size: 14px !important;
+      }
+      .raipur-hero-badge {
+        padding: 4px 12px;
+        white-space: normal;
+        text-align: left;
+      }
+      .raipur-badge-text, .raipur-badge-loc {
+        font-size: 9px;
+        letter-spacing: 1px;
+      }
+      .rt-inline-search-wrap {
+        padding: 4px 6px 4px 12px !important;
+      }
+      .rt-inline-search-input {
+        min-width: 0 !important;
+        font-size: 12px !important;
+      }
+      .rt-inline-search-btn {
+        padding: 8px 12px !important;
+        font-size: 10.5px !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+      }
+    }
+
+    /* ==========================================================================
+       CHHATTISGARH & RAIPUR REGIONAL ART & CULTURAL BACKGROUND SYSTEM
+       (Godna Tattoo Geometry, Bastar Dhokra Bell Metal, Rice Bowl & Sirpur Accents)
+       ========================================================================== */
+    .rt-home-page {
+      position: relative;
+    }
+
+    /* Ambient Godna Sacred Geometric Lattice Texture across all Light Sections */
+    .rt-home-page .rt-section:not(.rt-section-dark) {
+      position: relative !important;
+      overflow: hidden !important;
+      background-color: #F8F8F0 !important;
+      background-image: 
+        radial-gradient(circle at 12% 18%, rgba(201, 76, 43, 0.024) 0%, transparent 45%),
+        radial-gradient(circle at 88% 82%, rgba(18, 61, 50, 0.028) 0%, transparent 45%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23C94C2B' stroke-width='0.75' opacity='0.08'%3E%3Cpath d='M70 0 L140 70 L70 140 L0 70 Z'/%3E%3Cpath d='M70 20 L120 70 L70 120 L20 70 Z' stroke-dasharray='3,3'/%3E%3Ccircle cx='70' cy='70' r='3.2' fill='%23123D32' stroke='none' opacity='0.18'/%3E%3Ccircle cx='70' cy='40' r='1.5' fill='%23C94C2B' stroke='none'/%3E%3Ccircle cx='70' cy='100' r='1.5' fill='%23C94C2B' stroke='none'/%3E%3Ccircle cx='40' cy='70' r='1.5' fill='%23C94C2B' stroke='none'/%3E%3Ccircle cx='100' cy='70' r='1.5' fill='%23C94C2B' stroke='none'/%3E%3Cpath d='M70 54 Q75 62 70 70 Q65 62 70 54 Z' fill='%23C94C2B' stroke='none'/%3E%3Cpath d='M70 86 Q75 78 70 70 Q65 78 70 86 Z' fill='%23C94C2B' stroke='none'/%3E%3Cpath d='M54 70 Q62 75 70 70 Q62 65 54 70 Z' fill='%23C94C2B' stroke='none'/%3E%3Cpath d='M86 70 Q78 75 70 70 Q78 65 86 70 Z' fill='%23C94C2B' stroke='none'/%3E%3Ccircle cx='0' cy='0' r='2' fill='%23123D32' stroke='none' opacity='0.16'/%3E%3Ccircle cx='140' cy='0' r='2' fill='%23123D32' stroke='none' opacity='0.16'/%3E%3Ccircle cx='0' cy='140' r='2' fill='%23123D32' stroke='none' opacity='0.16'/%3E%3Ccircle cx='140' cy='140' r='2' fill='%23123D32' stroke='none' opacity='0.16'/%3E%3Cpath d='M0 70 L140 70' stroke='%23123D32' stroke-width='0.45' stroke-dasharray='4,6'/%3E%3Cpath d='M70 0 L70 140' stroke='%23123D32' stroke-width='0.45' stroke-dasharray='4,6'/%3E%3C/g%3E%3C/svg%3E") !important;
+      background-repeat: repeat !important;
+    }
+
+    /* Section content sits cleanly above watermarks */
+    .rt-home-page .rt-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Subtle Cultural Art Watermarks */
+    .rt-cultural-watermark {
+      position: absolute;
+      pointer-events: none;
+      user-select: none;
+      z-index: 1;
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Watermark Placements */
+    .rt-wm-dhokra-events {
+      top: 30px;
+      right: -20px;
+      width: 440px;
+      height: 380px;
+      opacity: 0.055;
+    }
+
+    .rt-wm-godna-peacock {
+      top: 40px;
+      left: -30px;
+      width: 400px;
+      height: 460px;
+      opacity: 0.052;
+    }
+
+    .rt-wm-sirpur-relief {
+      bottom: 10px;
+      right: -10px;
+      width: 420px;
+      height: 360px;
+      opacity: 0.05;
+    }
+
+    .rt-wm-rice-bowl {
+      top: 20px;
+      right: -10px;
+      width: 430px;
+      height: 430px;
+      opacity: 0.055;
+    }
+
+    .rt-wm-bison-maria {
+      top: 20px;
+      left: -20px;
+      width: 400px;
+      height: 400px;
+      opacity: 0.052;
+    }
+
+    .rt-wm-tree-life {
+      top: 20px;
+      right: -10px;
+      width: 420px;
+      height: 440px;
+      opacity: 0.05;
+    }
+
+    .rt-wm-iron-craft {
+      top: 15px;
+      left: -15px;
+      width: 400px;
+      height: 340px;
+      opacity: 0.05;
+    }
+
+    /* Cultural Ribbon Friezes running between sections */
+    .rt-cultural-frieze-bar {
+      width: 100%;
+      height: 12px;
+      overflow: hidden;
+      display: block;
+      background: #F8F8F0;
+      border-top: 1px solid rgba(201, 76, 43, 0.15);
+      border-bottom: 1px solid rgba(18, 61, 50, 0.12);
+      pointer-events: none;
+      line-height: 0;
+    }
+    .rt-cultural-frieze-bar svg {
+      width: 100%;
+      height: 12px;
+      display: block;
+    }
+
+    /* Responsive scaling for mobile devices */
+    @media (max-width: 768px) {
+      .rt-cultural-watermark {
+        opacity: 0.035 !important;
+        transform: scale(0.72);
+        transform-origin: center;
+      }
+      .rt-wm-dhokra-events {
+        right: -80px;
+        top: 10px;
+      }
+      .rt-wm-godna-peacock {
+        left: -80px;
+        top: 10px;
+      }
+      .rt-wm-rice-bowl {
+        right: -80px;
+      }
+      .rt-wm-bison-maria {
+        left: -80px;
+      }
+      .rt-wm-tree-life {
+        right: -80px;
+      }
+      .rt-wm-iron-craft {
+        left: -80px;
+      }
+    }
+
+    /* ==========================================================================
+       HOMEPAGE REFINEMENT — EDITORIAL REFINED CARDS & GRID SYSTEMS
+       ========================================================================== */
+
+    /* Typography & Section Headings */
+    .rt-home-page .rt-title {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: clamp(28px, 3.0vw, 42px) !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      line-height: 1.24 !important;
+      letter-spacing: -0.01em !important;
+      text-transform: none !important;
+    }
+
+    .rt-home-page .rt-subtitle {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: clamp(14px, 1.05vw, 16px) !important;
+      color: #6B6B61 !important;
+      line-height: 1.6 !important;
+    }
+
+    .rt-home-page .rt-label {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      letter-spacing: 1.8px !important;
+      text-transform: uppercase !important;
+      color: #C94C2B !important;
+      margin-bottom: 8px !important;
+    }
+
+    /* 1. DISCOVER RAIPUR — 3x2 REFINED GRID */
+    .rt-discover-card {
+      display: flex !important;
+      flex-direction: column !important;
+      background: #F7F3E9 !important;
+      border: 1px solid #E5DED1 !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      text-decoration: none !important;
+      color: inherit !important;
+      height: 100% !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.3s ease !important;
+      box-shadow: 0 2px 10px rgba(18, 61, 50, 0.04) !important;
+    }
+
+    .rt-discover-card:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 14px 32px rgba(18, 61, 50, 0.09) !important;
+      border-color: #C94C2B !important;
+      text-decoration: none !important;
+    }
+
+    .rt-discover-card-img {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background: #EAE5DB;
+    }
+
+    .rt-discover-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rt-discover-card:hover .rt-discover-card-img img {
+      transform: scale(1.05);
+    }
+
+    .rt-discover-card-body {
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: #F7F3E9;
+    }
+
+    .rt-discover-card-title {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 21px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 0 0 8px 0 !important;
+      line-height: 1.3 !important;
+    }
+
+    .rt-discover-card-desc {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13.5px !important;
+      color: #6B6B61 !important;
+      line-height: 1.55 !important;
+      margin-bottom: 16px !important;
+      flex-grow: 1;
+    }
+
+    .rt-discover-card-link {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.8px !important;
+      color: #C94C2B !important;
+      text-transform: uppercase !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s ease;
+    }
+
+    .rt-discover-card:hover .rt-discover-card-link {
+      transform: translateX(4px);
+    }
+
+    /* 2. PLACES WORTH DISCOVERING — 4 CLEAN DESTINATION CARDS */
+    .rt-place-card {
+      display: flex !important;
+      flex-direction: column !important;
+      background: #F7F3E9 !important;
+      border: 1px solid #E5DED1 !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      text-decoration: none !important;
+      color: inherit !important;
+      height: 100% !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.3s ease !important;
+      box-shadow: 0 2px 10px rgba(18, 61, 50, 0.04) !important;
+    }
+
+    .rt-place-card:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 14px 32px rgba(18, 61, 50, 0.09) !important;
+      border-color: #C94C2B !important;
+      text-decoration: none !important;
+    }
+
+    .rt-place-card-img {
+      position: relative;
+      width: 100%;
+      height: 210px;
+      overflow: hidden;
+      background: #EAE5DB;
+    }
+
+    .rt-place-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .rt-place-card:hover .rt-place-card-img img {
+      transform: scale(1.05);
+    }
+
+    .rt-place-card-body {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: #F7F3E9;
+    }
+
+    .rt-place-tag {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      letter-spacing: 1.4px !important;
+      text-transform: uppercase !important;
+      color: #C94C2B !important;
+      margin-bottom: 6px !important;
+    }
+
+    .rt-place-title {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 0 0 8px 0 !important;
+      line-height: 1.3 !important;
+    }
+
+    .rt-place-desc {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13px !important;
+      color: #6B6B61 !important;
+      line-height: 1.55 !important;
+      margin-bottom: 14px !important;
+      flex-grow: 1;
+    }
+
+    .rt-place-link {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      color: #073F3B !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .rt-place-card:hover .rt-place-link {
+      color: #C94C2B !important;
+      transform: translateX(4px);
+    }
+
+    /* 3. EAT LIKE A LOCAL REFINEMENTS */
+    .rt-food-hero-card {
+      position: relative;
+      height: 440px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid #E5DED1;
+      box-shadow: 0 4px 16px rgba(18, 61, 50, 0.06);
+    }
+
+    .rt-food-hero-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .rt-food-hero-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .rt-food-hero-overlay-panel {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7, 63, 59, 0.12) 0%, rgba(7, 63, 59, 0.9) 100%);
+      padding: 34px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: #FFFFFF;
+    }
+
+    .rt-food-hero-overlay-panel h3 {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 26px !important;
+      font-weight: 600 !important;
+      color: #FFFFFF !important;
+      margin: 8px 0 10px 0 !important;
+    }
+
+    .rt-food-hero-overlay-panel p {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 14px !important;
+      color: rgba(255, 255, 255, 0.9) !important;
+      line-height: 1.55 !important;
+      margin-bottom: 18px !important;
+    }
+
+    .rt-food-rec-card {
+      background: #F7F3E9;
+      border: 1px solid #E5DED1;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin-bottom: 18px;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .rt-food-rec-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .rt-food-rec-card:hover {
+      transform: translateX(4px);
+      border-color: #C94C2B;
+      box-shadow: 0 6px 18px rgba(18, 61, 50, 0.06);
+    }
+
+    .rt-food-rec-tag {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 10px !important;
+      font-weight: 700 !important;
+      letter-spacing: 1.4px !important;
+      text-transform: uppercase !important;
+      color: #C94C2B !important;
+      margin-bottom: 4px !important;
+      display: block;
+    }
+
+    .rt-food-rec-card h4 {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 19px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 0 0 6px 0 !important;
+    }
+
+    .rt-food-rec-card p {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13px !important;
+      color: #6B6B61 !important;
+      line-height: 1.55 !important;
+      margin: 0 !important;
+    }
+
+    /* 4. EXPERIENCES — 3 EQUAL WIDTH CARDS */
+    .rt-refined-exp-card {
+      display: flex !important;
+      flex-direction: column !important;
+      background: #F7F3E9 !important;
+      border: 1px solid #E5DED1 !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      text-decoration: none !important;
+      color: inherit !important;
+      height: 100% !important;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.3s ease !important;
+      box-shadow: 0 2px 10px rgba(18, 61, 50, 0.04) !important;
+    }
+
+    .rt-refined-exp-card:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 14px 32px rgba(18, 61, 50, 0.09) !important;
+      border-color: #C94C2B !important;
+      text-decoration: none !important;
+    }
+
+    .rt-refined-exp-img {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #EAE5DB;
+    }
+
+    .rt-refined-exp-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .rt-refined-exp-card:hover .rt-refined-exp-img img {
+      transform: scale(1.05);
+    }
+
+    .rt-refined-exp-body {
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      background: #F7F3E9;
+    }
+
+    .rt-refined-exp-body h4 {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 0 0 8px 0 !important;
+      line-height: 1.3 !important;
+    }
+
+    .rt-refined-exp-body p {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13.5px !important;
+      color: #6B6B61 !important;
+      line-height: 1.55 !important;
+      margin-bottom: 16px !important;
+      flex-grow: 1;
+    }
+
+    /* 5. STORIES REFINEMENTS */
+    .rt-story-card-lead {
+      background: #F7F3E9 !important;
+      border: 1px solid #E5DED1 !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      height: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.3s ease !important;
+      text-decoration: none !important;
+    }
+
+    .rt-story-card-lead:hover {
+      transform: translateY(-4px) !important;
+      box-shadow: 0 14px 32px rgba(18, 61, 50, 0.09) !important;
+      border-color: #C94C2B !important;
+      text-decoration: none !important;
+    }
+
+    .rt-story-card-lead-img {
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      background: #EAE5DB;
+    }
+
+    .rt-story-card-lead-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .rt-story-card-lead:hover .rt-story-card-lead-img img {
+      transform: scale(1.04);
+    }
+
+    .rt-story-card-lead-body {
+      padding: 26px 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .rt-story-card-lead-body h3 {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 23px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 8px 0 10px 0 !important;
+      line-height: 1.3 !important;
+    }
+
+    .rt-story-card-lead-body p {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 14px !important;
+      color: #6B6B61 !important;
+      line-height: 1.6 !important;
+      margin-bottom: 16px !important;
+      flex-grow: 1;
+    }
+
+    .rt-story-card-sm {
+      background: #F7F3E9 !important;
+      border: 1px solid #E5DED1 !important;
+      border-radius: 4px !important;
+      overflow: hidden !important;
+      display: flex !important;
+      flex-direction: row !important;
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.3s ease !important;
+      text-decoration: none !important;
+      flex: 1;
+    }
+
+    .rt-story-card-sm:hover {
+      transform: translateY(-3px) !important;
+      box-shadow: 0 10px 24px rgba(18, 61, 50, 0.08) !important;
+      border-color: #C94C2B !important;
+      text-decoration: none !important;
+    }
+
+    .rt-story-card-sm-img {
+      width: 160px;
+      min-width: 160px;
+      overflow: hidden;
+      background: #EAE5DB;
+    }
+
+    .rt-story-card-sm-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .rt-story-card-sm:hover .rt-story-card-sm-img img {
+      transform: scale(1.05);
+    }
+
+    .rt-story-card-sm-body {
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .rt-story-card-sm-body h4 {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 18px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 6px 0 8px 0 !important;
+      line-height: 1.3 !important;
+    }
+
+    .rt-story-card-sm-body p {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13px !important;
+      color: #6B6B61 !important;
+      line-height: 1.5 !important;
+      margin-bottom: 10px !important;
+    }
+
+    .rt-story-readtime {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 10.5px !important;
+      font-weight: 700 !important;
+      letter-spacing: 1.2px !important;
+      text-transform: uppercase !important;
+      color: #C94C2B !important;
+    }
+
+    /* 6. PLAN YOUR RAIPUR — 4 MINIMAL CARDS */
+    .rt-refined-plan-card {
+      display: flex !important;
+      flex-direction: column !important;
+      background: #F7F3E9 !important;
+      border: 1px solid #E5DED1 !important;
+      border-radius: 4px !important;
+      padding: 28px 24px !important;
+      text-decoration: none !important;
+      color: inherit !important;
+      height: 100% !important;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.3s ease,
+                  border-color 0.25s ease !important;
+    }
+
+    .rt-refined-plan-card:hover {
+      transform: translateY(-4px) !important;
+      border-color: #C94C2B !important;
+      box-shadow: 0 12px 28px rgba(18, 61, 50, 0.08) !important;
+      text-decoration: none !important;
+    }
+
+    .rt-refined-plan-card h4 {
+      font-family: 'Playfair Display', Georgia, serif !important;
+      font-size: 19px !important;
+      font-weight: 600 !important;
+      color: #123D32 !important;
+      margin: 12px 0 8px 0 !important;
+    }
+
+    .rt-refined-plan-card p {
+      font-family: 'Manrope', sans-serif !important;
+      font-size: 13px !important;
+      color: #6B6B61 !important;
+      line-height: 1.55 !important;
+      margin: 0 !important;
+    }
+
+    @media (max-width: 768px) {
+      .rt-story-card-sm {
+        flex-direction: column !important;
+      }
+      .rt-story-card-sm-img {
+        width: 100% !important;
+        height: 180px !important;
+      }
+    }
+  </style>
 </head>
 <body class="rt-home-page">
 
@@ -25,9 +1551,11 @@
 <header class="header">
   <div class="container position-relative">
     <nav class="custom-navbar">
-      <a class="navbar-brand-tab" href="index.html">
-        <img src="images/logo.png" alt="Humara Raipur - Places, People, Events, Stories" class="rt-logo-img">
-      </a>
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand-tab" href="index.html">
+          <img src="images/logo_raipur.png" alt="Humara Raipur - Places, People, Events, Stories" class="rt-logo-img">
+        </a>
+      </div>
 
       <button class="menu-icon" type="button" aria-label="Menu">
         <span style="display:block;width:24px;height:2px;background:#003838;margin:5px 0;"></span>
@@ -43,6 +1571,13 @@
           <li class="nav-item"><a class="nav-link" href="experiences.html">EXPERIENCES</a></li>
           <li class="nav-item"><a class="nav-link" href="stories.html">STORIES</a></li>
           <li class="nav-item"><a class="nav-link" href="plan-your-visit.html">PLAN</a></li>
+          <li class="nav-item">
+            <button class="nav-link nav-link-city-select" id="openCityModalBtn" type="button" aria-haspopup="dialog" aria-expanded="false" title="Current location: Raipur. Click to change city.">
+              <i class="fa-solid fa-location-dot" style="color:#C94C2B;font-size:13px;"></i>
+              <span>RAIPUR</span>
+              <i class="fa-solid fa-chevron-down" style="font-size:9px;opacity:0.8;margin-left:1px;"></i>
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -79,72 +1614,220 @@
   </div>
 </div>
 
-<!-- SECTION 1 — HERO SECTION (REACT BITS SCROLL EXPAND EFFECT) -->
-<section class="rt-scroll-expand-root" id="heroScrollExpand">
-  <div class="rt-scroll-expand-track" id="scrollExpandTrack">
-    <div class="rt-scroll-expand-stage" id="scrollExpandStage">
-      <div class="rt-scroll-expand-frame" id="scrollExpandFrame">
-        <video class="rt-scroll-expand-media" src="videos/hero_compressed.mp4" poster="images/hero_banner.jpg" autoplay muted loop playsinline></video>
-        <div class="rt-scroll-expand-scrim" id="scrollExpandScrim"></div>
-      </div>
-      <!-- Left gradient scrim for text readability -->
-      <div class="rt-hero-left-scrim" id="heroLeftScrim"></div>
+<!-- SECTION 1 — CINEMATIC TELIBANDHA MARINE DRIVE HERO (HUMARA RAIPUR) -->
+<section class="raipur-cinematic-hero" id="heroScrollExpand">
+  <!-- Subtle Godna Terracotta Top Border -->
+  <div class="raipur-godna-top-border" aria-hidden="true">
+    <svg viewBox="0 0 1200 12" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 6 L1200 6" stroke="#E85525" stroke-width="1" stroke-dasharray="2 6" opacity="0.6"/>
+      <!-- Repeating Godna diamond sequence -->
+      <g stroke="#E85525" stroke-width="1.2" fill="#E85525" fill-opacity="0.2">
+        <polygon points="20,6 26,1 32,6 26,11"/>
+        <polygon points="60,6 66,1 72,6 66,11"/>
+        <polygon points="100,6 106,1 112,6 106,11"/>
+        <polygon points="140,6 146,1 152,6 146,11"/>
+        <polygon points="180,6 186,1 192,6 186,11"/>
+        <polygon points="220,6 226,1 232,6 226,11"/>
+        <polygon points="260,6 266,1 272,6 266,11"/>
+        <polygon points="300,6 306,1 312,6 306,11"/>
+        <polygon points="340,6 346,1 352,6 346,11"/>
+        <polygon points="380,6 386,1 392,6 386,11"/>
+        <polygon points="420,6 426,1 432,6 426,11"/>
+        <polygon points="460,6 466,1 472,6 466,11"/>
+        <polygon points="500,6 506,1 512,6 506,11"/>
+        <polygon points="540,6 546,1 552,6 546,11"/>
+        <polygon points="580,6 586,1 592,6 586,11"/>
+        <polygon points="620,6 626,1 632,6 626,11"/>
+        <polygon points="660,6 666,1 672,6 666,11"/>
+        <polygon points="700,6 706,1 712,6 706,11"/>
+        <polygon points="740,6 746,1 752,6 746,11"/>
+        <polygon points="780,6 786,1 792,6 786,11"/>
+        <polygon points="820,6 826,1 832,6 826,11"/>
+        <polygon points="860,6 866,1 872,6 866,11"/>
+        <polygon points="900,6 906,1 912,6 906,11"/>
+        <polygon points="940,6 946,1 952,6 946,11"/>
+        <polygon points="980,6 986,1 992,6 986,11"/>
+        <polygon points="1020,6 1026,1 1032,6 1026,11"/>
+        <polygon points="1060,6 1066,1 1072,6 1066,11"/>
+        <polygon points="1100,6 1106,1 1112,6 1106,11"/>
+        <polygon points="1140,6 1146,1 1152,6 1146,11"/>
+        <polygon points="1180,6 1186,1 1192,6 1186,11"/>
+      </g>
+    </svg>
+  </div>
 
-      <!-- Top Right Weather Info -->
-      <div class="rt-hero-weather-line" id="heroWeatherLine" aria-label="Current weather in Raipur">
-        <span class="rt-weather-line-icon" id="weatherIconWrap"><i data-lucide="sun" class="rt-weather-icon"></i></span>
-        <span class="rt-weather-line-text" id="weatherLineText">Raipur: 28°C · Partly Cloudy · Feels like 29°C</span>
-      </div>
+  <!-- Deep Gradient Scrim ensuring 100% Text Readability on Left while keeping Telibandha Lake visible on Right -->
+  <div class="raipur-hero-scrim"></div>
 
-      <!-- Editorial text overlay -->
-      <div class="rt-hero-editorial" id="heroEditorial">
-        <h1 class="rt-hero-headline">RAIPUR,<br>TOLD DIFFERENTLY.</h1>
-        <p class="rt-hero-tagline">DISCOVER PLACES, EVENTS, FOOD & EXPERIENCES HAPPENING AROUND YOU.</p>
-        <p class="rt-hero-sub">Your modern local discovery engine to explore live events, local eats, hidden places, and stories in Raipur.</p>
+  <!-- Top-Right Meta Container (Weather) -->
+  <div class="raipur-top-right-meta d-none d-md-flex">
+    <!-- Weather Line (Preserves API integration) -->
+    <div class="rt-hero-weather-line" id="heroWeatherLine" aria-label="Current weather in Raipur">
+      <span class="rt-weather-line-icon" id="weatherIconWrap"><i data-lucide="sun" class="rt-weather-icon"></i></span>
+      <span class="rt-weather-line-text" id="weatherLineText">Raipur: 28°C · Partly Cloudy · Feels like 29°C</span>
+    </div>
+  </div>
 
-        <!-- Transparent Search Bar below Description -->
-        <div class="rt-hero-inline-search" id="heroInlineSearch">
-          <div class="rt-inline-search-wrap">
-            <i data-lucide="search" class="rt-inline-search-icon"></i>
-            <input type="text" class="rt-inline-search-input" id="heroSearchInput" placeholder="What are you looking for in Raipur? (e.g. Garba, Cafes, Turfs)">
-            <button class="rt-inline-search-btn rt-ai-search-btn" type="button">SEARCH <i data-lucide="arrow-right"></i></button>
-          </div>
+  <!-- Main Hero Content Container (Spacious Editorial Layout Positioned Left) -->
+  <div class="container position-relative raipur-hero-content-container">
+    <div class="row">
+      <div class="col-xl-7 col-lg-8 col-md-11 text-start">
+        
+        <!-- Soft Frosted Editorial Text Card for High Readability -->
+        <div class="raipur-hero-text-card">
+          <!-- Headline (Editorial Serif in Warm Ivory & Terracotta Sunset) -->
+          <h1 class="raipur-hero-headline">
+            RAIPUR,<br>
+            <span class="raipur-headline-terracotta">TOLD DIFFERENTLY.</span>
+          </h1>
 
-          <!-- Quick Discovery Chips below Search -->
-          <div class="rt-ai-prompt-chips">
-            <span class="rt-ai-chip-label">🔎 QUICK LOOKUP:</span>
-            <button class="rt-ai-chip btn-suggest-chip" data-query="Events today in Raipur">🎉 Events</button>
-            <button class="rt-ai-chip btn-suggest-chip" data-query="Best food and farra in Raipur">🍕 Food & Cafés</button>
-            <button class="rt-ai-chip btn-suggest-chip" data-query="Historical places to visit in Raipur">🏛️ Places</button>
-            <button class="rt-ai-chip btn-suggest-chip" data-query="Jungle safari and nature experiences">🌿 Experiences</button>
-          </div>
+          <!-- Supporting Text -->
+          <p class="raipur-hero-sub">
+            Discover places, events, food &amp; experiences happening around you.
+          </p>
 
-          <!-- AI Live Answer Card -->
-          <div class="rt-ai-response-card" id="heroAiResponse" style="display: none;">
-            <div class="rt-ai-response-header">
-              <span class="rt-ai-badge"><i data-lucide="sparkles"></i> HUMARA RAIPUR AI</span>
-              <button class="rt-ai-close-btn" id="closeHeroAiResponse" aria-label="Close answer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+          <!-- Search Bar & AI Quick Lookups -->
+          <div class="rt-hero-inline-search text-start" id="heroInlineSearch">
+            <div class="rt-inline-search-wrap">
+              <i data-lucide="search" class="rt-inline-search-icon"></i>
+              <input type="text" class="rt-inline-search-input" id="heroSearchInput" placeholder="What are you looking for in Raipur? (e.g. Garba, Cafes, Turfs)" autocomplete="off">
+              <button class="rt-inline-search-btn rt-ai-search-btn" type="button">SEARCH <i data-lucide="arrow-right"></i></button>
             </div>
-            <div class="rt-ai-response-text" id="heroAiResponseText">
-              Asking AI assistant...
+
+            <!-- AI Live Answer Card -->
+            <div class="rt-ai-response-card" id="heroAiResponse" style="display: none;">
+              <div class="rt-ai-response-header">
+                <span class="rt-ai-badge"><i data-lucide="sparkles"></i> HUMARA RAIPUR AI</span>
+                <button class="rt-ai-close-btn" id="closeHeroAiResponse" aria-label="Close answer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+              </div>
+              <div class="rt-ai-response-text" id="heroAiResponseText">
+                Asking AI assistant...
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-
-      <!-- Bottom Center Bouncing Scroll Indicator -->
-      <a href="#live-events-sec" class="rt-hero-scroll-down" id="heroScrollDown" aria-label="Scroll down">
-        <span>Discover Events</span>
-        <i data-lucide="chevrons-down" class="rt-bounce-arrow"></i>
-      </a>
-
     </div>
   </div>
+
+  <!-- Bottom Cultural Silhouette Frieze (Bastar Dhokra & Folk Dance Silhouettes Framing Edges) -->
+  <div class="raipur-cultural-bottom-frieze" aria-hidden="true">
+    <div class="raipur-frieze-craft">
+      <svg width="420" height="48" viewBox="0 0 420 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="raipur-dhokra-svg">
+        <!-- Bastar Dhokra Deer Silhouette -->
+        <g fill="#D97706" opacity="0.32">
+          <path d="M40 38 L42 26 L46 22 L52 24 L56 30 L54 38 Z"/>
+          <path d="M46 22 L44 14 L42 10 L44 8 L46 11 L48 14 Z"/>
+          <path d="M44 10 C40 6 36 8 34 11 C32 14 36 12 40 12"/>
+          <path d="M45 9 C47 5 52 4 55 6 C56 8 52 8 47 10"/>
+          <line x1="42" y1="38" x2="42" y2="46" stroke="#D97706" stroke-width="1.8"/>
+          <line x1="45" y1="38" x2="45" y2="46" stroke="#D97706" stroke-width="1.8"/>
+          <line x1="53" y1="38" x2="53" y2="46" stroke="#D97706" stroke-width="1.8"/>
+          <line x1="55" y1="38" x2="55" y2="46" stroke="#D97706" stroke-width="1.8"/>
+        </g>
+
+        <!-- Traditional Folk Dancer / Musician Silhouettes (Karma / Panthi rhythm) -->
+        <g stroke="#D97706" stroke-width="1.6" fill="none" opacity="0.28" stroke-linecap="round">
+          <!-- Musician with Horn (Turiya) -->
+          <circle cx="110" cy="14" r="3.5" fill="#D97706"/>
+          <line x1="110" y1="18" x2="110" y2="34"/>
+          <line x1="110" y1="34" x2="105" y2="46"/>
+          <line x1="110" y1="34" x2="115" y2="46"/>
+          <path d="M110 22 L116 26 L124 20 L130 18"/>
+          <path d="M128 16 C131 16 133 20 130 22"/>
+
+          <!-- Folk Dancer in rhythmic pose -->
+          <circle cx="160" cy="13" r="3.5" fill="#D97706"/>
+          <line x1="160" y1="17" x2="160" y2="32"/>
+          <line x1="160" y1="32" x2="153" y2="46"/>
+          <line x1="160" y1="32" x2="167" y2="46"/>
+          <path d="M150 20 L160 23 L170 19"/>
+
+          <!-- Second Dancer linking hands -->
+          <circle cx="190" cy="13" r="3.5" fill="#D97706"/>
+          <line x1="190" y1="17" x2="190" y2="32"/>
+          <line x1="190" y1="32" x2="183" y2="46"/>
+          <line x1="190" y1="32" x2="197" y2="46"/>
+          <path d="M180 19 L190 23 L200 20"/>
+
+          <!-- Third Dancer -->
+          <circle cx="220" cy="13" r="3.5" fill="#D97706"/>
+          <line x1="220" y1="17" x2="220" y2="32"/>
+          <line x1="220" y1="32" x2="213" y2="46"/>
+          <line x1="220" y1="32" x2="227" y2="46"/>
+          <path d="M210 20 L220 23 L230 19"/>
+
+          <!-- Stylized Sal Nature Motif Tree -->
+          <path d="M290 46 L290 16 M290 22 L278 14 M290 26 L302 18 M290 32 L276 24 M290 36 L304 28" stroke="#E85525" stroke-width="1.4"/>
+          <circle cx="290" cy="14" r="2" fill="#E85525"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Micro Cultural Label -->
+    <span class="raipur-frieze-caption d-none d-md-inline-block">
+      Bastar Dhokra &amp; Godna Folk Craft Heritage · Chhattisgarh
+    </span>
+  </div>
+
+  <!-- Bottom Bouncing Scroll Indicator -->
+  <a href="#live-events-sec" class="rt-hero-scroll-down" id="heroScrollDown" aria-label="Scroll down">
+    <span>Discover Events</span>
+    <i data-lucide="chevrons-down" class="rt-bounce-arrow"></i>
+  </a>
 </section>
 
 
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern1" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern1)"/>
+  </svg>
+</div>
+
 <!-- SECTION 2 — WHAT'S HAPPENING IN RAIPUR (LIVE EVENT FEED IMMEDIATELY BELOW HERO) -->
 <section class="rt-section" id="live-events-sec" style="background-color: var(--rt-offwhite); border-bottom: 1px solid var(--rt-border);">
+  <!-- Bastar Dhokra Deer & Tribal Rhythms Watermark Motif -->
+  <svg class="rt-cultural-watermark rt-wm-dhokra-events" viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="#C94C2B">
+      <path d="M180 230 L188 150 L210 130 L250 145 L275 190 L260 235 Z"/>
+      <path d="M210 130 L195 80 L185 55 L195 45 L210 60 L218 80 Z"/>
+      <path d="M195 55 C170 30 140 45 125 65 C110 85 135 75 160 70"/>
+      <path d="M200 48 C205 20 240 15 260 30 C270 40 250 42 220 52"/>
+      <path d="M175 42 C160 15 130 18 115 30"/>
+      <path d="M225 32 C255 10 280 22 290 35"/>
+      <line x1="185" y1="230" x2="180" y2="340" stroke="#C94C2B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="205" y1="230" x2="200" y2="340" stroke="#C94C2B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="250" y1="235" x2="255" y2="340" stroke="#C94C2B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="270" y1="230" x2="278" y2="340" stroke="#C94C2B" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g stroke="#123D32" stroke-width="5" fill="none" stroke-linecap="round">
+      <circle cx="340" cy="110" r="16" fill="#123D32"/>
+      <line x1="340" y1="126" x2="340" y2="220"/>
+      <line x1="340" y1="220" x2="315" y2="320"/>
+      <line x1="340" y1="220" x2="365" y2="320"/>
+      <ellipse cx="340" cy="180" rx="36" ry="18" fill="#123D32"/>
+      <line x1="310" y1="155" x2="330" y2="180"/>
+      <line x1="370" y1="155" x2="350" y2="180"/>
+    </g>
+    <g stroke="#123D32" stroke-width="4" stroke-linecap="round">
+      <path d="M60 360 L60 120 M60 170 L20 130 M60 210 L100 170 M60 260 L15 220 M60 300 L105 260"/>
+      <circle cx="60" cy="110" r="10" fill="#C94C2B"/>
+      <circle cx="20" cy="125" r="7" fill="#C94C2B"/>
+      <circle cx="100" cy="165" r="7" fill="#C94C2B"/>
+    </g>
+  </svg>
+
   <div class="container">
     <div class="row align-items-end mb-4">
       <div class="col-lg-7">
@@ -165,18 +1848,180 @@
       <button class="rt-date-pill" data-date-filter="month">THIS MONTH</button>
     </div>
 
-    <!-- Live Event Cards Container (Populated via JS) -->
+    <!-- Live Event Cards Container (Populated with Seaside Editorial Cards, filtered via JS) -->
     <div id="homeEventsContainer" class="w-100">
-      <div class="col-12 text-center py-4">
-        <div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading events...</span></div>
-        <p class="mt-2 text-muted small">Fetching live events in Raipur...</p>
+      <div class="row g-4">
+        <!-- Event 1: Standup Comedy -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://allevents.in/raipur/air-1-standup-comedy-by-harshit-mahawar/3900030311897858" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="shows" title="AIR 1: Standup Comedy by Harshit Mahawar">
+            <div class="rt-seaside-img-wrap">
+              <img src="https://cdn-az.allevents.in/events10/banners/11f11030-7ae0-11f1-af72-bfb50b776255-rimg-w1200-h600-dc2e0708-gmir.jpg?v=1783523821" alt="AIR 1: Standup Comedy by Harshit Mahawar" onerror="this.src='images/tribal_dance.jpg'" loading="lazy">
+            </div>
+            <div class="rt-seaside-content">
+              <div class="rt-seaside-tags">
+                <span class="rt-seaside-tag">COMEDY</span>
+                <span class="rt-seaside-tag">LIVE</span>
+              </div>
+              <h3 class="rt-seaside-title">AIR 1: Standup Comedy by Harshit Mahawar</h3>
+              <div class="rt-seaside-datetime">
+                <div class="rt-seaside-date">Saturday, Oct 31, 2026</div>
+                <div class="rt-seaside-time">7:00 pm onwards</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Event 2: Standup Comedy -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://allevents.in/raipur/satyabrat-mohapatra-live/3900030678881043" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="shows" title="Satyabrat Mohapatra LIVE">
+            <div class="rt-seaside-img-wrap">
+              <img src="https://cdn-az.allevents.in/events7/banners/513bf010-c401-11f1-961b-edf15f9dca82-rimg-w1200-h600-dc282828-gmir.jpg?v=1791564547" alt="Satyabrat Mohapatra LIVE" onerror="this.src='images/tribal_dance.jpg'" loading="lazy">
+            </div>
+            <div class="rt-seaside-content">
+              <div class="rt-seaside-tags">
+                <span class="rt-seaside-tag">COMEDY</span>
+                <span class="rt-seaside-tag">LIVE</span>
+              </div>
+              <h3 class="rt-seaside-title">Satyabrat Mohapatra LIVE</h3>
+              <div class="rt-seaside-datetime">
+                <div class="rt-seaside-date">Saturday, Nov 14, 2026</div>
+                <div class="rt-seaside-time">6:00 pm onwards</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Event 3: Education & Culture -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="culture" title="Great Education Expo 2027 – Raipur">
+            <div class="rt-seaside-img-wrap">
+              <img src="https://cdn2.allevents.in/thumbs/thumb6a86ac2c9e5a8.jpg" alt="Great Education Expo 2027 – Raipur" onerror="this.src='images/tribal_dance.jpg'" loading="lazy">
+            </div>
+            <div class="rt-seaside-content">
+              <div class="rt-seaside-tags">
+                <span class="rt-seaside-tag">EXHIBITION</span>
+                <span class="rt-seaside-tag">EDUCATION</span>
+              </div>
+              <h3 class="rt-seaside-title">Great Education Expo 2027 – Raipur</h3>
+              <div class="rt-seaside-datetime">
+                <div class="rt-seaside-date">Saturday, Nov 21, 2026</div>
+                <div class="rt-seaside-time">12:30 am onwards</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Event 4: Culture & Tribal -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://allevents.in/raipur/rhythms-of-bastar-a-dussehra-immersion/200030757825259" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="culture" title="Rhythms of Bastar — A Dussehra Immersion">
+            <div class="rt-seaside-img-wrap">
+              <img src="https://cdn-az.allevents.in/events6/banners/134074ff950b0c53b697177f7eae00a3919e6c9b0f0129ab165d0e6c18fa6294-rimg-w1200-h900-dcc8d8d8-gmir?v=1790841178" alt="Rhythms of Bastar — A Dussehra Immersion" onerror="this.src='images/tribal_dance.jpg'" loading="lazy">
+            </div>
+            <div class="rt-seaside-content">
+              <div class="rt-seaside-tags">
+                <span class="rt-seaside-tag">CULTURE</span>
+                <span class="rt-seaside-tag">FESTIVAL</span>
+              </div>
+              <h3 class="rt-seaside-title">Rhythms of Bastar — A Dussehra Immersion</h3>
+              <div class="rt-seaside-datetime">
+                <div class="rt-seaside-date">Sunday, Oct 18, 2026</div>
+                <div class="rt-seaside-time">6:00 am onwards</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Event 5: Workshop & Community -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://allevents.in/raipur/grow-your-brand-with-digital-hub/200030825949553" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="shows" title="Grow Your Brand with Digital Hub">
+            <div class="rt-seaside-img-wrap">
+              <img src="https://cdn-az.allevents.in/events6/banners/1e7eb35a57d6ee9177c635440f47bdeecb23a51a1798b8f936f9afee163a8a05-rimg-w1200-h447-dcf8f8e8-gmir?v=1791814913" alt="Grow Your Brand with Digital Hub" onerror="this.src='images/tribal_dance.jpg'" loading="lazy">
+            </div>
+            <div class="rt-seaside-content">
+              <div class="rt-seaside-tags">
+                <span class="rt-seaside-tag">WORKSHOP</span>
+                <span class="rt-seaside-tag">COMMUNITY</span>
+              </div>
+              <h3 class="rt-seaside-title">Grow Your Brand with Digital Hub</h3>
+              <div class="rt-seaside-datetime">
+                <div class="rt-seaside-date">Friday, Oct 16, 2026</div>
+                <div class="rt-seaside-time">8:00 am onwards</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Event 6: Comedy & Theatre -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="https://allevents.in/raipur/behrupiye-sketch-comedy-show/3900030781308046" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="shows" title="BEHRUPIYE - Sketch comedy show">
+            <div class="rt-seaside-img-wrap">
+              <img src="https://cdn-az.allevents.in/events2/banners/2dd65030-c50e-11f1-ba03-b7505d4e7d42-rimg-w1200-h600-dc282868-gmir.jpg?v=1791680011" alt="BEHRUPIYE - Sketch comedy show" onerror="this.src='images/tribal_dance.jpg'" loading="lazy">
+            </div>
+            <div class="rt-seaside-content">
+              <div class="rt-seaside-tags">
+                <span class="rt-seaside-tag">COMEDY</span>
+                <span class="rt-seaside-tag">LIVE</span>
+              </div>
+              <h3 class="rt-seaside-title">BEHRUPIYE — Sketch Comedy Show</h3>
+              <div class="rt-seaside-datetime">
+                <div class="rt-seaside-date">Saturday, Oct 24, 2026</div>
+                <div class="rt-seaside-time">7:00 pm onwards</div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern2" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern2)"/>
+  </svg>
+</div>
+
 <!-- SECTION 3 — DISCOVER RAIPUR (Category Cards) -->
 <section class="rt-section" id="discover-sec">
+  <!-- Chhattisgarhi Godna Peacock (Mor) Folk Art Watermark -->
+  <svg class="rt-cultural-watermark rt-wm-godna-peacock" viewBox="0 0 420 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="#123D32">
+      <path d="M120 280 C90 240 100 180 130 150 C150 130 170 120 180 90 C185 75 180 60 190 50 C200 40 215 45 220 60 C225 75 210 100 200 130 C190 160 210 220 190 280 Z"/>
+      <circle cx="208" cy="52" r="3.5" fill="#F8F8F0"/>
+      <line x1="205" y1="42" x2="200" y2="20" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="212" y1="42" x2="218" y2="18" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="218" y1="45" x2="232" y2="24" stroke="#C94C2B" stroke-width="3"/>
+      <circle cx="200" cy="18" r="4" fill="#C94C2B"/>
+      <circle cx="218" cy="16" r="4" fill="#C94C2B"/>
+      <circle cx="232" cy="22" r="4" fill="#C94C2B"/>
+    </g>
+    <g stroke="#C94C2B" stroke-width="3" fill="none">
+      <path d="M160 260 C220 230 300 220 380 240"/>
+      <path d="M160 270 C240 250 320 260 395 300"/>
+      <path d="M150 280 C230 280 310 320 375 370"/>
+      <path d="M140 290 C210 320 270 380 320 440"/>
+      <circle cx="380" cy="240" r="14" fill="#123D32" stroke="#C94C2B" stroke-width="2"/>
+      <circle cx="380" cy="240" r="6" fill="#C94C2B"/>
+      <circle cx="395" cy="300" r="14" fill="#123D32" stroke="#C94C2B" stroke-width="2"/>
+      <circle cx="395" cy="300" r="6" fill="#C94C2B"/>
+      <circle cx="375" cy="370" r="14" fill="#123D32" stroke="#C94C2B" stroke-width="2"/>
+      <circle cx="375" cy="370" r="6" fill="#C94C2B"/>
+      <circle cx="320" cy="440" r="14" fill="#123D32" stroke="#C94C2B" stroke-width="2"/>
+      <circle cx="320" cy="440" r="6" fill="#C94C2B"/>
+    </g>
+    <path d="M60 380 Q120 340 180 380 Q120 420 60 380 Z" fill="#123D32" opacity="0.7"/>
+  </svg>
+
   <div class="container">
     <div class="rt-section-header">
       <span class="rt-label">EXPLORE THE CITY</span>
@@ -185,188 +2030,278 @@
       <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
     </div>
 
-    <div class="rt-discover-asymmetric-grid">
-      <!-- 1. Large Feature Tile: PLACES -->
-      <a href="explore.html" class="rt-cat-tile tile-large">
-        <div class="rt-cat-tile-img"><img src="images/heritage.jpg" alt="Places in Raipur"></div>
-        <div class="rt-cat-tile-overlay">
-          <span class="rt-tile-badge">DISCOVER</span>
-          <h3>PLACES</h3>
-          <p>Ancient maths, lakefronts, museums & archaeological sites.</p>
-          <span class="rt-tile-arrow">Explore Places <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
+    <!-- 6 Consistent Discovery Categories (3 Columns x 2 Rows on Desktop) -->
+    <div class="row g-4">
+      <!-- 1. PLACES -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+        <a href="explore.html" class="rt-discover-card">
+          <div class="rt-discover-card-img">
+            <img src="images/heritage.jpg" alt="Places in Raipur" loading="lazy">
+          </div>
+          <div class="rt-discover-card-body">
+            <h3 class="rt-discover-card-title">PLACES</h3>
+            <p class="rt-discover-card-desc">Ancient maths, lakefronts, museums & archaeological sites across the city.</p>
+            <span class="rt-discover-card-link">Explore Places →</span>
+          </div>
+        </a>
+      </div>
 
-      <!-- 2. Medium Tile: FOOD -->
-      <a href="eat.html" class="rt-cat-tile tile-medium">
-        <div class="rt-cat-tile-img"><img src="images/food.jpg" alt="Food in Raipur"></div>
-        <div class="rt-cat-tile-overlay">
-          <span class="rt-tile-badge">CUISINE</span>
-          <h3>FOOD</h3>
-          <p>Farra, Chila & street food trails.</p>
-          <span class="rt-tile-arrow">Discover Food <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
+      <!-- 2. FOOD -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+        <a href="eat.html" class="rt-discover-card">
+          <div class="rt-discover-card-img">
+            <img src="images/food.jpg" alt="Food in Raipur" loading="lazy">
+          </div>
+          <div class="rt-discover-card-body">
+            <h3 class="rt-discover-card-title">FOOD</h3>
+            <p class="rt-discover-card-desc">Farra, chila, muthia & bustling Old Raipur street food trails.</p>
+            <span class="rt-discover-card-link">Discover Food →</span>
+          </div>
+        </a>
+      </div>
 
-      <!-- 3. Medium Tile: EVENTS -->
-      <a href="events.html" class="rt-cat-tile tile-medium">
-        <div class="rt-cat-tile-img"><img src="images/tribal_dance.jpg" alt="Events in Raipur"></div>
-        <div class="rt-cat-tile-overlay">
-          <span class="rt-tile-badge">LIVE</span>
-          <h3>EVENTS</h3>
-          <p>Tribal dance festivals & gatherings.</p>
-          <span class="rt-tile-arrow">View Events <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
+      <!-- 3. EVENTS -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+        <a href="events.html" class="rt-discover-card">
+          <div class="rt-discover-card-img">
+            <img src="images/tribal_dance.jpg" alt="Events in Raipur" loading="lazy">
+          </div>
+          <div class="rt-discover-card-body">
+            <h3 class="rt-discover-card-title">EVENTS</h3>
+            <p class="rt-discover-card-desc">Live concerts, comedy shows, Dandiya celebrations & cultural festivals.</p>
+            <span class="rt-discover-card-link">View Events →</span>
+          </div>
+        </a>
+      </div>
 
-      <!-- 4. Small Tile: EXPERIENCES -->
-      <a href="experiences.html" class="rt-cat-tile tile-small">
-        <div class="rt-cat-tile-img"><img src="images/wildlife.jpg" alt="Experiences in Raipur"></div>
-        <div class="rt-cat-tile-overlay">
-          <h3>EXPERIENCES</h3>
-          <p>Jungle safaris & walks.</p>
-        </div>
-      </a>
+      <!-- 4. EXPERIENCES -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+        <a href="experiences.html" class="rt-discover-card">
+          <div class="rt-discover-card-img">
+            <img src="images/wildlife.jpg" alt="Experiences in Raipur" loading="lazy">
+          </div>
+          <div class="rt-discover-card-body">
+            <h3 class="rt-discover-card-title">EXPERIENCES</h3>
+            <p class="rt-discover-card-desc">Jungle safaris, heritage walks & masterclasses with Bastar artisans.</p>
+            <span class="rt-discover-card-link">View Experiences →</span>
+          </div>
+        </a>
+      </div>
 
-      <!-- 5. Small Tile: STORIES -->
-      <a href="stories.html" class="rt-cat-tile tile-small">
-        <div class="rt-cat-tile-img"><img src="images/museum.jpg" alt="Stories of Raipur"></div>
-        <div class="rt-cat-tile-overlay">
-          <h3>STORIES</h3>
-          <p>Local legends & archives.</p>
-        </div>
-      </a>
+      <!-- 5. STORIES -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+        <a href="stories.html" class="rt-discover-card">
+          <div class="rt-discover-card-img">
+            <img src="images/museum.jpg" alt="Stories of Raipur" loading="lazy">
+          </div>
+          <div class="rt-discover-card-body">
+            <h3 class="rt-discover-card-title">STORIES</h3>
+            <p class="rt-discover-card-desc">Histories, oral archives, artisan memoirs & local neighborhood tales.</p>
+            <span class="rt-discover-card-link">Read Stories →</span>
+          </div>
+        </a>
+      </div>
 
-      <!-- 6. Small Tile: HIDDEN GEMS -->
-      <a href="explore.html" class="rt-cat-tile tile-small">
-        <div class="rt-cat-tile-img"><img src="images/purkhauti.jpg" alt="Hidden Gems Raipur"></div>
-        <div class="rt-cat-tile-overlay">
-          <h3>HIDDEN GEMS</h3>
-          <p>Unspoken local corners.</p>
-        </div>
-      </a>
+      <!-- 6. HIDDEN GEMS -->
+      <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+        <a href="explore.html" class="rt-discover-card">
+          <div class="rt-discover-card-img">
+            <img src="images/purkhauti.jpg" alt="Hidden Gems in Raipur" loading="lazy">
+          </div>
+          <div class="rt-discover-card-body">
+            <h3 class="rt-discover-card-title">HIDDEN GEMS</h3>
+            <p class="rt-discover-card-desc">Quiet temple ghats, forest pockets & secret culinary corners of Raipur.</p>
+            <span class="rt-discover-card-link">Find Hidden Gems →</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern3" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern3)"/>
+  </svg>
+</div>
 
 <!-- SECTION 4 — FEATURED PLACES (Asymmetric Editorial Layout) -->
 <section class="rt-section" id="explore" style="border-top: 1px solid var(--rt-border);">
+  <!-- Sirpur 7th-Century Terracotta Relief & Temple Spire Watermark -->
+  <svg class="rt-cultural-watermark rt-wm-sirpur-relief" viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="#C94C2B">
+      <polygon points="310,40 290,140 330,140"/>
+      <polygon points="310,20 305,40 315,40"/>
+      <circle cx="310" cy="16" r="5" fill="#123D32"/>
+      <rect x="275" y="140" width="70" height="20" rx="2"/>
+      <rect x="260" y="160" width="100" height="24" rx="2"/>
+      <rect x="245" y="184" width="130" height="28" rx="2"/>
+      <rect x="230" y="212" width="160" height="32" rx="2"/>
+      <rect x="215" y="244" width="190" height="36" rx="2"/>
+      <circle cx="120" cy="200" r="55" stroke="#123D32" stroke-width="3" fill="none"/>
+      <circle cx="120" cy="200" r="38" stroke="#C94C2B" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+      <circle cx="120" cy="200" r="16" fill="#123D32"/>
+      <circle cx="120" cy="200" r="6" fill="#C94C2B"/>
+    </g>
+  </svg>
+
   <div class="container">
-    <div class="rt-section-header">
-      <span class="rt-label">DESTINATIONS</span>
-      <h2 class="rt-title">PLACES WORTH DISCOVERING</h2>
-      <p class="rt-subtitle">Some places are worth slowing down for.</p>
-      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-7">
+        <span class="rt-label">DESTINATIONS</span>
+        <h2 class="rt-title m-0">PLACES WORTH DISCOVERING</h2>
+        <p class="rt-subtitle m-0 mt-1">Some places are worth slowing down for.</p>
+      </div>
+      <div class="col-lg-5 mt-3 mt-lg-0 text-lg-end">
+        <a href="explore.html" class="btn-rt-primary" style="padding: 10px 20px; font-size: 12px;">EXPLORE ALL PLACES →</a>
+      </div>
     </div>
 
-    <!-- React Bits Interactive Accordion Gallery -->
-    <div class="accordion-gallery" id="accordionGallery" role="list" aria-label="Places worth discovering accordion gallery">
-      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Dudhadhari Math">
-        <span class="ag-panel__frame">
-          <span class="ag-panel__media">
-            <img src="images/heritage.jpg" alt="Dudhadhari Math" draggable="false">
-          </span>
-          <span class="ag-panel__overlay" aria-hidden="true"></span>
-        </span>
-        <span class="ag-panel__label" aria-hidden="true">
-          <span class="ag-panel__bar"></span>
-          <span class="ag-panel__text-wrap">
-            <span class="ag-panel__tag">HERITAGE TEMPLE</span>
-            <span class="ag-panel__text">Dudhadhari Math</span>
-          </span>
-        </span>
-      </a>
+    <!-- 4 Clean Destination Cards (4 Columns on Desktop) -->
+    <div class="row g-4">
+      <!-- 1. Dudhadhari Math -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="explore.html" class="rt-place-card">
+          <div class="rt-place-card-img">
+            <img src="images/heritage.jpg" alt="Dudhadhari Math, Raipur" loading="lazy">
+          </div>
+          <div class="rt-place-card-body">
+            <span class="rt-place-tag">HERITAGE TEMPLE</span>
+            <h3 class="rt-place-title">Dudhadhari Math</h3>
+            <p class="rt-place-desc">17th-century monastery & temple adorned with ancient Ramayana wall frescoes in Mathpara.</p>
+            <span class="rt-place-link">Explore Place →</span>
+          </div>
+        </a>
+      </div>
 
-      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Nandan Van Jungle Safari">
-        <span class="ag-panel__frame">
-          <span class="ag-panel__media">
-            <img src="images/wildlife.jpg" alt="Nandan Van Jungle Safari" draggable="false">
-          </span>
-          <span class="ag-panel__overlay" aria-hidden="true"></span>
-        </span>
-        <span class="ag-panel__label" aria-hidden="true">
-          <span class="ag-panel__bar"></span>
-          <span class="ag-panel__text-wrap">
-            <span class="ag-panel__tag">WILDLIFE & SAFARI</span>
-            <span class="ag-panel__text">Nandan Van Safari</span>
-          </span>
-        </span>
-      </a>
+      <!-- 2. Nandan Van Safari -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="explore.html" class="rt-place-card">
+          <div class="rt-place-card-img">
+            <img src="images/wildlife.jpg" alt="Nandan Van Jungle Safari" loading="lazy">
+          </div>
+          <div class="rt-place-card-body">
+            <span class="rt-place-tag">WILDLIFE & NATURE</span>
+            <h3 class="rt-place-title">Nandan Van Safari</h3>
+            <p class="rt-place-desc">800-acre open forest reserve with tiger, lion & herbivore safari zones in Naya Raipur.</p>
+            <span class="rt-place-link">Explore Place →</span>
+          </div>
+        </a>
+      </div>
 
-      <a class="ag-panel ag-panel--active" href="explore.html" role="listitem" aria-label="Sirpur Archaeological Site">
-        <span class="ag-panel__frame">
-          <span class="ag-panel__media">
-            <img src="images/museum.jpg" alt="Sirpur Archaeological Site" draggable="false">
-          </span>
-          <span class="ag-panel__overlay" aria-hidden="true"></span>
-        </span>
-        <span class="ag-panel__label" aria-hidden="true">
-          <span class="ag-panel__bar"></span>
-          <span class="ag-panel__text-wrap">
-            <span class="ag-panel__tag">ARCHAEOLOGY</span>
-            <span class="ag-panel__text">Sirpur Monuments</span>
-          </span>
-        </span>
-      </a>
+      <!-- 3. Sirpur Archaeological Site -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="explore.html" class="rt-place-card">
+          <div class="rt-place-card-img">
+            <img src="images/museum.jpg" alt="Sirpur Archaeological Site" loading="lazy">
+          </div>
+          <div class="rt-place-card-body">
+            <span class="rt-place-tag">ARCHAEOLOGY</span>
+            <h3 class="rt-place-title">Sirpur Monuments</h3>
+            <p class="rt-place-desc">7th-century brick Lakshmana Temple, riverfront ruins and excavated Buddhist monasteries.</p>
+            <span class="rt-place-link">Explore Place →</span>
+          </div>
+        </a>
+      </div>
 
-      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Purkhauti Muktangan">
-        <span class="ag-panel__frame">
-          <span class="ag-panel__media">
-            <img src="images/purkhauti.jpg" alt="Purkhauti Muktangan" draggable="false">
-          </span>
-          <span class="ag-panel__overlay" aria-hidden="true"></span>
-        </span>
-        <span class="ag-panel__label" aria-hidden="true">
-          <span class="ag-panel__bar"></span>
-          <span class="ag-panel__text-wrap">
-            <span class="ag-panel__tag">OPEN-AIR MUSEUM</span>
-            <span class="ag-panel__text">Purkhauti Muktangan</span>
-          </span>
-        </span>
-      </a>
-
-      <a class="ag-panel" href="explore.html" role="listitem" aria-label="Cultural Festivals & Traditions">
-        <span class="ag-panel__frame">
-          <span class="ag-panel__media">
-            <img src="images/tribal_dance.jpg" alt="Cultural Festivals" draggable="false">
-          </span>
-          <span class="ag-panel__overlay" aria-hidden="true"></span>
-        </span>
-        <span class="ag-panel__label" aria-hidden="true">
-          <span class="ag-panel__bar"></span>
-          <span class="ag-panel__text-wrap">
-            <span class="ag-panel__tag">LIVING TRADITIONS</span>
-            <span class="ag-panel__text">Tribal Heritage & Arts</span>
-          </span>
-        </span>
-      </a>
-    </div>
-
-    <div class="text-center mt-4">
-      <a href="explore.html" class="btn-rt-primary">EXPLORE ALL PLACES →</a>
+      <!-- 4. Purkhauti Muktangan -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <a href="explore.html" class="rt-place-card">
+          <div class="rt-place-card-img">
+            <img src="images/purkhauti.jpg" alt="Purkhauti Muktangan" loading="lazy">
+          </div>
+          <div class="rt-place-card-body">
+            <span class="rt-place-tag">OPEN-AIR MUSEUM</span>
+            <h3 class="rt-place-title">Purkhauti Muktangan</h3>
+            <p class="rt-place-desc">200-acre cultural landscape showcasing traditional tribal habitats, craft courtyards & folk art.</p>
+            <span class="rt-place-link">Explore Place →</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern4" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern4)"/>
+  </svg>
+</div>
+
 <!-- SECTION 6 — EAT LIKE A LOCAL (Editorial Food Showcase) -->
 <section class="rt-section" id="eat" style="border-top: 1px solid var(--rt-border);">
+  <!-- Chhattisgarh Rice Bowl (Dhan ka Katora) Paddy & Clay Pot Watermark -->
+  <svg class="rt-cultural-watermark rt-wm-rice-bowl" viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#C94C2B" stroke-width="3" stroke-linecap="round">
+      <path d="M120 400 C150 320 220 220 350 140"/>
+      <g fill="#C94C2B">
+        <ellipse cx="350" cy="140" rx="14" ry="7" transform="rotate(-30 350 140)"/>
+        <ellipse cx="325" cy="155" rx="13" ry="6" transform="rotate(-15 325 155)"/>
+        <ellipse cx="310" cy="180" rx="13" ry="6" transform="rotate(-45 310 180)"/>
+        <ellipse cx="280" cy="195" rx="13" ry="6" transform="rotate(-20 280 195)"/>
+        <ellipse cx="265" cy="225" rx="13" ry="6" transform="rotate(-50 265 225)"/>
+        <ellipse cx="230" cy="245" rx="13" ry="6" transform="rotate(-25 230 245)"/>
+      </g>
+      <path d="M140 400 C200 300 280 200 410 180"/>
+      <g fill="#C94C2B">
+        <ellipse cx="410" cy="180" rx="14" ry="7" transform="rotate(-10 410 180)"/>
+        <ellipse cx="380" cy="195" rx="13" ry="6" transform="rotate(10 380 195)"/>
+        <ellipse cx="360" cy="225" rx="13" ry="6" transform="rotate(-25 360 225)"/>
+        <ellipse cx="330" cy="240" rx="13" ry="6" transform="rotate(5 330 240)"/>
+      </g>
+    </g>
+    <g fill="#123D32">
+      <ellipse cx="140" cy="330" rx="45" ry="12"/>
+      <path d="M95 330 C85 360 90 410 140 410 C190 410 195 360 185 330 Z"/>
+      <path d="M100 350 L180 350" stroke="#F8F8F0" stroke-width="2"/>
+      <circle cx="140" cy="370" r="8" fill="#C94C2B"/>
+    </g>
+  </svg>
+
   <div class="container">
-    <div class="rt-section-header">
-      <span class="rt-label">RICE BOWL FLAVOURS</span>
-      <h2 class="rt-title">EAT LIKE A LOCAL</h2>
-      <p class="rt-subtitle">Because you haven't really met a city until you've tasted it.</p>
-      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-7">
+        <span class="rt-label">RICE BOWL FLAVOURS</span>
+        <h2 class="rt-title m-0">EAT LIKE A LOCAL</h2>
+        <p class="rt-subtitle m-0 mt-1">Because you haven't really met a city until you've tasted it.</p>
+      </div>
+      <div class="col-lg-5 mt-3 mt-lg-0 text-lg-end">
+        <a href="eat.html" class="btn-rt-primary" style="padding: 10px 20px; font-size: 12px;">DISCOVER FOOD TRAILS →</a>
+      </div>
     </div>
 
     <div class="row align-items-center">
       <!-- Featured Food Hero Image (Left) -->
       <div class="col-lg-6 mb-4">
-        <div class="rt-food-hero-img" style="height: 440px;">
-          <img src="images/food.jpg" alt="Chhattisgarhi Food Trail">
-          <div class="rt-food-hero-overlay">
-            <span class="rt-label" style="color: #FFFFFF !important;">FEATURED CULINARY TRAIL</span>
+        <div class="rt-food-hero-card">
+          <img src="images/food.jpg" alt="Chhattisgarhi Food Trail — Farra & Chila" loading="lazy">
+          <div class="rt-food-hero-overlay-panel">
+            <span class="rt-food-rec-tag" style="color: #F8D7C8 !important;">FEATURED CULINARY TRAIL</span>
             <h3>The Authentic Farra & Chila Trail</h3>
-            <p class="m-0">From steamed rice flour rolls tempered with mustard & sesame to crispy chila crepes served with garlic chutney in Gole Bazaar.</p>
+            <p>From steamed rice flour rolls tempered with mustard & sesame to crispy chila crepes served with fiery garlic chutney in Gole Bazaar.</p>
+            <div>
+              <a href="eat.html" class="btn-rt-primary" style="padding: 9px 18px; font-size: 11.5px; background: #C94C2B; border-color: #C94C2B;">Explore Food Trail →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -374,95 +2309,180 @@
       <!-- 3 Smaller Recommendations (Right) -->
       <div class="col-lg-6 mb-4">
         <div class="rt-food-rec-list">
-          <div class="rt-food-rec-item mb-4">
-            <span class="rt-food-tag">STREET FOOD</span>
+          <div class="rt-food-rec-card">
+            <span class="rt-food-rec-tag">STREET FOOD</span>
             <h4>Muthia & Bafauri</h4>
             <p>Spiced boiled rice flour dumplings & healthy steamed chana dal bites served at Old Raipur market stalls.</p>
           </div>
 
-          <div class="rt-food-rec-item mb-4">
-            <span class="rt-food-tag">LOCAL CUISINE</span>
+          <div class="rt-food-rec-card">
+            <span class="rt-food-tag rt-food-rec-tag">LOCAL CUISINE</span>
             <h4>Bara & Aamat Feast</h4>
             <p>Crispy fermented lentil fritters paired with traditional bamboo shoot vegetable curry.</p>
           </div>
 
-          <div class="rt-food-rec-item">
-            <span class="rt-food-tag">CAFÉS & HANGOUTS</span>
+          <div class="rt-food-rec-card">
+            <span class="rt-food-tag rt-food-rec-tag">CAFÉS & HANGOUTS</span>
             <h4>Telibandha Lakefront Cafés</h4>
             <p>Open-air coffee houses and evening tea spots along Marine Drive promenade.</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="text-center mt-4">
-      <a href="eat.html" class="btn-rt-primary">DISCOVER RAIPUR FOOD →</a>
-    </div>
   </div>
 </section>
+
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern5" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern5)"/>
+  </svg>
+</div>
 
 <!-- SECTION 7 — EXPERIENCES (Image-Led Experiences Showcase) -->
 <section class="rt-section" id="experiences" style="border-top: 1px solid var(--rt-border);">
+  <!-- Bastar Bison-Horn Maria Tribal Dancer (Gaur Nach) Watermark -->
+  <svg class="rt-cultural-watermark rt-wm-bison-maria" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#C94C2B" stroke-width="7" stroke-linecap="round" fill="none">
+      <path d="M180 130 C150 90 100 80 60 110 C45 125 50 145 65 140 C85 130 130 120 170 145"/>
+      <path d="M220 130 C250 90 300 80 340 110 C355 125 350 145 335 140 C315 130 270 120 230 145"/>
+    </g>
+    <g fill="#123D32">
+      <circle cx="200" cy="150" r="24"/>
+      <polygon points="200,90 190,130 210,130"/>
+      <polygon points="185,95 180,132 195,132"/>
+      <polygon points="215,95 205,132 220,132"/>
+    </g>
+    <g stroke="#123D32" stroke-width="6" stroke-linecap="round" fill="none">
+      <line x1="200" y1="174" x2="200" y2="280"/>
+      <line x1="200" y1="280" x2="160" y2="390"/>
+      <line x1="200" y1="280" x2="240" y2="390"/>
+      <rect x="150" y="220" width="100" height="32" rx="8" fill="#C94C2B"/>
+      <line x1="165" y1="195" x2="185" y2="225"/>
+      <line x1="235" y1="195" x2="215" y2="225"/>
+    </g>
+  </svg>
+
   <div class="container">
-    <div class="rt-section-header">
-      <span class="rt-label">CURATED ACTIVITIES</span>
-      <h2 class="rt-title">DO MORE THAN JUST VISIT</h2>
-      <p class="rt-subtitle">Find things worth remembering.</p>
-      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-7">
+        <span class="rt-label">CURATED ACTIVITIES</span>
+        <h2 class="rt-title m-0">DO MORE THAN JUST VISIT</h2>
+        <p class="rt-subtitle m-0 mt-1">Find things worth remembering.</p>
+      </div>
+      <div class="col-lg-5 mt-3 mt-lg-0 text-lg-end">
+        <a href="experiences.html" class="btn-rt-primary" style="padding: 10px 20px; font-size: 12px;">VIEW EXPERIENCES →</a>
+      </div>
     </div>
 
-    <div class="row">
+    <div class="row g-4">
       <!-- Experience 1: HERITAGE -->
-      <div class="col-md-4 mb-4">
-        <div class="rt-exp-card">
-          <div class="rt-exp-img"><img src="images/heritage.jpg" alt="Heritage Walk"></div>
-          <div class="rt-exp-body">
-            <span class="rt-label">HERITAGE</span>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="experiences.html" class="rt-refined-exp-card">
+          <div class="rt-refined-exp-img">
+            <img src="images/heritage.jpg" alt="Old Raipur Heritage Walk" loading="lazy">
+          </div>
+          <div class="rt-refined-exp-body">
+            <span class="rt-place-tag">HERITAGE</span>
             <h4>Old Raipur Heritage Walks</h4>
             <p>Guided morning walks through 17th-century maths, Maratha-era spice lanes, and copper smith shops.</p>
+            <span class="rt-place-link">Explore Trail →</span>
           </div>
-        </div>
+        </a>
       </div>
 
       <!-- Experience 2: NATURE -->
-      <div class="col-md-4 mb-4">
-        <div class="rt-exp-card">
-          <div class="rt-exp-img"><img src="images/wildlife.jpg" alt="Nature & Wildlife Safaris"></div>
-          <div class="rt-exp-body">
-            <span class="rt-label">NATURE</span>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="experiences.html" class="rt-refined-exp-card">
+          <div class="rt-refined-exp-img">
+            <img src="images/wildlife.jpg" alt="Nandan Van Jungle Safaris" loading="lazy">
+          </div>
+          <div class="rt-refined-exp-body">
+            <span class="rt-place-tag">NATURE</span>
             <h4>Nandan Van Wildlife Safaris</h4>
             <p>Morning tiger and lion safaris across 800 acres of protected forest habitat in Naya Raipur.</p>
+            <span class="rt-place-link">Explore Safari →</span>
           </div>
-        </div>
+        </a>
       </div>
 
       <!-- Experience 3: LOCAL LIFE -->
-      <div class="col-md-4 mb-4">
-        <div class="rt-exp-card">
-          <div class="rt-exp-img"><img src="images/purkhauti.jpg" alt="Local Bazaar & Craft Life"></div>
-          <div class="rt-exp-body">
-            <span class="rt-label">LOCAL LIFE</span>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <a href="experiences.html" class="rt-refined-exp-card">
+          <div class="rt-refined-exp-img">
+            <img src="images/purkhauti.jpg" alt="Tribal Craft & Artisan Trails" loading="lazy">
+          </div>
+          <div class="rt-refined-exp-body">
+            <span class="rt-place-tag">LOCAL CRAFT</span>
             <h4>Tribal Craft & Artisan Trails</h4>
             <p>Masterclass interactions with 4,000-year-old Dhokra bell metal artisans & Kosa silk weavers.</p>
+            <span class="rt-place-link">Meet Artisans →</span>
           </div>
-        </div>
+        </a>
       </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <a href="experiences.html" class="btn-rt-primary">EXPLORE EXPERIENCES →</a>
     </div>
   </div>
 </section>
 
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern6" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern6)"/>
+  </svg>
+</div>
+
 <!-- SECTION 8 — STORIES (Editorial Magazine Layout) -->
 <section class="rt-section" id="stories" style="border-top: 1px solid var(--rt-border);">
+  <!-- Sacred Tree of Life (Kalpavriksha) & Celestial Sun/Moon Watermark -->
+  <svg class="rt-cultural-watermark rt-wm-tree-life" viewBox="0 0 440 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="#C94C2B">
+      <circle cx="340" cy="90" r="28"/>
+      <line x1="340" y1="45" x2="340" y2="30" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="340" y1="135" x2="340" y2="150" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="295" y1="90" x2="280" y2="90" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="385" y1="90" x2="400" y2="90" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="308" y1="58" x2="298" y2="48" stroke="#C94C2B" stroke-width="3"/>
+      <line x1="372" y1="122" x2="382" y2="132" stroke="#C94C2B" stroke-width="3"/>
+    </g>
+    <path d="M120 70 C100 85 100 115 120 130 C90 125 85 85 110 65 Z" fill="#123D32"/>
+    <g stroke="#123D32" stroke-width="5" stroke-linecap="round" fill="none">
+      <path d="M220 440 L220 200 M220 260 C160 220 120 240 80 200 M220 280 C280 240 320 250 360 210 M220 220 C180 170 150 170 120 140 M220 210 C260 160 290 170 320 140"/>
+      <circle cx="80" cy="200" r="10" fill="#C94C2B"/>
+      <circle cx="360" cy="210" r="10" fill="#C94C2B"/>
+      <circle cx="120" cy="140" r="12" fill="#123D32"/>
+      <circle cx="320" cy="140" r="12" fill="#123D32"/>
+      <circle cx="220" cy="190" r="14" fill="#C94C2B"/>
+    </g>
+  </svg>
+
   <div class="container">
-    <div class="rt-section-header">
-      <span class="rt-label">EDITORIAL JOURNAL</span>
-      <h2 class="rt-title">RAIPUR HAS STORIES TO TELL.</h2>
-      <p class="rt-subtitle">Beyond the places are the stories that shaped them.</p>
-      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-7">
+        <span class="rt-label">EDITORIAL JOURNAL</span>
+        <h2 class="rt-title m-0">RAIPUR HAS STORIES TO TELL.</h2>
+        <p class="rt-subtitle m-0 mt-1">Beyond the places are the stories that shaped them.</p>
+      </div>
+      <div class="col-lg-5 mt-3 mt-lg-0 text-lg-end">
+        <a href="stories.html" class="btn-rt-primary" style="padding: 10px 20px; font-size: 12px;">EXPLORE ALL STORIES →</a>
+      </div>
     </div>
 
     <div class="row align-items-stretch">
@@ -508,15 +2528,11 @@
         </div>
       </div>
     </div>
-
-    <div class="text-center mt-4">
-      <a href="stories.html" class="btn-rt-primary">READ MORE STORIES →</a>
-    </div>
   </div>
 </section>
 
 <!-- SECTION 9 — CINEMATIC VIDEO SECTION -->
-<section class="rt-section rt-section-dark" id="cinematic" style="padding: 90px 0;">
+<section class="rt-section rt-section-dark" id="cinematic" style="padding: 72px 0; background-color: #073F3B !important;">
   <div class="container">
     <div class="rt-section-header">
       <span class="rt-label" style="color: var(--rt-orange) !important;">CINEMATIC ARCHIVE</span>
@@ -536,82 +2552,196 @@
   </div>
 </section>
 
+<!-- CULTURAL SEPARATOR FRIEZE — GODNA CHEVRON & DHOKRA BEADS -->
+<div class="rt-cultural-frieze-bar" aria-hidden="true">
+  <svg viewBox="0 0 1200 12" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="friezeGodnaPattern7" x="0" y="0" width="48" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 6 L12 0 L24 6 L12 12 Z" fill="#C94C2B" opacity="0.6"/>
+      <path d="M24 6 L36 0 L48 6 L36 12 Z" fill="#123D32" opacity="0.55"/>
+      <circle cx="12" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="36" cy="6" r="1.8" fill="#F8F8F0"/>
+      <circle cx="0" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+      <circle cx="24" cy="6" r="1" fill="#123D32" opacity="0.8"/>
+      <circle cx="48" cy="6" r="1" fill="#C94C2B" opacity="0.8"/>
+    </pattern>
+    <rect width="100%" height="12" fill="url(#friezeGodnaPattern7)"/>
+  </svg>
+</div>
+
 <!-- SECTION 10 — PLAN YOUR RAIPUR -->
 <section class="rt-section" id="plan" style="border-top: 1px solid var(--rt-border);">
+  <!-- Bastar Loha Shilp (Iron Craft) Bird & Artisan Wheel Watermark -->
+  <svg class="rt-cultural-watermark rt-wm-iron-craft" viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#123D32" stroke-width="4.5" stroke-linecap="round" fill="none">
+      <path d="M40 280 L360 280"/>
+      <path d="M140 280 L180 220 L260 220 L290 280"/>
+      <path d="M200 220 C180 180 190 140 220 130 C240 120 270 140 260 180 Z" fill="#123D32"/>
+      <polygon points="260,140 290,145 260,155" fill="#C94C2B"/>
+      <path d="M185 200 L120 220 M185 208 L115 235 M185 215 L125 250" stroke="#C94C2B" stroke-width="3"/>
+    </g>
+    <g stroke="#C94C2B" stroke-width="3" fill="none">
+      <circle cx="330" cy="170" r="42"/>
+      <circle cx="330" cy="170" r="12" fill="#123D32"/>
+      <line x1="330" y1="128" x2="330" y2="212"/>
+      <line x1="288" y1="170" x2="372" y2="170"/>
+      <line x1="300" y1="140" x2="360" y2="200"/>
+      <line x1="300" y1="200" x2="360" y2="140"/>
+    </g>
+  </svg>
+
   <div class="container">
-    <div class="rt-section-header">
-      <span class="rt-label">TRAVEL BLUEPRINT</span>
-      <h2 class="rt-title">PLAN YOUR RAIPUR</h2>
-      <p class="rt-subtitle">Make your time in the city count.</p>
-      <div class="rt-motif-divider"><span class="rt-motif-dot"></span></div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="plan-your-visit.html" class="rt-plan-compact-item">
-          <i data-lucide="plane-takeoff" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
-          <h4>GETTING HERE</h4>
-          <p>Flight, train & highway connectivity to Raipur.</p>
-        </a>
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-7">
+        <span class="rt-label">TRAVEL BLUEPRINT</span>
+        <h2 class="rt-title m-0">PLAN YOUR RAIPUR</h2>
+        <p class="rt-subtitle m-0 mt-1">Make your time in the city count.</p>
       </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="plan-your-visit.html" class="rt-plan-compact-item">
-          <i data-lucide="building" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
-          <h4>WHERE TO STAY</h4>
-          <p>Heritage homestays & city business hotels.</p>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="plan-your-visit.html" class="rt-plan-compact-item">
-          <i data-lucide="car" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
-          <h4>GETTING AROUND</h4>
-          <p>Cabs, autos & Naya Raipur bus corridors.</p>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="plan-your-visit.html" class="rt-plan-compact-item">
-          <i data-lucide="map" style="color: var(--rt-orange); width: 32px; height: 32px; margin-bottom: 12px;"></i>
-          <h4>ITINERARIES</h4>
-          <p>Curated 1-day, weekend & culinary itineraries.</p>
-        </a>
+      <div class="col-lg-5 mt-3 mt-lg-0 text-lg-end">
+        <a href="plan-your-visit.html" class="btn-rt-primary" style="padding: 10px 20px; font-size: 12px;">START PLANNING →</a>
       </div>
     </div>
 
-    <div class="text-center mt-4">
-      <a href="plan-your-visit.html" class="btn-rt-primary">PLAN YOUR VISIT →</a>
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6 mb-4">
+        <a href="plan-your-visit.html" class="rt-refined-plan-card">
+          <i data-lucide="plane-takeoff" style="color: #C94C2B; width: 28px; height: 28px;"></i>
+          <h4>Getting Here</h4>
+          <p>Flight, train & highway connectivity to Swami Vivekananda Airport & city junction.</p>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-4">
+        <a href="plan-your-visit.html" class="rt-refined-plan-card">
+          <i data-lucide="building" style="color: #C94C2B; width: 28px; height: 28px;"></i>
+          <h4>Where to Stay</h4>
+          <p>Heritage homestays, city business hotels & lakefront guest suites in Raipur.</p>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-4">
+        <a href="plan-your-visit.html" class="rt-refined-plan-card">
+          <i data-lucide="car" style="color: #C94C2B; width: 28px; height: 28px;"></i>
+          <h4>Getting Around</h4>
+          <p>Cabs, autos, local transit & Naya Raipur express green bus corridors.</p>
+        </a>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-4">
+        <a href="plan-your-visit.html" class="rt-refined-plan-card">
+          <i data-lucide="map" style="color: #C94C2B; width: 28px; height: 28px;"></i>
+          <h4>Itineraries</h4>
+          <p>Curated 24-hour, weekend & culinary trails designed by local Raipurians.</p>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 11 — FINAL EMOTIONAL BRAND CTA -->
-<section class="rt-section rt-section-dark" style="padding: 90px 0; text-align: center;">
-  <div class="container">
-    <span class="rt-label" style="color: var(--rt-orange) !important;">HUMARA RAIPUR</span>
-    <h2 class="rt-serif text-white font-weight-bold display-4 mb-3">RAIPUR IS WAITING.<br>GO FIND YOUR VERSION OF IT.</h2>
-    <p style="color: rgba(255,255,255,0.85); font-size: 16px;" class="mb-4">Discover the city beyond the usual.</p>
-    <a href="explore.html" class="btn-rt-primary" style="padding: 16px 40px;">EXPLORE RAIPUR</a>
+<!-- SECTION 11 — CLOSING CTA: RAIPUR IS WAITING -->
+<section class="rt-closing-cta" id="closingCta">
+  <!-- Subtle Godna Folk Motif Border along top -->
+  <svg class="rt-cta-godna-border" viewBox="0 0 1200 8" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <pattern id="godnaRepeat" x="0" y="0" width="40" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 L20 0 L40 4 L20 8 Z" fill="#C94C2B"/>
+      <circle cx="20" cy="4" r="1.5" fill="#123D32"/>
+      <circle cx="5" cy="4" r="1" fill="#C94C2B"/>
+      <circle cx="35" cy="4" r="1" fill="#C94C2B"/>
+    </pattern>
+    <rect width="100%" height="8" fill="url(#godnaRepeat)"/>
+  </svg>
+
+  <!-- Restrained Panoramic Vector Silhouette: Telibandha Lake / Marine Drive Waterfront & Trees -->
+  <svg class="rt-cta-panoramic-backdrop" viewBox="0 0 1440 140" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- Gentle Lake Waters -->
+    <path d="M0,90 C320,86 480,94 720,90 C960,86 1120,94 1440,90 L1440,140 L0,140 Z" fill="#123D32" opacity="0.32"/>
+    <path d="M0,105 C280,102 540,108 820,104 C1100,100 1280,107 1440,105 L1440,140 L0,140 Z" fill="#123D32" opacity="0.45"/>
+    
+    <!-- Distant City Skyline Silhouettes -->
+    <rect x="210" y="58" width="18" height="32" rx="1" fill="#123D32"/>
+    <rect x="232" y="50" width="22" height="40" rx="1" fill="#123D32"/>
+    <rect x="258" y="62" width="16" height="28" rx="1" fill="#123D32"/>
+    <polygon points="243,38 238,50 248,50" fill="#123D32"/>
+    
+    <rect x="1140" y="56" width="24" height="34" rx="1" fill="#123D32"/>
+    <rect x="1168" y="48" width="20" height="42" rx="1" fill="#123D32"/>
+    <rect x="1192" y="64" width="26" height="26" rx="1" fill="#123D32"/>
+    
+    <!-- Marine Drive Promenade Railing & Lamps -->
+    <line x1="0" y1="90" x2="1440" y2="90" stroke="#123D32" stroke-width="1.2" stroke-dasharray="6,4"/>
+    <g stroke="#123D32" stroke-width="1.5" fill="none">
+      <path d="M120,90 L120,72 Q120,68 126,68"/>
+      <circle cx="126" cy="69" r="1.5" fill="#C94C2B"/>
+      <path d="M420,90 L420,72 Q420,68 426,68"/>
+      <circle cx="426" cy="69" r="1.5" fill="#C94C2B"/>
+      <path d="M720,90 L720,72 Q720,68 726,68"/>
+      <circle cx="726" cy="69" r="1.5" fill="#C94C2B"/>
+      <path d="M1020,90 L1020,72 Q1020,68 1026,68"/>
+      <circle cx="1026" cy="69" r="1.5" fill="#C94C2B"/>
+      <path d="M1320,90 L1320,72 Q1320,68 1326,68"/>
+      <circle cx="1326" cy="69" r="1.5" fill="#C94C2B"/>
+    </g>
+    <!-- Lakeside Neem & Sal Trees -->
+    <path d="M80,90 C80,75 88,68 95,68 C102,68 110,75 110,90 Z" fill="#123D32"/>
+    <path d="M360,90 C360,72 372,64 382,64 C392,64 404,72 404,90 Z" fill="#123D32"/>
+    <path d="M1070,90 C1070,74 1080,66 1090,66 C1100,66 1110,74 1110,90 Z" fill="#123D32"/>
+    <path d="M1260,90 C1260,70 1272,62 1282,62 C1292,62 1304,70 1304,90 Z" fill="#123D32"/>
+    <!-- Subtle Birds in Flight -->
+    <path d="M520,38 Q526,32 532,38 Q538,32 544,38" stroke="#123D32" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <path d="M552,48 Q557,43 562,48 Q567,43 572,48" stroke="#123D32" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <path d="M890,32 Q896,26 902,32 Q908,26 914,32" stroke="#123D32" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <path d="M924,42 Q928,37 933,42 Q938,37 942,42" stroke="#123D32" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+  </svg>
+
+  <div class="container position-relative">
+    <div class="rt-cta-inner">
+      <div class="rt-cta-eyebrow-accent" aria-hidden="true">
+        <span class="rt-cta-motif-line"></span>
+        <span class="rt-cta-motif-diamond"></span>
+        <span class="rt-cta-motif-line"></span>
+      </div>
+
+      <h2 class="rt-cta-headline">
+        Raipur is waiting.
+        <span>Go find your version of it.</span>
+      </h2>
+
+      <p class="rt-cta-sub">
+        Discover the places, people, food and stories that make Raipur unique.
+      </p>
+
+      <a href="explore.html" class="rt-cta-btn">
+        Explore Raipur →
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- SECTION 12 — FOOTER -->
-<footer class="footer">
+<!-- SECTION 12 — PREMIUM 4-COLUMN FOOTER -->
+<footer class="rt-raipur-footer" id="raipurFooter">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-4 mb-4">
-        <div class="footer-logo-text">HUMARA <span>RAIPUR</span></div>
-        <div class="footer-sub">“Raipur, Told Differently.”</div>
-        <p style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 14px;">
-          A modern local discovery platform helping people discover places, food, events, experiences, culture and stories in Raipur.
+    <div class="row g-4">
+      <!-- Column 1: Brand -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <a href="raipur.html" class="footer-logo-link" aria-label="Humara Raipur Home">
+          <img src="images/logo_raipur.png" alt="Humara Raipur Logo">
+        </a>
+        <div class="rt-footer-tagline">“Raipur, Told Differently.”</div>
+        <p class="rt-footer-desc">
+          A local discovery platform helping you explore Raipur's places, food, events, experiences, culture and stories.
         </p>
+        <ul class="rt-footer-social" aria-label="Social media links">
+          <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
       </div>
 
-      <div class="col-lg-2 col-md-4 mb-4">
-        <h5>DISCOVER</h5>
-        <ul class="footer-links">
-          <li><a href="explore.html">Explore</a></li>
+      <!-- Column 2: Discover -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h4 class="rt-col-heading">DISCOVER</h4>
+        <ul class="rt-footer-nav">
+          <li><a href="explore.html">Places</a></li>
           <li><a href="eat.html">Eat</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="experiences.html">Experiences</a></li>
@@ -620,40 +2750,52 @@
         </ul>
       </div>
 
-      <div class="col-lg-2 col-md-4 mb-4">
-        <h5>COMPANY</h5>
-        <ul class="footer-links">
-          <li><a href="about.html">About</a></li>
+      <!-- Column 3: Company -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h4 class="rt-col-heading">COMPANY</h4>
+        <ul class="rt-footer-nav">
+          <li><a href="about.html">About Humara</a></li>
           <li><a href="about.html#contact">Contact</a></li>
           <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="events.html">List an Event</a></li>
         </ul>
       </div>
 
-      <div class="col-lg-4 col-md-4 mb-4">
-        <h5>NEWSLETTER</h5>
-        <p style="font-size: 13px; color: rgba(255,255,255,0.7);">"Stories from Raipur, occasionally."</p>
-        <form action="#" method="post">
-          <input type="email" class="rt-newsletter-input" placeholder="Enter your email address...">
-          <button type="submit" class="btn-rt-primary w-100" style="padding: 10px 16px; font-size: 11px;">SUBSCRIBE <i class="fa-solid fa-envelope"></i></button>
+      <!-- Column 4: Newsletter -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h4 class="rt-col-heading">NEWSLETTER</h4>
+        <div class="rt-news-heading">Stories from Raipur, occasionally.</div>
+        <p class="rt-news-sub">
+          Get local discoveries, upcoming events and stories delivered to your inbox.
+        </p>
+        <form class="rt-footer-form" id="raipurFooterNewsletterForm" novalidate>
+          <div class="rt-footer-input-group">
+            <input 
+              type="email" 
+              class="rt-footer-input" 
+              id="raipurFooterEmailInput"
+              placeholder="Your email address" 
+              aria-label="Your email address" 
+              required
+            >
+            <button type="submit" class="rt-footer-subscribe-btn">
+              Subscribe →
+            </button>
+          </div>
+          <div class="rt-newsletter-status" id="raipurNewsletterStatus" role="status" aria-live="polite"></div>
         </form>
-        <div class="mt-4">
-          <ul class="footer-social">
-            <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
-          </ul>
-        </div>
       </div>
     </div>
 
-    <hr style="border-color: rgba(255,255,255,0.15); margin: 30px 0 20px;">
-    <div class="d-flex justify-content-between align-items-center flex-wrap" style="font-size: 12px; color: rgba(255,255,255,0.6);">
-      <p class="m-0">© 2026 Humara Raipur Platform. All Rights Reserved.</p>
-      <div>
-        <a href="about.html" style="color: rgba(255,255,255,0.6); text-decoration: none; margin-left: 14px;">About</a>
-        <a href="contribute.html" style="color: rgba(255,255,255,0.6); text-decoration: none; margin-left: 14px;">Contribute</a>
-      </div>
+    <!-- Bottom Copyright Bar -->
+    <div class="rt-footer-bottom">
+      <p class="rt-copy-text">© 2026 Humara Raipur. All rights reserved.</p>
+      <ul class="rt-legal-links" aria-label="Legal links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html#contact">Contact</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
     </div>
   </div>
 </footer>
@@ -670,6 +2812,239 @@
   </div>
 </div>
 
+<!-- CITY SELECTOR MODAL (BookMyShow Style) -->
+<div class="city-modal-backdrop" id="citySelectorModal" role="dialog" aria-modal="true" aria-labelledby="cityModalSearchInput">
+  <div class="city-modal-dialog">
+    <!-- Header with Search & Detect Location -->
+    <div class="city-modal-header">
+      <div class="city-modal-top-row">
+        <div class="city-modal-search-wrap">
+          <i class="fa-solid fa-magnifying-glass city-modal-search-icon"></i>
+          <input type="text" id="cityModalSearchInput" class="city-modal-search-input" placeholder="Search for your city" autocomplete="off" aria-label="Search for your city">
+        </div>
+        <button type="button" class="city-modal-close-btn" id="closeCityModalBtn" aria-label="Close City Selector" title="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="city-detect-row">
+        <button type="button" class="city-detect-btn" id="cityDetectLocationBtn">
+          <i class="fa-solid fa-location-crosshairs" style="color: #E85525;"></i>
+          <span>Detect my location</span>
+        </button>
+        <span id="cityDetectStatus" class="city-detect-status"></span>
+      </div>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="city-modal-body">
+      <!-- Popular Cities Grid -->
+      <div id="cityPopularSection">
+        <div class="city-popular-heading">Popular Cities</div>
+        <div class="city-popular-grid">
+
+          <!-- 1. Mumbai -->
+          <button type="button" class="city-landmark-btn" data-city="Mumbai" data-state="Maharashtra">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M6 42V16h6v26M36 42V16h6v26M12 42V24c0-6.6 5.4-12 12-12s12 5.4 12 12v18"/>
+                <path d="M6 16l3-5 3 5M36 16l3-5 3 5M12 16h24M16 42V24c0-4.4 3.6-8 8-8s8 3.6 8 8v18"/>
+                <path d="M6 11h6M36 11h6M14 12h20"/>
+                <circle cx="24" cy="9" r="2"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Mumbai</span>
+          </button>
+
+          <!-- 2. Delhi-NCR -->
+          <button type="button" class="city-landmark-btn" data-city="Delhi-NCR" data-state="Delhi">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M8 42V15h8v27M32 42V15h8v27"/>
+                <path d="M16 42V25c0-4.4 3.6-8 8-8s8 3.6 8 8v17"/>
+                <path d="M6 15h36M8 11h32M12 7h24M20 4h8"/>
+                <path d="M12 25h-4M40 25h-4"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Delhi-NCR</span>
+          </button>
+
+          <!-- 3. Bengaluru -->
+          <button type="button" class="city-landmark-btn" data-city="Bengaluru" data-state="Karnataka">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M8 42V22h32v20"/>
+                <path d="M19 22V13c0-2.8 2.2-5 5-5s5 2.2 5 5v9"/>
+                <path d="M24 4v4M13 22v-6l3-3 3 3v6M29 22v-6l3-3 3 3v6"/>
+                <path d="M14 42V28h20v14M20 42V32h8v10"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Bengaluru</span>
+          </button>
+
+          <!-- 4. Hyderabad -->
+          <button type="button" class="city-landmark-btn" data-city="Hyderabad" data-state="Telangana">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M8 42V10M40 42V10"/>
+                <path d="M8 10l2-4 2 4M40 10l-2-4-2 4M6 22h36M6 14h36"/>
+                <path d="M14 42V26c0-5.5 4.5-10 10-10s10 4.5 10 10v16"/>
+                <path d="M18 42V28c0-3.3 2.7-6 6-6s6 2.7 6 6v14"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Hyderabad</span>
+          </button>
+
+          <!-- 5. Chandigarh -->
+          <button type="button" class="city-landmark-btn" data-city="Chandigarh" data-state="Punjab">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 42h20M24 42V28"/>
+                <path d="M24 28c4 0 7-3 8-7l4-10c0-2-2-4-4-2l-4 5-1-8c0-2-2-3-4-2l-3 7-2-9c0-2-2-3-4-2l-2 9-3-6c-1-2-3-2-4 0l-1 9c0 8 7 14 15 14z"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Chandigarh</span>
+          </button>
+
+          <!-- 6. Ahmedabad -->
+          <button type="button" class="city-landmark-btn" data-city="Ahmedabad" data-state="Gujarat">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M10 42V14h6v28M32 42V14h6v28"/>
+                <path d="M10 14l3-6 3 6M32 14l3-6 3 6"/>
+                <path d="M16 42V26c0-4.4 3.6-8 8-8s8 3.6 8 8v16"/>
+                <path d="M24 18v8M20 22c2 2 6 2 8 0"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Ahmedabad</span>
+          </button>
+
+          <!-- 7. Pune -->
+          <button type="button" class="city-landmark-btn" data-city="Pune" data-state="Maharashtra">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M8 42V16l4-4h24l4 4v26"/>
+                <path d="M8 16h32M14 12V8h4v4M30 12V8h4v4M22 12V6h4v6"/>
+                <path d="M16 42V26c0-4.4 3.6-8 8-8s8 3.6 8 8v16"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Pune</span>
+          </button>
+
+          <!-- 8. Chennai -->
+          <button type="button" class="city-landmark-btn" data-city="Chennai" data-state="Tamil Nadu">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 42h28M12 42l3-28h18l3 28"/>
+                <path d="M15 14h18M13 28h22M14 21h20M12 35h24"/>
+                <path d="M18 14V9c0-1.5 1-3 3-3h6c2 0 3 1.5 3 3v5M24 6V2"/>
+                <path d="M20 42V32h8v10"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Chennai</span>
+          </button>
+
+          <!-- 9. Kolkata -->
+          <button type="button" class="city-landmark-btn" data-city="Kolkata" data-state="West Bengal">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M8 42V24h32v18"/>
+                <path d="M18 24V16c0-3.3 2.7-6 6-6s6 2.7 6 6v8"/>
+                <path d="M24 6v4M22 6h4"/>
+                <path d="M10 24V18h4v6M34 24V18h4v6"/>
+                <path d="M14 42V30h20v12"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Kolkata</span>
+          </button>
+
+          <!-- 10. Kochi -->
+          <button type="button" class="city-landmark-btn" data-city="Kochi" data-state="Kerala">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 40c8 3 16-3 24 0s12 3 16 0"/>
+                <path d="M6 35c3-1 6-3 12-3h16c6 0 8 2 10 3-4 3-8 4-18 4H14c-5 0-7-2-8-4z"/>
+                <path d="M14 32V24c0-4 4-7 10-7s10 3 10 7v8"/>
+                <path d="M6 12c3 2 5 6 4 12M6 12c-1 4 0 8 4 12M6 12c4-2 7 1 8 6"/>
+                <path d="M40 10c-3 2-4 6-3 12M40 10c2 4 1 8-3 12M40 10c-4-2-6 1-7 6"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Kochi</span>
+          </button>
+
+          <!-- 11. Raipur (Featured Live Portal) -->
+          <button type="button" class="city-landmark-btn" data-city="Raipur" data-state="Chhattisgarh">
+            <span class="city-badge-live">LIVE</span>
+            <div class="city-landmark-svg-wrap" style="color: #003838;">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M18 42V16h12v26"/>
+                <path d="M16 16h16M18 16l6-8 6 8"/>
+                <circle cx="24" cy="24" r="3"/>
+                <path d="M24 22v2l1.5 1"/>
+                <path d="M6 38c6 2 12-2 18 0s12 2 18 0"/>
+                <path d="M10 42v-6M38 42v-6"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label" style="color: #003838; font-weight: 700;">Raipur (Current)</span>
+          </button>
+
+          <!-- 12. Varanasi -->
+          <button type="button" class="city-landmark-btn" data-city="Varanasi" data-state="Uttar Pradesh">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 42h40M6 42l4-4h28l4 4M10 38l4-4h20l4 4"/>
+                <path d="M18 34V16l6-10 6 10v18"/>
+                <path d="M24 6V2M22 3h4"/>
+                <circle cx="36" cy="14" r="4"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Varanasi</span>
+          </button>
+
+          <!-- 13. Jaipur -->
+          <button type="button" class="city-landmark-btn" data-city="Jaipur" data-state="Rajasthan">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 42h36M10 42V26l4-6h20l4 6v16"/>
+                <path d="M16 20V12l8-6 8 6v8"/>
+                <path d="M20 42V32h8v10M14 26h4M30 26h4M22 24h4"/>
+                <circle cx="24" cy="14" r="1.5"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Jaipur</span>
+          </button>
+
+          <!-- 14. Indore -->
+          <button type="button" class="city-landmark-btn" data-city="Indore" data-state="Madhya Pradesh">
+            <div class="city-landmark-svg-wrap">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 42h32M12 42V12h24v30"/>
+                <path d="M10 12h28M14 12V8h20v4M18 8l6-4 6 4"/>
+                <path d="M18 42V30h12v12M12 24h24M12 18h24"/>
+                <path d="M16 18v6M24 18v6M32 18v6"/>
+              </svg>
+            </div>
+            <span class="city-landmark-label">Indore</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Realtime Filtered Results List (Shown when typing in search) -->
+      <ul class="city-search-results-list" id="citySearchResultsList">
+        <!-- Dynamically rendered via JS -->
+      </ul>
+    </div>
+
+    <!-- Modal Footer -->
+    <div class="city-modal-footer">
+      <button type="button" class="city-view-all-link" id="cityViewAllBtn">
+        View All Cities <i class="fa-solid fa-angle-right ms-1"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- SCRIPTS -->
 <script src="js/jquery-3.6.4.min.js"></script>
 <script src="js/popper.min.js"></script>
@@ -677,7 +3052,308 @@
 <script src="js/scrolla.jquery.min.js"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="js/raipurtales.js"></script>
-<script>if (typeof lucide !== 'undefined') { lucide.createIcons(); }</script>
+<script src="js/raipurtales.js?v=seaside2026"></script>
+<script>
+  if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+
+  // Newsletter Form Handler for Humara Raipur Footer
+  (function() {
+    var form = document.getElementById('raipurFooterNewsletterForm');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var input = document.getElementById('raipurFooterEmailInput');
+      var status = document.getElementById('raipurNewsletterStatus');
+      var email = input ? input.value.trim() : '';
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!email || !emailRegex.test(email)) {
+        status.className = 'rt-newsletter-status error';
+        status.textContent = 'Please enter a valid email address.';
+        if (input) input.focus();
+        return;
+      }
+
+      status.className = 'rt-newsletter-status success';
+      status.textContent = 'Thank you for subscribing! Stories from Raipur will arrive in your inbox.';
+      if (input) input.value = '';
+    });
+  })();
+
+  // BookMyShow-style City Selector Logic for Raipur Page
+  (function() {
+    var allCitiesData = [
+      { name: "Raipur", state: "Chhattisgarh", status: "Live Portal", isLive: true, link: "raipur.html" },
+      { name: "Varanasi", state: "Uttar Pradesh", status: "Launching Soon", isLive: false },
+      { name: "Jaipur", state: "Rajasthan", status: "Launching Soon", isLive: false },
+      { name: "Indore", state: "Madhya Pradesh", status: "Launching Soon", isLive: false },
+      { name: "Udaipur", state: "Rajasthan", status: "Launching Soon", isLive: false },
+      { name: "Kochi", state: "Kerala", status: "Launching Soon", isLive: false },
+      { name: "Lucknow", state: "Uttar Pradesh", status: "Launching Soon", isLive: false },
+      { name: "Bhopal", state: "Madhya Pradesh", status: "Launching Soon", isLive: false },
+      { name: "Mumbai", state: "Maharashtra", status: "In Curation", isLive: false },
+      { name: "Navi Mumbai", state: "Maharashtra", status: "In Curation (Mumbai Hub)", isLive: false },
+      { name: "Thane", state: "Maharashtra", status: "In Curation (Mumbai Hub)", isLive: false },
+      { name: "Delhi-NCR", state: "Delhi", status: "In Curation", isLive: false },
+      { name: "Bengaluru", state: "Karnataka", status: "In Curation", isLive: false },
+      { name: "Hyderabad", state: "Telangana", status: "In Curation", isLive: false },
+      { name: "Chandigarh", state: "Punjab", status: "In Curation", isLive: false },
+      { name: "Ahmedabad", state: "Gujarat", status: "In Curation", isLive: false },
+      { name: "Pune", state: "Maharashtra", status: "In Curation", isLive: false },
+      { name: "Chennai", state: "Tamil Nadu", status: "In Curation", isLive: false },
+      { name: "Kolkata", state: "West Bengal", status: "In Curation", isLive: false },
+      { name: "Amritsar", state: "Punjab", status: "In Curation", isLive: false },
+      { name: "Agra", state: "Uttar Pradesh", status: "In Curation", isLive: false },
+      { name: "Mysore", state: "Karnataka", status: "In Curation", isLive: false },
+      { name: "Guwahati", state: "Assam", status: "In Curation", isLive: false },
+      { name: "Madurai", state: "Tamil Nadu", status: "In Curation", isLive: false },
+      { name: "Goa", state: "Goa", status: "In Curation", isLive: false },
+      { name: "Patna", state: "Bihar", status: "In Curation", isLive: false }
+    ];
+
+    var $cityModal = $("#citySelectorModal");
+    var $cityModalInput = $("#cityModalSearchInput");
+    var $popularSection = $("#cityPopularSection");
+    var $searchResultsList = $("#citySearchResultsList");
+
+    function openCityModal() {
+      $cityModal.addClass("show");
+      $("body").css("overflow", "hidden");
+      $cityModalInput.val("");
+      $popularSection.show();
+      $searchResultsList.removeClass("active").empty();
+      $("#cityDetectStatus").text("");
+      setTimeout(function() {
+        $cityModalInput.focus();
+        if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+      }, 100);
+    }
+
+    function closeCityModal() {
+      $cityModal.removeClass("show");
+      $("body").css("overflow", "");
+    }
+
+    $(document).on("click", "#openCityModalBtn", function(e) {
+      e.preventDefault();
+      // If mobile menu is open, close it
+      $(".collapse-menu").removeClass("show-hide-menu");
+      $("#menuBackdrop").removeClass("show");
+      openCityModal();
+    });
+
+    if (window.location.search.indexOf("openCityModal=true") !== -1 || window.location.hash === "#city-select") {
+      openCityModal();
+    }
+
+    $("#closeCityModalBtn").on("click", function(e) {
+      e.preventDefault();
+      closeCityModal();
+    });
+
+    $cityModal.on("click", function(e) {
+      if ($(e.target).is("#citySelectorModal")) {
+        closeCityModal();
+      }
+    });
+
+    $(document).on("keydown", function(e) {
+      if (e.key === "Escape" && $cityModal.hasClass("show")) {
+        closeCityModal();
+      }
+    });
+
+    // Realtime search filtering
+    $cityModalInput.on("input", function() {
+      var query = $(this).val().toLowerCase().trim();
+      if (!query) {
+        $popularSection.show();
+        $searchResultsList.removeClass("active").empty();
+        return;
+      }
+
+      var matches = allCitiesData.filter(function(c) {
+        return c.name.toLowerCase().indexOf(query) !== -1 || c.state.toLowerCase().indexOf(query) !== -1;
+      });
+
+      $popularSection.hide();
+      $searchResultsList.empty();
+
+      if (matches.length === 0) {
+        $searchResultsList.addClass("active").html(
+          '<li style="grid-column: 1 / -1; padding: 24px; text-align: center; color: #6B7280; font-size: 14px;">' +
+          '<i class="fa-solid fa-map-location-dot" style="font-size: 28px; color: #D1D5DB; margin-bottom: 8px; display: block;"></i>' +
+          'No matching city found for "<strong>' + $("<div>").text(query).html() + '</strong>".<br>' +
+          '<a href="index.html#nominate" style="color: #E85525; font-weight: 700; text-decoration: underline; margin-top: 6px; display: inline-block;">Nominate this city to be added →</a>' +
+          '</li>'
+        );
+      } else {
+        matches.forEach(function(c) {
+          var liveBadge = c.isLive ? '<span class="badge" style="background: #10B981; color: #fff; font-size: 10px;">LIVE PORTAL</span>' : '<span style="font-size: 11px; color: #9CA3AF;">' + c.status + '</span>';
+          var $btn = $(
+            '<li><button type="button" class="city-result-item-btn" data-city="' + c.name + '" data-state="' + c.state + '">' +
+            '<div><span class="city-result-name">' + c.name + '</span><span class="city-result-state">' + c.state + '</span></div>' +
+            liveBadge +
+            '</button></li>'
+          );
+          $searchResultsList.append($btn);
+        });
+        $searchResultsList.addClass("active");
+      }
+    });
+
+    // Selecting a city
+    $(document).on("click", "#citySelectorModal .city-landmark-btn, #citySelectorModal .city-result-item-btn", function() {
+      var cityName = $(this).data("city");
+      if (!cityName) return;
+      closeCityModal();
+      localStorage.setItem("humara_selected_city", cityName);
+
+      if (cityName.toLowerCase() === "raipur") {
+        return; // Already on Raipur
+      }
+      window.location.href = "index.html?city=" + encodeURIComponent(cityName) + "#cities";
+    });
+
+    // View All Cities button
+    $("#cityViewAllBtn").on("click", function() {
+      closeCityModal();
+      window.location.href = "index.html#cities";
+    });
+
+    // Enhanced Real Geolocation Detection with Reverse Geocoding & Distance Fallback
+    var cityCoords = [
+      { name: "Mumbai", alt: ["navi mumbai", "thane", "kalyan", "panvel", "mumbai suburban", "bombay", "mumbai metropolitan region"], lat: 19.0760, lon: 72.8777, state: "Maharashtra" },
+      { name: "Pune", alt: ["pimpri", "chinchwad", "hadapsar", "hinjewadi"], lat: 18.5204, lon: 73.8567, state: "Maharashtra" },
+      { name: "Delhi-NCR", alt: ["delhi", "new delhi", "noida", "greater noida", "gurgaon", "gurugram", "ghaziabad", "faridabad"], lat: 28.6139, lon: 77.2090, state: "Delhi" },
+      { name: "Bengaluru", alt: ["bangalore", "whitefield", "electronic city"], lat: 12.9716, lon: 77.5946, state: "Karnataka" },
+      { name: "Hyderabad", alt: ["secunderabad", "cyberabad", "hitec city"], lat: 17.3850, lon: 78.4867, state: "Telangana" },
+      { name: "Ahmedabad", alt: ["gandhinagar"], lat: 23.0225, lon: 72.5714, state: "Gujarat" },
+      { name: "Chandigarh", alt: ["mohali", "panchkula", "zirakpur"], lat: 30.7333, lon: 76.7794, state: "Punjab" },
+      { name: "Chennai", alt: ["madras", "tambaram"], lat: 13.0827, lon: 80.2707, state: "Tamil Nadu" },
+      { name: "Kolkata", alt: ["calcutta", "howrah", "new town"], lat: 22.5726, lon: 88.3639, state: "West Bengal" },
+      { name: "Kochi", alt: ["cochin", "ernakulam"], lat: 9.9312, lon: 76.2673, state: "Kerala" },
+      { name: "Raipur", alt: ["bhilai", "durg", "naya raipur", "chhattisgarh"], lat: 21.2514, lon: 81.6296, state: "Chhattisgarh" },
+      { name: "Varanasi", alt: ["banaras", "kashi"], lat: 25.3176, lon: 82.9739, state: "Uttar Pradesh" },
+      { name: "Jaipur", alt: ["pink city"], lat: 26.9124, lon: 75.7873, state: "Rajasthan" },
+      { name: "Indore", alt: [], lat: 22.7196, lon: 75.8577, state: "Madhya Pradesh" },
+      { name: "Udaipur", alt: [], lat: 24.5854, lon: 73.7125, state: "Rajasthan" },
+      { name: "Lucknow", alt: [], lat: 26.8467, lon: 80.9462, state: "Uttar Pradesh" },
+      { name: "Bhopal", alt: [], lat: 23.2599, lon: 77.4126, state: "Madhya Pradesh" },
+      { name: "Goa", alt: ["panaji", "margao", "vasco", "north goa", "south goa"], lat: 15.2993, lon: 74.1240, state: "Goa" }
+    ];
+
+    function calculateDistanceKm(lat1, lon1, lat2, lon2) {
+      var R = 6371;
+      var dLat = (lat2 - lat1) * Math.PI / 180;
+      var dLon = (lon2 - lon1) * Math.PI / 180;
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+      return R * c;
+    }
+
+    function findClosestHub(lat, lon) {
+      var best = cityCoords[0];
+      var bestDist = Infinity;
+      for (var i = 0; i < cityCoords.length; i++) {
+        var d = calculateDistanceKm(lat, lon, cityCoords[i].lat, cityCoords[i].lon);
+        if (d < bestDist) {
+          bestDist = d;
+          best = cityCoords[i];
+        }
+      }
+      return { hub: best, distanceKm: Math.round(bestDist) };
+    }
+
+    function matchHubFromText(text) {
+      if (!text) return null;
+      var lower = text.toLowerCase();
+      for (var i = 0; i < cityCoords.length; i++) {
+        if (lower.indexOf(cityCoords[i].name.toLowerCase()) !== -1) {
+          return cityCoords[i];
+        }
+        for (var j = 0; j < cityCoords[i].alt.length; j++) {
+          if (lower.indexOf(cityCoords[i].alt[j]) !== -1) {
+            return cityCoords[i];
+          }
+        }
+      }
+      return null;
+    }
+
+    $("#cityDetectLocationBtn").on("click", function() {
+      var $status = $("#cityDetectStatus");
+      if (!navigator.geolocation) {
+        $status.html('<i class="fa-solid fa-triangle-exclamation" style="color:#E85525;"></i> Geolocation not supported by your browser.');
+        return;
+      }
+
+      $status.html('<i class="fa-solid fa-spinner fa-spin"></i> Accessing GPS coordinates...');
+
+      navigator.geolocation.getCurrentPosition(function(pos) {
+        var lat = pos.coords.latitude;
+        var lon = pos.coords.longitude;
+        $status.html('<i class="fa-solid fa-spinner fa-spin"></i> Identifying city & region...');
+
+        var apiUrl = "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=" + lat + "&longitude=" + lon + "&localityLanguage=en";
+        var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+        var timeoutId = controller ? setTimeout(function() { controller.abort(); }, 3500) : null;
+
+        fetch(apiUrl, { signal: controller ? controller.signal : undefined })
+          .then(function(res) { return res.json(); })
+          .then(function(data) {
+            if (timeoutId) clearTimeout(timeoutId);
+            var detectedPlace = data.locality || data.city || data.principalSubdivision || "";
+            var detectedState = data.principalSubdivision || "";
+
+            var matchedHub = matchHubFromText(detectedPlace);
+            if (!matchedHub && data.localityInfo && data.localityInfo.administrative) {
+              for (var k = 0; k < data.localityInfo.administrative.length; k++) {
+                matchedHub = matchHubFromText(data.localityInfo.administrative[k].name);
+                if (matchedHub) break;
+              }
+            }
+
+            if (!matchedHub) {
+              matchedHub = findClosestHub(lat, lon).hub;
+            }
+
+            handleLocationDetected(detectedPlace, detectedState, matchedHub.name);
+          })
+          .catch(function() {
+            var fallback = findClosestHub(lat, lon);
+            handleLocationDetected(fallback.hub.name, fallback.hub.state, fallback.hub.name);
+          });
+
+      }, function(err) {
+        var msg = "Location permission denied. Please pick a city manually.";
+        if (err.code === 2) msg = "Position unavailable. Please pick a city.";
+        else if (err.code === 3) msg = "Location request timed out.";
+        $status.html('<i class="fa-solid fa-circle-exclamation" style="color:#E85525;"></i> ' + msg);
+      }, { timeout: 10000, enableHighAccuracy: true });
+    });
+
+    function handleLocationDetected(placeName, stateName, hubName) {
+      var $status = $("#cityDetectStatus");
+      var displayName = placeName || hubName;
+      
+      if (displayName.toLowerCase() === "raipur" || hubName.toLowerCase() === "raipur") {
+        $status.html('<i class="fa-solid fa-circle-check" style="color:#10B981;"></i> Location detected: <strong>' + displayName + '</strong>! You are viewing Humara Raipur.');
+        setTimeout(function() {
+          closeCityModal();
+        }, 1500);
+      } else {
+        $status.html('<i class="fa-solid fa-circle-check" style="color:#10B981;"></i> Location detected: <strong>' + displayName + '</strong>' + (stateName ? ' (' + stateName + ')' : '') + '! Switching to ' + hubName + '...');
+        setTimeout(function() {
+          closeCityModal();
+          localStorage.setItem("humara_selected_city", hubName);
+          window.location.href = "index.html?city=" + encodeURIComponent(hubName) + "#cities";
+        }, 1400);
+      }
+    }
+  })();
+</script>
 </body>
 </html>

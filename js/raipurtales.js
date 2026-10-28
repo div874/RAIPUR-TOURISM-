@@ -315,6 +315,59 @@ jQuery(function($) {
       return true;
     }
 
+    function getEditorialTags(ev) {
+      var cat = (ev.category || "").toLowerCase();
+      var title = (ev.title || "").toLowerCase();
+      var venue = (ev.venue || "").toLowerCase();
+      var desc = (ev.description || "").toLowerCase();
+      var corpus = cat + " " + title + " " + venue + " " + desc;
+
+      var tags = [];
+      if (corpus.includes("comedy") || corpus.includes("standup") || corpus.includes("harshit")) {
+        tags.push("COMEDY", "LIVE");
+      } else if (corpus.includes("music") || corpus.includes("dj") || corpus.includes("concert") || corpus.includes("singer") || corpus.includes("band") || corpus.includes("bhangra")) {
+        tags.push("MUSIC", "NIGHTLIFE");
+      } else if (corpus.includes("sport") || corpus.includes("cricket") || corpus.includes("football") || corpus.includes("turf") || corpus.includes("match")) {
+        tags.push("SPORTS", "OUTDOOR");
+      } else if (corpus.includes("garba") || corpus.includes("dandiya") || corpus.includes("navratri") || corpus.includes("tribal") || corpus.includes("festival")) {
+        tags.push("CULTURE", "FESTIVAL");
+      } else if (corpus.includes("food") || corpus.includes("cafe") || corpus.includes("bazaar") || corpus.includes("market") || corpus.includes("tasting")) {
+        tags.push("FOOD & WINE", "OUTDOOR");
+      } else if (corpus.includes("expo") || corpus.includes("education") || corpus.includes("exhibition") || corpus.includes("art")) {
+        tags.push("EXHIBITION", "EDUCATION");
+      } else if (cat) {
+        tags.push(cat.toUpperCase(), "RAIPUR");
+      } else {
+        tags.push("OUTDOOR", "COMMUNITY");
+      }
+      return tags;
+    }
+
+    function formatEditorialDate(dateStr) {
+      if (!dateStr) return "Upcoming Date";
+      var daysMap = {
+        "mon": "Monday",
+        "tue": "Tuesday",
+        "wed": "Wednesday",
+        "thu": "Thursday",
+        "fri": "Friday",
+        "sat": "Saturday",
+        "sun": "Sunday"
+      };
+      var parts = dateStr.split(",");
+      if (parts.length >= 2) {
+        var prefix = parts[0].trim().toLowerCase();
+        var fullDay = daysMap[prefix] || parts[0].trim();
+        return fullDay + ", " + parts.slice(1).join(",").trim();
+      }
+      return dateStr;
+    }
+
+    function formatEditorialTime(timeStr) {
+      if (!timeStr) return "7:00 pm onwards";
+      return timeStr.toLowerCase().replace("am", "am").replace("pm", "pm");
+    }
+
     function createCardHtml(ev) {
       var cat = (ev.category || "").toLowerCase();
       var title = (ev.title || "").toLowerCase();
@@ -333,56 +386,29 @@ jQuery(function($) {
 
       var linkUrl = ev.link || "https://in.bookmyshow.com/explore/events-raipur";
       var posterImg = ev.image || "images/tribal_dance.jpg";
-      var dateText = ev.date || ev.start_date || "Upcoming Event";
-      var timeText = ev.time || "7:00 PM onwards";
-      var venueText = ev.venue || "Raipur Venue / Cultural Center";
+      var dateText = formatEditorialDate(ev.date || ev.start_date || "Sat, 31 Oct 2026");
+      var timeText = formatEditorialTime(ev.time || "7:00 PM onwards");
       var titleText = ev.title || "Live Event in Raipur";
+      var tags = getEditorialTags(ev);
 
       var cardHtml = '<div class="col-lg-4 col-md-6 mb-4">';
-      cardHtml += '  <div class="rt-event-card-exact" data-tab="' + dataTab + '">';
-      
-      // 1. Poster Image (16:9 rounded)
-      var displayTag = (ev.category || dataTab || "Event").toUpperCase();
-      cardHtml += '    <div class="rt-poster-exact">';
-      cardHtml += '      <span class="rt-card-tag">' + displayTag + '</span>';
-      cardHtml += '      <img src="' + posterImg + '" alt="' + titleText.replace(/"/g, '&quot;') + '" onerror="this.src=\'images/tribal_dance.jpg\'">';
+      cardHtml += '  <a href="' + linkUrl + '" target="_blank" rel="noopener" class="rt-seaside-card" data-tab="' + dataTab + '" title="' + titleText.replace(/"/g, '&quot;') + '">';
+      cardHtml += '    <div class="rt-seaside-img-wrap">';
+      cardHtml += '      <img src="' + posterImg + '" alt="' + titleText.replace(/"/g, '&quot;') + '" onerror="this.src=\'images/tribal_dance.jpg\'" loading="lazy">';
       cardHtml += '    </div>';
-      
-      // 2. Card Content Body
-      cardHtml += '    <div class="rt-body-exact">';
-      
-      // Title
-      cardHtml += '      <h3 class="rt-title-exact">' + titleText + '</h3>';
-      
-      // Date & Time Row
-      cardHtml += '      <div class="rt-datetime-row-exact">';
-      cardHtml += '        <span class="rt-date-green">' + dateText + '</span>';
-      cardHtml += '        <span class="rt-time-text">' + timeText + '</span>';
+      cardHtml += '    <div class="rt-seaside-content">';
+      cardHtml += '      <div class="rt-seaside-tags">';
+      for (var t = 0; t < tags.length; t++) {
+        cardHtml += '        <span class="rt-seaside-tag">' + tags[t] + '</span>';
+      }
       cardHtml += '      </div>';
-
-      // Location Row
-      cardHtml += '      <div class="rt-location-row-exact">';
-      cardHtml += '        <div class="rt-loc-icon-exact">';
-      cardHtml += '          <svg width="15" height="15" viewBox="0 0 24 24" fill="#047857" stroke="#047857" stroke-width="1"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>';
-      cardHtml += '        </div>';
-      cardHtml += '        <div class="rt-loc-text-exact">';
-      cardHtml += '          <div class="rt-loc-venue">' + venueText + '</div>';
-      cardHtml += '          <div class="rt-loc-city">Raipur, Chhattisgarh</div>';
-      cardHtml += '        </div>';
+      cardHtml += '      <h3 class="rt-seaside-title">' + titleText + '</h3>';
+      cardHtml += '      <div class="rt-seaside-datetime">';
+      cardHtml += '        <div class="rt-seaside-date">' + dateText + '</div>';
+      cardHtml += '        <div class="rt-seaside-time">' + timeText + '</div>';
       cardHtml += '      </div>';
-
-      // Dual Action Buttons Side by Side
-      cardHtml += '      <div class="rt-actions-exact">';
-      cardHtml += '        <a href="' + linkUrl + '" target="_blank" rel="noopener" class="rt-btn-book-exact">';
-      cardHtml += '          Book Tickets <i class="fa-solid fa-arrow-right"></i>';
-      cardHtml += '        </a>';
-      cardHtml += '        <button type="button" class="rt-btn-group-exact btn-open-group-modal" data-event-title="' + titleText.replace(/"/g, '&quot;') + '">';
-      cardHtml += '          Join Group / Carpool';
-      cardHtml += '        </button>';
-      cardHtml += '      </div>';
-
       cardHtml += '    </div>';
-      cardHtml += '  </div>';
+      cardHtml += '  </a>';
       cardHtml += '</div>';
 
       return cardHtml;
