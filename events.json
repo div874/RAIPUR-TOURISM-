@@ -1,5 +1,45 @@
 [
     {
+        "id": "evt_discodiwaliftdjmosh_sat07nov20",
+        "title": "Disco Diwali ft. DJ Mosh",
+        "date": "Sat, 07 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9jMTU1ZjM3MC1kODY4LTExZjEtYTE5OC0xN2I4NDEyYWQ2MTQtcmltZy13MTIwMC1oNjc1LWRjMDgwODA4LWdtaXIuanBnP3Y9MTc5MzgwNzk4NQ.avif",
+        "link": "https://allevents.in/raipur/disco-diwali-ft-dj-mosh/4100030969774346",
+        "category": "Clubs",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'Disco Diwali ft. DJ Mosh'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-04T21:12:51Z",
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
+    },
+    {
+        "id": "evt_entrepreneursmixerraipur_fri27nov20",
+        "title": "Entrepreneur's Mixer (Raipur)",
+        "date": "Fri, 27 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YWViNjRiNjkyN2VjLmpwZw.avif",
+        "link": "https://allevents.in/raipur/entrepreneurs-mixer-raipur-tickets/80003073980732",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-25T20:41:39Z",
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
+    },
+    {
         "id": "evt_satyabratmohapatralive_sat14nov20",
         "title": "Satyabrat Mohapatra LIVE",
         "date": "Sat, 14 Nov 2026",
@@ -16,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
@@ -36,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -56,8 +96,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
+    },
+    {
+        "id": "evt_screeningofarsenalvshullcity_sat07nov20",
+        "title": "Screening of Arsenal vs Hull City",
+        "date": "Sat, 07 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9iZGM3NGU3MC1kODY4LTExZjEtYTE5OC0xN2I4NDEyYWQ2MTQtcmltZy13MTIwMC1oNjc1LWRjZjhmOGY4LWdtaXIuanBnP3Y9MTc5MzgwNzk3OQ.avif",
+        "link": "https://allevents.in/raipur/screening-of-arsenal-vs-hull-city/4100030969774240",
+        "category": "Sports",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'Screening of Arsenal vs Hull City'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-04T21:12:51Z",
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -76,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -96,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -116,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -136,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur_sat21nov20",
@@ -156,28 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
-    },
-    {
-        "id": "evt_entrepreneursmixerraipur_fri27nov20",
-        "title": "Entrepreneur's Mixer (Raipur)",
-        "date": "Fri, 27 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YWRlNDVjNGM0YTM4LmpwZw.avif",
-        "link": "https://allevents.in/raipur/entrepreneurs-mixer-raipur-tickets/80003073980732",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -196,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -216,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -236,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-07T16:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-07T21:12:51Z"
     },
     {
         "id": "evt_chhathpuja2025_sat14nov20",
@@ -256,8 +296,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -276,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -296,8 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -316,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -336,8 +376,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -356,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -376,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -396,7 +436,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-04T16:20:01Z",
-        "next_check_due": "2026-11-05T04:20:01Z"
+        "last_verified_at": "2026-11-04T21:12:51Z",
+        "next_check_due": "2026-11-05T09:12:51Z"
     }
 ]
