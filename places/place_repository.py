@@ -9,9 +9,11 @@ import json
 import logging
 from typing import List, Dict, Any, Optional
 import requests
-from dotenv import load_dotenv
-
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 logger = logging.getLogger("PlaceRepository")
 
 

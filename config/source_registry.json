@@ -18,7 +18,7 @@
     "permission_status": "public_government_domain",
     "enabled": true,
     "refresh_frequency_days": 14,
-    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_successful_fetch": "2026-10-28T23:46:03Z",
     "last_fetch_status": "success",
     "notes": "Official state tourism portal destination entries and historical context.",
     "last_fetch_count": 0
@@ -66,7 +66,7 @@
     "permission_status": "odbl_license_compliant",
     "enabled": true,
     "refresh_frequency_days": 30,
-    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_successful_fetch": "2026-10-28T23:46:03Z",
     "last_fetch_status": "success",
     "notes": "Open geographic points of interest with verified latitude and longitude coordinates. Requires attribution.",
     "last_fetch_count": 2
@@ -91,7 +91,7 @@
     "permission_status": "proprietary_editorial",
     "enabled": true,
     "refresh_frequency_days": 7,
-    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_successful_fetch": "2026-10-28T23:46:03Z",
     "last_fetch_status": "success",
     "notes": "Manually verified Raipur eateries, traditional Chhattisgarhi food specialists, lakefront promenade cafes, and historic sweet vendors.",
     "last_fetch_count": 0
@@ -115,7 +115,7 @@
     "permission_status": "proprietary_editorial",
     "enabled": true,
     "refresh_frequency_days": 7,
-    "last_successful_fetch": "2026-10-28T22:27:17Z",
+    "last_successful_fetch": "2026-10-28T23:46:03Z",
     "last_fetch_status": "success",
     "notes": "Verified guided tours, wildlife safari booking info, and tribal dokra casting & terracotta workshops in Raipur.",
     "last_fetch_count": 0
