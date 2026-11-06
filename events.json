@@ -16,8 +16,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-04T21:12:51Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T08:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-06T18:41:24Z"
     },
     {
         "id": "evt_satyabratmohapatralive_sat14nov20",
@@ -27,7 +27,7 @@
         "venue": "Akhada, Raipur 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNGZlNDg5MzAtZDY5My0xMWYxLThkYmMtYTliOTU5MTdhN2U0LXJpbWctdzEyMDAtaDYwMC1kYzI4MjgyOC1nbWlyLmpwZz92PTE3OTM2MDYzNjE.avif",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9lN2RmMmQ2MC1kOWJmLTExZjEtOGVkOC1hYjAzZDg5Yzg0YmMtcmltZy13MTIwMC1oNjAwLWRjMjgyODI4LWdtaXIuanBnP3Y9MTc5Mzk1NTM2Nw.avif",
         "link": "https://allevents.in/raipur/satyabrat-mohapatra-live/3900030678881043",
         "category": "Shows",
         "tag": "week",
@@ -36,8 +36,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
@@ -56,8 +56,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -76,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_screeningofarsenalvshullcity_sat07nov20",
@@ -96,8 +96,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-04T21:12:51Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T08:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-06T18:41:24Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -116,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -136,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -156,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur_sat21nov20",
@@ -176,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -196,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur_fri27nov20",
@@ -216,8 +216,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
+    },
+    {
+        "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
+        "title": "🚴‍♂️ ITSA THE GREAT RAIPUR VELO 2026 🏆",
+        "date": "Sun, 06 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Naya Raipur, Raipur Naya Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy9mNzJkNGVhODZiMDQzOGRmMmUyNjFlNzI0Njk0NjNhZmMyN2YzNTNjNDMxZjQ4MjgwZWFjYmFhNWQzN2FhZTY0LXJpbWctdzEyMDAtaDYyOC1kY2Y4ZjhmOC1nbWlyP3Y9MTc5Mzk1MDg4Mg.avif",
+        "link": "https://allevents.in/raipur/itsa-the-great-raipur-velo-2026/200030982508023",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Naya Raipur, Raipur Naya Raipur: '🚴‍♂️ ITSA THE GREAT RAIPUR VELO 2026 🏆'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-06T16:41:24Z",
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -236,8 +256,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
+    },
+    {
+        "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
+        "title": "HIRA The Great Chhattisgarh Run 2026",
+        "date": "Sun, 20 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgrah",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvMTgxY2YwZThlZjk0Nzk0NjQzNDdjNTExNDIxYmU4ODE3ZmU1NTNlMWViYTAxMjg2NjQ5M2I1ZTk3NDFmNDhjMS1yaW1nLXcxMjAwLWg2MzMtZGNmOGY4ZjgtZ21pcj92PTE3OTM5NTA4NzE.avif",
+        "link": "https://allevents.in/raipur/hira-the-great-chhattisgarh-run-2026/200030982506411",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgrah: 'HIRA The Great Chhattisgarh Run 2026'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-06T16:41:24Z",
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -256,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -276,8 +316,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -296,8 +336,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-09T06:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_chhathpuja2025_sat14nov20",
@@ -316,8 +356,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
+    },
+    {
+        "id": "evt_boriyakalaplotes_thu04mar20",
+        "title": "Boriyakala plotes",
+        "date": "Thu, 04 Mar 2027",
+        "time": "Evening onwards",
+        "venue": "Lalpur, Raipur Shri Paramhans Alokik Dham .. Anandpuri Kuteeya, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://dyn-image.allevents.in/generate-image?v=4&title=Boriyakala+plotes+&date=Thu+Mar+04+2027+at+01%3A30+pm&bg=2",
+        "link": "https://allevents.in/raipur/boriyakala-plotes/200030982507316",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Lalpur, Raipur Shri Paramhans Alokik Dham .. Anandpuri Kuteeya, Raipur: 'Boriyakala plotes'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-06T16:41:24Z",
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-09T16:41:24Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -336,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -356,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -376,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -396,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -416,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -436,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -456,7 +516,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-06T06:09:59Z",
-        "next_check_due": "2026-11-06T18:09:59Z"
+        "last_verified_at": "2026-11-06T16:41:24Z",
+        "next_check_due": "2026-11-07T04:41:24Z"
     }
 ]
