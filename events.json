@@ -1,25 +1,5 @@
 [
     {
-        "id": "evt_discodiwaliftdjmosh_sat07nov20",
-        "title": "Disco Diwali ft. DJ Mosh",
-        "date": "Sat, 07 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9jMTU1ZjM3MC1kODY4LTExZjEtYTE5OC0xN2I4NDEyYWQ2MTQtcmltZy13MTIwMC1oNjc1LWRjMDgwODA4LWdtaXIuanBnP3Y9MTc5MzgwNzk4NQ.avif",
-        "link": "https://allevents.in/raipur/disco-diwali-ft-dj-mosh/4100030969774346",
-        "category": "Clubs",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'Disco Diwali ft. DJ Mosh'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-04T21:12:51Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-07T14:48:20Z"
-    },
-    {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
         "title": "Steel, Power, Cement, Mining National Expo",
         "date": "Thu, 26 Nov 2026",
@@ -36,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_satyabratmohapatralive_sat14nov20",
@@ -56,8 +36,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -76,8 +56,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -96,28 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
-    },
-    {
-        "id": "evt_screeningofarsenalvshullcity_sat07nov20",
-        "title": "Screening of Arsenal vs Hull City",
-        "date": "Sat, 07 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9iZGM3NGU3MC1kODY4LTExZjEtYTE5OC0xN2I4NDEyYWQ2MTQtcmltZy13MTIwMC1oNjc1LWRjZjhmOGY4LWdtaXIuanBnP3Y9MTc5MzgwNzk3OQ.avif",
-        "link": "https://allevents.in/raipur/screening-of-arsenal-vs-hull-city/4100030969774240",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'Screening of Arsenal vs Hull City'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-04T21:12:51Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-07T14:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -136,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -156,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -176,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur_sat21nov20",
@@ -196,8 +156,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur_fri27nov20",
@@ -216,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
@@ -236,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -256,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -276,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -296,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -316,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -336,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
     },
     {
         "id": "evt_chhathpuja2025_sat14nov20",
@@ -356,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -376,8 +336,48 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-10T12:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-10T19:19:43Z"
+    },
+    {
+        "id": "evt_screeningofarsenalvshullcity_upcomingev",
+        "title": "Screening of Arsenal vs Hull City",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-az.allevents.in/events1/banners/bdc74e70-d868-11f1-a198-17b8412ad614-rimg-w1200-h675-dcf8f8f8-gmir.jpg?v=1793807979",
+        "link": "https://allevents.in/raipur/screening-of-arsenal-vs-hull-city/4100030969774240",
+        "category": "Sports",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'Screening of Arsenal vs Hull City'. Tickets available on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-07T19:19:43Z",
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
+    },
+    {
+        "id": "evt_discodiwaliftdjmosh_upcomingev",
+        "title": "Disco Diwali ft. DJ Mosh",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-az.allevents.in/events4/banners/c155f370-d868-11f1-a198-17b8412ad614-rimg-w1200-h675-dc080808-gmir.jpg?v=1793807985",
+        "link": "https://allevents.in/raipur/disco-diwali-ft-dj-mosh/4100030969774346",
+        "category": "Clubs",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'Disco Diwali ft. DJ Mosh'. Tickets available on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-07T19:19:43Z",
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -396,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -416,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -436,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -456,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -476,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -516,7 +516,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-07T12:48:20Z",
-        "next_check_due": "2026-11-08T00:48:20Z"
+        "last_verified_at": "2026-11-07T19:19:43Z",
+        "next_check_due": "2026-11-08T07:19:43Z"
     }
 ]
