@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_humareramraipur_sat26dec20",
@@ -36,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_satyabratmohapatralive_sat14nov20",
@@ -56,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -76,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
@@ -96,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -116,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_sillysundaysstandupcomedyshow_sun15nov20",
@@ -136,8 +136,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-10T10:56:52Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -156,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -176,8 +176,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -196,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -216,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur_sat21nov20",
@@ -236,8 +236,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur_fri27nov20",
@@ -256,28 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
-    },
-    {
-        "id": "evt_amazingmushroomfarmingfreshmushr_wed11nov20",
-        "title": "Amazing Mushroom Farming 🍄 | Fresh Mushroom Cultivation",
-        "date": "Wed, 11 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Raipur, Raipur Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvOGFiYTZiNmUyNWNhNzMxM2VlZDk2MjUwODUyMGJjMGY2MGYxNWNhYzkwM2FlZTVjMWMyNGJjMDA1NmYxNjNhYi1yaW1nLXcxMDg2LWgxNDQ4LWRjZjhmOGY4LWdtaXI_dj0xNzk0MTY2NDU5.avif",
-        "link": "https://allevents.in/raipur/amazing-mushroom-farming-fresh-mushroom-cultivation/200031003704319",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Raipur, Raipur Raipur: 'Amazing Mushroom Farming 🍄 | Fresh Mushroom Cultivation'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T12:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -296,8 +276,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -316,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -336,8 +316,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -356,8 +336,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_chhathpuja2025_sat14nov20",
@@ -376,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -396,8 +376,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-14T10:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-14T19:28:25Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -416,8 +396,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -436,8 +416,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -456,8 +436,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -476,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -496,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -516,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -536,7 +516,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-11T10:38:28Z",
-        "next_check_due": "2026-11-11T22:38:28Z"
+        "last_verified_at": "2026-11-11T19:28:25Z",
+        "next_check_due": "2026-11-12T07:28:25Z"
     }
 ]
