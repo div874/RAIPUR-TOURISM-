@@ -1,5 +1,25 @@
 [
     {
+        "id": "evt_thebollywoodboiler_sat14nov20",
+        "title": "The Bollywood Boiler",
+        "date": "Sat, 14 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy83MmJhNDEzMC1kZWIyLTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13MTIwMC1oNjc1LWRjODgwODA4LWdtaXIuanBnP3Y9MTc5NDQ5OTM0Mw.avif",
+        "link": "https://allevents.in/raipur/the-bollywood-boiler/4100031032838424",
+        "category": "Clubs",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'The Bollywood Boiler'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-11-12T19:47:08Z",
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-12T21:47:08Z"
+    },
+    {
         "id": "evt_humareramraipur_sat26dec20",
         "title": "Humare Ram - Raipur",
         "date": "Sat, 26 Dec 2026",
@@ -16,8 +36,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
@@ -36,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_satyabratmohapatralive_sat14nov20",
@@ -56,8 +76,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T12:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-12T21:47:08Z"
     },
     {
         "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
@@ -76,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -96,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -116,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_sillysundaysstandupcomedyshow_sun15nov20",
@@ -136,8 +156,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-10T10:56:52Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -156,8 +176,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
+    },
+    {
+        "id": "evt_afronoonweekender_sat21nov20",
+        "title": "afronoon weekender",
+        "date": "Sat, 21 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Diablo, Raipur LG-24, Zora the Mall, NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9iMjk3NmVkMC1kZWJkLTExZjEtOTIyOS1lMWUzNjI1Y2FkYmUtcmltZy13MTIwMC1oNjAwLWRjMjgxODA4LWdtaXIuanBnP3Y9MTc5NDUwNDE3NQ.avif",
+        "link": "https://allevents.in/raipur/afronoon-weekender/3900031033521955",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Diablo, Raipur LG-24, Zora the Mall, NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur: 'afronoon weekender'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-12T19:47:08Z",
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -176,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -196,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -216,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_greateducationexpo2027raipur_sat21nov20",
@@ -236,8 +276,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur_fri27nov20",
@@ -256,28 +296,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
         "title": "Mukul Sharma Live - A Poetry &amp; Storytelling Show",
         "date": "Sun, 27 Dec 2026",
-        "time": "7:00 PM onwards",
+        "time": "Evening onwards",
         "venue": "Venue To Be Announced",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy84NmU3OTZlMC1kOGU5LTExZjEtOTAzYy0xZmI1M2YzNTdjMTQtcmltZy13MTIwMC1oNjAwLWRjZjhlOGQ4LWdtaXIuanBnP3Y9MTc5Mzg2MzM4Mg.avif",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czkvYmFubmVycy8zNTQ0ZDhiMC1kZThmLTExZjEtYTdiZS0yOThiNWMwZWY1YjEtcmltZy13MTIwMC1oNjAwLWRjZjhlOGQ4LWdtaXIuanBnP3Y9MTc5NDQ4NDI5OQ.avif",
         "link": "https://allevents.in/raipur/mukul-sharma-live-a-poetry-and-storytelling-show/3900030974549402",
         "category": "Shows",
         "tag": "week",
         "description": "Live event at Venue To Be Announced: 'Mukul Sharma Live - A Poetry &amp; Storytelling Show'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
+        "verification_status": "UPDATED",
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -296,8 +336,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -316,8 +356,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -336,8 +376,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
     },
     {
         "id": "evt_chhathpuja2025_sat14nov20",
@@ -356,8 +396,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T12:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-12T21:47:08Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -376,8 +416,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-15T10:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-15T19:47:08Z"
+    },
+    {
+        "id": "evt_mukulsharmaliveapoetrystorytelli_upcomingev",
+        "title": "Mukul Sharma Live - A Poetry & Storytelling Show",
+        "date": "Upcoming Event",
+        "time": "Evening onwards",
+        "venue": "Raipur, Chhattisgarh",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-az.allevents.in/events9/banners/3544d8b0-de8f-11f1-a7be-298b5c0ef5b1-rimg-w1200-h600-dcf8e8d8-gmir.jpg?v=1794484299",
+        "link": "https://allevents.in/raipur/mukul-sharma-live-a-poetry-and-storytelling-show/3900030974549402",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Raipur, Chhattisgarh: 'Mukul Sharma Live - A Poetry & Storytelling Show'. Tickets available on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-12T19:47:08Z",
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -396,8 +456,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -416,8 +476,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -436,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -456,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -476,8 +536,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -496,8 +556,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -516,7 +576,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-12T10:51:06Z",
-        "next_check_due": "2026-11-12T22:51:06Z"
+        "last_verified_at": "2026-11-12T19:47:08Z",
+        "next_check_due": "2026-11-13T07:47:08Z"
     }
 ]
