@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
@@ -36,8 +36,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_bollywoodnightcollectiveftdjmosh_sat21nov20",
@@ -56,8 +56,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-14T22:13:22Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
     },
     {
         "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
@@ -76,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -96,8 +96,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -116,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_neonriotftdjsaranya_sat28nov20",
@@ -136,8 +136,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_sun20dec20",
@@ -156,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_18thsikhpremierleague2026_fri04dec20",
@@ -176,8 +176,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-14T10:02:00Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -196,208 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
-    },
-    {
-        "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
-        "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
-        "date": "Thu, 24 Dec 2026",
-        "time": "Evening onwards",
-        "venue": "Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy8yNjJkNDg5YWZlODIwNWZkODg3MmYwYmIxZTk0YTdmNTU1NDY1NmE2ZGFhMjk0MDVjNmNiYmMwMzAyNjllOWRlLXJpbWctdzExMjctaDYzMy1kYzc3MGYzNC1nbWlyP3Y9MTc3Nzc0NTQxNg.avif",
-        "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
-    },
-    {
-        "id": "evt_resolution2027india_thu31dec20",
-        "title": "RESOLUTION 2027 INDIA",
-        "date": "Thu, 31 Dec 2026",
-        "time": "Evening onwards",
-        "venue": "Venue To Be Announced",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvYjZlZmIwYzAtZDI1OS0xMWYxLTkyZDAtODNiZjQ0ODg0M2EwLXJpbWctdzEyMDAtaDYwMC1kYzA4MDgxOC1nbWlyLmpwZz92PTE3OTMxNDE4Mzk.avif",
-        "link": "https://allevents.in/raipur/resolution-2027-india/3900030707945208",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Venue To Be Announced: 'RESOLUTION 2027 INDIA'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
-    },
-    {
-        "id": "evt_themanifestationretreatraipur_sat05dec20",
-        "title": "The Manifestation Retreat - Raipur",
-        "date": "Sat, 05 Dec 2026",
-        "time": "Evening onwards",
-        "venue": "Shagun Farms, Raipur SHAGUN FARMS ; VIP Road, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy81Y2Y5ZTBjZDE3NzcyNTY1YTM5Y2FlOTgxNWUyZmFjYjk5ZjhkNWZhMTllZjI4NjI4OWU0ZDJkYWM0ZmZmY2ZmLXJpbWctdzk2MC1oNTQwLWRjZjhmOGY4LWdtaXI_dj0xNzk1MDkyMjEy.avif",
-        "link": "https://allevents.in/raipur/the-manifestation-retreat-raipur/200031079866432",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Shagun Farms, Raipur SHAGUN FARMS ; VIP Road, Raipur: 'The Manifestation Retreat - Raipur'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-11-19T20:23:37Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
-    },
-    {
-        "id": "evt_sundaynightftaaryangalaatqavalli_sun22nov20",
-        "title": "Sunday Night ft. Aaryan Gala at Qavalli, Raipur",
-        "date": "Sun, 22 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Qavalli Raipur, Raipur Ground Floor, Kh. No.237, near Hero Premia Show Room, opposite Magneto Mall",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy81NzliYWJmNDVkNWNlNTU1ZmI0MzBlZDBmZTUwYmVjZjI0ZTZmYzQ1YTczZjY2ODRjNTk3YjVkZjEyZjA1OGQ3LXJpbWctdzU0MC1oOTYwLWRjMjgwODA4LWdtaXI_dj0xNzk1MDY4Mzg1.avif",
-        "link": "https://allevents.in/raipur/sunday-night-ft-aaryan-gala-at-qavalli-raipur/200031076982725",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Qavalli Raipur, Raipur Ground Floor, Kh. No.237, near Hero Premia Show Room, opposite Magneto Mall: 'Sunday Night ft. Aaryan Gala at Qavalli, Raipur'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-19T11:24:27Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
-    },
-    {
-        "id": "evt_afronoonweekender_sat21nov20",
-        "title": "afronoon weekender",
-        "date": "Sat, 21 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Diablo, Raipur LG-24, Zora the Mall, NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9iMjk3NmVkMC1kZWJkLTExZjEtOTIyOS1lMWUzNjI1Y2FkYmUtcmltZy13MTIwMC1oNjAwLWRjMjgxODA4LWdtaXIuanBnP3Y9MTc5NDUwNDE3NQ.avif",
-        "link": "https://allevents.in/raipur/afronoon-weekender/3900031033521955",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Diablo, Raipur LG-24, Zora the Mall, NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur: 'afronoon weekender'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-12T19:47:08Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
-    },
-    {
-        "id": "evt_iseiglobalexcellenceaward2026_sat28nov20",
-        "title": "ISEI Global Excellence Award 2026",
-        "date": "Sat, 28 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "518, Usha pride, Mowa, Raipur, Raipur Usha Estates, Service Road, Panchvati Nagar",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czkvYmFubmVycy85NWU5MjBlZDU1YjNkNDhmNmM4OWE3NzhkYTAyMTE5ZDIyNDdhZmIzMjA1MjNkYzZiMWFjMzJjNTcyYmNiOTU2LXJpbWctdzEyMDAtaDUxOS1kY2Y4ZjhmOC1nbWlyP3Y9MTc5NTIxMTA1MQ.avif",
-        "link": "https://allevents.in/raipur/isei-global-excellence-award-2026/200031089856611",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at 518, Usha pride, Mowa, Raipur, Raipur Usha Estates, Service Road, Panchvati Nagar: 'ISEI Global Excellence Award 2026'. Get tickets directly on AllEvents.",
-        "verification_status": "NEW",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
-        "first_seen_at": "2026-11-21T02:03:46Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
-    },
-    {
-        "id": "evt_firstattemptbykshitijsharma_sun22nov20",
-        "title": "First Attempt by Kshitij Sharma",
-        "date": "Sun, 22 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Akhada, Raipur 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy83ZTg3N2I1MC1lMzZiLTExZjEtOGZiOC04NWViYzVhZWY5NDMtcmltZy13MTIwMC1oNjAwLWRjYTgyODI4LWdtaXIuanBnP3Y9MTc5NTAxODYyNA.avif",
-        "link": "https://allevents.in/raipur/first-attempt-by-kshitij-sharma/3900031074770105",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Akhada, Raipur 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur: 'First Attempt by Kshitij Sharma'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
-    },
-    {
-        "id": "evt_screeningofliverpoolvsmanchester_sun22nov20",
-        "title": "Screening of Liverpool vs Manchester United",
-        "date": "Sun, 22 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy80OGI0YjQ3MC1lMzdmLTExZjEtYWZhYS00OTgzNWM3Nzg1NzgtcmltZy13MTIwMC1oNjc0LWRjMDgwODA4LWdtaXIucG5nP3Y9MTc5NTAyNzEyNA.avif",
-        "link": "https://allevents.in/raipur/screening-of-liverpool-vs-manchester-united/4100031075142345",
-        "category": "Sports",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'Screening of Liverpool vs Manchester United'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
-    },
-    {
-        "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
-        "title": "Premier Schools Exhibition , Raipur",
-        "date": "Sat, 23 Jan 2027",
-        "time": "Evening onwards",
-        "venue": "Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8wMjkxNDBlYTMzOTZiNDZjZDhlMzlhMDJhMGNjMzc0ZDRjZDFjMTg0ZTZlNjVjMjFiM2Y0YzQwODMzMDFhZDY0LXJpbWctdzEyMDAtaDYyOC1kY2I4MTg1OC1nbWlyP3Y9MTc5MzM0MDI4MQ.avif",
-        "link": "https://allevents.in/raipur/premier-schools-exhibition-raipur/200030937769942",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd: 'Premier Schools Exhibition , Raipur'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
-    },
-    {
-        "id": "evt_greateducationexpo2027raipur_sat21nov20",
-        "title": "Great Education Expo 2027 – Raipur",
-        "date": "Sat, 21 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Hotel Babylon Inn, Raipur Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YTg2YWMyYzllNWE4LmpwZw.avif",
-        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Raipur, Raipur Hotel Babylon Inn, Bhatapara Marg, New Shanti Nagar, Fafadih: 'Great education expo 2027 - Raipur'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-10-08T00:53:44Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_aiagentampautomationworkshopbyla_sun29nov20",
@@ -416,28 +216,188 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-17T18:22:26Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
-        "id": "evt_entrepreneursmixerraipur_fri27nov20",
-        "title": "Entrepreneur's Mixer (Raipur)",
-        "date": "Fri, 27 Nov 2026",
+        "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
+        "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
+        "date": "Thu, 24 Dec 2026",
         "time": "Evening onwards",
-        "venue": "Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur",
+        "venue": "Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YWViNjRiNjkyN2VjLmpwZw.avif",
-        "link": "https://allevents.in/raipur/entrepreneurs-mixer-raipur-tickets/80003073980732",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy8yNjJkNDg5YWZlODIwNWZkODg3MmYwYmIxZTk0YTdmNTU1NDY1NmE2ZGFhMjk0MDVjNmNiYmMwMzAyNjllOWRlLXJpbWctdzExMjctaDYzMy1kYzc3MGYzNC1nbWlyP3Y9MTc3Nzc0NTQxNg.avif",
+        "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
+    },
+    {
+        "id": "evt_resolution2027india_thu31dec20",
+        "title": "RESOLUTION 2027 INDIA",
+        "date": "Thu, 31 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Venue To Be Announced",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvYjZlZmIwYzAtZDI1OS0xMWYxLTkyZDAtODNiZjQ0ODg0M2EwLXJpbWctdzEyMDAtaDYwMC1kYzA4MDgxOC1nbWlyLmpwZz92PTE3OTMxNDE4Mzk.avif",
+        "link": "https://allevents.in/raipur/resolution-2027-india/3900030707945208",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on AllEvents.",
+        "description": "Live event at Venue To Be Announced: 'RESOLUTION 2027 INDIA'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
+    },
+    {
+        "id": "evt_themanifestationretreatraipur_sat05dec20",
+        "title": "The Manifestation Retreat - Raipur",
+        "date": "Sat, 05 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Shagun Farms, Raipur SHAGUN FARMS ; VIP Road, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy81Y2Y5ZTBjZDE3NzcyNTY1YTM5Y2FlOTgxNWUyZmFjYjk5ZjhkNWZhMTllZjI4NjI4OWU0ZDJkYWM0ZmZmY2ZmLXJpbWctdzk2MC1oNTQwLWRjZjhmOGY4LWdtaXI_dj0xNzk1MDkyMjEy.avif",
+        "link": "https://allevents.in/raipur/the-manifestation-retreat-raipur/200031079866432",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Shagun Farms, Raipur SHAGUN FARMS ; VIP Road, Raipur: 'The Manifestation Retreat - Raipur'. Get tickets directly on AllEvents.",
         "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
-        "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "first_seen_at": "2026-11-19T20:23:37Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
+    },
+    {
+        "id": "evt_sundaynightftaaryangalaatqavalli_sun22nov20",
+        "title": "Sunday Night ft. Aaryan Gala at Qavalli, Raipur",
+        "date": "Sun, 22 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Qavalli Raipur, Raipur Ground Floor, Kh. No.237, near Hero Premia Show Room, opposite Magneto Mall",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy81NzliYWJmNDVkNWNlNTU1ZmI0MzBlZDBmZTUwYmVjZjI0ZTZmYzQ1YTczZjY2ODRjNTk3YjVkZjEyZjA1OGQ3LXJpbWctdzU0MC1oOTYwLWRjMjgwODA4LWdtaXI_dj0xNzk1MDY4Mzg1.avif",
+        "link": "https://allevents.in/raipur/sunday-night-ft-aaryan-gala-at-qavalli-raipur/200031076982725",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Qavalli Raipur, Raipur Ground Floor, Kh. No.237, near Hero Premia Show Room, opposite Magneto Mall: 'Sunday Night ft. Aaryan Gala at Qavalli, Raipur'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-11-19T11:24:27Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
+    },
+    {
+        "id": "evt_afronoonweekender_sat21nov20",
+        "title": "afronoon weekender",
+        "date": "Sat, 21 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Diablo, Raipur LG-24, Zora the Mall, NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy9iMjk3NmVkMC1kZWJkLTExZjEtOTIyOS1lMWUzNjI1Y2FkYmUtcmltZy13MTIwMC1oNjAwLWRjMjgxODA4LWdtaXIuanBnP3Y9MTc5NDUwNDE3NQ.avif",
+        "link": "https://allevents.in/raipur/afronoon-weekender/3900031033521955",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Diablo, Raipur LG-24, Zora the Mall, NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur: 'afronoon weekender'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-11-12T19:47:08Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
+    },
+    {
+        "id": "evt_iseiglobalexcellenceaward2026_sat28nov20",
+        "title": "ISEI Global Excellence Award 2026",
+        "date": "Sat, 28 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "518, Usha pride, Mowa, Raipur, Raipur Usha Estates, Service Road, Panchvati Nagar",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czkvYmFubmVycy85NWU5MjBlZDU1YjNkNDhmNmM4OWE3NzhkYTAyMTE5ZDIyNDdhZmIzMjA1MjNkYzZiMWFjMzJjNTcyYmNiOTU2LXJpbWctdzEyMDAtaDUxOS1kY2Y4ZjhmOC1nbWlyP3Y9MTc5NTIxMTA1MQ.avif",
+        "link": "https://allevents.in/raipur/isei-global-excellence-award-2026/200031089856611",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at 518, Usha pride, Mowa, Raipur, Raipur Usha Estates, Service Road, Panchvati Nagar: 'ISEI Global Excellence Award 2026'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-21T02:03:46Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
+    },
+    {
+        "id": "evt_firstattemptbykshitijsharma_sun22nov20",
+        "title": "First Attempt by Kshitij Sharma",
+        "date": "Sun, 22 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Akhada, Raipur 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy83ZTg3N2I1MC1lMzZiLTExZjEtOGZiOC04NWViYzVhZWY5NDMtcmltZy13MTIwMC1oNjAwLWRjYTgyODI4LWdtaXIuanBnP3Y9MTc5NTAxODYyNA.avif",
+        "link": "https://allevents.in/raipur/first-attempt-by-kshitij-sharma/3900031074770105",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Akhada, Raipur 512, Fifth Floor, Babylon Capital, Jivan Vihar, Raipur: 'First Attempt by Kshitij Sharma'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-11-18T20:19:37Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
+    },
+    {
+        "id": "evt_screeningofliverpoolvsmanchester_sun22nov20",
+        "title": "Screening of Liverpool vs Manchester United",
+        "date": "Sun, 22 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czUvYmFubmVycy80OGI0YjQ3MC1lMzdmLTExZjEtYWZhYS00OTgzNWM3Nzg1NzgtcmltZy13MTIwMC1oNjc0LWRjMDgwODA4LWdtaXIucG5nP3Y9MTc5NTAyNzEyNA.avif",
+        "link": "https://allevents.in/raipur/screening-of-liverpool-vs-manchester-united/4100031075142345",
+        "category": "Sports",
+        "tag": "week",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: 'Screening of Liverpool vs Manchester United'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-11-18T20:19:37Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
+    },
+    {
+        "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
+        "title": "Premier Schools Exhibition , Raipur",
+        "date": "Sat, 23 Jan 2027",
+        "time": "Evening onwards",
+        "venue": "Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8wMjkxNDBlYTMzOTZiNDZjZDhlMzlhMDJhMGNjMzc0ZDRjZDFjMTg0ZTZlNjVjMjFiM2Y0YzQwODMzMDFhZDY0LXJpbWctdzEyMDAtaDYyOC1kY2I4MTg1OC1nbWlyP3Y9MTc5MzM0MDI4MQ.avif",
+        "link": "https://allevents.in/raipur/premier-schools-exhibition-raipur/200030937769942",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd: 'Premier Schools Exhibition , Raipur'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-04T14:32:55Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -456,8 +416,48 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
+    },
+    {
+        "id": "evt_greateducationexpo2027raipur_sat21nov20",
+        "title": "Great Education Expo 2027 – Raipur",
+        "date": "Sat, 21 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Hotel Babylon Inn, Raipur Jail Rd, near Gobind Singh Square, Devendra Nagar, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YTg2YWMyYzllNWE4LmpwZw.avif",
+        "link": "https://allevents.in/raipur/great-education-expo-2027-raipur-tickets/80001941382303",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Babylon Inn, Raipur, Raipur Hotel Babylon Inn, Bhatapara Marg, New Shanti Nagar, Fafadih: 'Great education expo 2027 - Raipur'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-10-08T00:53:44Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
+    },
+    {
+        "id": "evt_entrepreneursmixerraipur_fri27nov20",
+        "title": "Entrepreneur's Mixer (Raipur)",
+        "date": "Fri, 27 Nov 2026",
+        "time": "Evening onwards",
+        "venue": "Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YWViNjRiNjkyN2VjLmpwZw.avif",
+        "link": "https://allevents.in/raipur/entrepreneurs-mixer-raipur-tickets/80003073980732",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-10-25T20:41:39Z",
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -476,8 +476,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -496,8 +496,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -516,8 +516,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_invitationforchhattisgarhraipura_mon23nov20",
@@ -532,12 +532,12 @@
         "category": "Shows",
         "tag": "week",
         "description": "Live event at Raipur, Raipur Raipur: 'INVITATION FOR CHHATTISGARH ( RAIPUR &amp;. BILASPUR ) HUB CENTER OPENING'. Get tickets directly on AllEvents.",
-        "verification_status": "NEW",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-21T02:03:46Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T04:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T12:51:08Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -556,8 +556,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-24T02:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-24T10:51:08Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_upcomingev",
@@ -576,8 +576,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetrystorytelli_upcomingev",
@@ -596,8 +596,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-12T19:47:08Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -616,8 +616,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -636,8 +636,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -656,8 +656,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -676,8 +676,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -696,8 +696,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -716,8 +716,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -736,7 +736,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-21T02:03:46Z",
-        "next_check_due": "2026-11-21T14:03:46Z"
+        "last_verified_at": "2026-11-21T10:51:08Z",
+        "next_check_due": "2026-11-21T22:51:08Z"
     }
 ]
