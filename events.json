@@ -16,28 +16,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
-        "id": "evt_akshaysrivastavalivestandupcomed_sat05dec20",
-        "title": "Akshay Srivastava Live Standup Comedy RAIPUR",
-        "date": "Sat, 05 Dec 2026",
+        "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
+        "title": "🚴‍♂️ ITSA THE GREAT RAIPUR VELO 2026 🏆",
+        "date": "Sun, 06 Dec 2026",
         "time": "Evening onwards",
-        "venue": "Akhada By RCC, Raipur Capital (NOT TOWER, Hotel Babylon, 512, VIP chowk, Jivan Vihar, Raipur",
+        "venue": "Naya Raipur, Raipur Naya Raipur",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YjAxNzk5MjVjMzBiLmpwZw.avif",
-        "link": "https://allevents.in/raipur/akshay-srivastava-live-standup-comedy-raipur-tickets/80001608061821",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy9mNzJkNGVhODZiMDQzOGRmMmUyNjFlNzI0Njk0NjNhZmMyN2YzNTNjNDMxZjQ4MjgwZWFjYmFhNWQzN2FhZTY0LXJpbWctdzEyMDAtaDYyOC1kY2Y4ZjhmOC1nbWlyP3Y9MTc5Mzk1MDg4Mg.avif",
+        "link": "https://allevents.in/raipur/itsa-the-great-raipur-velo-2026/200030982508023",
         "category": "Shows",
         "tag": "week",
-        "description": "Live event at Akhada By RCC, Raipur Capital (NOT TOWER, Hotel Babylon, 512, VIP chowk, Jivan Vihar, Raipur: 'Akshay Srivastava Live Standup Comedy RAIPUR'. Get tickets directly on AllEvents.",
-        "verification_status": "NEW",
+        "description": "Live event at Naya Raipur, Raipur Naya Raipur: '🚴‍♂️ ITSA THE GREAT RAIPUR VELO 2026 🏆'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
-        "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "first_seen_at": "2026-11-06T16:41:24Z",
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
@@ -56,28 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
-    },
-    {
-        "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
-        "title": "🚴‍♂️ ITSA THE GREAT RAIPUR VELO 2026 🏆",
-        "date": "Sun, 06 Dec 2026",
-        "time": "Evening onwards",
-        "venue": "Naya Raipur, Raipur Naya Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy9mNzJkNGVhODZiMDQzOGRmMmUyNjFlNzI0Njk0NjNhZmMyN2YzNTNjNDMxZjQ4MjgwZWFjYmFhNWQzN2FhZTY0LXJpbWctdzEyMDAtaDYyOC1kY2Y4ZjhmOC1nbWlyP3Y9MTc5Mzk1MDg4Mg.avif",
-        "link": "https://allevents.in/raipur/itsa-the-great-raipur-velo-2026/200030982508023",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Naya Raipur, Raipur Naya Raipur: '🚴‍♂️ ITSA THE GREAT RAIPUR VELO 2026 🏆'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -96,8 +76,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -116,8 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_neonriotftdjsaranya_sat28nov20",
@@ -136,8 +116,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_sun20dec20",
@@ -156,28 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
-    },
-    {
-        "id": "evt_indiandesignerhaatexhibition_sat26dec20",
-        "title": "Indian Designer Haat Exhibition",
-        "date": "Sat, 26 Dec 2026",
-        "time": "Evening onwards",
-        "venue": "Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YjAxNzNhMDAzMDc0LmpwZw.avif",
-        "link": "https://allevents.in/raipur/indian-designer-haat-exhibition-tickets/80002076705074",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur: 'Indian Designer Haat Exhibition'. Get tickets directly on AllEvents.",
-        "verification_status": "NEW",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_90snostalgiaftdjmosh_thu26nov20",
@@ -192,12 +152,12 @@
         "category": "Clubs",
         "tag": "week",
         "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: '90s Nostalgia ft. DJ Mosh'. Get tickets directly on AllEvents.",
-        "verification_status": "NEW",
+        "verification_status": "CONFIRMED",
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_18thsikhpremierleague2026_fri04dec20",
@@ -216,8 +176,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-14T10:02:00Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -236,8 +196,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_aiagentampautomationworkshopbyla_sun29nov20",
@@ -256,8 +216,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-17T18:22:26Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -276,8 +236,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -296,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_themanifestationretreatraipur_sat05dec20",
@@ -316,8 +276,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-19T20:23:37Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_sundaynightftaaryangalaatqavalli_sun22nov20",
@@ -336,8 +296,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-19T11:24:27Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-21T20:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T03:07:06Z"
     },
     {
         "id": "evt_iseiglobalexcellenceaward2026_sat28nov20",
@@ -356,8 +316,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-21T02:03:46Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
+    },
+    {
+        "id": "evt_akshaysrivastavalivestandupcomed_sat05dec20",
+        "title": "Akshay Srivastava Live Standup Comedy RAIPUR",
+        "date": "Sat, 05 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Akhada By RCC, Raipur Capital (NOT TOWER, Hotel Babylon, 512, VIP chowk, Jivan Vihar, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YjAxNzk5MjVjMzBiLmpwZw.avif",
+        "link": "https://allevents.in/raipur/akshay-srivastava-live-standup-comedy-raipur-tickets/80001608061821",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Akhada By RCC, Raipur Capital (NOT TOWER, Hotel Babylon, 512, VIP chowk, Jivan Vihar, Raipur: 'Akshay Srivastava Live Standup Comedy RAIPUR'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "MEDIUM",
+        "check_interval_hours": 12,
+        "first_seen_at": "2026-11-21T18:59:47Z",
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_firstattemptbykshitijsharma_sun22nov20",
@@ -376,8 +356,28 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-21T20:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T03:07:06Z"
+    },
+    {
+        "id": "evt_indiandesignerhaatexhibition_sat26dec20",
+        "title": "Indian Designer Haat Exhibition",
+        "date": "Sat, 26 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YjAxNzNhMDAzMDc0LmpwZw.avif",
+        "link": "https://allevents.in/raipur/indian-designer-haat-exhibition-tickets/80002076705074",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur: 'Indian Designer Haat Exhibition'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-21T18:59:47Z",
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_screeningofliverpoolvsmanchester_sun22nov20",
@@ -396,8 +396,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-21T20:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T03:07:06Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -416,8 +416,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -436,8 +436,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur_fri27nov20",
@@ -456,8 +456,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
+    },
+    {
+        "id": "evt_farewellanentropyofseperation_sun20dec20",
+        "title": "FAREWELL - AN ENTROPY OF SEPERATION",
+        "date": "Sun, 20 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Manch Auditorium, Zora The Mall, Raipur NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czIvYmFubmVycy81YTFiYTZhMC1lNTk3LTExZjEtYjhhMC02NWVmY2MwODlmOTgtcmltZy13MTIwMC1oNjAwLWRjMDgwODA4LWdtaXIuanBnP3Y9MTc5NTI1NzM2NA.avif",
+        "link": "https://allevents.in/raipur/farewell-an-entropy-of-seperation/3900031091667404",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Manch Auditorium, Zora The Mall, Raipur NH-6, Opposite Agriculture College, Serikhedi, Jora, Raipur: 'FAREWELL - AN ENTROPY OF SEPERATION'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-22T01:07:06Z",
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -476,8 +496,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -496,8 +516,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -516,8 +536,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_invitationforchhattisgarhraipura_mon23nov20",
@@ -536,8 +556,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-21T02:03:46Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-21T20:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T03:07:06Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -556,8 +576,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-24T18:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-25T01:07:06Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_upcomingev",
@@ -576,8 +596,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetrystorytelli_upcomingev",
@@ -596,8 +616,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-12T19:47:08Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -616,8 +636,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -636,8 +656,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -656,8 +676,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -676,8 +696,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -696,8 +716,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -716,8 +736,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -736,7 +756,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-21T18:59:47Z",
-        "next_check_due": "2026-11-22T06:59:47Z"
+        "last_verified_at": "2026-11-22T01:07:06Z",
+        "next_check_due": "2026-11-22T13:07:06Z"
     }
 ]
