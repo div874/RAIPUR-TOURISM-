@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_themanifestationretreatraipur_sat05dec20",
@@ -36,8 +36,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-19T20:23:37Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
@@ -56,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_steelpowercementminingnationalex_thu26nov20",
@@ -76,8 +76,28 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T01:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T10:04:05Z"
+    },
+    {
+        "id": "evt_thegreatchhattisgarhrun2026_sun20dec20",
+        "title": "The Great Chhattisgarh Run 2026",
+        "date": "Sun, 20 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Ekatma Path, Nava Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvNWJlMmI2OWZhNTNmYzZhMWE4ZWI4ZGYxY2NhOTIzZmRkNWMzMzBiMzQwYTJjNzgxMTA2NGJlMTlhYjVkZDJhNi1yaW1nLXcxMjAwLWg2MzMtZGNmOGY4ZjgtZ21pcj92PTE3OTU1ODYzNDI.avif",
+        "link": "https://allevents.in/raipur/the-great-chhattisgarh-run-2026/200031122627303",
+        "category": "Shows",
+        "tag": "week",
+        "description": "Live event at Ekatma Path, Nava Raipur: 'The Great Chhattisgarh Run 2026'. Get tickets directly on AllEvents.",
+        "verification_status": "NEW",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-25T08:04:05Z",
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_nationalexporaipur2026_fri27nov20",
@@ -93,11 +113,11 @@
         "tag": "week",
         "description": "Live event at Science College Ground, Raipur, Raipur 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on AllEvents.",
         "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
         "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T10:04:05Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -116,8 +136,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_sun20dec20",
@@ -136,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_neonriotftdjsaranya_sat28nov20",
@@ -156,28 +176,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
-    },
-    {
-        "id": "evt_90snostalgiaftdjmosh_thu26nov20",
-        "title": "90s Nostalgia ft. DJ Mosh",
-        "date": "Thu, 26 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9mZTE3YzhlMC1lNWJjLTExZjEtYjhhMC02NWVmY2MwODlmOTgtcmltZy13MTIwMC1oNjc0LWRjMDgyOGY4LWdtaXIucG5nP3Y9MTc5NTI3MzUzMA.avif",
-        "link": "https://allevents.in/raipur/90s-nostalgia-ft-dj-mosh/4100031092139131",
-        "category": "Clubs",
-        "tag": "week",
-        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: '90s Nostalgia ft. DJ Mosh'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T01:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_18thsikhpremierleague2026_fri04dec20",
@@ -196,8 +196,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-14T10:02:00Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -216,28 +216,28 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
-        "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
-        "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
-        "date": "Thu, 24 Dec 2026",
+        "id": "evt_90snostalgiaftdjmosh_thu26nov20",
+        "title": "90s Nostalgia ft. DJ Mosh",
+        "date": "Thu, 26 Nov 2026",
         "time": "Evening onwards",
-        "venue": "Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur",
+        "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy8yNjJkNDg5YWZlODIwNWZkODg3MmYwYmIxZTk0YTdmNTU1NDY1NmE2ZGFhMjk0MDVjNmNiYmMwMzAyNjllOWRlLXJpbWctdzExMjctaDYzMy1kYzc3MGYzNC1nbWlyP3Y9MTc3Nzc0NTQxNg.avif",
-        "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
-        "category": "Culture",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9mZTE3YzhlMC1lNWJjLTExZjEtYjhhMC02NWVmY2MwODlmOTgtcmltZy13MTIwMC1oNjc0LWRjMDgyOGY4LWdtaXIucG5nP3Y9MTc5NTI3MzUzMA.avif",
+        "link": "https://allevents.in/raipur/90s-nostalgia-ft-dj-mosh/4100031092139131",
+        "category": "Clubs",
         "tag": "week",
-        "description": "Live event at Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on AllEvents.",
+        "description": "Live event at Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar: '90s Nostalgia ft. DJ Mosh'. Get tickets directly on AllEvents.",
         "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
+        "first_seen_at": "2026-11-21T18:59:47Z",
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T10:04:05Z"
     },
     {
         "id": "evt_aiagentampautomationworkshopbyla_sun29nov20",
@@ -256,8 +256,28 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-17T18:22:26Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
+    },
+    {
+        "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
+        "title": "Seven Vows A Holistic Wedding Exhibition Raipur",
+        "date": "Thu, 24 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czYvYmFubmVycy8yNjJkNDg5YWZlODIwNWZkODg3MmYwYmIxZTk0YTdmNTU1NDY1NmE2ZGFhMjk0MDVjNmNiYmMwMzAyNjllOWRlLXJpbWctdzExMjctaDYzMy1kYzc3MGYzNC1nbWlyP3Y9MTc3Nzc0NTQxNg.avif",
+        "link": "https://allevents.in/raipur/seven-vows-a-holistic-wedding-exhibition-raipur/200025426016955",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Sayaji Raipur, Raipur The Taj Gateway Raipur, Shri Krishna Apartments, Labhandih, Raipur: 'Seven Vows A Holistic Wedding Exhibition Raipur'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-10-06T04:00:29Z",
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -276,8 +296,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_akshaysrivastavalivestandupcomed_sat05dec20",
@@ -296,8 +316,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_iseiglobalexcellenceaward2026_sat28nov20",
@@ -316,48 +336,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-21T02:03:46Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
-    },
-    {
-        "id": "evt_indiandesignerhaatexhibition_sat26dec20",
-        "title": "Indian Designer Haat Exhibition",
-        "date": "Sat, 26 Dec 2026",
-        "time": "Evening onwards",
-        "venue": "Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YjAxNzNhMDAzMDc0LmpwZw.avif",
-        "link": "https://allevents.in/raipur/indian-designer-haat-exhibition-tickets/80002076705074",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur: 'Indian Designer Haat Exhibition'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
-    },
-    {
-        "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
-        "title": "Premier Schools Exhibition , Raipur",
-        "date": "Sat, 23 Jan 2027",
-        "time": "Evening onwards",
-        "venue": "Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8wMjkxNDBlYTMzOTZiNDZjZDhlMzlhMDJhMGNjMzc0ZDRjZDFjMTg0ZTZlNjVjMjFiM2Y0YzQwODMzMDFhZDY0LXJpbWctdzEyMDAtaDYyOC1kY2I4MTg1OC1nbWlyP3Y9MTc5MzM0MDI4MQ.avif",
-        "link": "https://allevents.in/raipur/premier-schools-exhibition-raipur/200030937769942",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd: 'Premier Schools Exhibition , Raipur'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "SPARSE",
-        "check_interval_hours": 72,
-        "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -376,8 +356,48 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
+    },
+    {
+        "id": "evt_indiandesignerhaatexhibition_sat26dec20",
+        "title": "Indian Designer Haat Exhibition",
+        "date": "Sat, 26 Dec 2026",
+        "time": "Evening onwards",
+        "venue": "Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YjAxNzNhMDAzMDc0LmpwZw.avif",
+        "link": "https://allevents.in/raipur/indian-designer-haat-exhibition-tickets/80002076705074",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Hotel Babylon Inn, Jail Road, near Gobind Singh Square, Devendra Nagar, Raipur: 'Indian Designer Haat Exhibition'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-21T18:59:47Z",
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
+    },
+    {
+        "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
+        "title": "Premier Schools Exhibition , Raipur",
+        "date": "Sat, 23 Jan 2027",
+        "time": "Evening onwards",
+        "venue": "Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd",
+        "price": "Book on AllEvents",
+        "source": "AllEvents",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czcvYmFubmVycy8wMjkxNDBlYTMzOTZiNDZjZDhlMzlhMDJhMGNjMzc0ZDRjZDFjMTg0ZTZlNjVjMjFiM2Y0YzQwODMzMDFhZDY0LXJpbWctdzEyMDAtaDYyOC1kY2I4MTg1OC1nbWlyP3Y9MTc5MzM0MDI4MQ.avif",
+        "link": "https://allevents.in/raipur/premier-schools-exhibition-raipur/200030937769942",
+        "category": "Culture",
+        "tag": "week",
+        "description": "Live event at Raipur VIP Chowk, Raipur Currency Tower Shop GE road, Infront, VIP Rd: 'Premier Schools Exhibition , Raipur'. Get tickets directly on AllEvents.",
+        "verification_status": "CONFIRMED",
+        "freshness_tier": "SPARSE",
+        "check_interval_hours": 72,
+        "first_seen_at": "2026-11-04T14:32:55Z",
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_entrepreneursmixerraipur_fri27nov20",
@@ -393,11 +413,11 @@
         "tag": "week",
         "description": "Live event at Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on AllEvents.",
         "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
         "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T10:04:05Z"
     },
     {
         "id": "evt_farewellanentropyofseperation_sun20dec20",
@@ -416,8 +436,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-22T01:07:06Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -436,8 +456,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_bonsaiexpo2026_fri27nov20",
@@ -453,11 +473,11 @@
         "tag": "week",
         "description": "Live event at The Bonsai Haat Jora Pirda Road, Raipur: 'Bonsai Expo 2026'. Get tickets directly on AllEvents.",
         "verification_status": "CONFIRMED",
-        "freshness_tier": "MEDIUM",
-        "check_interval_hours": 12,
+        "freshness_tier": "HIGH",
+        "check_interval_hours": 2,
         "first_seen_at": "2026-11-24T02:05:58Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T10:04:05Z"
     },
     {
         "id": "evt_imaaratexpo_wed16dec20",
@@ -476,8 +496,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-24T13:29:46Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_aanganhumaresapnoka_thu26nov20",
@@ -496,8 +516,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T01:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T10:04:05Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -516,8 +536,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -536,8 +556,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_acereflectraipur_thu10jun20",
@@ -556,8 +576,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-24T02:05:58Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-27T23:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-28T08:04:05Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_upcomingev",
@@ -576,8 +596,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetrystorytelli_upcomingev",
@@ -596,8 +616,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-12T19:47:08Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -616,8 +636,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -636,8 +656,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -656,8 +676,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -676,8 +696,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -696,8 +716,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -716,8 +736,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -736,7 +756,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-24T23:49:38Z",
-        "next_check_due": "2026-11-25T11:49:38Z"
+        "last_verified_at": "2026-11-25T08:04:05Z",
+        "next_check_due": "2026-11-25T20:04:05Z"
     }
 ]
