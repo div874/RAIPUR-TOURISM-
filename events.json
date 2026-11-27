@@ -16,8 +16,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-09T05:51:22Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_themanifestationretreatraipur_sat05dec20",
@@ -36,8 +36,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-19T20:23:37Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_itsathegreatraipurvelo2026_sun06dec20",
@@ -56,8 +56,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_hirathegreatchhattisgarhrun2026_sun20dec20",
@@ -76,8 +76,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_thegreatchhattisgarhrun2026_sun20dec20",
@@ -96,28 +96,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-25T08:04:05Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
-    },
-    {
-        "id": "evt_nationalexporaipur2026_fri27nov20",
-        "title": "National Expo Raipur 2026",
-        "date": "Fri, 27 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Science College Ground, Raipur, Raipur 29 College Road, Govt Sanskrit College Campus, Chirhuldih",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czQvYmFubmVycy9iNmEwNDQ5ZDZiODYxMTM5MTE0YWQzNjUwMTJlZjEyYTQxZDRkYzk3NDE0OThhMGNlNTBmZDdlNzBiMThhOWViLXJpbWctdzEwMjQtaDU0MS1kY2Y4ZDgwOC1nbWlyP3Y9MTc5MjQzNDIxNQ.avif",
-        "link": "https://allevents.in/raipur/national-expo-raipur-2026/200030856712337",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at Science College Ground, Raipur, Raipur 29 College Road, Govt Sanskrit College Campus, Chirhuldih: 'National Expo Raipur 2026'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-10-19T20:30:32Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_sun20dec20",
@@ -136,8 +116,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_neonriotftdjsaranya_sat28nov20",
@@ -156,8 +136,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-27T23:03:53Z"
     },
     {
         "id": "evt_raipurcomedyfestival_sun20dec20",
@@ -176,8 +156,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_afterdarkfeathrx_sat28nov20",
@@ -187,7 +167,7 @@
         "venue": "Romeo Lane, Raipur F&amp;B 2 &amp; 3, 2nd Floor, Avinash One, Vishal Nagar, Raipur",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy8wZTNjNDRjMC1lOGVkLTExZjEtYjY1OC1jNTAyNjU4MTRlNGYtcmltZy13MTIwMC1oNjc1LWRjNDgwODA4LWdtaXIuanBnP3Y9MTc5NTYyNDAyNg.avif",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czgvYmFubmVycy9iZTZiZDE4MC1lYWEwLTExZjEtODg5OC0zYjdjOGJmY2ZhMjgtcmltZy13MTIwMC1oNjc1LWRjNDgwODA4LWdtaXIuanBnP3Y9MTc5NTgxMTE1Mw.avif",
         "link": "https://allevents.in/raipur/after-dark-feat-hrx/4100031131220607",
         "category": "Shows",
         "tag": "week",
@@ -196,8 +176,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-26T03:27:19Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-27T23:03:53Z"
     },
     {
         "id": "evt_18thsikhpremierleague2026_fri04dec20",
@@ -216,8 +196,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-14T10:02:00Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_sevenvowsaholisticweddingexhibit_thu24dec20",
@@ -236,8 +216,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_aiagentampautomationworkshopbyla_sun29nov20",
@@ -256,8 +236,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-17T18:22:26Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-27T23:03:53Z"
     },
     {
         "id": "evt_resolution2027india_thu31dec20",
@@ -276,8 +256,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_internationalrangolicompetition2_mon30nov20",
@@ -296,8 +276,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-26T03:27:19Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_akshaysrivastavalivestandupcomed_sat05dec20",
@@ -316,8 +296,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_iseiglobalexcellenceaward2026_sat28nov20",
@@ -336,28 +316,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-21T02:03:46Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
-    },
-    {
-        "id": "evt_entrepreneursmixerraipur_fri27nov20",
-        "title": "Entrepreneur's Mixer (Raipur)",
-        "date": "Fri, 27 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4yLmFsbGV2ZW50cy5pbi90aHVtYnMvdGh1bWI2YWViNjRiNjkyN2VjLmpwZw.avif",
-        "link": "https://allevents.in/raipur/entrepreneurs-mixer-raipur-tickets/80003073980732",
-        "category": "Shows",
-        "tag": "week",
-        "description": "Live event at Kursi Cowork, Raipur 3rd Floor, LK Logistics and Corporate Park, Raipur: 'Entrepreneur's Mixer (Raipur)'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-10-25T20:41:39Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-27T23:03:53Z"
     },
     {
         "id": "evt_shrishyamsankalpsandhyaftkanhaiy_sat12dec20",
@@ -376,8 +336,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-20T14:14:20Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_premierschoolsexhibitionraipur_sat23jan20",
@@ -396,8 +356,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-04T14:32:55Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_indiandesignerhaatexhibition_sat26dec20",
@@ -416,8 +376,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-21T18:59:47Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_screeningofqatargrandprix_sun29nov20",
@@ -427,7 +387,7 @@
         "venue": "Underdoggs, Devendra Nagar, Raipur, Raipur Devendra Nagar",
         "price": "Book on AllEvents",
         "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEwL2Jhbm5lcnMvMWI1MGNmNTAtZThlZC0xMWYxLWI2NTgtYzUwMjY1ODE0ZTRmLXJpbWctdzEyMDAtaDY3NS1kYzM4MTgwOC1nbWlyLmpwZz92PTE3OTU2MjQwNDg.avif",
+        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czEvYmFubmVycy85ZDQxNWVkMC1lYWEwLTExZjEtODg5OC0zYjdjOGJmY2ZhMjgtcmltZy13MTIwMC1oNjc1LWRjMzgxODA4LWdtaXIuanBnP3Y9MTc5NTgxMTA5Nw.avif",
         "link": "https://allevents.in/raipur/screening-of-qatar-grand-prix/4100031131221629",
         "category": "Sports",
         "tag": "week",
@@ -436,8 +396,8 @@
         "freshness_tier": "HIGH",
         "check_interval_hours": 2,
         "first_seen_at": "2026-11-26T03:27:19Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-27T23:03:53Z"
     },
     {
         "id": "evt_farewellanentropyofseperation_sun20dec20",
@@ -456,8 +416,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-22T01:07:06Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetryampstoryte_sun27dec20",
@@ -476,8 +436,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-05T17:17:06Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_blahblahlastnight_thu31dec20",
@@ -496,28 +456,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-26T03:27:19Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
-    },
-    {
-        "id": "evt_bonsaiexpo2026_fri27nov20",
-        "title": "Bonsai Expo 2026",
-        "date": "Fri, 27 Nov 2026",
-        "time": "Evening onwards",
-        "venue": "The Bonsai Haat Jora Pirda Road, Raipur",
-        "price": "Book on AllEvents",
-        "source": "AllEvents",
-        "image": "https://cdn-ip.allevents.in/s/rs:fill:500:250/g:sm/sh:100/aHR0cHM6Ly9jZG4tYXouYWxsZXZlbnRzLmluL2V2ZW50czMvYmFubmVycy82ZDkxN2UwODlmZmQ2MTM3OGMzOWVlZjM4OTMxOGQ5YWJlOWFkZmIxNDE1Zjg1NjA5NTkxZmZlYTE0MDUwMjNiLXJpbWctdzEyMDAtaDE0OTktZGNlODY4MjgtZ21pcj92PTE3OTU0MzIyNzg.avif",
-        "link": "https://allevents.in/raipur/bonsai-expo-2026/200031105823318",
-        "category": "Culture",
-        "tag": "week",
-        "description": "Live event at The Bonsai Haat Jora Pirda Road, Raipur: 'Bonsai Expo 2026'. Get tickets directly on AllEvents.",
-        "verification_status": "CONFIRMED",
-        "freshness_tier": "HIGH",
-        "check_interval_hours": 2,
-        "first_seen_at": "2026-11-24T02:05:58Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T13:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_imaaratexpo_wed16dec20",
@@ -536,8 +476,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-24T13:29:46Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_oshojainmeregharchaloindiatour_sun07feb20",
@@ -556,8 +496,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-10-17T20:25:51Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_boriyakalaplotes_thu04mar20",
@@ -576,8 +516,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-06T16:41:24Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_acereflectraipur_thu10jun20",
@@ -596,8 +536,8 @@
         "freshness_tier": "SPARSE",
         "check_interval_hours": 72,
         "first_seen_at": "2026-11-24T02:05:58Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-30T11:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-30T21:03:53Z"
     },
     {
         "id": "evt_chhattisgarhcomedytourftvivekvid_upcomingev",
@@ -616,8 +556,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-18T20:19:37Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_mukulsharmaliveapoetrystorytelli_upcomingev",
@@ -636,8 +576,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-11-12T19:47:08Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_11poolofferatunderdoggsraipur_upcomingev",
@@ -647,7 +587,7 @@
         "venue": "Underdoggs Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6abbc7e4d7b20045d769d8ae-4773945c04e3.jpg",
         "link": "https://sortmyscene.com/event/1-1-pool-offer-at-underdoggs-raipur-tuesday-pool-deal-play-one-get-one-free-oct-06-2026",
         "category": "Clubs",
         "tag": "week",
@@ -656,8 +596,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_fakeresignationparty_upcomingev",
@@ -667,7 +607,7 @@
         "venue": "Edo, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6aa3cdb2d446400b964cb365-dd1619512c65.jpg",
         "link": "https://sortmyscene.com/event/fake-resignation-party-oct-03-2026",
         "category": "Clubs",
         "tag": "week",
@@ -676,8 +616,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_exkishaadi_upcomingev",
@@ -687,7 +627,7 @@
         "venue": "The Haunt Dive 2.0, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6aaed391df46593fe22bdc64-31d05567ee8e.jpg",
         "link": "https://sortmyscene.com/event/ex-ki-shaadi-oct-10-2026",
         "category": "Clubs",
         "tag": "week",
@@ -696,8 +636,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_saturdayglamwithyogeshrawat_upcomingev",
@@ -707,7 +647,7 @@
         "venue": "F Lounge by FTV, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6abc03ffd7b20045d769fc43-98ee2045d00f.jpg",
         "link": "https://sortmyscene.com/event/saturday-glam-oct-10-2026",
         "category": "Clubs",
         "tag": "week",
@@ -716,8 +656,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T22:32:52Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_manchesterunitedvstottenhamhotsp_upcomingev",
@@ -727,7 +667,7 @@
         "venue": "Underdoggs Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6abd0c6e75f2784ea2185a2c-835ce3d2af66.jpg",
         "link": "https://sortmyscene.com/event/manchester-united-vs-tottenham-hotspur-underdoggs-raipur-raipur-oct-10-2026",
         "category": "Sports",
         "tag": "week",
@@ -736,8 +676,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_raaserang_upcomingev",
@@ -747,7 +687,7 @@
         "venue": "The Soul Garden, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6ac00e88ae54635bb04572e5-89e5f35dd598.jpg",
         "link": "https://sortmyscene.com/event/raas-e-rang-oct-11-2026",
         "category": "Shows",
         "tag": "week",
@@ -756,8 +696,8 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-06T04:00:29Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     },
     {
         "id": "evt_royalgarbaraipur_upcomingev",
@@ -767,7 +707,7 @@
         "venue": "Hotel Royal Castle, Raipur",
         "price": "Book on SortMyScene",
         "source": "SortMyScene",
-        "image": "$OG_IMAGE",
+        "image": "https://cdn.sortmyscene.com/event-cards/6abd23fb2ffa8b682ec3a6a6-7db732371a6d.jpg",
         "link": "https://sortmyscene.com/event/royal-garba-oct-11-2026",
         "category": "Culture",
         "tag": "week",
@@ -776,7 +716,7 @@
         "freshness_tier": "MEDIUM",
         "check_interval_hours": 12,
         "first_seen_at": "2026-10-13T16:51:40Z",
-        "last_verified_at": "2026-11-27T11:58:01Z",
-        "next_check_due": "2026-11-27T23:58:01Z"
+        "last_verified_at": "2026-11-27T21:03:53Z",
+        "next_check_due": "2026-11-28T09:03:53Z"
     }
 ]
